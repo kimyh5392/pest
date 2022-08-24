@@ -27,14 +27,15 @@ $kcolor: #0e3db4;
 
 html, body {
     width: 100%;
-    min-width: 1280px;
+    min-width: 1300px;
 }
 
 body {
     font-size: 17px;
     color: #000;
-    font-weight: 400;
+    font-weight: 300;
 	@include noto();
+    padding-top: 270px;
     word-break: keep-all;
     box-sizing: border-box;
     *, *::before, *::after {
@@ -44,8 +45,7 @@ body {
 
 .container {
     display: block;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 .container-fluid {
