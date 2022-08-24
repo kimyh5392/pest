@@ -172,4 +172,63 @@ pre {
         .jumbotron .container .jumbo-slider .slick-arrow.slick-next {
           right: -8.5px; }
 
+/* introduce */
+.introduce {
+  padding: 70px 0 30px; }
+  .introduce .container > ul {
+    display: table;
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+    table-layout: fixed; }
+    .introduce .container > ul > li {
+      display: table-cell;
+      vertical-align: top;
+      padding: 0 10px; }
+      .introduce .container > ul > li > a {
+        position: relative;
+        display: block;
+        height: 267px;
+        overflow: hidden;
+        padding: 50px 40px 0; }
+        .introduce .container > ul > li > a .backdrop {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          display: block;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+          -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: cover; }
+        .introduce .container > ul > li > a > dl > dt {
+          font-size: 33px;
+          color: #fff;
+          font-weight: bold;
+          padding-bottom: 20px;
+          padding-left: 7px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+        .introduce .container > ul > li > a > dl > dd {
+          font-size: 16px;
+          color: #fff;
+          font-weight: 400;
+          line-height: 25px;
+          margin-top: 25px; }
+        .introduce .container > ul > li > a:hover .backdrop {
+          transform: scale(1.1); }
+      .introduce .container > ul > li:nth-of-type(1) > a .backdrop {
+        background-image: url(/pest/images/main/bg_introduce01.png); }
+      .introduce .container > ul > li:nth-of-type(2) > a .backdrop {
+        background-image: url(/pest/images/main/bg_introduce02.png); }
+      .introduce .container > ul > li:nth-of-type(3) > a .backdrop {
+        background-image: url(/pest/images/main/bg_introduce03.png); }
+
 /*# sourceMappingURL=main.css.map */
