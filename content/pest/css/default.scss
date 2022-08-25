@@ -1,6 +1,5 @@
 @import 'common';
 
-
 /* header */
 #header {
     position: fixed;
@@ -87,6 +86,7 @@
                     vertical-align: top;
                     > li {
                         display: inline-block;
+                        vertical-align: top;
                         margin-left: 25px;
                         > a {
                             position: relative;
@@ -104,6 +104,20 @@
                                 text-align: center;
                                 border-radius: 50%;
                                 background-color: $kcolor;
+                            }
+                            &.login {
+                                font-size: 16px;
+                                line-height: 34px;
+                                font-weight: 500;
+                                &:hover {
+                                    color: $kcolor;
+                                }
+                            }
+                            span {
+                                display: block;
+                                font-size: 16px;
+                                color: #333;
+                                line-height: 34px;
                             }
                         }
                     }
@@ -152,8 +166,10 @@
                         width: auto;
                         white-space: nowrap;
                         min-width: 610px;
-                        padding: 40px 50px;;
+                        padding: 40px 50px;
+                        border-top: 2px solid #b2b2b2;
                         background-color: #fff;
+                        box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2);
                         > div {
                             display: table-cell;
                             vertical-align: top;
@@ -316,9 +332,6 @@
                                     margin: 0 3px 0 6px;
                                 }
                             }
-                            > dd {
-                                
-                            }
                         }
                         &:nth-of-type(2n + 1) {
                             clear: left;
@@ -340,5 +353,93 @@
                 margin-top: 50px;
             }
         }
+    }
+}
+
+/* common */
+.tab-content {
+    .tab-pane {
+        height: 0;
+        visibility: hidden;
+        &.active {
+            height: auto;
+            visibility: visible;
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    > ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    &.active {
+        > ul {
+            display: block;
+        }
+    }
+}
+
+/* quick-banner */
+.quick-banner {
+    position: absolute;
+    top: 723px;
+    z-index: 9;
+    right: 50%;
+    width: 100px;
+    margin-right: -790px;
+    display: none;
+    > ul {
+        width: 100%;
+        padding: 0 10px;
+        border: 1px solid #b7b7b7;
+        background-color: #fff;
+        > li {
+            padding: 20px 0;
+            border-bottom: 1px solid #b7b7b7;
+            &:last-child {
+                border-bottom: 0;
+            }
+            > a {
+                display: block;
+                text-align: center;
+                figure {
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-size: cover;
+                    }
+                    figcaption {
+                        font-size: 12px;
+                        color: #000;
+                        font-weight: 400;
+                        margin-top: 10px;
+                        b {
+                            font-size: 29px;
+                            color: #000;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                > dl {
+                    > dt {
+                        font-size: 12px;
+                        color: #b7b7b7;
+                        font-weight: 400;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1380px) {
+        display: block;
     }
 }

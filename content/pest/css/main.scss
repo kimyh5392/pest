@@ -3,6 +3,10 @@
 /* jumbotron */
 .jumbotron {
     overflow: hidden;
+    opacity: 0;
+    &.show {
+        opacity: 1;
+    }
     .container {
         width: 1290px;
         .jumbo-slider {
@@ -162,7 +166,7 @@
                     }
                     &:hover {
                         .backdrop {
-                            transform: scale(1.1);;
+                            transform: scale(1.1);
                         }
                     }
                 }
@@ -192,57 +196,706 @@
     }
 }
 
+/* find-product */
+.find-product {
+    padding-bottom: 100px;
+    .container {
+        display: table;
+        height: 100%;
+        table-layout: fixed;
+        article {
+            display: table-cell;
+            vertical-align: top;
+            height: 100%;
+            text-align: center;
+            .article-content {
+                height: 100%;
+                background-color: #e4e4e4;
+                padding: 45px 0 40px;
+                h3 {
+                    font-size: 33px;
+                    color: #010101;
+                    font-weight: bold;
+                }
+                .tab-area {
+                    margin-top: 30px;
+                    .tab-menu {
+                        font-size: 0;
+                        > ul {
+                            > li {
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-right: 10px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                > a {
+                                    display: block;
+                                    font-size: 16px;
+                                    color: #000;
+                                    font-weight: 400;
+                                    line-height: 38px;
+                                    padding: 0 15px;
+                                    @include transition();
+                                    border: 1px solid #9f9f9f;
+                                }
+                                &.active {
+                                    > a {
+                                        color: #fff;
+                                        border-color: $kcolor;
+                                        background-color: $kcolor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tab-content {
+                        margin-top: 40px;
+                        .tab-pane {
+                            .product-slider {
+                                position: relative;
+                                width: 440px;
+                                margin: 0 auto;
+                                .slick-list {
+                                    .slick-track {
+                                        .slick-slide {
+                                            outline: none;
+                                            > a {
+                                                display: block;
+                                                > figure {
+                                                    img {
+                                                        display: block;
+                                                        margin: 0 auto;
+                                                    }
+                                                    > figcaption {
+                                                        font-size: 16px;
+                                                        padding-top: 20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .slick-arrow {
+                                    position: absolute;
+                                    top: 35px;
+                                    display: block;
+                                    width: 19px;
+                                    height: 34px;
+                                    font-size: 0;
+                                    text-indent: -9999999px;
+                                    background-repeat: no-repeat;
+                                    background-position: 0 0;
+                                    background-size: auto;
+                                    &.slick-prev {
+                                        left: -45px;
+                                        background-image: url(/content/pest/images/main/img_slick_prev.png);
+                                    }
+                                    &.slick-next {
+                                        right: -45px;
+                                        background-image: url(/content/pest/images/main/img_slick_next.png);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .select-area {
+                    display: table;
+                    width: 100%;
+                    padding: 0 40px;
+                    margin-top: 60px;
+                    > div {
+                        display: table-cell;
+                        vertical-align: top;
+                        &.select-list {
+                            width: calc(100% - 116px);
+                            padding-right: 20px;
+                            > ul {
+                                font-size: 0;
+                                > li {
+                                    display: inline-block;
+                                    width: 50%;
+                                    vertical-align: top;
+                                    .dropdown {
+                                        position: relative;
+                                        text-align: left;
+                                        .btn-drop {
+                                            position: relative;
+                                            display: block;
+                                            width: 100%;
+                                            font-size: 16px;
+                                            color: #000;
+                                            text-align: left;
+                                            line-height: 41px;
+                                            padding: 0 15px;
+                                            border: 1px solid #9f9f9f;
+                                            &:after {
+                                                position: absolute;
+                                                top: 50%;
+                                                right: 15px;
+                                                display: block;
+                                                content: url(/content/pest/images/ico_arrow_down.png);
+                                                @include transition();
+                                                transform: translateY(-50%);
+                                            }
+                                        }
+                                        > ul {
+                                            top: calc(100% - 10px);
+                                            border: 1px solid #9f9f9f;
+                                            border-top: 0;
+                                            background-color: #fff;
+                                            > li {
+                                                > a {
+                                                    display: block;
+                                                    font-size: 16px;
+                                                    color: #000;
+                                                    font-weight: 400;
+                                                    line-height: 30px;
+                                                    padding: 0 15px;
+                                                }
+                                            }
+                                        }
+                                        &.active {
+                                            .btn-drop {
+                                                border-bottom: 0;
+                                                background-color: #fff;
+                                                &:after {
+                                                    transform: translateY(-50%) rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn-area {
+                                        .btn-result {
+                                            display: block;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            width: 100%;
+                                            line-height: 43px;
+                                            background-color: $kcolor;
+                                            @include transition();
+                                            &:hover {
+                                                background-color: #0948e9;
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(2n + 1) {
+                                        padding-right: 7px;
+                                    }
+                                    &:nth-of-type(2n + 2) {
+                                        padding-left: 7px;
+                                    }
+                                    &:nth-of-type(2) ~ li {
+                                        margin-top: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        &.img-board {
+                            > figure {
+                                img {
+                                    display: block;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 50%;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(1) {
+                padding-right: 10px;
+            }
+            &:nth-of-type(2) {
+                padding-left: 10px;
+            }
+        }
+    }
+}
 
+/* section-header */
+.section-header {
+    text-align: center;
+    padding: 100px 0 50px;
+    h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
 
+/* photo-review */
+.photo-review {
+    padding-bottom: 90px;
+    .section-content {
+        overflow: hidden;
+        .review-list {
+            width: calc(100% + 30px);
+            margin: 0 -15px;
+            > li {
+                float: left;
+                width: 25%;
+                padding: 0 15px;
+                a {
+                    display: block;
+                    figure {
+                        img {
+                            
+                        }
+                        figcaption {
+                            padding-top: 25px;
+                            > b {
+                                display: block;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                            > p {
+                                font-size: 16px;
+                                line-height: 25px;
+                                font-weight: 400;
+                                height: 75px;
+                                margin-top: 15px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                word-break: break-word;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3; 
+                                -webkit-box-orient: vertical
+                            }
+                            > .usr-grade {
+                                position: relative;
+                                margin-top: 25px;
+                                i {
+                                    display: block;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #ababab;
+                                }
+                                .grade {
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: 0;
+                                    > ol {
+                                        font-size: 0;
+                                        > li {
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            margin-right: 2px;
+                                            
+                                            width: 16px;
+                                            height: 16px;
+                                            &:last-child {
+                                                margin-right: 0;
+                                            }
+                                            img {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(4n + 1) {
+                    clear: left;
+                }
+                &:nth-of-type(4) ~ li {
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
 
+/* item-area */
+.item-area {
+    overflow: hidden;
+    padding: 100px 0;
+    &.best {
+        padding-top: 0;
+    }
+    .container {
+        display: table;
+        table-layout: fixed;
+        > div {
+            display: table-cell;
+            vertical-align: top;
+            &.section-header {
+                width: 250px;
+                padding: 0;
+                text-align: left;
+                h3 {
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+                .tab-menu {
+                    margin-top: 40px;
+                    > ul {
+                        > li {
+                            > a {
+                                display: inline-block;
+                                font-size: 17px;
+                                font-weight: 400;
+                                color: #000;
+                                line-height: 36px;
+                                padding: 0 10px;
+                                @include transition();
+                            }
+                            &.active {
+                                > a {
+                                    color: #fff;
+                                    background-color: $kcolor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-content {
+                padding-left: 50px;
+                .tab-content {
+                    .tab-pane {
+                        .item-slider {
+                            position: relative;
+                            width: calc(100% + 26px);
+                            margin: 0 -13px;
+                            .slick-list {
+                                .slick-track {
+                                    .slick-slide {
+                                        outline: none;
+                                        padding: 0 13px;
+                                        > a {
+                                            display: block;
+                                            width: 100%;
+                                            > .item-img {
+                                                position: relative;
+                                                border: 1px solid #d9d9d9;
+                                                img {
+                                                    width: 100%;
+                                                    display: block;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    background-position: 50% 50%;
+                                                }
+                                                .label {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    font-size: 13px;
+                                                    color: #fff;
+                                                    font-weight: 400;
+                                                    width: 50px;
+                                                    text-align: center;
+                                                    line-height: 23px;
+                                                    &.sale {
+                                                        background-color: $kcolor;
+                                                    }
+                                                    &.new {
+                                                        background-color: #000;
+                                                    }
+                                                }
+                                            }
+                                            .details {
+                                                padding-top: 15px;
+                                                strong {
+                                                    display: block;
+                                                    color: #000;
+                                                    font-weight: bold;
+                                                    font-size: 19px;
+                                                    line-height: 25px;
+                                                }
+                                                p {
+                                                    font-weight: 400;
+                                                    font-size: 19px;
+                                                    line-height: 25px;
+                                                }
+                                                .sum {
+                                                    margin-top: 10px;
+                                                    b {
+                                                        display: inline;
+                                                        font-size: 17px;
+                                                        color: $kcolor;
+                                                        font-weight: 600;
+                                                    }
+                                                    small {
+                                                        font-size: 14px;
+                                                        font-weight: 500;
+                                                        color: #000;
+                                                        text-decoration: line-through;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .slick-arrow {
+                                position: absolute;
+                                top: calc(50% - 41px);
+                                display: block;
+                                width: 19px;
+                                height: 34px;
+                                font-size: 0;
+                                transform: translateY(-50%);
+                                text-indent: -9999999px;
+                                background-repeat: no-repeat;
+                                background-position: 0 0;
+                                background-size: auto;
+                                &.slick-prev {
+                                    left: -45px;
+                                    background-image: url(/content/pest/images/main/img_slick_prev.png);
+                                }
+                                &.slick-next {
+                                    right: -45px;
+                                    background-image: url(/content/pest/images/main/img_slick_next.png);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+/* promotion */
+.promotion {
+    .container {
+        display: table;
+        height: 274px;
+        > .v-align {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 105px;
+            background-image: url(/content/pest/images/main/bg_promotion_banner.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            b {
+                display: block;
+                font-size: 35px;
+                line-height: 45px;
+                font-weight: 500;
+            }
+            .btn-area {
+                margin-top: 20px;
+                .btn-more {
+                    display: inline-block;
+                    font-size: 19px;
+                    color: #fff;
+                    line-height: 44px;
+                    font-weight: 500;
+                    padding: 0 24px;
+                    border-radius: 50px;
+                    background-color: #000;
+                    @include transition();
+                    &:hover {
+                        background-color: $kcolor;
+                    }
+                }
+            }
+        }
+    }
+}
 
+/* util-area */
+.util-area {
+    .container {
+        overflow: hidden;
+        > ul {
+            display: table;
+            width: calc(100% + 30px);
+            margin: 0 -15px;
+            > li {
+                display: table-cell;
+                vertical-align: top;
+                padding: 0 15px;
+                > a {
+                    display: block;
+                    width: 100%;
+                    height: 370px;
+                    padding: 30px;
+                    font-size: 0;
+                    @include transition();
+                    > b {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 170px;
+                        font-size: 28px;
+                        color: #fff;
+                        font-weight: bold;
+                        line-height: 38px;
+                    }
+                    p {
+                        display: inline-block;
+                        vertical-align: top;
+                        font-size: 15px;
+                        line-height: 24px;
+                        color: rgba(#fff, .5);
+                        width: calc(100% - 170px);
+                    }
+                    &:hover {
+                        opacity: .9;
+                    }
+                }
+                &:nth-of-type(1) {
+                    > a {
+                        background-image: url(/content/pest/images/main/bg_util01.png);
+                    }
+                }
+                &:nth-of-type(2) {
+                    > a {
+                        background-image: url(/content/pest/images/main/bg_util02.png);
+                    }
+                }
+                &:nth-of-type(3) {
+                    > a {
+                        background-image: url(/content/pest/images/main/bg_util03.png);
+                    }
+                }
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* product */
+.product {
+    overflow: hidden;
+    .container {
+        .section-header {
+            padding-bottom: 40px;
+        }
+        .section-content {
+            .tab-menu {
+                text-align: center;
+                > ul {
+                    font-size: 0;
+                    > li {
+                        display: inline-block;
+                        vertical-align: top;
+                        padding: 0 5px;
+                        > a {
+                            display: block;
+                            font-size: 17px;
+                            color: #000;
+                            font-weight: 400;
+                            padding: 0 15px;
+                            line-height: 33px;
+                            @include transition();
+                        }
+                        &.active {
+                            > a {
+                                color: #fff;
+                                background-color: $kcolor;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                margin-top: 70px;
+                .tab-pane {
+                    .item-slider {
+                        position: relative;
+                        width: calc(100% + 30px);
+                        margin: 0 -15px;
+                        .slick-list {
+                            .slick-track {
+                                .slick-slide {
+                                    outline: none;
+                                    padding: 0 15px;
+                                    > a {
+                                        display: block;
+                                        width: 100%;
+                                        > .item-img {
+                                            position: relative;
+                                            border: 1px solid #d9d9d9;
+                                            img {
+                                                width: 100%;
+                                                display: block;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                background-position: 50% 50%;
+                                            }
+                                            .label {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                font-size: 13px;
+                                                color: #fff;
+                                                font-weight: 400;
+                                                width: 50px;
+                                                text-align: center;
+                                                line-height: 23px;
+                                                &.sale {
+                                                    background-color: $kcolor;
+                                                }
+                                                &.new {
+                                                    background-color: #000;
+                                                }
+                                            }
+                                        }
+                                        .details {
+                                            padding-top: 15px;
+                                            strong {
+                                                display: block;
+                                                color: #000;
+                                                font-weight: bold;
+                                                font-size: 19px;
+                                                line-height: 25px;
+                                            }
+                                            p {
+                                                font-weight: 400;
+                                                font-size: 19px;
+                                                line-height: 25px;
+                                            }
+                                            .sum {
+                                                margin-top: 10px;
+                                                b {
+                                                    display: inline;
+                                                    font-size: 17px;
+                                                    color: $kcolor;
+                                                    font-weight: 600;
+                                                }
+                                                small {
+                                                    font-size: 14px;
+                                                    font-weight: 500;
+                                                    color: #000;
+                                                    text-decoration: line-through;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slick-arrow {
+                            position: absolute;
+                            top: calc(50% - 41px);
+                            display: block;
+                            width: 19px;
+                            height: 34px;
+                            font-size: 0;
+                            transform: translateY(-50%);
+                            text-indent: -9999999px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: auto;
+                            &.slick-prev {
+                                left: -45px;
+                                background-image: url(/content/pest/images/main/img_slick_prev.png);
+                            }
+                            &.slick-next {
+                                right: -45px;
+                                background-image: url(/content/pest/images/main/img_slick_next.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
