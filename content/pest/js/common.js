@@ -61,7 +61,7 @@
             }, 'slow');
         } else {
             $('.quick-banner').stop().animate({
-                top: 723
+                top: 703
             }, 'slow');
         }
     });

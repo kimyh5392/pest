@@ -1,16 +1,132 @@
 @import 'common';
-
-/* jumbotron */
-.jumbotron {
-    overflow: hidden;
+/* swiper loading */
+.swiper {
     opacity: 0;
     &.show {
         opacity: 1;
     }
+}
+
+/* jumbotron */
+.jumbotron {
+    overflow: hidden;
     .container {
         width: 1290px;
         .jumbo-slider {
             position: relative;
+            overflow: visible;
+            .swiper-wrapper {
+                .swiper-slide {
+                    padding: 0 45px;
+                    .slide-content {
+                        position: relative;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                            content: '';
+                            display: block;
+                            background-color: rgba(#fff, .4);
+                        }
+                        .backdrop {
+                            width: 100%;
+                            height: 383px;
+                            display: block;
+                            z-index: -1;
+                            background-repeat: no-repeat;
+                            background-position: 50% 50%;
+                            background-size: cover;
+                        }
+                        .summary {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            .v-align {
+                                display: table;
+                                width: 100%;
+                                height: 100%;
+                                > div {
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                    padding: 0 80px 20px;
+                                    h3 {
+                                        font-size: 41px;
+                                        font-weight: bold;
+                                        line-height: 52px;
+                                    }
+                                    .btn-area {
+                                        margin-top: 30px;
+                                        .btn-round {
+                                            display: block;
+                                            color: #fff;
+                                            width: 155px;
+                                            font-size: 19px;
+                                            font-weight: 400;
+                                            line-height: 44px;
+                                            text-align: center;
+                                            border-radius: 50px;
+                                            background-color: #000;
+                                            @include transition();
+                                            &:hover {
+                                                background-color: $kcolor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.swiper-slide-active {
+                        .slide-content {
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                display: table;
+                width: 1076px;
+                border-radius: 10px;
+                overflow: hidden;
+                transform: translateX(-50%);
+                background-color: rgba(#fff, .3);
+                table-layout: fixed;
+                > span {
+                    display: table-cell;
+                    vertical-align: top;
+                    height: 4px;
+                    border-radius: 0;
+                    background: none !important;
+                    &.swiper-pagination-bullet-active {
+                        background-color: #fff !important;
+                    }
+                }
+            }
+            .btn-controls {
+                > button {
+                    position: absolute;
+                    top: 50%;
+                    z-index: 1;
+                    display: block;
+                    transform: translateY(-50%);
+                    &.swiper-prev {
+                        left: -9.5px;
+                    }
+                    &.swiper-next {
+                        right: -9.5px;
+                    }
+                }
+            }
             .slick-list {
                 overflow: visible;
                 .slick-track {
@@ -117,7 +233,7 @@
 
 /* introduce */
 .introduce {
-    padding: 70px 0 30px;
+    padding: 70px 0 20px;
     .container {
         > ul {
             display: table;
@@ -131,9 +247,9 @@
                 > a {
                     position: relative;
                     display: block;
-                    height: 267px;
+                    height: 180px;
                     overflow: hidden;
-                    padding: 50px 40px 0;
+                    padding: 40px 40px 0;
                     .backdrop {
                         position: absolute;
                         top: 0;
@@ -149,19 +265,20 @@
                     }
                     > dl {
                         > dt {
-                            font-size: 33px;
+                            font-size: 26px;
                             color: #fff;
                             font-weight: bold;
-                            padding-bottom: 20px;
+                            padding-bottom: 10px;
                             padding-left: 7px;
                             border-bottom: 1px solid rgba(#fff, .3);
                         }
                         > dd {
-                            font-size: 16px;
+                            font-size: 14px;
                             color: #fff;
                             font-weight: 400;
-                            line-height: 25px;
-                            margin-top: 25px;
+                            line-height: 23px;
+                            margin-top: 15px;
+                            padding-left: 7px;
                         }
                     }
                     &:hover {
@@ -198,7 +315,7 @@
 
 /* find-product */
 .find-product {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     .container {
         display: table;
         height: 100%;
@@ -211,14 +328,14 @@
             .article-content {
                 height: 100%;
                 background-color: #e4e4e4;
-                padding: 45px 0 40px;
+                padding: 40px 0 30px;
                 h3 {
-                    font-size: 33px;
+                    font-size: 26px;
                     color: #010101;
                     font-weight: bold;
                 }
                 .tab-area {
-                    margin-top: 30px;
+                    margin-top: 20px;
                     .tab-menu {
                         font-size: 0;
                         > ul {
@@ -231,10 +348,10 @@
                                 }
                                 > a {
                                     display: block;
-                                    font-size: 16px;
+                                    font-size: 14px;
                                     color: #000;
                                     font-weight: 400;
-                                    line-height: 38px;
+                                    line-height: 32px;
                                     padding: 0 15px;
                                     @include transition();
                                     border: 1px solid #9f9f9f;
@@ -250,50 +367,47 @@
                         }
                     }
                     .tab-content {
-                        margin-top: 40px;
+                        margin-top: 30px;
                         .tab-pane {
-                            .product-slider {
+                            .product-wrap {
                                 position: relative;
-                                width: 440px;
+                                width: 400px;
                                 margin: 0 auto;
-                                .slick-list {
-                                    .slick-track {
-                                        .slick-slide {
-                                            outline: none;
+                                .swiper {
+                                    width: 100%;
+                                    .swiper-wrapper {
+                                        .swiper-slide {
                                             > a {
                                                 display: block;
                                                 > figure {
-                                                    img {
+                                                    > img {
                                                         display: block;
+                                                        max-width: 100%;
                                                         margin: 0 auto;
                                                     }
                                                     > figcaption {
-                                                        font-size: 16px;
-                                                        padding-top: 20px;
+                                                        font-size: 14px;
+                                                        font-weight: 300;
+                                                        margin-top: 15px;
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                                .slick-arrow {
-                                    position: absolute;
-                                    top: 35px;
-                                    display: block;
-                                    width: 19px;
-                                    height: 34px;
-                                    font-size: 0;
-                                    text-indent: -9999999px;
-                                    background-repeat: no-repeat;
-                                    background-position: 0 0;
-                                    background-size: auto;
-                                    &.slick-prev {
-                                        left: -45px;
-                                        background-image: url(/content/pest/images/main/img_slick_prev.png);
-                                    }
-                                    &.slick-next {
-                                        right: -45px;
-                                        background-image: url(/content/pest/images/main/img_slick_next.png);
+                                .btn-controls {
+                                    > button {
+                                        position: absolute;
+                                        top: calc(50% - 15px);
+                                        display: block;
+                                        z-index: 1;
+                                        transform: translateY(-50%);
+                                        &.swiper-prev {
+                                            left: -65px;
+                                        }
+                                        &.swiper-next {
+                                            right: -65px;
+                                        }
                                     }
                                 }
                             }
@@ -303,14 +417,14 @@
                 .select-area {
                     display: table;
                     width: 100%;
-                    padding: 0 40px;
-                    margin-top: 60px;
+                    padding: 0 35px;
+                    margin-top: 40px;
                     > div {
                         display: table-cell;
                         vertical-align: top;
                         &.select-list {
                             width: calc(100% - 116px);
-                            padding-right: 20px;
+                            padding-right: 30px;
                             > ul {
                                 font-size: 0;
                                 > li {
@@ -324,12 +438,13 @@
                                             position: relative;
                                             display: block;
                                             width: 100%;
-                                            font-size: 16px;
+                                            font-size: 14px;
                                             color: #000;
                                             text-align: left;
-                                            line-height: 41px;
+                                            line-height: 36px;
                                             padding: 0 15px;
                                             border: 1px solid #9f9f9f;
+                                            background-color: #fff;
                                             &:after {
                                                 position: absolute;
                                                 top: 50%;
@@ -341,9 +456,9 @@
                                             }
                                         }
                                         > ul {
-                                            top: calc(100% - 10px);
+                                            top: 100%;
+                                            /*top: calc(100% - 10px);*/
                                             border: 1px solid #9f9f9f;
-                                            border-top: 0;
                                             background-color: #fff;
                                             > li {
                                                 > a {
@@ -369,10 +484,10 @@
                                     .btn-area {
                                         .btn-result {
                                             display: block;
-                                            font-size: 17px;
+                                            font-size: 14px;
                                             color: #fff;
                                             width: 100%;
-                                            line-height: 43px;
+                                            line-height: 38px;
                                             background-color: $kcolor;
                                             @include transition();
                                             &:hover {
@@ -418,16 +533,20 @@
 /* section-header */
 .section-header {
     text-align: center;
-    padding: 100px 0 50px;
+    padding: 80px 0 30px;
     h3 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
+        @include msr();
     }
 }
 
 /* photo-review */
 .photo-review {
     padding-bottom: 90px;
+    .section-header {
+        padding-bottom: 40px;
+    }
     .section-content {
         overflow: hidden;
         .review-list {
@@ -447,15 +566,16 @@
                             padding-top: 25px;
                             > b {
                                 display: block;
+                                font-size: 19px;
                                 white-space: nowrap;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                             }
                             > p {
-                                font-size: 16px;
-                                line-height: 25px;
+                                font-size: 14px;
+                                line-height: 23px;
                                 font-weight: 400;
-                                height: 75px;
+                                height: 69px;
                                 margin-top: 15px;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
@@ -469,7 +589,7 @@
                                 margin-top: 25px;
                                 i {
                                     display: block;
-                                    font-size: 16px;
+                                    font-size: 14px;
                                     font-weight: 400;
                                     color: #ababab;
                                 }
@@ -503,7 +623,7 @@
                     clear: left;
                 }
                 &:nth-of-type(4) ~ li {
-                    margin-top: 70px;
+                    margin-top: 60px;
                 }
             }
         }
@@ -513,7 +633,7 @@
 /* item-area */
 .item-area {
     overflow: hidden;
-    padding: 100px 0;
+    padding: 80px 0;
     &.best {
         padding-top: 0;
     }
@@ -524,15 +644,16 @@
             display: table-cell;
             vertical-align: top;
             &.section-header {
-                width: 250px;
+                width: 300px;
                 padding: 0;
                 text-align: left;
                 h3 {
-                    font-size: 40px;
-                    line-height: 45px;
+                    font-size: 30px;
+                    line-height: 35px;
+                    @include msr();
                 }
                 .tab-menu {
-                    margin-top: 40px;
+                    margin-top: 50px;
                     > ul {
                         > li {
                             > a {
@@ -555,18 +676,14 @@
                 }
             }
             &.section-content {
-                padding-left: 50px;
+                width: calc(100% - 300px);
                 .tab-content {
                     .tab-pane {
-                        .item-slider {
+                        .item-wrap {
                             position: relative;
-                            width: calc(100% + 26px);
-                            margin: 0 -13px;
-                            .slick-list {
-                                .slick-track {
-                                    .slick-slide {
-                                        outline: none;
-                                        padding: 0 13px;
+                            .swiper {
+                                .swiper-wrapper {
+                                    .swiper-slide {
                                         > a {
                                             display: block;
                                             width: 100%;
@@ -586,10 +703,11 @@
                                                     right: 0;
                                                     font-size: 13px;
                                                     color: #fff;
-                                                    font-weight: 400;
+                                                    font-weight: 500;
                                                     width: 50px;
                                                     text-align: center;
                                                     line-height: 23px;
+                                                    @include msr();
                                                     &.sale {
                                                         background-color: $kcolor;
                                                     }
@@ -604,25 +722,26 @@
                                                     display: block;
                                                     color: #000;
                                                     font-weight: bold;
-                                                    font-size: 19px;
-                                                    line-height: 25px;
+                                                    font-size: 16px;
+                                                    line-height: 22px;
                                                 }
                                                 p {
                                                     font-weight: 400;
-                                                    font-size: 19px;
-                                                    line-height: 25px;
+                                                    font-size: 16px;
+                                                    line-height: 22px;
                                                 }
                                                 .sum {
-                                                    margin-top: 10px;
+                                                    margin-top: 15px;
+                                                    @include msr();
                                                     b {
                                                         display: inline;
                                                         font-size: 17px;
                                                         color: $kcolor;
-                                                        font-weight: 600;
+                                                        font-weight: bold;
                                                     }
                                                     small {
                                                         font-size: 14px;
-                                                        font-weight: 500;
+                                                        font-weight: bold;
                                                         color: #000;
                                                         text-decoration: line-through;
                                                     }
@@ -632,25 +751,19 @@
                                     }
                                 }
                             }
-                            .slick-arrow {
-                                position: absolute;
-                                top: calc(50% - 41px);
-                                display: block;
-                                width: 19px;
-                                height: 34px;
-                                font-size: 0;
-                                transform: translateY(-50%);
-                                text-indent: -9999999px;
-                                background-repeat: no-repeat;
-                                background-position: 0 0;
-                                background-size: auto;
-                                &.slick-prev {
-                                    left: -45px;
-                                    background-image: url(/content/pest/images/main/img_slick_prev.png);
-                                }
-                                &.slick-next {
-                                    right: -45px;
-                                    background-image: url(/content/pest/images/main/img_slick_next.png);
+                            .controls {
+                                > button {
+                                    position: absolute;
+                                    top: calc(50% - 45px);
+                                    display: block;
+                                    z-index: 1;
+                                    transform: translateY(-50%);
+                                    &.swiper-prev {
+                                        left: -48px;
+                                    }
+                                    &.swiper-next {
+                                        right: -48px;
+                                    }
                                 }
                             }
                         }
@@ -664,36 +777,41 @@
 /* promotion */
 .promotion {
     .container {
-        display: table;
-        height: 274px;
-        > .v-align {
-            display: table-cell;
-            vertical-align: middle;
-            padding-left: 105px;
-            background-image: url(/content/pest/images/main/bg_promotion_banner.png);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: cover;
-            b {
-                display: block;
-                font-size: 35px;
-                line-height: 45px;
-                font-weight: 500;
+        .simply-scroll {
+            width: 100% !important;
+            height: auto !important;
+            margin: 0 !important;
+            .simply-scroll-clip {
+                width: 100% !important;
+                height: auto !important;
+                .floting-list {
+                    > li {
+                        width: 585px;
+                        height: auto;
+                        margin-right: 30px;
+                        > a {
+                            display: block;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
-            .btn-area {
-                margin-top: 20px;
-                .btn-more {
-                    display: inline-block;
-                    font-size: 19px;
-                    color: #fff;
-                    line-height: 44px;
-                    font-weight: 500;
-                    padding: 0 24px;
-                    border-radius: 50px;
-                    background-color: #000;
-                    @include transition();
-                    &:hover {
-                        background-color: $kcolor;
+        }
+        .floting-slider {
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        outline: none;
+                        margin-right: 30px;
+                        > a {
+                            display: block;
+                            img {
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
@@ -716,7 +834,7 @@
                 > a {
                     display: block;
                     width: 100%;
-                    height: 370px;
+                    height: 300px;
                     padding: 30px;
                     font-size: 0;
                     @include transition();
@@ -724,16 +842,16 @@
                         display: inline-block;
                         vertical-align: top;
                         width: 170px;
-                        font-size: 28px;
+                        font-size: 26px;
                         color: #fff;
                         font-weight: bold;
-                        line-height: 38px;
+                        line-height: 36px;
                     }
                     p {
                         display: inline-block;
                         vertical-align: top;
-                        font-size: 15px;
-                        line-height: 24px;
+                        font-size: 14px;
+                        line-height: 23px;
                         color: rgba(#fff, .5);
                         width: calc(100% - 170px);
                     }
@@ -779,11 +897,11 @@
                         padding: 0 5px;
                         > a {
                             display: block;
-                            font-size: 17px;
+                            font-size: 14px;
                             color: #000;
                             font-weight: 400;
-                            padding: 0 15px;
-                            line-height: 33px;
+                            padding: 0 10px;
+                            line-height: 26px;
                             @include transition();
                         }
                         &.active {
@@ -798,15 +916,11 @@
             .tab-content {
                 margin-top: 70px;
                 .tab-pane {
-                    .item-slider {
+                    .item-wrap {
                         position: relative;
-                        width: calc(100% + 30px);
-                        margin: 0 -15px;
-                        .slick-list {
-                            .slick-track {
-                                .slick-slide {
-                                    outline: none;
-                                    padding: 0 15px;
+                        .swiper {
+                            .swiper-wrapper {
+                                .swiper-slide {
                                     > a {
                                         display: block;
                                         width: 100%;
@@ -824,12 +938,13 @@
                                                 position: absolute;
                                                 top: 0;
                                                 right: 0;
-                                                font-size: 13px;
+                                                font-size: 17px;
                                                 color: #fff;
-                                                font-weight: 400;
-                                                width: 50px;
+                                                font-weight: 500;
+                                                width: 70px;
                                                 text-align: center;
-                                                line-height: 23px;
+                                                line-height: 30px;
+                                                @include msr();
                                                 &.sale {
                                                     background-color: $kcolor;
                                                 }
@@ -844,25 +959,26 @@
                                                 display: block;
                                                 color: #000;
                                                 font-weight: bold;
-                                                font-size: 19px;
-                                                line-height: 25px;
+                                                font-size: 16px;
+                                                line-height: 22px;
                                             }
                                             p {
                                                 font-weight: 400;
-                                                font-size: 19px;
-                                                line-height: 25px;
+                                                font-size: 16px;
+                                                line-height: 22px;
                                             }
                                             .sum {
-                                                margin-top: 10px;
+                                                margin-top: 15px;
+                                                @include msr();
                                                 b {
                                                     display: inline;
                                                     font-size: 17px;
                                                     color: $kcolor;
-                                                    font-weight: 600;
+                                                    font-weight: bold;
                                                 }
                                                 small {
                                                     font-size: 14px;
-                                                    font-weight: 500;
+                                                    font-weight: bold;
                                                     color: #000;
                                                     text-decoration: line-through;
                                                 }
@@ -872,25 +988,19 @@
                                 }
                             }
                         }
-                        .slick-arrow {
-                            position: absolute;
-                            top: calc(50% - 41px);
-                            display: block;
-                            width: 19px;
-                            height: 34px;
-                            font-size: 0;
-                            transform: translateY(-50%);
-                            text-indent: -9999999px;
-                            background-repeat: no-repeat;
-                            background-position: 0 0;
-                            background-size: auto;
-                            &.slick-prev {
-                                left: -45px;
-                                background-image: url(/content/pest/images/main/img_slick_prev.png);
-                            }
-                            &.slick-next {
-                                right: -45px;
-                                background-image: url(/content/pest/images/main/img_slick_next.png);
+                        .controls {
+                            > button {
+                                position: absolute;
+                                top: calc(50% - 45px);
+                                display: block;
+                                z-index: 1;
+                                transform: translateY(-50%);
+                                &.swiper-prev {
+                                    left: -48px;
+                                }
+                                &.swiper-next {
+                                    right: -48px;
+                                }
                             }
                         }
                     }

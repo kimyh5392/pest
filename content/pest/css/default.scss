@@ -25,7 +25,7 @@
         border-bottom: 2px solid #b2b2b2;
         .container {
             position: relative;
-            padding: 50px 0 46px;
+            padding: 48px 0;
             .logo {
                 font-size: 0;
                 display: inline-block;
@@ -134,17 +134,17 @@
                     position: relative;
                     display: inline-block;
                     vertical-align: top;
-                    margin-right: 35px;
+                    margin-right: 70px;
                     &:last-child {
                         margin-right: 0;
                     }
                     > a {
                         position: relative;
                         display: inline-block;
-                        font-size: 17px;
+                        font-size: 15px;
                         color: #000;
                         font-weight: 500;
-                        line-height: 94px;
+                        line-height: 76px;
                         @include transition();
                         &:after {
                             position: absolute;
@@ -162,90 +162,98 @@
                     .nav-content {
                         position: absolute;
                         top: 100%;
-                        display: none;
-                        width: auto;
-                        white-space: nowrap;
-                        min-width: 610px;
-                        padding: 40px 50px;
-                        border-top: 2px solid #b2b2b2;
-                        background-color: #fff;
-                        box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2);
-                        > div {
-                            display: table-cell;
-                            vertical-align: top;
-                            &.menu {
-                                text-align: left;
-                                > ul {
-                                    > li {
-                                        > a {
-                                            display: inline-block;
-                                            font-size: 17px;
-                                            color: #000;
-                                            font-weight: 400;
-                                            line-height: 35px;
-                                            @include transition();
-                                            &:hover {
-                                                color: $kcolor;
+                        overflow: hidden;
+                        visibility: hidden;
+                        .menu-wrap {
+                            position: relative;
+                            top: -40px;
+                            opacity: 0;
+                            display: table;
+                            width: auto;
+                            white-space: nowrap;
+                            min-width: 610px;
+                            padding: 40px;
+                            border-top: 2px solid #b2b2b2;
+                            background-color: #fff;
+                            box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2);
+                            @include transition();
+                            > div {
+                                display: table-cell;
+                                vertical-align: top;
+                                &.menu {
+                                    text-align: left;
+                                    > ul {
+                                        > li {
+                                            > a {
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                color: #000;
+                                                font-weight: 500;
+                                                line-height: 32px;
+                                                @include transition();
+                                                &:hover {
+                                                    color: $kcolor;
+                                                }
                                             }
                                         }
-                                    }
-                                    &.col2 {
-                                        overflow: hidden;
-                                        > li {
-                                            float: left;
-                                            &:nth-of-type(2n + 1) {
-                                                width: 146px;
-                                                clear: left;
+                                        &.col2 {
+                                            overflow: hidden;
+                                            > li {
+                                                float: left;
+                                                &:nth-of-type(2n + 1) {
+                                                    width: 146px;
+                                                    clear: left;
+                                                    margin-right: 40px;
+                                                }
+                                            }
+                                        }
+                                        &.col3 {
+                                            overflow: hidden;
+                                            width: 470px;
+                                            > li {
+                                                float: left;
                                                 margin-right: 40px;
-                                            }
-                                        }
-                                    }
-                                    &.col3 {
-                                        overflow: hidden;
-                                        width: 470px;
-                                        > li {
-                                            float: left;
-                                            margin-right: 40px;
-                                            &:nth-of-type(3n + 1) {
-                                                width: 110px;
-                                                clear: left;
-                                            }
-                                            &:nth-of-type(3n + 2) {
-                                                width: 131px;
-                                            }
-                                            &:nth-of-type(3n + 3) {
-                                                margin-right: 0;
+                                                &:nth-of-type(3n + 1) {
+                                                    width: 110px;
+                                                    clear: left;
+                                                }
+                                                &:nth-of-type(3n + 2) {
+                                                    width: 131px;
+                                                }
+                                                &:nth-of-type(3n + 3) {
+                                                    margin-right: 0;
+                                                }
                                             }
                                         }
                                     }
                                 }
-                            }
-                            &.nav-banner {
-                                > a {
-                                    display: inline-block;
-                                    vertical-align: top;
-                                    margin-right: 10px;
-                                    &:last-child {
-                                        margin-right: 0;
-                                    }
-                                    > figure {
-                                        img {
-                                            display: block;
+                                &.nav-banner {
+                                    > a {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        margin-right: 10px;
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                        > figure {
+                                            img {
+                                                display: block;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                         &.grid-left {
-                            left: -50px;
+                            left: -40px;
                             .menu {
-                                padding-right: 50px;
+                                padding-right: 40px;
                             }
                         }
                         &.grid-right {
-                            right: -50px;
+                            right: -40px;
                             .menu {
-                                padding-left: 50px;
+                                padding-left: 40px;
                             }
                         }
                     }
@@ -257,7 +265,11 @@
                             }
                         }
                         .nav-content {
-                            display: table;
+                            visibility: visible;
+                            .menu-wrap {
+                                top: 0;
+                                opacity: 1;
+                            }
                         }
                     }
                 }
@@ -269,7 +281,7 @@
 
 /* footer */
 #footer {
-    padding: 70px 0 100px;
+    padding: 70px 0 80px;
     border-top: 2px solid #b2b2b2;
     .container {
         position: relative;
@@ -296,7 +308,7 @@
                     }
                     > a {
                         display: block;
-                        font-size: 17px;
+                        font-size: 15px;
                         font-weight: 400;
                         color: #000;
                     }
@@ -309,10 +321,10 @@
                     font-size: 0;
                     * {
                         display: inline-block;
-                        font-size: 17px;
+                        font-size: 15px;
                         font-weight: 400;
                         vertical-align: top;
-                        line-height: 33px;
+                        line-height: 31px;
                     }
                     > li {
                         float: left;
@@ -321,8 +333,8 @@
                             vertical-align: top;
                             content: '';
                             width: 1px;
-                            height: 18px;
-                            margin: 8px 20px 0 17px;
+                            height: 12px;
+                            margin: 12px 18px 0 15px;
                             background-color: #000;
                         }
                         > dl {
@@ -348,7 +360,7 @@
                 }
             }
             .copyright {
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 400;
                 margin-top: 50px;
             }
@@ -388,7 +400,7 @@
 /* quick-banner */
 .quick-banner {
     position: absolute;
-    top: 723px;
+    top: 703px;
     z-index: 9;
     right: 50%;
     width: 100px;
