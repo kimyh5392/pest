@@ -11,13 +11,17 @@
 </head>
 <body>
     
+    <!-- top-banner -->
+    <div class="top-banner">
+        <a href="#" style="background-image: url(/content/pest/images/img_top_banner.png);"></a>
+        <div class="container">
+            <button type="button" class="btn-banner-close">
+                <img src="/content/pest/images/ico_banner_close.png" alt="">
+            </button>
+        </div>
+    </div>
     <!-- Header -->
     <header id="header">
-        <div class="top-banner">
-            <a href="#">
-                베스트 상품 더 보러가기 &gt;
-            </a>
-        </div>
         <div class="header-area">
             <div class="container">
                 <h1 class="logo">
@@ -61,6 +65,9 @@
         <!-- gnb -->
         <nav id="gnb">
             <div class="container">
+                <a href="/content/" class="home">
+                    <img src="/content/pest/images/ico_home.png" alt="">
+                </a>
                 <ul class="gnb-menu">
                     <li>
                         <a href="#">ABOUT US</a>
@@ -250,6 +257,26 @@
                         </div>
                     </li>
                 </ul>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/content/pest/images/ico_search.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/content/pest/images/ico_basket.png" alt="">
+                                <span class="basket-num">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/content/pest/images/ico_usr.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -2691,28 +2718,20 @@
     <nav class="quick-banner">
         <ul>
             <li>
+                <p>장바구니</p>
                 <a href="#">
-                    <dl>
-                        <dt>장바구니</dt>
-                        <dd>
-                            <figure>
-                                <img src="/content/pest/images/img_quick_basket.png" alt="">
-                                <figcaption><b>2</b></figcaption>
-                            </figure>
-                        </dd>
-                    </dl>
+                    <figure>
+                        <img src="/content/pest/images/img_quick_basket.png" alt="">
+                        <figcaption><b>2</b></figcaption>
+                    </figure>
                 </a>
             </li>
             <li>
+                <p>최근 본 상품</p>
                 <a href="#">
-                    <dl>
-                        <dt>최근 본 상품</dt>
-                        <dd>
-                            <figure>
-                                <img src="/content/pest/images/img_quick_frame.png" style="background-image: url(/content/pest/images/bg_quick01.png);" alt="">
-                            </figure>
-                        </dd>
-                    </dl>
+                    <figure>
+                        <img src="/content/pest/images/img_quick_frame.png" style="background-image: url(/content/pest/images/bg_quick01.png);" alt="">
+                    </figure>
                 </a>
             </li>
             <li>
@@ -2731,6 +2750,13 @@
             </li>
         </ul>
     </nav>
+    
+    <!-- quick-top -->
+    <div class="quick-top">
+        <a href="javascript:;" class="btn-quick-top">
+            <img src="/content/pest/images/ico_quick_top.png" alt="">
+        </a>
+    </div>
 
     <!-- Footer -->
     <footer id="footer">
