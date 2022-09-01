@@ -332,6 +332,14 @@
                                 border-radius: 50%;
                                 background-color: $kcolor;
                             }
+                            &.login {
+                                font-size: 16px;
+                                line-height: 34px;
+                                font-weight: 500;
+                                &:hover {
+                                    color: $kcolor;
+                                }
+                            }
                         }
                         &:last-child {
                             padding-right: 0;

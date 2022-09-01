@@ -371,6 +371,12 @@ pre {
                 text-align: center;
                 border-radius: 50%;
                 background-color: #0e3db4; }
+              #header #gnb .container .gnb-util > ul > li > a.login {
+                font-size: 16px;
+                line-height: 34px;
+                font-weight: 500; }
+                #header #gnb .container .gnb-util > ul > li > a.login:hover {
+                  color: #0e3db4; }
             #header #gnb .container .gnb-util > ul > li:last-child {
               padding-right: 0; }
 
