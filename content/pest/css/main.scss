@@ -776,7 +776,7 @@
 
 /* promotion */
 .promotion {
-    .container {
+    .container-fluid {
         .simply-scroll {
             width: 100% !important;
             height: auto !important;
@@ -786,7 +786,7 @@
                 height: auto !important;
                 .floting-list {
                     > li {
-                        width: 585px;
+                        width: 889px;
                         height: auto;
                         margin-right: 30px;
                         > a {

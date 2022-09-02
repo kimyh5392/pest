@@ -690,28 +690,28 @@ pre {
               right: -48px; }
 
 /* promotion */
-.promotion .container .simply-scroll {
+.promotion .container-fluid .simply-scroll {
   width: 100% !important;
   height: auto !important;
   margin: 0 !important; }
-  .promotion .container .simply-scroll .simply-scroll-clip {
+  .promotion .container-fluid .simply-scroll .simply-scroll-clip {
     width: 100% !important;
     height: auto !important; }
-    .promotion .container .simply-scroll .simply-scroll-clip .floting-list > li {
-      width: 585px;
+    .promotion .container-fluid .simply-scroll .simply-scroll-clip .floting-list > li {
+      width: 889px;
       height: auto;
       margin-right: 30px; }
-      .promotion .container .simply-scroll .simply-scroll-clip .floting-list > li > a {
+      .promotion .container-fluid .simply-scroll .simply-scroll-clip .floting-list > li > a {
         display: block;
         width: 100%; }
-        .promotion .container .simply-scroll .simply-scroll-clip .floting-list > li > a img {
+        .promotion .container-fluid .simply-scroll .simply-scroll-clip .floting-list > li > a img {
           width: 100%; }
-.promotion .container .floting-slider .slick-list .slick-track .slick-slide {
+.promotion .container-fluid .floting-slider .slick-list .slick-track .slick-slide {
   outline: none;
   margin-right: 30px; }
-  .promotion .container .floting-slider .slick-list .slick-track .slick-slide > a {
+  .promotion .container-fluid .floting-slider .slick-list .slick-track .slick-slide > a {
     display: block; }
-    .promotion .container .floting-slider .slick-list .slick-track .slick-slide > a img {
+    .promotion .container-fluid .floting-slider .slick-list .slick-track .slick-slide > a img {
       width: 100%; }
 
 /* util-area */
