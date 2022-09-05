@@ -444,7 +444,7 @@
                                             line-height: 36px;
                                             padding: 0 15px;
                                             border: 1px solid #9f9f9f;
-                                            background-color: #fff;
+                                            background-color: #e4e4e4;
                                             &:after {
                                                 position: absolute;
                                                 top: 50%;
@@ -454,19 +454,23 @@
                                                 @include transition();
                                                 transform: translateY(-50%);
                                             }
+                                            &.on {
+                                                background-color: #fff;
+                                            }
                                         }
                                         > ul {
                                             top: 100%;
                                             /*top: calc(100% - 10px);*/
+                                            padding: 5px 0;
                                             border: 1px solid #9f9f9f;
                                             background-color: #fff;
                                             > li {
                                                 > a {
                                                     display: block;
-                                                    font-size: 16px;
+                                                    font-size: 14px;
                                                     color: #000;
                                                     font-weight: 400;
-                                                    line-height: 30px;
+                                                    line-height: 26px;
                                                     padding: 0 15px;
                                                 }
                                             }

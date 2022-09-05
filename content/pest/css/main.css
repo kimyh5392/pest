@@ -442,7 +442,7 @@ pre {
                       line-height: 36px;
                       padding: 0 15px;
                       border: 1px solid #9f9f9f;
-                      background-color: #fff; }
+                      background-color: #e4e4e4; }
                       .find-product .container article .article-content .select-area > div.select-list > ul > li .dropdown .btn-drop:after {
                         position: absolute;
                         top: 50%;
@@ -458,17 +458,20 @@ pre {
                         -webkit-transition-delay: 0s;
                         transition-delay: 0s;
                         transform: translateY(-50%); }
+                      .find-product .container article .article-content .select-area > div.select-list > ul > li .dropdown .btn-drop.on {
+                        background-color: #fff; }
                     .find-product .container article .article-content .select-area > div.select-list > ul > li .dropdown > ul {
                       top: 100%;
                       /*top: calc(100% - 10px);*/
+                      padding: 5px 0;
                       border: 1px solid #9f9f9f;
                       background-color: #fff; }
                       .find-product .container article .article-content .select-area > div.select-list > ul > li .dropdown > ul > li > a {
                         display: block;
-                        font-size: 16px;
+                        font-size: 14px;
                         color: #000;
                         font-weight: 400;
-                        line-height: 30px;
+                        line-height: 26px;
                         padding: 0 15px; }
                     .find-product .container article .article-content .select-area > div.select-list > ul > li .dropdown.active .btn-drop {
                       border-bottom: 0;

@@ -38,6 +38,7 @@
 
         // On click get Current Selected tag Value
         $('.dropdown > ul > li > a').click(function (e) {
+            $(this).parent().parent().siblings('.btn-drop').addClass('on');
             if ($('.dropdown').hasClass('active')) {
                 var current_value = $(this).text();
                 $('.dropdown').removeClass('active');
