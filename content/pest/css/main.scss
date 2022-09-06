@@ -512,12 +512,15 @@
                             }
                         }
                         &.img-board {
-                            > figure {
-                                img {
-                                    display: block;
-                                    background-repeat: no-repeat;
-                                    background-position: 50% 50%;
-                                    background-size: cover;
+                            > a {
+                                display: block;
+                                > figure {
+                                    img {
+                                        display: block;
+                                        background-repeat: no-repeat;
+                                        background-position: 50% 50%;
+                                        background-size: cover;
+                                    }
                                 }
                             }
                         }
