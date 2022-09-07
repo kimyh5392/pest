@@ -565,6 +565,7 @@ pre {
                 display: block;
                 font-size: 14px;
                 font-weight: 400;
+                line-height: 17px;
                 color: #ababab; }
               .photo-review .section-content .review-list > li a figure figcaption > .usr-grade .grade {
                 position: absolute;
@@ -576,12 +577,14 @@ pre {
                     display: inline-block;
                     vertical-align: top;
                     margin-right: 2px;
-                    width: 16px;
-                    height: 16px; }
+                    width: 17px;
+                    height: 17px;
+                    font-size: 0; }
                     .photo-review .section-content .review-list > li a figure figcaption > .usr-grade .grade > ol > li:last-child {
                       margin-right: 0; }
                     .photo-review .section-content .review-list > li a figure figcaption > .usr-grade .grade > ol > li img {
-                      display: block; }
+                      display: block;
+                      width: 100%; }
         .photo-review .section-content .review-list > li:nth-of-type(4n + 1) {
           clear: left; }
         .photo-review .section-content .review-list > li:nth-of-type(4) ~ li {

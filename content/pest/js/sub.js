@@ -14,9 +14,9 @@
     
     // accordion
     $(document).on('click', '.btn-collapse', function(e){
-        e.preventDefault();
         $(this).parent().toggleClass('active');
         $(this).closest('li').find('.answer').not(':animated').slideToggle();
+        e.preventDefault();
     });
     
     // modify-drop
