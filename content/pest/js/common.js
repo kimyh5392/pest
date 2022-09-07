@@ -85,7 +85,7 @@
     });
     
     // global-saerch-area
-    $(document).on('click', '.btn-search-open', function(){
+    $(document).on('click', '.btn-search-open, .header-util .form-control', function(){
         $('body').addClass('search-open');
     });
     $(document).on('click', '.btn-search-close', function(){
