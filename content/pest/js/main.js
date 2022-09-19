@@ -88,10 +88,10 @@ const goods_swiper1 = new Swiper ('.goods1', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev1",
         nextEl: ".g-next1",
@@ -104,10 +104,10 @@ const goods_swiper2 = new Swiper ('.goods2', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev2",
         nextEl: ".g-next2",
@@ -120,10 +120,10 @@ const goods_swiper3 = new Swiper ('.goods3', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev3",
         nextEl: ".g-next3",
@@ -136,10 +136,10 @@ const goods_swiper4 = new Swiper ('.goods4', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev4",
         nextEl: ".g-next4",
@@ -152,10 +152,10 @@ const goods_swiper5 = new Swiper ('.goods5', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev5",
         nextEl: ".g-next5",
@@ -168,10 +168,10 @@ const goods_swiper6 = new Swiper ('.goods6', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev6",
         nextEl: ".g-next6",
@@ -184,10 +184,10 @@ const goods_swiper7 = new Swiper ('.goods7', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev7",
         nextEl: ".g-next7",
@@ -200,10 +200,10 @@ const goods_swiper8 = new Swiper ('.goods8', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev8",
         nextEl: ".g-next8",
@@ -216,10 +216,10 @@ const goods_swiper9 = new Swiper ('.goods9', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev9",
         nextEl: ".g-next9",
@@ -232,10 +232,10 @@ const goods_swiper10 = new Swiper ('.goods10', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev10",
         nextEl: ".g-next10",
@@ -248,10 +248,10 @@ const goods_swiper11 = new Swiper ('.goods11', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev11",
         nextEl: ".g-next11",
@@ -264,10 +264,10 @@ const goods_swiper12 = new Swiper ('.goods12', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev12",
         nextEl: ".g-next12",
@@ -280,10 +280,10 @@ const goods_swiper13 = new Swiper ('.goods13', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev13",
         nextEl: ".g-next13",
@@ -296,10 +296,10 @@ const goods_swiper14 = new Swiper ('.goods14', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev14",
         nextEl: ".g-next14",
@@ -312,10 +312,10 @@ const goods_swiper15 = new Swiper ('.goods15', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev15",
         nextEl: ".g-next15",
@@ -328,10 +328,10 @@ const goods_swiper16 = new Swiper ('.goods16', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev16",
         nextEl: ".g-next16",
@@ -344,10 +344,10 @@ const goods_swiper17 = new Swiper ('.goods17', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev17",
         nextEl: ".g-next17",
@@ -360,10 +360,10 @@ const goods_swiper18 = new Swiper ('.goods18', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev18",
         nextEl: ".g-next18",
@@ -376,10 +376,10 @@ const goods_swiper19 = new Swiper ('.goods19', {
     slidesPerView: 4,
     loadPrevNext : true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".g-prev19",
         nextEl: ".g-next19",

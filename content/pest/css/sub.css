@@ -91,6 +91,9 @@ pre {
 #content {
   padding-bottom: 100px; }
 
+.tab-content .tab-pane {
+  overflow: hidden; }
+
 /* sub common */
 .page-header {
   text-align: center;
@@ -130,6 +133,87 @@ pre {
     .page-header.type-2 .container .v-align {
       width: 100%; }
 
+/* mypage-header */
+.mypage-header {
+  padding: 70px 0 40px;
+  background-color: #f8f8f8; }
+  .mypage-header .container {
+    display: table;
+    table-layout: fixed; }
+    .mypage-header .container > div {
+      display: table-cell;
+      vertical-align: bottom;
+      height: 100%; }
+      .mypage-header .container > div.user .usr-lank {
+        display: block; }
+      .mypage-header .container > div.user strong {
+        display: block;
+        font-size: 44px;
+        color: #000;
+        font-weight: 500;
+        margin-top: 20px; }
+      .mypage-header .container > div.user p {
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+        line-height: 22px;
+        margin-top: 20px; }
+      .mypage-header .container > div.details {
+        width: 790px; }
+        .mypage-header .container > div.details > ul {
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+          .mypage-header .container > div.details > ul > li {
+            display: table-cell;
+            vertical-align: bottom; }
+            .mypage-header .container > div.details > ul > li > div {
+              position: relative;
+              height: 200px;
+              padding: 20px;
+              border-radius: 10px;
+              border: 1px solid #e4e4e4;
+              background-image: url(/content/pest/images/mypage/bg_mypage_header_box.png);
+              background-repeat: no-repeat;
+              background-position: -7px calc(100% + 5px);
+              background-size: auto; }
+              .mypage-header .container > div.details > ul > li > div > a {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: inline-block;
+                font-size: 14px;
+                color: #000;
+                font-weight: 400;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #636363; }
+              .mypage-header .container > div.details > ul > li > div dl dt {
+                font-size: 20px;
+                font-weight: bold;
+                color: #000; }
+              .mypage-header .container > div.details > ul > li > div dl dd {
+                font-size: 14px;
+                color: #000;
+                font-weight: 400;
+                margin-top: 10px; }
+              .mypage-header .container > div.details > ul > li > div .total {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                text-align: right; }
+                .mypage-header .container > div.details > ul > li > div .total p {
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #0e3db4; }
+                  .mypage-header .container > div.details > ul > li > div .total p strong {
+                    font-size: 59px;
+                    font-weight: bold; }
+            .mypage-header .container > div.details > ul > li:nth-of-type(1) {
+              padding-right: 5px; }
+            .mypage-header .container > div.details > ul > li:nth-of-type(2) {
+              padding-left: 5px; }
+
+/* sub-wrap */
 .sub-wrap {
   padding-top: 100px; }
   .sub-wrap .container {

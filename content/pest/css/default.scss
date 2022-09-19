@@ -498,7 +498,6 @@ body {
     .tab-pane {
         height: 0;
         visibility: hidden;
-        overflow: hidden;
         &.active {
             height: auto;
             visibility: visible;
