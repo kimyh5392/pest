@@ -930,4 +930,163 @@ select.form-control {
 .search-result .article-content .pagination {
   margin-top: 60px; }
 
+/* default-modal */
+.default-modal {
+  display: none; }
+  .default-modal .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 107;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .default-modal .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    z-index: 108;
+    text-align: center;
+    padding: 70px 30px 40px;
+    background-color: #fff;
+    transform: translate(-50%, -50%); }
+    .default-modal .modal-content .btn-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block; }
+    .default-modal .modal-content > p {
+      font-size: 23px;
+      color: #000;
+      font-weight: 400;
+      line-height: 32px; }
+      .default-modal .modal-content > p b {
+        font-size: 26px;
+        display: block;
+        margin-bottom: 20px; }
+    .default-modal .modal-content .btn-area {
+      font-size: 0;
+      margin-top: 40px; }
+      .default-modal .modal-content .btn-area .btn {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        color: #000;
+        line-height: 48px;
+        font-weight: 500; }
+        .default-modal .modal-content .btn-area .btn.btn-sm {
+          width: calc(50% - 10px);
+          margin-right: 20px; }
+          .default-modal .modal-content .btn-area .btn.btn-sm:last-child {
+            margin-right: 0; }
+        .default-modal .modal-content .btn-area .btn.btn-md {
+          width: 50%; }
+        .default-modal .modal-content .btn-area .btn.btn-lg {
+          display: block;
+          width: 100%; }
+        .default-modal .modal-content .btn-area .btn.btn-black {
+          color: #fff;
+          background-color: #000; }
+        .default-modal .modal-content .btn-area .btn.btn-gray {
+          background-color: #eaeaea; }
+  .default-modal.show {
+    display: block; }
+
+/* btn-controls */
+.btn-controls {
+  width: 120px;
+  border: 1px solid #d7d7d7; }
+  .btn-controls > .form-group {
+    position: relative;
+    padding: 0 34px; }
+    .btn-controls > .form-group .form-control {
+      font-size: 18px;
+      height: 34px;
+      text-align: center;
+      padding: 0;
+      border: 0;
+      border-left: 1px solid #d7d7d7;
+      border-right: 1px solid #d7d7d7; }
+    .btn-controls > .form-group button {
+      position: absolute;
+      top: 0;
+      width: 34px;
+      height: 34px;
+      font-size: 20px;
+      color: #000;
+      font-weight: 400;
+      line-height: 34px;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 50% 50%; }
+      .btn-controls > .form-group button.btn-minus {
+        left: 0; }
+      .btn-controls > .form-group button.btn-plus {
+        right: 0; }
+
+/* modal */
+.modal {
+  display: none;
+  /* 배경 공통 */
+  /* 일반 alert */ }
+  .modal .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 103;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .modal .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 104;
+    transform: translate(-50%, -50%); }
+    .modal .modal-content > .btn-modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block; }
+  .modal > .btn-modal-close {
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    display: block;
+    z-index: 104; }
+  .modal.modal-msg .modal-content {
+    width: 400px;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff; }
+    .modal.modal-msg .modal-content > dl > dt {
+      font-size: 25px;
+      color: #000;
+      font-weight: bold; }
+    .modal.modal-msg .modal-content > dl > dd {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000;
+      font-weight: 400;
+      margin-top: 20px; }
+    .modal.modal-msg .modal-content .btn-area {
+      margin-top: 30px; }
+      .modal.modal-msg .modal-content .btn-area .btn-default {
+        display: block;
+        width: 260px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 48px;
+        font-weight: 500;
+        margin: 0 auto;
+        background-color: #000; }
+  .modal.show {
+    display: block; }
+
+body.show-modal {
+  overflow: hidden; }
+
 /*# sourceMappingURL=sub.css.map */

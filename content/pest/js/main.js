@@ -82,8 +82,8 @@ const product_swiper4 = new Swiper ('.product4', {
 
 // goods slider
 const goods_swiper1 = new Swiper ('.goods1', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -98,8 +98,8 @@ const goods_swiper1 = new Swiper ('.goods1', {
     },
 });
 const goods_swiper2 = new Swiper ('.goods2', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -114,8 +114,8 @@ const goods_swiper2 = new Swiper ('.goods2', {
     },
 });
 const goods_swiper3 = new Swiper ('.goods3', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -130,8 +130,8 @@ const goods_swiper3 = new Swiper ('.goods3', {
     },
 });
 const goods_swiper4 = new Swiper ('.goods4', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -146,8 +146,8 @@ const goods_swiper4 = new Swiper ('.goods4', {
     },
 });
 const goods_swiper5 = new Swiper ('.goods5', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -162,8 +162,8 @@ const goods_swiper5 = new Swiper ('.goods5', {
     },
 });
 const goods_swiper6 = new Swiper ('.goods6', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -178,8 +178,8 @@ const goods_swiper6 = new Swiper ('.goods6', {
     },
 });
 const goods_swiper7 = new Swiper ('.goods7', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -194,8 +194,8 @@ const goods_swiper7 = new Swiper ('.goods7', {
     },
 });
 const goods_swiper8 = new Swiper ('.goods8', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -210,8 +210,8 @@ const goods_swiper8 = new Swiper ('.goods8', {
     },
 });
 const goods_swiper9 = new Swiper ('.goods9', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -226,8 +226,8 @@ const goods_swiper9 = new Swiper ('.goods9', {
     },
 });
 const goods_swiper10 = new Swiper ('.goods10', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -242,8 +242,8 @@ const goods_swiper10 = new Swiper ('.goods10', {
     },
 });
 const goods_swiper11 = new Swiper ('.goods11', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -258,8 +258,8 @@ const goods_swiper11 = new Swiper ('.goods11', {
     },
 });
 const goods_swiper12 = new Swiper ('.goods12', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -274,8 +274,8 @@ const goods_swiper12 = new Swiper ('.goods12', {
     },
 });
 const goods_swiper13 = new Swiper ('.goods13', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -290,8 +290,8 @@ const goods_swiper13 = new Swiper ('.goods13', {
     },
 });
 const goods_swiper14 = new Swiper ('.goods14', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -306,8 +306,8 @@ const goods_swiper14 = new Swiper ('.goods14', {
     },
 });
 const goods_swiper15 = new Swiper ('.goods15', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -322,8 +322,8 @@ const goods_swiper15 = new Swiper ('.goods15', {
     },
 });
 const goods_swiper16 = new Swiper ('.goods16', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -338,8 +338,8 @@ const goods_swiper16 = new Swiper ('.goods16', {
     },
 });
 const goods_swiper17 = new Swiper ('.goods17', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -354,8 +354,8 @@ const goods_swiper17 = new Swiper ('.goods17', {
     },
 });
 const goods_swiper18 = new Swiper ('.goods18', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
@@ -370,8 +370,8 @@ const goods_swiper18 = new Swiper ('.goods18', {
     },
 });
 const goods_swiper19 = new Swiper ('.goods19', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,

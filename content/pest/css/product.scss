@@ -12,11 +12,1685 @@
     }
 }
 
+/* product-details */
+.product-details {
+    position: relative;
+    padding-top: 90px;
+    .product-info {
+        position: absolute;
+        top: 90px;
+        right: 50%;
+        z-index: 1;
+        margin-right: -600px;
+        width: 410px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        background-color: #fff;
+        .info-wrap {
+            .info-header {
+                position: relative;
+                h4 {
+                    font-size: 25px;
+                    color: #000;
+                    font-weight: bold;
+                }
+                .btn-dibs {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    width: 33px;
+                    height: 30px;
+                    background-image: url(/content/pest/images/product/ico_heart.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: auto;
+                    @include transition();
+                    &.on {
+                        background-image: url(/content/pest/images/product/ico_heart_on.png);
+                    }
+                }
+                > p {
+                    display: block;
+                    font-size: 14px;
+                    color: rgba(#000, .4);
+                    line-height: 21px;
+                    margin-top: 15px;
+                }
+                .price-wrap {
+                    padding-top: 20px;
+                    .price {
+                        font-size: 0;
+                        span {
+                            display: inline-block;
+                            vertical-align: top;
+                            font-size: 26px;
+                            color: $kcolor;
+                            font-weight: 500;
+                            margin-right: 10px;
+                            line-height: 44px;
+                        }
+                        p {
+                            display: inline-block;
+                            vertical-align: top;
+                            font-size: 18px;
+                            color: #000;
+                            font-weight: 400;
+                            line-height: 44px;
+                            > b {
+                                font-size: 30px;
+                                font-weight: bold;
+                                vertical-align: top;
+                            }
+                            small {
+                                display: inline-block;
+                                vertical-align: top;
+                                font-size: 15px;
+                                line-height: 16px;
+                                padding-top: 16px;
+                                text-decoration: line-through;
+                                font-weight: bold;
+                                color: rgba(#000, .4);
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .coupon {
+                        font-size: 0;
+                        margin-top: 10px;
+                        .btn-coupon {
+                            display: inline-block;
+                            vertical-align: top;
+                            font-size: 14px;
+                            color: #fff;
+                            font-weight: 400;
+                            line-height: 34px;
+                            padding: 0 10px;
+                            text-align: center;
+                            background-color: $kcolor;
+                            .ico-down {
+                                display: inline-block;
+                                vertical-align: top;
+                                width: 12px;
+                                height: 34px;
+                                margin-left: 5px;
+                                background-image: url(/content/pest/images/product/ico_down.png);
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                                background-size: 12px auto;
+                            }
+                        }
+                        .ticker {
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: top;
+                            margin-left: 10px;
+                            .btn-ticker {
+                                display: block;
+                                padding: 7px 0;
+                            }
+                            .ticker-pop {
+                                display: none;
+                                position: absolute;
+                                top: -20%;
+                                left: 50%;
+                                white-space: nowrap;
+                                padding: 7px 10px;
+                                background-color: #fff;
+                                border: 1px solid #000;
+                                transform: translate(-50%, -100%);
+                                &:after {
+                                    position: absolute;
+                                    bottom: -10px;
+                                    left: 50%;
+                                    margin-left: -6.5px;
+                                    content: url(/content/pest/images/product/ico_ticker_bottom.png);
+                                }
+                                p {
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                    color: #000;
+                                    font-weight: 400;
+                                }
+                            }
+                            &.show {
+                                .ticker-pop {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .info-body {
+                padding-top: 15px;
+                .options {
+                    padding-bottom: 20px;
+                    > ul {
+                        > li {
+                            > dl {
+                                display: table;
+                                width: 100%;
+                                > dt, dd {
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                }
+                                dt {
+                                    width: 90px;
+                                    font-size: 14px;
+                                    color: #000;
+                                    font-weight: 400;
+                                }
+                            }
+                            & ~ li {
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+                }
+                .selection-box {
+                    border-top: 1px solid #d7d7d7;
+                    > ul {
+                        > li {
+                            border-bottom: 1px solid #d7d7d7;
+                            &:last-child {
+                                border-bottom: 0;
+                            }
+                            .box {
+                                padding: 20px 0;
+                                position: relative;
+                                .btn-del {
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 0;
+                                }
+                                > p {
+                                    font-size: 16px;
+                                    color: #000;
+                                    font-weight: 500;
+                                    line-height: 28px;
+                                }
+                                .pay-info {
+                                    position: relative;
+                                    text-align: right;
+                                    margin-top: 20px;
+                                    .btn-controls {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    b {
+                                        font-size: 22px;
+                                        color: #000;
+                                        font-weight: 500;
+                                        line-height: 36px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .amount {
+                    border-top: 4px solid #000;
+                    border-bottom: 4px solid #000;
+                    .total {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        padding-top: 20px;
+                        > dt, dd {
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                        dt {
+                            width: 90px;
+                            font-size: 14px;
+                            color: #000;
+                            font-weight: 500;
+                        }
+                        dd {
+                            font-size: 18px;
+                            color: #000;
+                            font-weight: 400;
+                            text-align: right;
+                            b {
+                                font-size: 30px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .btn-area {
+                        font-size: 0;
+                        text-align: center;
+                        padding: 30px 0;
+                        > .btn {
+                            display: inline-block;
+                            vertical-align: top;
+                            &.btn-basket {
+                                width: 164px;
+                                font-size: 16px;
+                                color: #000;
+                                font-weight: 400;
+                                line-height: 50px;
+                                border: 1px solid #d7d7d7;
+                                background-color: #fff;
+                            }
+                            &.btn-purchase {
+                                font-size: 16px;
+                                color: #fff;
+                                font-weight: 400;
+                                line-height: 52px;
+                                width: calc(100% - 164px);
+                                background-image: url(/content/pest/images/product/bg_btn_purchase.png);
+                                background-position: 50% 0;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+                .n-pay {
+                    padding: 20px 0;
+                }
+                .delivery-info {
+                    > dl {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        dt, dd {
+                            display: table-cell;
+                            vertical-align: top;
+                        }
+                        > dt {
+                            width: 90px;
+                            font-size: 14px;
+                            color: #000;
+                            font-weight: 500;
+                        }
+                        > dd {
+                            font-size: 12px;
+                            color: #919191;
+                            font-weight: 400;
+                            letter-spacing: -.5px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+        }
+        &.fixed {
+            position: fixed;
+            top: 230px;
+        }
+        &.fixed-none {
+            display: none;
+        }
+    }
+    .details-wrap {
+        position: relative;
+        .container {
+            padding-right: 410px;
+        }
+        .details-header {
+            .product-slider {
+                position: relative;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        > figure {
+                            img {
+                                display: block;
+                                width: 100%;
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+                .btn-enlarge {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 40px;
+                    display: block;
+                    z-index: 1;
+                    img {
+                        display: block;
+                    }
+                }
+            }
+            .swiper-nav-area {
+                position: relative;
+                width: 360px;
+                margin: 30px auto 0;
+                .nav-slider {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            cursor: pointer;
+                            > figure {
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 50%;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+                .controls {
+                    > button {
+                        position: absolute;
+                        top: 50%;
+                        display: block;
+                        width: 11px;
+                        height: 20px;
+                        margin: 0;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
+                        background-size: auto;
+                        transform: translateY(-50%);
+                        &:after {
+                            display: none;
+                        }
+                        &.swiper-button-prev {
+                            left: -50px;
+                            background-image: url(/content/pest/images/product/btn_nav_slide_prev.png);
+                        }
+                        &.swiper-button-next {
+                            right: -50px;
+                            background-image: url(/content/pest/images/product/btn_nav_slide_next.png);
+                        }
+                    }
+                }
+            }
+        }
+        article {
+            margin-top: 80px;
+            .article-header {
+                position: relative;
+                padding-bottom: 15px;
+                border-bottom: 3px solid $kcolor;
+                h4 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $kcolor;
+                }
+                .btn-more {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    font-size: 14px;
+                    color: #919191;
+                    font-weight: 500;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #919191;
+                }
+                .btn-write {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 0;
+                    display: block;
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 500;
+                    padding: 0 20px;
+                    line-height: 34px;
+                    border: 1px solid #d7d7d7;
+                }
+            }
+            .article-content {
+                padding-top: 20px;
+            }
+            & ~ article {
+                margin-top: 75px;
+            }
+        }
+    }
+}
+
+.relation-item {
+    .article-content {
+        > ul {
+            overflow: hidden;
+            > li {
+                float: left;
+                width: 50%;
+                > a {
+                    display: table;
+                    table-layout: fixed;
+                    > div {
+                        display: table-cell;
+                        vertical-align: bottom;
+                        &.item {
+                            width: 115px;
+                            figure {
+                                img {
+                                    width: 100%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                }
+                            }
+                        }
+                        &.details {
+                            padding-left: 15px;
+                            padding-bottom: 5px;
+                            dl {
+                                dt {
+                                    font-size: 16px;
+                                    color: #000;
+                                    font-weight: bold;
+                                    line-height: 24px;
+                                }
+                                dd {
+                                    font-size: 16px;
+                                    color: #000;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                }
+                            }
+                            p {
+                                font-size: 18px;
+                                color: $kcolor;
+                                font-weight: 500;
+                                margin-top: 15px;
+                                small {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    color: #000;
+                                    font-weight: 400;
+                                    margin-left: 5px;
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(2n + 1) {
+                    padding-right: 7.5px;
+                }
+                &:nth-of-type(2n + 2) {
+                    padding-left: 7.5px;
+                }
+                &:nth-of-type(2) ~ li {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+.photo-review {
+    padding-bottom: 138px;
+    border-bottom: 1px solid red;
+    .article-content {
+        .review-list {
+            width: calc(100% + 20px);
+            margin: 0 -10px;
+            > li {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+.info-details {
+    .article-header {
+        border-bottom: 0 !important;
+    }
+    .article-content {
+        > figure {
+            height: 780px;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .btn-area {
+            display: block;
+            width: 100%;
+            .btn-details {
+                display: block;
+                font-size: 14px;
+                color: #000;
+                line-height: 52px;
+                text-align: center;
+                border: 1px solid #000;
+                background-color: #fff;
+                .ico-down {
+                    width: 15px;
+                    height: 52px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-left: 10px;
+                    background-image: url(/content/pest/images/product/ico_details_down.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: auto;
+                }
+            }
+        }
+        &.show-details {
+            > figure {
+                height: auto;
+            }
+            .btn-area {
+                display: none;
+            }
+        }
+    }
+}
+
+.product-review {
+    .article-content {
+        padding-top: 0 !important;
+        > ul {
+            > li {
+                border-bottom: 2px solid #e4e4e4;
+                .review-wrap {
+                    display: block;
+                    padding: 30px 0;
+                    .review-info {
+                        position: relative;
+                        padding-right: 270px;
+                        .usr-grade {
+                            font-size: 0;
+                            .grade {
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-right: 10px;
+                                > ol {
+                                    > li {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        img {
+                                            display: block;
+                                        }
+                                        & ~ li {
+                                            margin-left: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                            i {
+                                display: inline-block;
+                                font-size: 15px;
+                                color: #919191;
+                                line-height: 17px;
+                                font-style: normal;
+                                margin-right: 10px;
+                            }
+                            .date {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #919191;
+                                line-height: 17px;
+                            }
+                        }
+                        .review-util {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            font-size: 0;
+                            text-align: right;
+                            > div {
+                                display: inline-block;
+                                vertical-align: top;
+                                &.like {
+                                    border: 1px solid #919191;
+                                    > span {
+                                        display: inline-block;
+                                        font-size: 14px;
+                                        color: #000;
+                                        font-weight: 500;
+                                        line-height: 36px;
+                                        padding: 0 15px;
+                                        background-color: #fff;
+                                        border-right: 1px solid #919191;
+                                    }
+                                    .btn-like {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        width: 64px;
+                                        height: 36px;
+                                        line-height: 36px;
+                                        font-size: 20px;
+                                        color: #000;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        @include transition();
+                                        .ico-like {
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            width: 21px;
+                                            height: 36px;
+                                            margin-right: 5px;
+                                            background-image: url(/content/pest/images/product/ico_like.png);
+                                            background-repeat: no-repeat;
+                                            background-position: 50% 50%;
+                                            background-size: auto;
+                                            @include transition();
+                                        }
+                                        &.on {
+                                            color: #fff;
+                                            background-color: $kcolor;
+                                            .ico-like {
+                                                background-image: url(/content/pest/images/product/ico_like_on.png);
+                                            }
+                                        }
+                                    }
+                                }
+                                &.modify-drop {
+                                    .drop-area {
+                                        position: relative;
+                                        .btn-drop-more {
+                                            display: block;
+                                            width: 20px;
+                                        }
+                                        > ul {
+                                            display: none;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 100%;
+                                            padding: 5px 10px;
+                                            border: 1px solid #919191;
+                                            background-color: #fff;
+                                            > li {
+                                                > a {
+                                                    display: block;
+                                                    font-size: 14px;
+                                                    color: #000;
+                                                    font-weight: 400;
+                                                    line-height: 23px;
+                                                    padding-right: 35px;
+                                                    background-repeat: no-repeat;
+                                                    background-position: 100% 50%;
+                                                    &.btn-modify {
+                                                        background-image: url(/content/pest/images/sub/ico_modify.png);
+                                                    }
+                                                    &.btn-delete {
+                                                        background-image: url(/content/pest/images/sub/ico_delete.png);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.show {
+                                            > ul {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .review-content {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        margin-top: 25px;
+                        > div {
+                            display: table-cell;
+                            vertical-align: top;
+                            &.review-txt {
+                                > dl {
+                                    > dt {
+                                        font-size: 14px;
+                                        color: #919191;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                    }
+                                    > dd {
+                                        font-size: 14px;
+                                        color: #000;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+                            &.review-img {
+                                width: 270px;
+                                > figure {
+                                    display: block;
+                                    width: 94px;
+                                    margin-left: auto;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: 50% 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pagination {
+            margin-top: 30px;
+        }
+    }
+}
+
+/* amount-info */
+.amount-info {
+    .article-header {
+        > a {
+            position: relative;
+            display: block;
+            &:after {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                display: block;
+                content: url(/content/pest/images/product/ico_arrow_up.png);
+                @include transition();
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .article-content {
+        padding: 30px 0;
+        > dl {
+            > dt {
+                font-size: 14px;
+                color: #000;
+                font-weight: 600;
+                line-height: 25px;
+                & ~ dt {
+                    margin-top: 40px;
+                }
+            }
+            > dd {
+                font-size: 14px;
+                color: #000;
+                letter-spacing: -.5px;
+                font-weight: 400;
+                line-height: 25px;
+                .dott-list {
+                    > li {
+                        position: relative;
+                        padding-left: 10px;
+                        &:before {
+                            position: absolute;
+                            top: -5px;
+                            left: 0;
+                            content: '. ';
+                        }
+                        > dl {
+                            display: table;
+                            dt {
+                                &:after {
+                                    content: ':';
+                                    padding: 0 5px;
+                                }
+                            }
+                            dt, dd {
+                                display: table-cell;
+                                vertical-align: top;
+                            }
+                        }
+                        &.block {
+                            > dl {
+                                display: block;
+                                dt {
+                                    display: block;
+                                }
+                                dd {
+                                    display: block;
+                                    .dash-list {
+                                        padding-left: 10px;
+                                        > li {
+                                            position: relative;
+                                            padding-left: 10px;
+                                            &:before {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                content: '-';
+                                            }
+                                            > dl {
+                                                display: table;
+                                                dt, dd {
+                                                    display: table-cell;
+                                                    vertical-align: top;
+                                                }
+                                                dt {
+                                                    &:after {
+                                                        content: ':';
+                                                        padding: 0 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .attention {
+            position: relative;
+            font-size: 14px;
+            color: #000;
+            font-weight: 400;
+            margin-top: 35px;
+            padding-left: 20px;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '※';
+            }
+        }
+    }
+    &.show {
+        .article-header {
+            > a {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+/* details-tab */
+.details-tab {
+    position: absolute;
+    top: 2260px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    background-color: #f1f1f1;
+    .container {
+        padding-right: 410px;
+        > ul {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            > li {
+                display: table-cell;
+                vertical-align: middle;
+                > a {
+                    display: block;
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 400;
+                    line-height: 58px;
+                    @include transition();
+                }
+                &.active {
+                    > a {
+                        color: #fff;
+                        background-color: $kcolor;
+                    }
+                }
+            }
+        }
+    }
+    &.fixed-tab {
+        position: fixed;
+        top: 150px;
+    }
+}
+
+/* qna-list */
+.qna-list {
+    .article-content {
+        padding-top: 0 !important;
+        .default-board {
+            .accordion-list {
+                > ul {
+                    > li {
+                        .btn-collapse {
+                            padding-left: 0;
+                            padding-right: 0;
+                            > dl {
+                                dt {
+                                    color: #919191;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pagination {
+            margin-top: 30px;
+        }
+    }
+}
 
 
 
+body {
+    &.banner-none {
+        .details-tab {
+            top: 2190px;
+            &.fixed-tab {
+                top: 80px;
+            }
+        }
+    }
+}
 
 
+/* modal */
+.modal {
+    &.modal-enlarge {
+        .btn-modal-close {
+            position: fixed;
+            top: 80px;
+            right: 80px;
+            display: block;
+            z-index: 104;
+        }
+        .modal-content {
+            display: table;
+            table-layout: fixed;
+            width: 810px;
+            > div {
+                display: table-cell;
+                vertical-align: top;
+                &.frame-area {
+                    overflow: hidden;
+                    width: 720px;
+                    height: 720px;
+                    background-color: #fff;
+                    > figure {
+                        img {
+                            display: block;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            //@include transition();
+                        }
+                    }
+                }
+                &.frame-contols {
+                    position: relative;
+                    padding-left: 18px;
+                    > ul {
+                        padding-bottom: 150px;
+                        > li {
+                            width: 70px;
+                            height: 70px;
+                            img {
+                                display: block;
+                                cursor: pointer;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: 50% 50%;
+                                @include transition();
+                            }
+                            & ~ li {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                    .btn-area {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 70px;
+                        > a {
+                            display: block;
+                            width: 70px;
+                            height: 70px;
+                            background-color: #fff;
+                            background-repeat: no-repeat;
+                            background-position: 50% 50%;
+                            background-size: auto;
+                            &.btn-plus {
+                                background-image: url(/content/pest/images/product/ico_plus.png);
+                            }
+                            &.btn-minus {
+                                background-image: url(/content/pest/images/product/ico_minus.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.modal-review {
+        .modal-content {
+            width: 720px;
+            max-height: 680px;
+            overflow-y: auto;
+            background-color: #fff;
+            .content-head {
+                text-align: center;
+                padding: 60px 0 50px;
+                h4 {
+                    font-size: 25px;
+                    color: #000;
+                    font-weight: 400;
+                }
+                .grade {
+                    margin-top: 30px;
+                    > ol {
+                        > li {
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 0 5px;
+                            > a {
+                                display: block;
+                                img {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 35px;
+                        color: $kcolor;
+                        font-weight: 500;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .content-body {
+                position: relative;
+                padding: 0 45px 60px;
+                .form-group {
+                    padding: 30px;
+                    border: 1px solid #d7d7d7;
+                    .form-control {
+                        height: 180px;
+                        border: 0;
+                        padding: 0;
+                        resize: none;
+                    }
+                    span {
+                        display: block;
+                        font-size: 17px;
+                        color: #010101;
+                        text-align: right;
+                        padding-top: 30px;
+                    }
+                }
+                .file-attach {
+                    margin-top: 10px;
+                    input[type="file"] {
+                        display: none;
+                    }
+                    .btn-flie {
+                        display: block;
+                        width: 100%;
+                        line-height: 70px;
+                        font-size: 18px;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: 400;
+                        cursor: pointer;
+                        background-color: $kcolor;
+                    }
+                    .attention {
+                        font-size: 14px;
+                        color: #ababab;
+                        font-weight: 400;
+                        margin-top: 15px;
+                    }
+                }
+                .file-list {
+                    margin-top: 30px;
+                    padding-bottom: 45px;
+                    > ul {
+                        font-size: 0;
+                        > li {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 85px;
+                            margin-right: 10px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            > .file-wrap {
+                                position: relative;
+                                figure {
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: 50% 50%;
+                                    }
+                                }
+                            }
+                            .btn-del {
+                                position: absolute;
+                                top: 8px;
+                                right: 8px;
+                                display: block;
+                                img {
+                                    display: block;
+                                }
+                            }
+                            .btn-file-modify {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                text-align: center;
+                                color: #fff;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 22px;
+                                background-color: rgba(#000, .2);
+                            }
+                        }
+                    }
+                }
+                .btn-area {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    font-size: 0;
+                    text-align: center;
+                    margin-top: 45px;
+                    .btn {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 50%;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 60px;
+                        &.btn-cancel {
+                            color: #000;
+                            background-color: #f5f5f5;
+                        }
+                        &.btn-submit {
+                            color: #fff;
+                            background-color: $kcolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.modal-qna {
+        .modal-content {
+            width: 720px;
+            max-height: 680px;
+            overflow-y: auto;
+            background-color: #fff;
+            h4 {
+                display: block;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 500;
+                line-height: 50px;
+                text-align: center;
+                background-color: $kcolor;
+            }
+            .write-form {
+                padding-top: 30px;
+                > ul {
+                    padding: 0 30px;
+                    > li {
+                        dl {
+                            dt {
+                                font-size: 18px;
+                                color: #000;
+                                font-weight: 500;
+                                padding-bottom: 15px;
+                            }
+                            dd {
+                                .form-group {
+                                    .form-control {
+                                        font-size: 16px;
+                                    }
+                                    &.type-2 {
+                                        padding: 15px;
+                                        border: 1px solid #d7d7d7;
+                                        .form-control {
+                                            height: 180px;
+                                            border: 0;
+                                            padding: 0;
+                                            resize: none;
+                                        }
+                                        span {
+                                            display: block;
+                                            font-size: 17px;
+                                            color: #010101;
+                                            text-align: right;
+                                            padding-top: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & ~ li {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+                .check-box {
+                    margin: 20px 0 30px;
+                    padding: 0 30px;
+                    .label {
+                        font-size: 16px;
+                        color: #000;
+                    }
+                }
+                .attention {
+                    padding: 0 30px;
+                    > p {
+                        position: relative;
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        line-height: 26px;
+                        padding-left: 20px;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: '※';
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: center;
+                font-size: 0;
+                margin-top: 45px;
+                .btn {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 50%;
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 60px;
+                    &.btn-cancel {
+                        background-color: #000;
+                    }
+                    &.btn-submit {
+                        background-color: $kcolor;
+                    }
+                }
+            }
+        }
+    }
+    &.modal-photo-list {
+        .modal-content {
+            width: 720px;
+            height: 750px;
+            padding: 50px 40px;
+            overflow-y: auto;
+            background-color: #fff;
+            > ul {
+                overflow: hidden;
+                width: calc(100% + 20px);
+                margin: 0 -10px;
+                > li {
+                    float: left;
+                    width: 33.3333333333%;
+                    padding: 0 10px;
+                    > a {
+                        display: block;
+                        > figure {
+                            img {
+                                display: block;
+                                width: 100%;
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3n + 1) {
+                        clear: left;
+                    }
+                    &:nth-of-type(3) ~ li {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &.review-list-popup {
+        .modal-content {
+            .review-area {
+                width: 880px;
+                .review-swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .review-content {
+                                width: 720px;
+                                max-height: 760px;
+                                overflow-y: auto;
+                                margin: 0 auto;
+                                background-color: #fff;
+                                > a {
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                    padding: 15px;
+                                    padding-right: 80px;
+                                    background-color: #ebebeb;
+                                    background-image: url(/content/pest/images/product/ico_arrow_move.png);
+                                    background-repeat: no-repeat;
+                                    background-size: auto;
+                                    background-position: calc(100% - 30px) 50%;
+                                    > div {
+                                        display: table-cell;
+                                        vertical-align: middle;
+                                        &.item-img {
+                                            width: 55px;
+                                            > figure {
+                                                img {
+                                                    display: block;
+                                                    width: 100%;
+                                                    background-repeat: no-repeat;
+                                                    background-position: 50% 50%;
+                                                    background-size: cover;
+                                                }
+                                            }
+                                        }
+                                        &.details {
+                                            padding-left: 15px;
+                                            > dl {
+                                                dt, dd {
+                                                    font-size: 18px;
+                                                    color: #000;
+                                                    font-weight: 400;
+                                                    line-height: 23px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .review-wrap {
+                                    padding: 0 30px;
+                                    .review-head {
+                                        position: relative;
+                                        padding: 20px 0;
+                                        border-bottom: 2px solid #000;
+                                        .grade {
+                                            font-size: 0;
+                                            > ol {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                padding: 1.5px 0;
+                                                > li {
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    margin-right: 2px;
+                                                    &:last-child {
+                                                        margin-right: 0;
+                                                    }
+                                                    img {
+                                                        display: block;
+                                                    }
+                                                }
+                                            }
+                                            > b {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                font-size: 20px;
+                                                color: $kcolor;
+                                                margin-left: 10px;
+                                            }
+                                        }
+                                        .usr-info {
+                                            margin-top: 15px;
+                                            > ul {
+                                                font-size: 0;
+                                                > li {
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    font-size: 15px;
+                                                    color: #919191;
+                                                    font-weight: 400;
+                                                    &:after {
+                                                        position: relative;
+                                                        top: 3px;
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        content: '';
+                                                        width: 1px;
+                                                        height: 12px;
+                                                        margin: 0 10px;
+                                                        background-color: #919191;
+                                                    }
+                                                    &:last-child {
+                                                        &:after {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .modify-drop {
+                                            position: absolute;
+                                            top: 20px;
+                                            right: 0;
+                                            .drop-area {
+                                                position: relative;
+                                                .btn-drop-more {
+                                                    display: block;
+                                                    width: 24px;
+                                                }
+                                                > ul {
+                                                    display: none;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 100%;
+                                                    padding: 5px 10px;
+                                                    border: 1px solid #919191;
+                                                    background-color: #fff;
+                                                    > li {
+                                                        > a {
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #000;
+                                                            font-weight: 400;
+                                                            line-height: 23px;
+                                                            padding-right: 35px;
+                                                            background-repeat: no-repeat;
+                                                            background-position: 100% 50%;
+                                                            &.btn-modify {
+                                                                background-image: url(/content/pest/images/sub/ico_modify.png);
+                                                            }
+                                                            &.btn-delete {
+                                                                background-image: url(/content/pest/images/sub/ico_delete.png);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &.show {
+                                                    > ul {
+                                                        display: block;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .review-body {
+                                        padding-top: 20px;
+                                        > p {
+                                            font-size: 14px;
+                                            color: #000;
+                                            font-weight: 400;
+                                            line-height: 25px;
+                                        }
+                                        > figure {
+                                            margin-top: 40px;
+                                            img {
+                                                display: block;
+                                                width: 100%;
+                                                background-repeat: no-repeat;
+                                                background-position: 50% 50%;
+                                                background-size: cover;
+                                            }
+                                        }
+                                        .like-area {
+                                            font-size: 0;
+                                            padding: 20px 0;
+                                            span {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                font-size: 16px;
+                                                color: #000;
+                                                line-height: 34px;
+                                                font-weight: 400;
+                                                margin-right: 10px;
+                                            }
+                                            .btn-like {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                width: 64px;
+                                                height: 34px;
+                                                line-height: 36px;
+                                                font-size: 20px;
+                                                color: #000;
+                                                text-align: center;
+                                                font-weight: bold;
+                                                @include transition();
+                                                border: 1px solid #000;
+                                                .ico-like {
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    width: 21px;
+                                                    height: 34px;
+                                                    margin-right: 5px;
+                                                    background-image: url(/content/pest/images/product/ico_like.png);
+                                                    background-repeat: no-repeat;
+                                                    background-position: 50% 50%;
+                                                    background-size: auto;
+                                                    @include transition();
+                                                }
+                                                &.on {
+                                                    color: #fff;
+                                                    background-color: $kcolor;
+                                                    border-color: $kcolor;
+                                                    .ico-like {
+                                                        background-image: url(/content/pest/images/product/ico_like_on.png);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .controls {
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        z-index: 1;
+                        display: block;
+                        transform: translateY(-50%);
+                        &.swiper-button-prev2 {
+                            left: 0;
+                        }
+                        &.swiper-button-next2 {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* rotate-pop */
+.rotate-pop {
+    display: none;
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 105;
+        background-color: rgba(#000, .3);
+    }
+    > .btn-rotataepop-close {
+        position: fixed;
+        top: 80px;
+        right: 80px;
+        display: block;
+        z-index: 106;
+    }
+    .modal-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 720px;
+        height: 780px;
+        overflow: hidden;
+        z-index: 106;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        .rotate-board {
+            position: relative;
+            width: 100%;
+            height: 720px;
+            overflow: hidden;
+            > figure {
+                img {
+                    display: block;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                }
+            }
+            .btn-rotate {
+                position: absolute;
+                bottom: 30px;
+                right: 35px;
+                font-size: 15px;
+                color: #000;
+                text-align: center;
+                img {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .btn-area {
+            text-align: center;
+            font-size: 0;
+            .btn {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                font-size: 20px;
+                color: #fff;
+                font-weight: 400;
+                line-height: 60px;
+                &.btn-cancel {
+                    background-color: #000;
+                }
+                &.btn-submit {
+                    background-color: $kcolor;
+                }
+            }
+        }
+    }
+    &.show {
+        display: block;
+    }
+}
 
 
 

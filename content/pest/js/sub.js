@@ -12,6 +12,17 @@
         }
     });
     
+    // modal 
+    $(document).on('click','.btn-modal', function(e){
+        $('body').addClass('show-modal');
+        $($(this).attr('href')).addClass('show');
+        e.preventDefault();
+    });
+    $(document).on('click','.btn-modal-close', function(e){
+        $('body').removeClass('show-modal');
+        $('.modal').removeClass('show');
+    });
+    
     // accordion
     $(document).on('click', '.btn-collapse', function(e){
         $(this).parent().toggleClass('active');
@@ -28,6 +39,13 @@
         $('.drop-area').removeClass('show');
     });
     
+    // btn-default-popup
+    $(document).on('click', '.btn-default-popup', function(){
+        $('.default-modal').addClass('show');
+    });
+    $(document).on('click', '.pop-close', function(){
+        $('.default-modal').removeClass('show');
+    });
     
     
     // datepicker
