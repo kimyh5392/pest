@@ -349,7 +349,7 @@
             </button>
             <p>검색어를 입력해주세요.</p>
             <div class="btn-area">
-                <a href="#" class="btn-default md-alert-close">확인</a>
+                <a href="javascript:;" class="btn-default md-alert-close">확인</a>
             </div>
         </div>
     </div>
@@ -438,6 +438,9 @@
                 </nav>
                 <!-- sub-content -->
                 <div class="sub-content">
+                   
+                    <h2 class="sub-t">공동 메세지 팝업</h2>
+                    <a href="javascript:;" class="btn-default-popup">공동 팝업 메세지 버튼</a>
                     
                     <h2 class="sub-t">section-top</h2>
                     <!-- section-top -->
@@ -503,7 +506,17 @@
                         </div>
                     </div>
                     
+                    <!-- controls -->
+                    <h2 class="sub-t">btn-controls</h2>
+                    <div class="btn-controls">
+                        <div class="form-group">
+                            <button type="button" class="btn-minus">-</button>
+                            <input type="text" class="form-control" value="1">
+                            <button type="button" class="btn-plus">+</button>
+                        </div>
+                    </div>
                     
+                    <!-- resio & checkbox -->
                     <h2 class="sub-t">radio &amp; checkbox</h2>
                     <div class="radio-box">
                         <div>
@@ -968,6 +981,43 @@
             
         </div>
     </main>
+    
+    <!-- default-modal -->
+    <div class="default-modal">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <button type="button" class="btn-close pop-close">
+                <img src="/content/pest/images/ico_close_small.png" alt="">
+            </button>
+            <p>
+                <b>문의사항 등록 완료</b>
+                등록된 문의사항은 마이페이지<br> 에서 확인할 수 있습니다.
+            </p>
+            <!--<p>리뷰를 최소 10자 이상<br> 작성해주세요</p>-->
+            <!--<p>
+                <b>상품리뷰 작성 완료!</b>
+                작성된 리뷰는 마이페이지에서<br> 확인할 수 있습니다.
+            </p>-->
+            <!--<p>이미 선택된 옵션입니다.</p>-->
+            <!--<p>옵션을 선택하세요.</p>-->
+            <!--<p>
+                <b>장바구니에 담겼습니다.</b>
+                장바구니로 이동 하겠습니까?
+            </p>-->
+            <!--<p>해당 리뷰를<br> 삭제 하시겠습니까?</p>-->
+            <div class="btn-area">
+                <a href="javascript:;" class="btn btn-lg btn-black pop-close">확인</a>
+                <!--<p>
+                    <a href="javascript:;" class="btn btn-md btn-gray pop-close">계속 쇼핑</a>
+                    <a href="#" class="btn btn-md btn-black pop-close">장바구니 바로가기</a>
+                </p>-->
+                <!--<p>
+                    <a href="javascript:;" class="btn btn-sm btn-gray pop-close">NO</a>
+                    <a href="#" class="btn btn-sm btn-black pop-close">YES</a>
+                </p>-->
+            </div>
+        </div>
+    </div>
     
     <!-- quick-banner -->
     <nav class="quick-banner">

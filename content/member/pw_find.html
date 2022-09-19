@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/content/pest/css/default.css">
     <link rel="stylesheet" href="/content/pest/css/sub.css">
-    <link rel="stylesheet" href="/content/pest/css/product.css">
+    <link rel="stylesheet" href="/content/pest/css/member.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>GssenShop</title>
 </head>
@@ -358,322 +358,138 @@
     <!-- Content -->
     <main id="content">
         
-        <!-- page-header -->
-        <div class="page-header type-2" style="background-image: url(/content/pest/images/sub/bg_lohas_page_header.png);">
+        <section class="member find-wrap">
             <div class="container">
-                <figure>
-                    <img src="/content/pest/images/sub/img_lohas.png" alt="">
-                </figure>
-                <div class="v-align">
-                    <h3>로하스 인증 제품</h3>
-                    <p>
-                        LOHAS ( Lifesstyle of Health and Sustainability)의 약자로 건강한 사회를 만들기 위하여<br>
-                        친환경적이고 사회공헌을 최우선으로 삼는 기업 및 단체의 제품, 서비스에 대한 인증이며<br>
-                        개인의 건강 및 사회의 친환경에 대한 가치를 최우선으로 하는 제품만입니다.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- product-item -->
-        <article class="product-list">
-            <div class="container tab-area">
-                <div class="article-header">
-                    <ul class="tab-menu">
-                        <li class="active"><a href="#tab-1">전체</a></li>
-                        <li><a href="#tab-2">EWG 그린등급 제품</a></li>
-                        <li><a href="#tab-3">Micro Capture 제품</a></li>
-                        <li><a href="#tab-3">Tablet 제품</a></li>
+                <div class="section-header">
+                    <h3>아이디/비밀번호 찾기</h3>
+                    <ul class="tab-link">
+                        <li>
+                            <a href="/content/member/id_find.html">아이디(이메일) 찾기</a>
+                        </li>
+                        <li class="active">
+                            <a href="/content/member/pw_find.html">비밀번호 찾기</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="article-content">
-                    <div class="sub-top-util">
+                <div class="section-content">
+                    <p class="attention">회원가입시 등록한 휴대폰 번호로 인증후 비밀번호를 다시 설정할 수 있습니다.</p>
+                    <div class="find-form">
                         <ul>
-                            <li class="active"><a href="#">신상품순</a></li>
-                            <li><a href="#">인기순</a></li>
-                            <li><a href="#">높은 가격순</a></li>
-                            <li><a href="#">낮은 가격순</a></li>
+                            <li>
+                                <dl>
+                                    <dt>아이디(이메일)</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="이메일을 입력해주세요.">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>이름</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>휴대전화번호</dt>
+                                    <dd>
+                                        <div class="contact-input type-2">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option>010</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="v-top">인증번호 입력</dt>
+                                    <dd class="v-top">
+                                        <div class="form-group certification">
+                                            <input type="text" class="form-control">
+                                            <a href="#" class="btn-certification">인증번호 전호</a>
+                                        </div>
+                                        <p class="attention">입력하신 번호로 인증번호가 발송되었습니다.</p>
+                                    </dd>
+                                </dl>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab-1">
-                            <ul class="goods-list">
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods01.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods02.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods03.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods04.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-2">
-                            <ul class="goods-list">
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods01.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods02.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods03.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods04.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-3">
-                            <ul class="goods-list">
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods01.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods02.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods03.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods04.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-4">
-                            <ul class="goods-list">
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods01.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods02.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods03.png);" alt="">
-                                            <span class="label sale">SALE</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/content/product/product_details.html">
-                                        <div class="item-img">
-                                            <img src="/content/pest/images/sub/img_product_frame.png" style="background-image: url(/content/pest/images/product/bg_goods04.png);" alt="">
-                                            <span class="label new">NEW</span>
-                                        </div>
-                                        <div class="details">
-                                            <strong>백두산 생약치약</strong>
-                                            <p>[치약] 천연 4가지 성분</p>
-                                            <div class="sum">
-                                                <b>39,000원</b>
-                                                <small>51,000원</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="btn-find-area">
+                            <a href="#" class="btn btn-cancel">취소</a>
+                            <a href="#new-pw" class="btn btn-find btn-modal">확인하기</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
         
     </main>
+    
+    <!-- pw-write -->
+    <div class="modal pw-write" id="new-pw">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <button type="button" class="btn-modal-close">
+                <img src="/content/pest/images/member/ico_close.png" alt="">
+            </button>
+            <article>
+                <div class="article-header">
+                    <h4>비밀번호 변경</h4>
+                    <p>새로운 비밀번호를 입력하세요.</p>
+                </div>
+                <div class="article-content">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>새로운 비밀번호</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="영문/숫자/특수문자를 포함하여 8~20자">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>새로운 비밀번호 확인</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder=" 비밀번호를 다시한번 입력하세요.">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-cancel">취소</a>
+                        <button type="button" class="btn btn-submit">비밀번호 변경</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
     
     <!-- quick-banner -->
     <nav class="quick-banner">
