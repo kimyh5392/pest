@@ -20,60 +20,60 @@ const carosel = new Swiper ('.jumbo-slider', {
 
 // product-slider
 const product_swiper1 = new Swiper ('.product1', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".p-prev1",
         nextEl: ".p-next1",
     },
 });
 const product_swiper2 = new Swiper ('.product2', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".p-prev2",
         nextEl: ".p-next2",
     },
 });
 const product_swiper3 = new Swiper ('.product3', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".p-prev3",
         nextEl: ".p-next3",
     },
 });
 const product_swiper4 = new Swiper ('.product4', {
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true,
+    //loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
     slidesPerView: 4,
     loadPrevNext : true,
-    autoplay: {
+    /*autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-    },
+    },*/
     navigation: {
         prevEl: ".p-prev4",
         nextEl: ".p-next4",

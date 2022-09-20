@@ -209,6 +209,7 @@
                                     color: #000;
                                     font-weight: 500;
                                     line-height: 28px;
+                                    padding-right: 50px;
                                 }
                                 .pay-info {
                                     position: relative;
@@ -230,90 +231,90 @@
                         }
                     }
                 }
-                .amount {
+                .total {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    padding-top: 20px;
                     border-top: 4px solid #000;
-                    border-bottom: 4px solid #000;
-                    .total {
-                        display: table;
-                        width: 100%;
-                        table-layout: fixed;
-                        padding-top: 20px;
-                        > dt, dd {
-                            display: table-cell;
-                            vertical-align: middle;
-                        }
-                        dt {
-                            width: 90px;
-                            font-size: 14px;
-                            color: #000;
-                            font-weight: 500;
-                        }
-                        dd {
-                            font-size: 18px;
-                            color: #000;
-                            font-weight: 400;
-                            text-align: right;
-                            b {
-                                font-size: 30px;
-                                font-weight: bold;
-                            }
-                        }
+                    > dt, dd {
+                        display: table-cell;
+                        vertical-align: middle;
                     }
-                    .btn-area {
-                        font-size: 0;
-                        text-align: center;
-                        padding: 30px 0;
-                        > .btn {
-                            display: inline-block;
-                            vertical-align: top;
-                            &.btn-basket {
-                                width: 164px;
-                                font-size: 16px;
-                                color: #000;
-                                font-weight: 400;
-                                line-height: 50px;
-                                border: 1px solid #d7d7d7;
-                                background-color: #fff;
-                            }
-                            &.btn-purchase {
-                                font-size: 16px;
-                                color: #fff;
-                                font-weight: 400;
-                                line-height: 52px;
-                                width: calc(100% - 164px);
-                                background-image: url(/content/pest/images/product/bg_btn_purchase.png);
-                                background-position: 50% 0;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                            }
+                    dt {
+                        width: 90px;
+                        font-size: 14px;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                    dd {
+                        font-size: 18px;
+                        color: #000;
+                        font-weight: 400;
+                        text-align: right;
+                        b {
+                            font-size: 30px;
+                            font-weight: bold;
                         }
                     }
                 }
-                .n-pay {
-                    padding: 20px 0;
+            }
+        }
+        .info-foot {
+            .btn-area {
+                font-size: 0;
+                text-align: center;
+                padding: 30px 0;
+                border-bottom: 4px solid #000;
+                > .btn {
+                    display: inline-block;
+                    vertical-align: top;
+                    &.btn-basket {
+                        width: 164px;
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        line-height: 50px;
+                        border: 1px solid #d7d7d7;
+                        background-color: #fff;
+                    }
+                    &.btn-purchase {
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: 400;
+                        line-height: 52px;
+                        width: calc(100% - 164px);
+                        background-image: url(/content/pest/images/product/bg_btn_purchase.png);
+                        background-position: 50% 0;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
                 }
-                .delivery-info {
-                    > dl {
-                        display: table;
-                        width: 100%;
-                        table-layout: fixed;
-                        dt, dd {
-                            display: table-cell;
-                            vertical-align: top;
-                        }
-                        > dt {
-                            width: 90px;
-                            font-size: 14px;
-                            color: #000;
-                            font-weight: 500;
-                        }
-                        > dd {
-                            font-size: 12px;
-                            color: #919191;
-                            font-weight: 400;
-                            letter-spacing: -.5px;
-                            line-height: 23px;
-                        }
+            }
+            .n-pay {
+                padding: 20px 0;
+            }
+            .delivery-info {
+                > dl {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    dt, dd {
+                        display: table-cell;
+                        vertical-align: top;
+                    }
+                    > dt {
+                        width: 90px;
+                        font-size: 14px;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                    > dd {
+                        font-size: 12px;
+                        color: #919191;
+                        font-weight: 400;
+                        letter-spacing: -.5px;
+                        line-height: 23px;
                     }
                 }
             }
@@ -321,9 +322,32 @@
         &.fixed {
             position: fixed;
             top: 230px;
+            padding-bottom: 0;
+            .info-wrap {
+                overflow-y: auto;
+                min-height: 400px;
+                max-height: 540px;
+                max-height: 540px;
+                padding-right: 10px;
+            }
+            .info-foot {
+                .delivery-info {
+                    display: none;
+                }
+                .btn-area {
+                    padding: 20px 0;
+                }
+                .n-pay {
+                    padding-top: 20px;
+                    padding-bottom: 0;
+                }
+            }
         }
         &.fixed-none {
-            display: none;
+            visibility: hidden;
+            overflow: hidden;
+            opacity: 0;
+            @include transition();
         }
     }
     .details-wrap {
@@ -524,7 +548,6 @@
 
 .photo-review {
     padding-bottom: 138px;
-    border-bottom: 1px solid red;
     .article-content {
         .review-list {
             width: calc(100% + 20px);

@@ -464,36 +464,31 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="amount">
-                            <dl class="total">
-                                <dt>합계</dt>
-                                <dd><b>55,000</b> 원</dd>
-                            </dl>
-                            <div class="btn-area">
-                                <a href="#" class="btn btn-basket">장바구니</a>
-                                <a href="#" class="btn btn-purchase">바로구매</a>
-                            </div>
-                        </div>
-                        <div class="n-pay">
-                            <!-- 네이버 결제 -->
-                            <img src="/content/pest/images/product/img_naver_pay.png" alt="">
-                        </div>
-                        <div class="delivery-info">
-                            <dl>
-                                <dt>배송정보</dt>
-                                <dd>
-                                    조건부 무료 (3,000원 &nbsp;|&nbsp; 30,000 이상 무료)<br>
-                                    도서산간 배송비 추가 (제주: 3,000원, 도서산간 : 3,000원)
-                                </dd>
-                            </dl>
-                        </div>
-                        
-                        <!-- (예시) 개발시 참고해주세요 common popup message 개발시 class 추가 -->
-                        <br>
-                        <br>
-                        <br>
-                        <a href="javascript:;" class="btn-default-popup">공동 팝업 메세지</a>
-                        
+                        <dl class="total">
+                            <dt>합계</dt>
+                            <dd><b>55,000</b> 원</dd>
+                        </dl>
+                        <!-- (예시) 개발시 참고해주세요 common popup message 개발시 class 추가 
+                        <a href="javascript:;" class="btn-default-popup">공통 팝업 메세지</a>-->
+                    </div>
+                </div>
+                <div class="info-foot">
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-basket">장바구니</a>
+                        <a href="#" class="btn btn-purchase">바로구매</a>
+                    </div>
+                    <div class="n-pay">
+                        <!-- 네이버 결제 -->
+                        <img src="/content/pest/images/product/img_naver_pay.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="delivery-info">
+                        <dl>
+                            <dt>배송정보</dt>
+                            <dd>
+                                조건부 무료 (3,000원 &nbsp;|&nbsp; 30,000 이상 무료)<br>
+                                도서산간 배송비 추가 (제주: 3,000원, 도서산간 : 3,000원)
+                            </dd>
+                        </dl>
                     </div>
                 </div>
             </div>
@@ -1821,22 +1816,19 @@
             }
 
             findPosition();
+            
+            // 제품 구매 숨기기
+            $(window).scroll(function() {
+               if ($(window).scrollTop() + $(window).height() > $(document).height() - 375) {
+                   $('.product-info').addClass('fixed-none');
+               } else {
+                   $('.product-info').removeClass('fixed-none');
+               }
+            });
 
-            // 제품 상세
+            // 제품 상세 숨기기
             $(document).on('click', '.info-details .article-content .btn-details', function(){
                 $('.info-details .article-content').toggleClass('show-details');
-            });
-            
-            // 제품 상세 숨기기
-            var bodyHeight = $('body').height() - 1600;
-            
-            $(window).on('scroll', function() {
-                //console.log(bodyHeight);
-                if ($(this).scrollTop() >= bodyHeight) {
-                    $('.product-info').addClass('fixed-none');
-                } else {
-                    $('.product-info').removeClass('fixed-none');
-                }
             });
             
             // btn-like
