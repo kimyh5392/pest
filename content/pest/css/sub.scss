@@ -180,8 +180,9 @@
             width: 310px;
             padding-right: 100px;
             > ul {
-                padding: 20px 0;
+                padding-bottom: 20px;
                 border: 1px solid #e4e4e4;
+                border-top: 0;
                 > li {
                     padding: 0 30px;
                     > dl {
@@ -924,6 +925,9 @@ select {
                             font-size: 16px;
                             color: $kcolor;
                             font-weight: 400;
+                            &.black {
+                                color: #000;
+                            }
                         }
                         > dd {
                             font-size: 16px;
@@ -967,6 +971,21 @@ select {
                             color: #000;
                         }
                     }
+                    .notice-content {
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #000;
+                        font-weight: 400;
+                        text-align: center;
+                        padding: 35px;
+                        background-color: #f8f8f8;
+                        border-top: 1px solid #e4e4e4;
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                            max-width: 100%;
+                        }
+                    }
                     .usr-content {
                         position: relative;
                         padding: 30px 40px;
@@ -996,45 +1015,6 @@ select {
                                 position: absolute;
                                 top: 0;
                                 right: 0;
-                                .drop-area {
-                                    position: relative;
-                                    .btn-drop-more {
-                                        display: block;
-                                        width: 24px;
-                                    }
-                                    > ul {
-                                        display: none;
-                                        position: absolute;
-                                        top: 0;
-                                        right: 100%;
-                                        padding: 5px 10px;
-                                        border: 1px solid #919191;
-                                        background-color: #fff;
-                                        > li {
-                                            > a {
-                                                display: block;
-                                                font-size: 14px;
-                                                color: #000;
-                                                font-weight: 400;
-                                                line-height: 23px;
-                                                padding-right: 35px;
-                                                background-repeat: no-repeat;
-                                                background-position: 100% 50%;
-                                                &.btn-modify {
-                                                    background-image: url(/content/pest/images/sub/ico_modify.png);
-                                                }
-                                                &.btn-delete {
-                                                    background-image: url(/content/pest/images/sub/ico_delete.png);
-                                                }
-                                            }
-                                        }
-                                    }
-                                    &.show {
-                                        > ul {
-                                            display: block;
-                                        }
-                                    }
-                                }
                             }
                         }
                         > p {
@@ -1096,6 +1076,49 @@ select {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+/* modify-drop */
+.modify-drop {
+    .drop-area {
+        position: relative;
+        .btn-drop-more {
+            display: block;
+            width: 24px;
+        }
+        > ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 100%;
+            padding: 5px 10px;
+            border: 1px solid #919191;
+            background-color: #fff;
+            > li {
+                > a {
+                    display: block;
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 400;
+                    line-height: 23px;
+                    padding-right: 35px;
+                    background-repeat: no-repeat;
+                    background-position: 100% 50%;
+                    &.btn-modify {
+                        background-image: url(/content/pest/images/sub/ico_modify.png);
+                    }
+                    &.btn-delete {
+                        background-image: url(/content/pest/images/sub/ico_delete.png);
+                    }
+                }
+            }
+        }
+        &.show {
+            > ul {
+                display: block;
             }
         }
     }
@@ -1206,6 +1229,12 @@ select {
                 display: block;
                 margin-bottom: 20px;
             }
+            small {
+                display: block;
+                font-size: 16px;
+                margin-top: 15px;
+                font-weight: 400;
+            }
         }
         .btn-area {
             font-size: 0;
@@ -1237,6 +1266,10 @@ select {
                 }
                 &.btn-gray {
                     background-color: #eaeaea;
+                }
+                &.btn-blue {
+                    color: #fff;
+                    background-color: $kcolor;
                 }
             }
         }
@@ -1400,6 +1433,14 @@ body {
         &:first-child {
             border-top: 1px solid #e4e4e4;
         }
+        &.no-history {
+            p {
+                font-size: 16px;
+                color: #ababab;
+                line-height: 115px;
+                text-align: center;
+            }
+        }
         .info {
             display: table;
             table-layout: fixed;
@@ -1469,11 +1510,6 @@ body {
             }
         }
     }
-}
-
-/* lately-product */
-.lately-product {
-    
 }
 
 /* recommend-product */
@@ -1664,6 +1700,266 @@ body {
         }
     }
 }
+
+/*  */
+.tab-link {
+    display: table;
+    table-layout: fixed;
+    width: 850px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+    > li {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+        > a {
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            color: #000;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+        &.active {
+            a {
+                color: $kcolor;
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    content: '';
+                    background-color: $kcolor;
+                }
+            }
+        }
+    }
+}
+
+/* table-wrap */
+.table-wrap {
+    &.default {
+        .table {
+            text-align: center;
+            width: 100%;
+            table-layout: fixed;
+            thead {
+                tr {
+                    th {
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        vertical-align: middle;
+                        padding: 20px 0;
+                        border-top: 1px solid #e4e4e4;
+                        border-bottom: 1px solid #e4e4e4;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 18px;
+                        color: #000;
+                        font-weight: 400;
+                        vertical-align: middle;
+                        padding: 40px 0;
+                        border-bottom: 1px solid #e4e4e4;
+                        b {
+                            font-size: 25px;
+                            color: $kcolor;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* text-box */
+.form-group {
+    &.text-box {
+        padding: 20px;
+        border: 1px solid #d7d7d7;
+        .form-control {
+            resize: none;
+            height: 100px;
+            padding: 0;
+            border: 0;
+        }
+        span {
+            display: block;
+            font-size: 17px;
+            color: #010101;
+            font-weight: 400;
+            text-align: right;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* btn-banner-area */
+.btn-banner-area {
+    width: 100%;
+    text-align: center;
+    padding: 92px 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    .btn-default {
+        display: block;
+        width: 205px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 48px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: $kcolor;
+    }
+}
+
+/* addr-list */
+.addr-list {
+    > ul {
+        > li {
+            display: table;
+            width: 100%;
+            padding: 35px 0;
+            table-layout: fixed;
+            border-bottom: 1px solid #e4e4e4;
+            &:first-child {
+                border-top: 1px solid #e4e4e4;
+            }
+            > div {
+                display: table-cell;
+                vertical-align: middle;
+                &.radio-box {
+                    width: 50px;
+                }
+                &.info {
+                    .info-top {
+                        position: relative;
+                        font-size: 0;
+                        b {
+                            display: inline-block;
+                            vertical-align: top;
+                            font-size: 22px;
+                            line-height: 36px;
+                            font-weight: 500;
+                        }
+                        .default-addr {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 116px;
+                            text-align: center;
+                            font-size: 16px;
+                            line-height: 34px;
+                            margin-left: 10px;
+                            border: 1px solid #bababa;
+                        }
+                        .modify-drop {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                    address {
+                        display: block;
+                        font-size: 18px;
+                        color: #000;
+                        line-height: 27px;
+                        font-weight: 400;
+                        letter-spacing: -.5px;
+                        font-style: normal;
+                        margin-top: 15px;
+                    }
+                    > p {
+                        font-size: 18px;
+                        color: #000;
+                        line-height: 27px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .addr-modify-form {
+                > ul {
+                    > li {
+                        > dl {
+                            dt {
+                                font-size: 18px;
+                                color: #000;
+                                font-weight: 400;
+                            }
+                            dd {
+                                margin-top: 10px;
+                                &.addr-search {
+                                    .form-group {
+                                        position: relative;
+                                        .btn-addr {
+                                            display: block;
+                                            cursor: pointer;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 5px;
+                                            width: 80px;
+                                            text-align: center;
+                                            font-size: 13px;
+                                            color: #fff;
+                                            font-weight: 400;
+                                            line-height: 36px;
+                                            transform: translateY(-50%);
+                                            background-color: #000;
+                                        }
+                                        .form-control{
+                                            padding-left: 90px;
+                                        }
+                                    }
+                                }
+                                &.contact {
+                                    overflow: hidden;
+                                    width: calc(100% + 10px);
+                                    margin: 10px -5px 0;
+                                    > .form-group {
+                                        float: left;
+                                        width: 33.3333333%;
+                                        padding: 0 5px;
+                                    }
+                                }
+                            }
+                        }
+                        & ~ li {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

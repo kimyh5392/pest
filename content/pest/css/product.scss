@@ -706,47 +706,6 @@
                                         }
                                     }
                                 }
-                                &.modify-drop {
-                                    .drop-area {
-                                        position: relative;
-                                        .btn-drop-more {
-                                            display: block;
-                                            width: 20px;
-                                        }
-                                        > ul {
-                                            display: none;
-                                            position: absolute;
-                                            top: 0;
-                                            right: 100%;
-                                            padding: 5px 10px;
-                                            border: 1px solid #919191;
-                                            background-color: #fff;
-                                            > li {
-                                                > a {
-                                                    display: block;
-                                                    font-size: 14px;
-                                                    color: #000;
-                                                    font-weight: 400;
-                                                    line-height: 23px;
-                                                    padding-right: 35px;
-                                                    background-repeat: no-repeat;
-                                                    background-position: 100% 50%;
-                                                    &.btn-modify {
-                                                        background-image: url(/content/pest/images/sub/ico_modify.png);
-                                                    }
-                                                    &.btn-delete {
-                                                        background-image: url(/content/pest/images/sub/ico_delete.png);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        &.show {
-                                            > ul {
-                                                display: block;
-                                            }
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
@@ -767,10 +726,17 @@
                                         line-height: 24px;
                                     }
                                     > dd {
+                                        display: block;
                                         font-size: 14px;
                                         color: #000;
                                         font-weight: 400;
                                         line-height: 24px;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        word-break: break-word;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 3;
+                                        -webkit-box-orient: vertical;
                                     }
                                 }
                             }
@@ -1502,45 +1468,6 @@ body {
                                             position: absolute;
                                             top: 20px;
                                             right: 0;
-                                            .drop-area {
-                                                position: relative;
-                                                .btn-drop-more {
-                                                    display: block;
-                                                    width: 24px;
-                                                }
-                                                > ul {
-                                                    display: none;
-                                                    position: absolute;
-                                                    top: 0;
-                                                    right: 100%;
-                                                    padding: 5px 10px;
-                                                    border: 1px solid #919191;
-                                                    background-color: #fff;
-                                                    > li {
-                                                        > a {
-                                                            display: block;
-                                                            font-size: 14px;
-                                                            color: #000;
-                                                            font-weight: 400;
-                                                            line-height: 23px;
-                                                            padding-right: 35px;
-                                                            background-repeat: no-repeat;
-                                                            background-position: 100% 50%;
-                                                            &.btn-modify {
-                                                                background-image: url(/content/pest/images/sub/ico_modify.png);
-                                                            }
-                                                            &.btn-delete {
-                                                                background-image: url(/content/pest/images/sub/ico_delete.png);
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                &.show {
-                                                    > ul {
-                                                        display: block;
-                                                    }
-                                                }
-                                            }
                                         }
                                     }
                                     .review-body {

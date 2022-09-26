@@ -486,8 +486,19 @@
                 <!-- sub-content -->
                 <div class="sub-content">
                    
-                    <h2 class="sub-t">공동 메세지 팝업</h2>
-                    <a href="javascript:;" class="btn-default-popup">공동 팝업 메세지 버튼</a>
+                    <h2 class="sub-t">공통 메세지 팝업</h2>
+                    <a href="javascript:;" class="btn-default-popup">공통 팝업 메세지 버튼</a>
+                    
+                    <h2 class="sub-t">서브 link tab</h2>
+                    <!-- tab-link -->
+                    <ul class="tab-link">
+                        <li class="active">
+                            <a href="/content/mypage/down_coupon.html">다운가능한 쿠폰</a>
+                        </li>
+                        <li>
+                            <a href="/content/mypage/possible_coupon.html">사용가능한 쿠폰</a>
+                        </li>
+                    </ul>
                     
                     <h2 class="sub-t">section-top</h2>
                     <!-- section-top -->
@@ -553,6 +564,36 @@
                         </div>
                     </div>
                     
+                    
+                    <h2 class="sub-t">table-wrap default</h2>
+                    <!-- table-wrap default -->
+                    <div class="table-wrap default">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>포인트</th>
+                                    <th>적립내용</th>
+                                    <th>적립일</th>
+                                    <th>소멸예정일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>+1,000P</b></td>
+                                    <td>포토리뷰 등록</td>
+                                    <td>2022. 06. 25</td>
+                                    <td>2023. 01. 01</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                     <!-- controls -->
                     <h2 class="sub-t">btn-controls</h2>
                     <div class="btn-controls">
@@ -593,6 +634,12 @@
                         </div>
                     </div>
                     
+                    <h2 class="sub-t">textarea</h2>
+                    <!-- text-box -->
+                    <div class="form-group text-box">
+                        <textarea class="form-control" placeholder="상세 사유를 작성해주세요."></textarea>
+                        <span>0 / 최대 1,000자</span>
+                    </div>
                     
                     <h2 class="sub-t">sub-search-form</h2>
                     <!-- search-option -->
@@ -734,6 +781,64 @@
                         </li>
                     </ul>
                     
+                    <h2 class="sub-t">주소록</h2>
+                    <!-- addr-list -->
+                    <div class="addr-list">
+                        <ul>
+                            <li>
+                                <div class="radio-box">
+                                    <div>
+                                        <input type="radio" id="radio1" name="addr">
+                                        <label for="radio1"></label>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="info-top">
+                                        <b>홍길동 (우리집)</b><span class="default-addr">기본 배송지</span>
+                                        <div class="modify-drop">
+                                            <div class="drop-area">
+                                                <button type="button" class="btn-drop-more">
+                                                    <img src="/content/pest/images/sub/ico_modify_drop.png" alt="">
+                                                </button>
+                                                <ul>
+                                                    <li><a href="#" class="btn-modify">수정하기</a></li>
+                                                    <li><a href="#" class="btn-delete">삭제하기</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <address>16005<br> 경기도 용인시 기흥구 동백죽전대로 325번지 롯데캐슬 아파트 101동 1101호</address>
+                                    <p>010-1234-5678</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio-box">
+                                    <div>
+                                        <input type="radio" id="radio2" name="addr">
+                                        <label for="radio2"></label>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="info-top">
+                                        <b>이태백 (회사)</b>
+                                        <div class="modify-drop">
+                                            <div class="drop-area">
+                                                <button type="button" class="btn-drop-more">
+                                                    <img src="/content/pest/images/sub/ico_modify_drop.png" alt="">
+                                                </button>
+                                                <ul>
+                                                    <li><a href="#" class="btn-modify">수정하기</a></li>
+                                                    <li><a href="#" class="btn-delete">삭제하기</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <address>16005<br> 경기도 용인시 기흥구 동백죽전대로 325번지 롯데캐슬 아파트 101동 1101호</address>
+                                    <p>010-1234-5678</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     
                     <h2 class="sub-t">아코디언 리스트</h2>
                     <!-- default-board -->
@@ -771,7 +876,7 @@
                                             <dd>3일전에 주문했는데 확인 부탁드립니다.</dd>
                                         </dl>
                                         <div class="adm-reply">
-                                            <span class="label success">답변대기</span>
+                                            <span class="label success">답변완료</span>
                                         </div>
                                     </a>
                                     <div class="answer">
@@ -817,7 +922,7 @@
                                             <dd>비밀글입니다.</dd>
                                         </dl>
                                         <div class="adm-reply">
-                                            <span class="label success">답변대기</span>
+                                            <span class="label success">답변완료</span>
                                         </div>
                                     </a>
                                     <div class="answer">
@@ -1016,7 +1121,6 @@
                 <br>
                 <textarea class="form-control" placeholder="test test test"></textarea>
             </div>
-            
             
             <h2 class="sub-t">탭 메뉴</h2>
             <!-- tab-menu -->

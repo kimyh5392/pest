@@ -225,8 +225,9 @@ pre {
       width: 310px;
       padding-right: 100px; }
       .sub-wrap .container #snb > ul {
-        padding: 20px 0;
-        border: 1px solid #e4e4e4; }
+        padding-bottom: 20px;
+        border: 1px solid #e4e4e4;
+        border-top: 0; }
         .sub-wrap .container #snb > ul > li {
           padding: 0 30px; }
           .sub-wrap .container #snb > ul > li > dl {
@@ -842,6 +843,8 @@ select.form-control {
       font-size: 16px;
       color: #0e3db4;
       font-weight: 400; }
+      .default-board .accordion-list > ul > li > .btn-collapse > dl > dt.black {
+        color: #000; }
     .default-board .accordion-list > ul > li > .btn-collapse > dl > dd {
       font-size: 16px;
       color: #000;
@@ -875,6 +878,19 @@ select.form-control {
       .default-board .accordion-list > ul > li .answer .no-reply p {
         font-size: 14px;
         color: #000; }
+    .default-board .accordion-list > ul > li .answer .notice-content {
+      font-size: 18px;
+      line-height: 27px;
+      color: #000;
+      font-weight: 400;
+      text-align: center;
+      padding: 35px;
+      background-color: #f8f8f8;
+      border-top: 1px solid #e4e4e4; }
+      .default-board .accordion-list > ul > li .answer .notice-content img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; }
     .default-board .accordion-list > ul > li .answer .usr-content {
       position: relative;
       padding: 30px 40px;
@@ -898,34 +914,6 @@ select.form-control {
           position: absolute;
           top: 0;
           right: 0; }
-          .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area {
-            position: relative; }
-            .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area .btn-drop-more {
-              display: block;
-              width: 24px; }
-            .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area > ul {
-              display: none;
-              position: absolute;
-              top: 0;
-              right: 100%;
-              padding: 5px 10px;
-              border: 1px solid #919191;
-              background-color: #fff; }
-              .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area > ul > li > a {
-                display: block;
-                font-size: 14px;
-                color: #000;
-                font-weight: 400;
-                line-height: 23px;
-                padding-right: 35px;
-                background-repeat: no-repeat;
-                background-position: 100% 50%; }
-                .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area > ul > li > a.btn-modify {
-                  background-image: url(/content/pest/images/sub/ico_modify.png); }
-                .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area > ul > li > a.btn-delete {
-                  background-image: url(/content/pest/images/sub/ico_delete.png); }
-            .default-board .accordion-list > ul > li .answer .usr-content .usr-info .modify-drop .drop-area.show > ul {
-              display: block; }
       .default-board .accordion-list > ul > li .answer .usr-content > p {
         font-size: 14px;
         color: #000;
@@ -967,6 +955,36 @@ select.form-control {
     background-size: auto; }
   .default-board .accordion-list > ul > li.active > .btn-collapse:after {
     transform: translateY(-50%) rotate(180deg); }
+
+/* modify-drop */
+.modify-drop .drop-area {
+  position: relative; }
+  .modify-drop .drop-area .btn-drop-more {
+    display: block;
+    width: 24px; }
+  .modify-drop .drop-area > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    padding: 5px 10px;
+    border: 1px solid #919191;
+    background-color: #fff; }
+    .modify-drop .drop-area > ul > li > a {
+      display: block;
+      font-size: 14px;
+      color: #000;
+      font-weight: 400;
+      line-height: 23px;
+      padding-right: 35px;
+      background-repeat: no-repeat;
+      background-position: 100% 50%; }
+      .modify-drop .drop-area > ul > li > a.btn-modify {
+        background-image: url(/content/pest/images/sub/ico_modify.png); }
+      .modify-drop .drop-area > ul > li > a.btn-delete {
+        background-image: url(/content/pest/images/sub/ico_delete.png); }
+  .modify-drop .drop-area.show > ul {
+    display: block; }
 
 /* pagination */
 .pagination {
@@ -1049,6 +1067,11 @@ select.form-control {
         font-size: 26px;
         display: block;
         margin-bottom: 20px; }
+      .default-modal .modal-content > p small {
+        display: block;
+        font-size: 16px;
+        margin-top: 15px;
+        font-weight: 400; }
     .default-modal .modal-content .btn-area {
       font-size: 0;
       margin-top: 40px; }
@@ -1074,6 +1097,9 @@ select.form-control {
           background-color: #000; }
         .default-modal .modal-content .btn-area .btn.btn-gray {
           background-color: #eaeaea; }
+        .default-modal .modal-content .btn-area .btn.btn-blue {
+          color: #fff;
+          background-color: #0e3db4; }
   .default-modal.show {
     display: block; }
 
@@ -1201,6 +1227,11 @@ body.show-modal {
   border-bottom: 1px solid #e4e4e4; }
   .order-list > li:first-child {
     border-top: 1px solid #e4e4e4; }
+  .order-list > li.no-history p {
+    font-size: 16px;
+    color: #ababab;
+    line-height: 115px;
+    text-align: center; }
   .order-list > li .info {
     display: table;
     table-layout: fixed; }
@@ -1255,7 +1286,6 @@ body.show-modal {
         line-height: 34px;
         background-color: #000; }
 
-/* lately-product */
 /* recommend-product */
 .recommend-product {
   padding-top: 30px;
@@ -1397,5 +1427,182 @@ body.show-modal {
           background-color: #000; }
         .select-product .select-body > ul > li > div.btn-area > a.btn-blue {
           background-color: #0e3db4; }
+
+/*  */
+.tab-link {
+  display: table;
+  table-layout: fixed;
+  width: 850px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #000; }
+  .tab-link > li {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%; }
+    .tab-link > li > a {
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      color: #000;
+      font-weight: 400;
+      padding-bottom: 15px; }
+    .tab-link > li.active a {
+      color: #0e3db4; }
+      .tab-link > li.active a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        content: '';
+        background-color: #0e3db4; }
+
+/* table-wrap */
+.table-wrap.default .table {
+  text-align: center;
+  width: 100%;
+  table-layout: fixed; }
+  .table-wrap.default .table thead tr th {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    vertical-align: middle;
+    padding: 20px 0;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4; }
+  .table-wrap.default .table tbody tr td {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    vertical-align: middle;
+    padding: 40px 0;
+    border-bottom: 1px solid #e4e4e4; }
+    .table-wrap.default .table tbody tr td b {
+      font-size: 25px;
+      color: #0e3db4;
+      font-weight: bold; }
+
+/* text-box */
+.form-group.text-box {
+  padding: 20px;
+  border: 1px solid #d7d7d7; }
+  .form-group.text-box .form-control {
+    resize: none;
+    height: 100px;
+    padding: 0;
+    border: 0; }
+  .form-group.text-box span {
+    display: block;
+    font-size: 17px;
+    color: #010101;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 20px; }
+
+/* btn-banner-area */
+.btn-banner-area {
+  width: 100%;
+  text-align: center;
+  padding: 92px 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
+  .btn-banner-area .btn-default {
+    display: block;
+    width: 205px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #0e3db4; }
+
+/* addr-list */
+.addr-list > ul > li {
+  display: table;
+  width: 100%;
+  padding: 35px 0;
+  table-layout: fixed;
+  border-bottom: 1px solid #e4e4e4; }
+  .addr-list > ul > li:first-child {
+    border-top: 1px solid #e4e4e4; }
+  .addr-list > ul > li > div {
+    display: table-cell;
+    vertical-align: middle; }
+    .addr-list > ul > li > div.radio-box {
+      width: 50px; }
+    .addr-list > ul > li > div.info .info-top {
+      position: relative;
+      font-size: 0; }
+      .addr-list > ul > li > div.info .info-top b {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 500; }
+      .addr-list > ul > li > div.info .info-top .default-addr {
+        display: inline-block;
+        vertical-align: top;
+        width: 116px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 34px;
+        margin-left: 10px;
+        border: 1px solid #bababa; }
+      .addr-list > ul > li > div.info .info-top .modify-drop {
+        position: absolute;
+        top: 0;
+        right: 0; }
+    .addr-list > ul > li > div.info address {
+      display: block;
+      font-size: 18px;
+      color: #000;
+      line-height: 27px;
+      font-weight: 400;
+      letter-spacing: -.5px;
+      font-style: normal;
+      margin-top: 15px; }
+    .addr-list > ul > li > div.info > p {
+      font-size: 18px;
+      color: #000;
+      line-height: 27px;
+      margin-top: 30px; }
+  .addr-list > ul > li .addr-modify-form > ul > li > dl dt {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400; }
+  .addr-list > ul > li .addr-modify-form > ul > li > dl dd {
+    margin-top: 10px; }
+    .addr-list > ul > li .addr-modify-form > ul > li > dl dd.addr-search .form-group {
+      position: relative; }
+      .addr-list > ul > li .addr-modify-form > ul > li > dl dd.addr-search .form-group .btn-addr {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 80px;
+        text-align: center;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 36px;
+        transform: translateY(-50%);
+        background-color: #000; }
+      .addr-list > ul > li .addr-modify-form > ul > li > dl dd.addr-search .form-group .form-control {
+        padding-left: 90px; }
+    .addr-list > ul > li .addr-modify-form > ul > li > dl dd.contact {
+      overflow: hidden;
+      width: calc(100% + 10px);
+      margin: 10px -5px 0; }
+      .addr-list > ul > li .addr-modify-form > ul > li > dl dd.contact > .form-group {
+        float: left;
+        width: 33.3333333%;
+        padding: 0 5px; }
+  .addr-list > ul > li .addr-modify-form > ul > li ~ li {
+    margin-top: 15px; }
 
 /*# sourceMappingURL=sub.css.map */

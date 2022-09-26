@@ -47,6 +47,13 @@
         $('.default-modal').removeClass('show');
     });
     
+    // ticker 말풍선
+    $(document).on('mouseenter', '.btn-ticker', function(){
+        $(this).parent().addClass('show');
+    });
+    $(document).on('mouseleave', '.btn-ticker', function(){
+        $(this).parent().removeClass('show');
+    });
     
     // datepicker
     $.datepicker.setDefaults({

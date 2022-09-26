@@ -530,6 +530,7 @@ pre {
   .photo-review .section-content {
     overflow: hidden; }
     .photo-review .section-content .review-list {
+      overflow: hidden;
       width: calc(100% + 30px);
       margin: 0 -15px; }
       .photo-review .section-content .review-list > li {
@@ -589,6 +590,27 @@ pre {
           clear: left; }
         .photo-review .section-content .review-list > li:nth-of-type(4) ~ li {
           margin-top: 60px; }
+    .photo-review .section-content .btn-area {
+      margin-top: 70px; }
+      .photo-review .section-content .btn-area .btn-more {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        color: #000;
+        font-weight: 400;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #000; }
+        .photo-review .section-content .btn-area .btn-more .icon-down {
+          display: inline-block;
+          vertical-align: top;
+          width: 15px;
+          height: 50px;
+          margin-left: 10px;
+          background-image: url(/content/pest/images/main/ico_arrow_down.png);
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: 50% 50%; }
 
 /* item-area */
 .item-area {

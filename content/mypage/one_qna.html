@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/content/pest/css/default.css">
+    <link rel="stylesheet" href="/content/pest/css/sub.css">
+    <link rel="stylesheet" href="/content/pest/css/mypage.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>GssenShop</title>
+</head>
+<body>
+    
+    <!-- top-banner -->
+    <div class="top-banner">
+        <a href="#" style="background-image: url(/content/pest/images/img_top_banner.png); background-color: #a7a9a5;"></a>
+        <div class="container">
+            <button type="button" class="btn-banner-close">
+                <img src="/content/pest/images/ico_banner_close.png" alt="">
+            </button>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="header-area">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="/content/">
+                        <img src="/content/pest/images/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="header-util">
+                    <!-- 검색영역 열기 -->
+                    <div class="search-area">
+                        <div class="form-group">
+                            <input type="button" class="form-control" value="살충제">
+                            <a href="javascript:;" class="btn-search-open">
+                                <img src="/content/pest/images/ico_search.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="/content/mypage/basket.html">
+                                <img src="/content/pest/images/ico_basket.png" alt="">
+                                <span class="basket-num">3</span>
+                            </a>
+                        </li>
+                        <!-- 로그인 전 -->
+                        <!-- 
+                        <li>
+                            <a href="/content/member/login.html" class="login">로그인</a>
+                        </li>
+                        -->
+                        <!-- 로그인 후 -->
+                        <li>
+                            <a href="/content/mypage/order_his.html">
+                                <img src="/content/pest/images/ico_usr.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- gnb -->
+        <nav id="gnb">
+            <div class="container">
+                <a href="/content/" class="home">
+                    <img src="/content/pest/images/ico_home.png" alt="">
+                </a>
+                <ul class="gnb-menu">
+                    <li>
+                        <a href="/content/introduction/company.html">ABOUT US</a>
+                        <div class="nav-content grid-left">
+                            <div class="menu-wrap">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="/content/introduction/company.html">회사 소개</a></li>
+                                        <li><a href="/content/introduction/research.html">연구소 소개</a></li>
+                                        <li><a href="/content/introduction/patent.html">인증 및 특허</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/content/product/">친환경 혁신 제품</a>
+                        <div class="nav-content grid-left">
+                            <div class="menu-wrap">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="/content/product/product_list.html">EWG 그린등급 제품</a></li>
+                                        <li><a href="/content/product/product_list.html">Micro Capture 제품</a></li>
+                                        <li><a href="/content/product/product_list.html">Tablet 제품</a></li>
+                                        <li><a href="/content/product/lohas.html">로하스인증제품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/content/walk_pest/ant.html">보행해충</a>
+                        <div class="nav-content grid-left">
+                            <div class="menu-wrap">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="/content/walk_pest/ant.html">개미</a></li>
+                                        <li><a href="/content/walk_pest/cockroach.html">바퀴벌레</a></li>
+                                        <li><a href="/content/walk_pest/rat.html">쥐</a></li>
+                                        <li><a href="/content/walk_pest/mite.html">진드기</a></li>
+                                        <li><a href="/content/walk_pest/centipede.html">지네</a></li>
+                                        <li><a href="/content/walk_pest/millipede.html">노래기</a></li>
+                                        <li><a href="/content/walk_pest/flea.html">빈대/벼룩</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/content/proportional_pest/">비래해충</a>
+                        <div class="nav-content grid-left">
+                            <div class="menu-wrap">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="/content/proportional_pest/mosquito.html">모기</a></li>
+                                        <li><a href="/content/proportional_pest/fly.html">파리</a></li>
+                                        <li><a href="/content/proportional_pest/drosophila.html">날(초)파리</a></li>
+                                        <li><a href="/content/proportional_pest/moth.html">나방류</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/content/virus/germicide.html">바이러스</a>
+                        <div class="nav-content grid-left">
+                            <div class="menu-wrap">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="/content/virus/germicide.html">살균제</a></li>
+                                        <li><a href="/content/virus/disinfectant.html">손소독제</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/content/solution/">셀프방역솔루션</a>
+                        <div class="nav-content grid-left">
+                            <div class="menu-wrap">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="/content/solution/vermin.html">해충방역</a></li>
+                                        <li><a href="/content/solution/disinfection.html">살균방역</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/content/community/">커뮤니티</a>
+                        <div class="nav-content grid-right">
+                            <div class="menu-wrap">
+                                <div class="nav-banner">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="/content/pest/images/img_gnb_nav_banner.png" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="menu">
+                                    <ul class="col2">
+                                        <li><a href="/content/community/event.html">기획이벤트</a></li>
+                                        <li><a href="/content/community/">공지사항</a></li>
+                                        <!--<li><a href="/content/community/">해충별 방역퇴치법</a></li>-->
+                                        <li><a href="/content/community/experience.html">FAQ</a></li>
+                                        <li><a href="/content/community/photo_review.html">전문가에게 물어보기</a></li>
+                                        <li><a href="/content/community/notice.html">1:1문의</a></li>
+                                        <li><a href="/content/community/faq.html">신제품 고객 체험단</a></li>
+                                        <li><a href="/content/community/one_qna.html">멤버십</a></li>
+                                        <li><a href="/content/community/membership.html">포토 후기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn-search-open">
+                                <img src="/content/pest/images/ico_search.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/content/pest/images/ico_basket.png" alt="">
+                                <span class="basket-num">3</span>
+                            </a>
+                        </li>
+                        <!-- 로그인 전 -->
+                        <!-- 
+                        <li>
+                            <a href="/content/member/login.html" class="login">로그인</a>
+                        </li>
+                        -->
+                        <!-- 로그인 후 -->
+                        <li>
+                            <a href="/content/mypage/order_his.html">
+                                <img src="/content/pest/images/ico_usr.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- global-search-area -->
+    <div class="global-search-area">
+        <div class="container">
+            <div class="search-area">
+                <div class="form-group">
+                    <input type="text" class="form-control search-form" placeholder="Search">
+                    <div class="btn-area">
+                        <button type="submit" class="btn btn-search">
+                            <img src="/content/pest/images/ico_search_bic.png" alt="">
+                        </button>
+                        <a href="javascript:;" class="btn btn-search-close">
+                            <img src="/content/pest/images/ico_close_balck.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="popular-search">
+                    <dl>
+                        <dt>인기 검색어</dt>
+                        <dd>
+                            <ol>
+                                <li><a href="#">1. 모기약</a></li>
+                                <li><a href="#">2. 신상품</a></li>
+                                <li><a href="#">3. 무무스가드</a></li>
+                                <li><a href="#">4. 해충</a></li>
+                                <li><a href="#">5. 손소독제</a></li>
+                                <li><a href="#">6. 바퀴벌레</a></li>
+                                <li><a href="#">7. 쌀벌레</a></li>
+                                <li><a href="#">8. 파리</a></li>
+                                <li><a href="#">9. 치약</a></li>
+                                <li><a href="#">10. 좀벌레</a></li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="banner">
+                    <a href="#">
+                        <figure>
+                            <img src="/content/pest/images/img_search_banner.png" style="background-image: url(/content/pest/images/img_gnb_nav_banner.png);" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-backdrop -->
+    <div class="search-backdrop"></div>
+    <!-- modal md-alert -->
+    <!--
+        검색어를 입력해주세요. 팝업 활성화시 
+        클래스에 'show' 추가
+    -->
+    <div class="modal md-alert">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <button type="button" class="md-alert-close">
+                <img src="/content/pest/images/ico_close_small.png" alt="">
+            </button>
+            <p>검색어를 입력해주세요.</p>
+            <div class="btn-area">
+                <a href="javascript:;" class="btn-default md-alert-close">확인</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <main id="content">
+        
+        <!-- mypage-header -->
+        <div class="mypage-header">
+            <div class="container">
+                <div class="user">
+                    <div class="usr-rank">
+                        <!--<img src="/content/pest/images/mypage/img_buddy.png" alt="">
+                        <img src="/content/pest/images/mypage/img_family.png" alt="">
+                        <img src="/content/pest/images/mypage/img_vvip.png" alt="">-->
+                        <img src="/content/pest/images/mypage/img_vip.png" alt="">
+                    </div>
+                    <strong>홍길동님</strong>
+                    <p>
+                        안녕하세요.<br>
+                        지쎈샵에 오신걸 환영합니다.
+                    </p>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            <div class="coupon">
+                                <a href="/content/mypage/coupon.html">자세히 보기</a>
+                                <dl>
+                                    <dt>쿠폰</dt>
+                                    <dd>소멸 예정 쿠폰 : 1개</dd>
+                                </dl>
+                                <div class="total">
+                                    <p><strong>3</strong>개</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <a href="/content/mypage/point.html">자세히 보기</a>
+                                <dl>
+                                    <dt>포인트</dt>
+                                    <dd>소멸 예정 쿠폰 : 0원</dd>
+                                </dl>
+                                <div class="total">
+                                    <p><strong>3,000</strong>원</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- sub nav 있을때 -->
+        <div class="sub-wrap">
+            <div class="container">
+                <!-- snb -->
+                <nav id="snb">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>쇼핑내역</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="/content/mypage/order_his.html">주문내역조회 &gt;</a></li>
+                                        <li><a href="/content/mypage/delivery.html">배송 조회 &gt;</a></li>
+                                        <li><a href="/content/mypage/revocation.html">취소/교환/반품 &gt;</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>할인혜택</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="/content/mypage/coupon.html">쿠폰 &gt;</a></li>
+                                        <li><a href="/content/mypage/point.html">포인트 &gt;</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>관심목록</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="/content/mypage/wish_list.html">위시리스트 &gt;</a></li>
+                                        <li><a href="/content/mypage/lately_product.html">최근 본 상품 &gt;</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>쇼핑활동</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="/content/mypage/review.html">상품리뷰 &gt;</a></li>
+                                        <li><a href="/content/mypage/qna.html">상품Q&amp;A &gt;</a></li>
+                                        <li><a href="/content/mypage/one_qna.html">1대1 문의 &gt;</a></li>
+                                        <li><a href="/content/mypage/experience.html">신제품 고객체험단 &gt;</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>회원정보</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="/content/mypage/modify.html">회원정보 수정 &gt;</a></li>
+                                        <li><a href="/content/mypage/delivery_addr.html">배송 주소록 &gt;</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>고객센터</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="/content/mypage/notice.html">공지사항 &gt;</a></li>
+                                        <li><a href="/content/mypage/question.html">전문가에게 물어보기 &gt;</a></li>
+                                        <li><a href="/content/mypage/benefit.html">멤버십 혜택 &gt;</a></li>
+                                        <li><a href="/content/mypage/faq.html">FAQ &gt;</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- sub-content -->
+                <div class="sub-content">
+                    <!-- qna -->
+                    <section class="one-qna">
+                        <div class="section-content">
+                            <article>
+                                <div class="article-head">
+                                    <h4>1대1 문의</h4>
+                                </div>
+                                <div class="article-content">
+                                    <div class="sub-search-form">
+                                        <div class="form-group">
+                                            <ul>
+                                                <li class="active"><a href="#">3개월</a></li>
+                                                <li><a href="#">6개월</a></li>
+                                                <li><a href="#">1년</a></li>
+                                            </ul>
+                                            <div class="date-select">
+                                                <input type="text" class="form-control date-pick" value="2022.05.03" id="dp1663802009046">
+                                                <span>-</span>
+                                                <input type="text" class="form-control date-pick" value="2022.06.03" id="dp1663802009047">
+                                                <button type="button" class="btn-search">조회</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>전체</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <p class="attention">기간 선택 후 조회 버튼을 클릭하시면 해당기간의 본인이 작성한 1:1 문의를 확인할 수 있습니다.</p>
+                                    <!-- btn-banner -->
+                                    <div class="btn-banner-area" style="background-image: url(/content/pest/images/mypage/bg_one_qna_banner.png);">
+                                        <a href="#qna-modify-pop" class="btn-default btn-modal">1:1 문의하기</a>
+                                    </div>
+                                    <div class="default-board">
+                                        <!-- accordion-list -->
+                                        <div class="accordion-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" class="btn-collapse">
+                                                        <dl>
+                                                            <dt>재입고문의</dt>
+                                                            <dd>언제 다시 입고되는지?</dd>
+                                                        </dl>
+                                                        <div class="adm-reply">
+                                                            <span class="label wait">답변대기</span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="answer">
+                                                        <div class="no-reply">
+                                                            <p>등록된 답변이 없습니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" class="btn-collapse">
+                                                        <dl>
+                                                            <dt>배송지연</dt>
+                                                            <dd>3일전에 주문했는데 확인 부탁드립니다.</dd>
+                                                        </dl>
+                                                        <div class="adm-reply">
+                                                            <span class="label success">답변완료</span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="answer">
+                                                        <div class="usr-content">
+                                                            <div class="usr-info">
+                                                                <ul>
+                                                                    <li>이**님</li>
+                                                                    <li>2022. 06. 20</li>
+                                                                </ul>
+                                                                <div class="modify-drop">
+                                                                    <div class="drop-area">
+                                                                        <button type="button" class="btn-drop-more">
+                                                                            <img src="/content/pest/images/sub/ico_modify_drop.png" alt="">
+                                                                        </button>
+                                                                        <ul>
+                                                                            <li><a href="#qna-modify-pop" class="btn-modify btn-modal">수정하기</a></li>
+                                                                            <li><a href="#" class="btn-delete">삭제하기</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>
+                                                                오늘 배송받아서 확인해보니 케이스가 좀 파손되었네요<br>
+                                                                교환신청합니다.
+                                                            </p>
+                                                        </div>
+                                                        <div class="adm-content">
+                                                            <div class="adm-info">
+                                                                <b>관리자 답변</b>
+                                                                <span>2022. 06. 20</span>
+                                                            </div>
+                                                            <p>
+                                                                네 확인하였습니다.<br>
+                                                                교환처리 진행토록 하겠습니다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="secret">
+                                                    <a href="javascript:;" class="btn-collapse">
+                                                        <dl>
+                                                            <dt>배송지연</dt>
+                                                            <dd>비밀글입니다.</dd>
+                                                        </dl>
+                                                        <div class="adm-reply">
+                                                            <span class="label success">답변완료</span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="answer">
+                                                        <div class="usr-content">
+                                                            <div class="usr-info">
+                                                                <ul>
+                                                                    <li>이**님</li>
+                                                                    <li>2022. 06. 20</li>
+                                                                </ul>
+                                                                <div class="modify-drop">
+                                                                    <div class="drop-area">
+                                                                        <button type="button" class="btn-drop-more">
+                                                                            <img src="/content/pest/images/sub/ico_modify_drop.png" alt="">
+                                                                        </button>
+                                                                        <ul>
+                                                                            <li><a href="#qna-modify-pop" class="btn-modify btn-modal">수정하기</a></li>
+                                                                            <li><a href="#" class="btn-delete">삭제하기</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>
+                                                                오늘 배송받아서 확인해보니 케이스가 좀 파손되었네요<br>
+                                                                교환신청합니다.
+                                                            </p>
+                                                        </div>
+                                                        <div class="adm-content">
+                                                            <div class="adm-info">
+                                                                <b>관리자 답변</b>
+                                                                <span>2022. 06. 20</span>
+                                                            </div>
+                                                            <p>
+                                                                네 확인하였습니다.<br>
+                                                                교환처리 진행토록 하겠습니다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- modal modal-review -->
+    <div class="modal modal-qna-modify" id="qna-modify-pop">
+        <button type="button" class="btn-modal-close">
+            <img src="/content/pest/images/sub/btn_modal_close.png" alt="">
+        </button>
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <article>
+                <div class="article-header">
+                    <button type="button" class="btn-modal-close">
+                        <img src="/content/pest/images/ico_close_small.png" alt="">
+                    </button>
+                    <h3>1대1 문의 수정하기</h3>
+                </div>
+                <div class="article-content">
+                    <div class="modify-form">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>문의유형</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>배송지연</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>문의제목</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="3일전에 주문했는데 확인 부탁드립니다.">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>문의내용</dt>
+                                    <dd>
+                                        <div class="form-group text-box">
+                                            <textarea class="form-control">오늘 배송받아서 확인해보니 케이스가 좀 파손되었네요 교환신청합니다.</textarea>
+                                            <span>0 / 최대 1,000자</span>
+                                        </div>
+                                        <div class="check-box">
+                                            <input type="checkbox" id="check1">
+                                            <label for="check1"></label>
+                                            <label for="check1" class="label">비밀글로 등록하기</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <p class="attention">
+                            문의하신 내용에 대한 답변은 해당 상품의 상세페이지 <br>또는 '마이페이지 > 1대1 문의'에서 확인하실 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="modal-btn-area">
+                        <a href="#" class="btn btn-md btn-gray">취소</a>
+                        <a href="#" class="btn btn-md btn-blue ">수정</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <!-- modal modal-delete -->
+    <div class="modal alert-modal" id="delete-pop">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <article>
+                <div class="article-header">
+                    <button type="button" class="btn-modal-close">
+                        <img src="/content/pest/images/ico_close_small.png" alt="">
+                    </button>
+                    <p>상품리뷰를 삭제<br> 하시겠습니까?</p>
+                    <!--<p>상품리뷰가 수정되었습니다.</p>-->
+                </div>
+                <div class="article-content">
+                    <div class="btn-area">
+                        <p>
+                            <a href="#" class="btn btn-md btn-black btn-modal-close">취소</a>
+                            <a href="#" class="btn btn-md btn-blue btn-modal-close">확인</a>
+                        </p>
+                        <!--
+                        <p>
+                            <a href="javascript:;" class="btn btn-lg btn-blue btn-modal-close">확인</a>
+                        </p>
+                        -->
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <!-- quick-banner -->
+    <nav class="quick-banner">
+        <ul>
+            <li>
+                <p>장바구니</p>
+                <a href="#">
+                    <figure>
+                        <img src="/content/pest/images/img_quick_basket.png" alt="">
+                        <figcaption><b>2</b></figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <p>최근 본 상품</p>
+                <a href="#">
+                    <figure>
+                        <img src="/content/pest/images/img_quick_frame.png" style="background-image: url(/content/pest/images/bg_quick01.png);" alt="">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="/content/pest/images/img_quick_frame.png" style="background-image: url(/content/pest/images/bg_quick02.png);" alt="">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="/content/pest/images/img_quick_frame.png" style="background-image: url(/content/pest/images/bg_quick01.png);" alt="">
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- quick-top -->
+    <div class="quick-top">
+        <a href="javascript:;" class="btn-quick-top">
+            <img src="/content/pest/images/ico_quick_top.png" alt="">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <h2 class="logo">
+                <img src="/content/pest/images/logo.png" alt="">
+            </h2>
+            <div class="foot-area">
+                <ul class="foot-link">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+                <div class="company-info">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>법인명(상호)</dt>
+                                <dd>주식회사 지쎈하이진</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>대표이사(성명)</dt>
+                                <dd>안호영</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>사업자 등록번호 안내</dt>
+                                <dd>495-88-01753</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>통신판매업 신고</dt>
+                                <dd>2021-서울용상-1857호</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>이메일</dt>
+                                <dd><a href="mailto:info@gssenhg.com">info@gssenhg.com</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>전화번호</dt>
+                                <dd>02-6263-0312</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>서울 용산구 서빙고로 센트럴파크타워 1308호</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright">Copyright © 주식회사 지쎈하이진. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src='/content/pest/js/common.js'></script>
+    <script src='/content/pest/js/sub.js'></script>
+</body>
+</html>

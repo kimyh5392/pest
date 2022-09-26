@@ -644,34 +644,6 @@ pre {
                   background-color: #0e3db4; }
                   .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .btn-like.on .ico-like {
                     background-image: url(/content/pest/images/product/ico_like_on.png); }
-            .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area {
-              position: relative; }
-              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area .btn-drop-more {
-                display: block;
-                width: 20px; }
-              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area > ul {
-                display: none;
-                position: absolute;
-                top: 0;
-                right: 100%;
-                padding: 5px 10px;
-                border: 1px solid #919191;
-                background-color: #fff; }
-                .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area > ul > li > a {
-                  display: block;
-                  font-size: 14px;
-                  color: #000;
-                  font-weight: 400;
-                  line-height: 23px;
-                  padding-right: 35px;
-                  background-repeat: no-repeat;
-                  background-position: 100% 50%; }
-                  .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area > ul > li > a.btn-modify {
-                    background-image: url(/content/pest/images/sub/ico_modify.png); }
-                  .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area > ul > li > a.btn-delete {
-                    background-image: url(/content/pest/images/sub/ico_delete.png); }
-              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.modify-drop .drop-area.show > ul {
-                display: block; }
       .product-review .article-content > ul > li .review-wrap .review-content {
         display: table;
         width: 100%;
@@ -686,10 +658,17 @@ pre {
             font-weight: 400;
             line-height: 24px; }
           .product-review .article-content > ul > li .review-wrap .review-content > div.review-txt > dl > dd {
+            display: block;
             font-size: 14px;
             color: #000;
             font-weight: 400;
-            line-height: 24px; }
+            line-height: 24px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; }
           .product-review .article-content > ul > li .review-wrap .review-content > div.review-img {
             width: 270px; }
             .product-review .article-content > ul > li .review-wrap .review-content > div.review-img > figure {
@@ -1228,34 +1207,6 @@ body.banner-none .details-tab {
           position: absolute;
           top: 20px;
           right: 0; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area {
-            position: relative; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area .btn-drop-more {
-              display: block;
-              width: 24px; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area > ul {
-              display: none;
-              position: absolute;
-              top: 0;
-              right: 100%;
-              padding: 5px 10px;
-              border: 1px solid #919191;
-              background-color: #fff; }
-              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area > ul > li > a {
-                display: block;
-                font-size: 14px;
-                color: #000;
-                font-weight: 400;
-                line-height: 23px;
-                padding-right: 35px;
-                background-repeat: no-repeat;
-                background-position: 100% 50%; }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area > ul > li > a.btn-modify {
-                  background-image: url(/content/pest/images/sub/ico_modify.png); }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area > ul > li > a.btn-delete {
-                  background-image: url(/content/pest/images/sub/ico_delete.png); }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop .drop-area.show > ul {
-              display: block; }
       .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body {
         padding-top: 20px; }
         .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > p {
