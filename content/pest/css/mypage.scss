@@ -346,36 +346,6 @@ section {
     }
 }
 
-/* modal-btn-area */
-.modal-btn-area {
-    text-align: center;
-    font-size: 0;
-    .btn {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 20px;
-        color: #fff;
-        line-height: 62px;
-        font-weight: 400;
-        &.btn-md {
-            width: 50%;
-        }
-        &.btn-black {
-            background-color: #000;
-        }
-        &.btn-blue {
-            background-color: $kcolor;
-        }
-        &.btn-gray {
-            color: #000;
-            background-color: #f5f5f5;
-        }
-        &.btn-lg {
-            width: 100%;
-        }
-    }
-}
-
 /* modal */
 .modal {
     //display: block;
@@ -1355,6 +1325,113 @@ section {
             }
         }
     }
+    &.modal-question {
+        .modal-content {
+            article {
+                .article-content {
+                    > ul {
+                        padding: 0 50px;
+                        > li {
+                            > dl {
+                                > dt {
+                                    font-size: 18px;
+                                    color: #000;
+                                    font-weight: 400;
+                                }
+                                > dd {
+                                    margin-top: 15px;
+                                    .form-group {
+                                        .form-control {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                            & ~ li {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                    .file-area {
+                        margin-top: 20px;
+                        padding: 0 50px;
+                        .file-attach {
+                            margin-top: 20px;
+                            input[type="file"] {
+                                display: none;
+                            }
+                            .btn-file {
+                                display: block;
+                                width: 100%;
+                                font-size: 20px;
+                                color: #fff;
+                                cursor: pointer;
+                                text-align: center;
+                                font-weight: 400;
+                                line-height: 70px;
+                                background-color: $kcolor;
+                            }
+                            .attention {
+                                color: #ababab;
+                                margin-top: 15px;
+                            }
+                        }
+                        .file-list {
+                            margin-top: 30px;
+                            > ul {
+                                font-size: 0;
+                                > li {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width: 85px;
+                                    margin-right: 10px;
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+                                    > .file-wrap {
+                                        position: relative;
+                                        figure {
+                                            img {
+                                                display: block;
+                                                width: 100%;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                background-position: 50% 50%;
+                                            }
+                                        }
+                                    }
+                                    .btn-del {
+                                        position: absolute;
+                                        top: 8px;
+                                        right: 8px;
+                                        display: block;
+                                        img {
+                                            display: block;
+                                        }
+                                    }
+                                    .btn-file-modify {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        text-align: center;
+                                        color: #fff;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 22px;
+                                        background-color: rgba(#000, .2);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .modal-btn-area {
+                        margin-top: 45px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* rotate-pop */
@@ -2251,13 +2328,198 @@ section {
                         margin-top: 10px;
                     }
                 }
+                .table-wrap {
+                    &.benefit-table {
+                        .table {
+                            width: 100%;
+                            table-layout: fixed;
+                            tbody {
+                                tr {
+                                    th {
+                                        font-size: 17px;
+                                        color: #363636;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                        border-bottom: 1px solid #eaeaea;
+                                        background-color: #f5f4ef;
+                                    }
+                                    td {
+                                        font-size: 16px;
+                                        color: #363636;
+                                        font-weight: 500;
+                                        line-height: 26px;
+                                        padding: 30px 0;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                        border-left: 1px solid #eaeaea;
+                                        border-bottom: 1px solid #eaeaea;
+                                        img {
+                                            display: block;
+                                            margin: 0 auto;
+                                        }
+                                        small {
+                                            display: block;
+                                            line-height: 18px;
+                                            color: rgba(#000, .5);
+                                        }
+                                        .btn-down {
+                                            display: block;
+                                            width: 120px;
+                                            font-size: 14px;
+                                            color: #fff;
+                                            line-height: 33px;
+                                            text-align: center;
+                                            font-weight: 400;
+                                            margin: 15px auto 0;
+                                            background-color: $kcolor;
+                                            img {
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                        &.v-top {
+                                            vertical-align: top;
+                                        }
+                                        > ul {
+                                            text-align: left;
+                                            padding-left: 40px;
+                                            li {
+                                                position: relative;
+                                                font-size: 12px;
+                                                color: #363636;
+                                                font-weight: 400;
+                                                line-height: 20px;
+                                                padding-left: 10px;
+                                                &:before {
+                                                    position: absolute;
+                                                    top: 9px;
+                                                    left: 0;
+                                                    width: 2px;
+                                                    height: 2px;
+                                                    content: '';
+                                                    background-color: #363636;
+                                                }
+                                                & ~ li {
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:first-child {
+                                        th {
+                                            border-top: 1px solid #eaeaea;
+                                        }
+                                        td {
+                                            border-top: 1px solid #eaeaea;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+/* faq */
+.faq {
+    .section-content {
+        article {
+            .article-head {
+                padding-bottom: 40px;
+            }
+            .article-content {
+                .select-tab {
+                    > ul {
+                        overflow: hidden;
+                        > li {
+                            float: left;
+                            width: 135px;
+                            margin-right: 10px;
+                            > a {
+                                display: block;
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: 500;
+                                line-height: 37px;
+                                text-align: center;
+                                border: 1px solid #d7d7d7;
+                            }
+                            &.active {
+                                > a {
+                                    color: #fff;
+                                    border-color: $kcolor;
+                                    background-color: $kcolor;
+                                }
+                            }
+                            &:nth-of-type(5n + 1) {
+                                clear: left;
+                            }
+                            &:nth-of-type(5n + 5) {
+                                margin-right: 0;
+                            }
+                            &:nth-of-type(5) ~ li {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+                .default-board {
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+}
 
-
+/* question */
+.question {
+    .section-content {
+        article {
+            .article-head {
+                padding-bottom: 40px;
+                p {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-top: 30px;
+                }
+            }
+            .article-content {
+                .search-form {
+                    margin-top: 60px;
+                }
+                .default-board {
+                    margin-top: 60px;
+                    .accordion-list {
+                        > ul {
+                            > li {
+                                > .answer {
+                                    .usr-content {
+                                        video {
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 450px;
+                                        }
+                                        img {
+                                            display: block;
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

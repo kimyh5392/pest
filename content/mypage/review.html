@@ -43,7 +43,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="/content/mypage/basket.html">
+                            <a href="/content/purchase/basket.html">
                                 <img src="/content/pest/images/ico_basket.png" alt="">
                                 <span class="basket-num">3</span>
                             </a>
@@ -1053,6 +1053,11 @@
                 $('.rotate-pop').removeClass('show');
                 rotateDegrees = 0;
                 $('.rotate-board figure > img').css("transform","rotate(" + rotateDegrees + "deg)");
+            });
+            
+            // btn-like
+            $(document).on('click', '.btn-like', function(){
+                $(this).toggleClass('on');
             });
         })(jQuery);
         // review-swiper

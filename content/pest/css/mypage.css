@@ -333,29 +333,6 @@ section .section-content article ~ article {
   .order-details .section-content article.delivery-info .article-content > ul > li ~ li {
     margin-top: 15px; }
 
-/* modal-btn-area */
-.modal-btn-area {
-  text-align: center;
-  font-size: 0; }
-  .modal-btn-area .btn {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 20px;
-    color: #fff;
-    line-height: 62px;
-    font-weight: 400; }
-    .modal-btn-area .btn.btn-md {
-      width: 50%; }
-    .modal-btn-area .btn.btn-black {
-      background-color: #000; }
-    .modal-btn-area .btn.btn-blue {
-      background-color: #0e3db4; }
-    .modal-btn-area .btn.btn-gray {
-      color: #000;
-      background-color: #f5f5f5; }
-    .modal-btn-area .btn.btn-lg {
-      width: 100%; }
-
 /* modal */
 .modal .modal-content {
   width: 725px;
@@ -1034,6 +1011,77 @@ section .section-content article ~ article {
     margin-top: 20px; }
 .modal.modal-addr-write .modal-content article .article-content .modal-btn-area {
   margin-top: 60px; }
+.modal.modal-question .modal-content article .article-content > ul {
+  padding: 0 50px; }
+  .modal.modal-question .modal-content article .article-content > ul > li > dl > dt {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400; }
+  .modal.modal-question .modal-content article .article-content > ul > li > dl > dd {
+    margin-top: 15px; }
+    .modal.modal-question .modal-content article .article-content > ul > li > dl > dd .form-group .form-control {
+      font-size: 16px; }
+  .modal.modal-question .modal-content article .article-content > ul > li ~ li {
+    margin-top: 20px; }
+.modal.modal-question .modal-content article .article-content .file-area {
+  margin-top: 20px;
+  padding: 0 50px; }
+  .modal.modal-question .modal-content article .article-content .file-area .file-attach {
+    margin-top: 20px; }
+    .modal.modal-question .modal-content article .article-content .file-area .file-attach input[type="file"] {
+      display: none; }
+    .modal.modal-question .modal-content article .article-content .file-area .file-attach .btn-file {
+      display: block;
+      width: 100%;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+      font-weight: 400;
+      line-height: 70px;
+      background-color: #0e3db4; }
+    .modal.modal-question .modal-content article .article-content .file-area .file-attach .attention {
+      color: #ababab;
+      margin-top: 15px; }
+  .modal.modal-question .modal-content article .article-content .file-area .file-list {
+    margin-top: 30px; }
+    .modal.modal-question .modal-content article .article-content .file-area .file-list > ul {
+      font-size: 0; }
+      .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li {
+        display: inline-block;
+        vertical-align: top;
+        width: 85px;
+        margin-right: 10px; }
+        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li:last-child {
+          margin-right: 0; }
+        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li > .file-wrap {
+          position: relative; }
+          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li > .file-wrap figure img {
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%; }
+        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-del {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          display: block; }
+          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-del img {
+            display: block; }
+        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-file-modify {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 22px;
+          background-color: rgba(0, 0, 0, 0.2); }
+.modal.modal-question .modal-content article .article-content .modal-btn-area {
+  margin-top: 45px; }
 
 /* rotate-pop */
 .rotate-pop {
@@ -1667,5 +1715,124 @@ section .section-content article ~ article {
     color: #000;
     font-weight: 400;
     margin-top: 10px; }
+.benefit .section-content article .article-content .table-wrap.benefit-table .table {
+  width: 100%;
+  table-layout: fixed; }
+  .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr th {
+    font-size: 17px;
+    color: #363636;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #f5f4ef; }
+  .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td {
+    font-size: 16px;
+    color: #363636;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 30px 0;
+    text-align: center;
+    vertical-align: middle;
+    border-left: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea; }
+    .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td img {
+      display: block;
+      margin: 0 auto; }
+    .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td small {
+      display: block;
+      line-height: 18px;
+      color: rgba(0, 0, 0, 0.5); }
+    .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td .btn-down {
+      display: block;
+      width: 120px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 33px;
+      text-align: center;
+      font-weight: 400;
+      margin: 15px auto 0;
+      background-color: #0e3db4; }
+      .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td .btn-down img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px; }
+    .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td.v-top {
+      vertical-align: top; }
+    .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td > ul {
+      text-align: left;
+      padding-left: 40px; }
+      .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td > ul li {
+        position: relative;
+        font-size: 12px;
+        color: #363636;
+        font-weight: 400;
+        line-height: 20px;
+        padding-left: 10px; }
+        .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td > ul li:before {
+          position: absolute;
+          top: 9px;
+          left: 0;
+          width: 2px;
+          height: 2px;
+          content: '';
+          background-color: #363636; }
+        .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr td > ul li ~ li {
+          margin-top: 10px; }
+  .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr:first-child th {
+    border-top: 1px solid #eaeaea; }
+  .benefit .section-content article .article-content .table-wrap.benefit-table .table tbody tr:first-child td {
+    border-top: 1px solid #eaeaea; }
+
+/* faq */
+.faq .section-content article .article-head {
+  padding-bottom: 40px; }
+.faq .section-content article .article-content .select-tab > ul {
+  overflow: hidden; }
+  .faq .section-content article .article-content .select-tab > ul > li {
+    float: left;
+    width: 135px;
+    margin-right: 10px; }
+    .faq .section-content article .article-content .select-tab > ul > li > a {
+      display: block;
+      font-size: 15px;
+      color: #000;
+      font-weight: 500;
+      line-height: 37px;
+      text-align: center;
+      border: 1px solid #d7d7d7; }
+    .faq .section-content article .article-content .select-tab > ul > li.active > a {
+      color: #fff;
+      border-color: #0e3db4;
+      background-color: #0e3db4; }
+    .faq .section-content article .article-content .select-tab > ul > li:nth-of-type(5n + 1) {
+      clear: left; }
+    .faq .section-content article .article-content .select-tab > ul > li:nth-of-type(5n + 5) {
+      margin-right: 0; }
+    .faq .section-content article .article-content .select-tab > ul > li:nth-of-type(5) ~ li {
+      margin-top: 10px; }
+.faq .section-content article .article-content .default-board {
+  margin-top: 55px; }
+
+/* question */
+.question .section-content article .article-head {
+  padding-bottom: 40px; }
+  .question .section-content article .article-head p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 30px; }
+.question .section-content article .article-content .search-form {
+  margin-top: 60px; }
+.question .section-content article .article-content .default-board {
+  margin-top: 60px; }
+  .question .section-content article .article-content .default-board .accordion-list > ul > li > .answer .usr-content video {
+    display: block;
+    width: 100%;
+    max-width: 450px; }
+  .question .section-content article .article-content .default-board .accordion-list > ul > li > .answer .usr-content img {
+    display: block;
+    max-width: 100%; }
 
 /*# sourceMappingURL=mypage.css.map */

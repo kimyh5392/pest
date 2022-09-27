@@ -1079,6 +1079,78 @@ select {
             }
         }
     }
+    .faq-list {
+        > ul {
+            border-bottom: 1px solid #e4e4e4;
+            > li {
+                > a {
+                    position: relative;
+                    display: block;
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 400;
+                    line-height: 24px;
+                    padding: 20px 40px 20px 55px;
+                    border-top: 1px solid #e4e4e4;
+                    &:before {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 55px;
+                        font-size: 18px;
+                        color: #0e3db4;
+                        font-weight: 400;
+                        text-align: center;
+                        vertical-align: top;
+                        display: block;
+                        content: 'Q.';
+                        margin-top: -1px;
+                        transform: translateY(-50%);
+                    }
+                    &:after {
+                        position: absolute;
+                        top: 50%;
+                        right: 20px;
+                        width: 20px;
+                        height: 100%;
+                        content: '';
+                        @include transition();
+                        transform: translateY(-50%);
+                        background-image: url(/content/pest/images/mypage/ico_black_arrow.png);
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-size: auto;
+                    }
+                }
+                > .answer {
+                    display: none;
+                    > div {
+                        position: relative;
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        line-height: 36px;
+                        padding: 20px 20px 20px 55px;
+                        border-top: 1px solid #e4e4e4;
+                        background-color: #f8f8f8;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 55px;
+                            padding-top: 20px;
+                            font-size: 18px;
+                            color: #ff4800;
+                            line-height: 36px;
+                            font-weight: 400;
+                            text-align: center;
+                            content: 'A.';
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* modify-drop */
@@ -1182,6 +1254,14 @@ select {
         }
     }
     .article-content {
+        .no-search {
+            display: block;
+            font-size: 30px;
+            color: $kcolor;
+            font-weight: 500;
+            text-align: center;
+            padding: 150px 0;
+        }
         .goods-list {
             margin-top: 30px;
         }
@@ -1942,7 +2022,35 @@ body {
     }
 }
 
-
+/* modal-btn-area */
+.modal-btn-area {
+    text-align: center;
+    font-size: 0;
+    .btn {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 20px;
+        color: #fff;
+        line-height: 62px;
+        font-weight: 400;
+        &.btn-md {
+            width: 50%;
+        }
+        &.btn-black {
+            background-color: #000;
+        }
+        &.btn-blue {
+            background-color: $kcolor;
+        }
+        &.btn-gray {
+            color: #000;
+            background-color: #f5f5f5;
+        }
+        &.btn-lg {
+            width: 100%;
+        }
+    }
+}
 
 
 
