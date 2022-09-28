@@ -703,6 +703,29 @@
         </div>
     </div>
     
+    <!-- rotate-pop -->
+    <div class="rotate-pop">
+        <button type="button" class="btn-rotataepop-close">
+            <img src="/content/pest/images/sub/btn_modal_close.png" alt="">
+        </button>
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <div class="rotate-board">
+                <figure>
+                    <img src="/content/pest/images/product/img_rotate_frame.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png);" alt="">
+                </figure>
+                <button type="button" class="btn-rotate">
+                    <img src="/content/pest/images/product/img_rotate.png" alt="">
+                    사진 회전
+                </button>
+            </div>
+            <div class="btn-area">
+                <a href="javascript:;" class="btn btn-cancel btn-rotataepop-close">취소</a>
+                <a href="#" class="btn btn-submit">등록</a>
+            </div>
+        </div>
+    </div>
+    
     <!-- quick-banner -->
     <nav class="quick-banner">
         <ul>
@@ -815,5 +838,25 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest/js/common.js'></script>
     <script src='/content/pest/js/sub.js'></script>
+    <script>
+        (function($){
+            // img rotate
+            var rotateDegrees = 0;
+            $(document).on('click', '.btn-rotate', function(){
+                rotateDegrees += 90;
+                $('.rotate-board figure > img').css("transform","rotate(" + rotateDegrees + "deg)");
+            });
+            
+            // rotate popup
+            $(document).on('click', '.btn-file-modify', function(){
+                $('.rotate-pop').addClass('show');
+            });
+            $(document).on('click', '.btn-rotataepop-close', function(){
+                $('.rotate-pop').removeClass('show');
+                rotateDegrees = 0;
+                $('.rotate-board figure > img').css("transform","rotate(" + rotateDegrees + "deg)");
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

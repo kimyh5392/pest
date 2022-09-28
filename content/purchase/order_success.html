@@ -361,152 +361,50 @@
         <!-- purchase-wrap -->
         <div class="purchase-wrap">
             <div class="container">
-                <section class="basket">
+                <section class="order-success">
                     <div class="section-header">
-                        <h3>장바구니</h3>
+                        <h3>주문 완료</h3>
                     </div>
                     <div class="section-content">
+                        <div class="success-summary">
+                            <strong>주문이 정상적으로 완료되었습니다.</strong>
+                            <small>GSSENSHOP을 이용해 주셔서 감사합니다.</small>
+                            <figure>
+                                <img src="/content/pest/images/purchase/img_order_success.png" alt="">
+                            </figure>
+                            <p>고객님의 주문이 완료되었습니다.<br>주문하신 내역은 [마이페이지]에서 확인 가능합니다.</p>
+                            <dl>
+                                <dt>주문 번호</dt>
+                                <dd>K100934</dd>
+                            </dl>
+                        </div>
                         <article>
                             <div class="article-header">
-                                <div class="check-box">
-                                    <input type="checkbox" id="checkAll">
-                                    <label for="checkAll"></label>
-                                    <label for="checkAll" class="label">전체선택</label>
-                                </div>
-                                <p>선택한 상품 <a href="#" class="btn-del">삭제</a></p>
+                                <h4>배송정보</h4>
                             </div>
                             <div class="article-content">
-                                <div class="table-wrap basket-table">
-                                    <table class="table">
-                                        <colgroup>
-                                            <col style="width: 80px;">
-                                            <col style="width: 110px;">
-                                            <col style="width: px;">
-                                            <col style="width: 160px;">
-                                            <col style="width: 190px;">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>이미지</th>
-                                                <th>상품정보</th>
-                                                <th>수량</th>
-                                                <th>합계</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="check-box">
-                                                        <input type="checkbox" id="check1-1">
-                                                        <label for="check1-1"></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <figure>
-                                                        <img src="/content/pest/images/purchase/img_basket_list_frame.png" style="background-image: url(/content/pest/images/purchase/bg_basket_list.png)" alt="">
-                                                    </figure>
-                                                </td>
-                                                <td>
-                                                    <div class="pro-info">
-                                                        <p>무무스가드플러스 80ml</p>
-                                                        <a href="#" class="btn-option">옵션변경</a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="btn-controls">
-                                                        <div class="form-group">
-                                                            <button type="button" class="btn-minus">-</button>
-                                                            <input type="text" class="form-control" value="1">
-                                                            <button type="button" class="btn-plus">+</button>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="amount">
-                                                    <p class="total"><b>122,000</b>원</p>
-                                                    <p class="discount"><b>32%</b> <span>155,000원</span></p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="check-box">
-                                                        <input type="checkbox" id="check1-2">
-                                                        <label for="check1-2"></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <figure>
-                                                        <img src="/content/pest/images/purchase/img_basket_list_frame.png" style="background-image: url(/content/pest/images/purchase/bg_basket_list.png)" alt="">
-                                                    </figure>
-                                                </td>
-                                                <td>
-                                                    <div class="pro-info">
-                                                        <p>무무스가드플러스 80ml</p>
-                                                        <a href="#" class="btn-option">옵션변경</a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="btn-controls">
-                                                        <div class="form-group">
-                                                            <button type="button" class="btn-minus">-</button>
-                                                            <input type="text" class="form-control" value="1">
-                                                            <button type="button" class="btn-plus">+</button>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="amount">
-                                                    <p class="total"><b>122,000</b>원</p>
-                                                    <p class="discount"><b>32%</b> <span>155,000원</span></p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="check-box">
-                                                        <input type="checkbox" id="check1-3">
-                                                        <label for="check1-3"></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <figure>
-                                                        <img src="/content/pest/images/purchase/img_basket_list_frame.png" style="background-image: url(/content/pest/images/purchase/bg_basket_list.png)" alt="">
-                                                    </figure>
-                                                </td>
-                                                <td>
-                                                    <div class="pro-info">
-                                                        <p>무무스가드플러스 80ml</p>
-                                                        <a href="#" class="btn-option">옵션변경</a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="btn-controls">
-                                                        <div class="form-group">
-                                                            <button type="button" class="btn-minus">-</button>
-                                                            <input type="text" class="form-control" value="1">
-                                                            <button type="button" class="btn-plus">+</button>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="amount">
-                                                    <p class="total"><b>122,000</b>원</p>
-                                                    <p class="discount"><b>32%</b> <span>155,000원</span></p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="attention">
-                                    <dl>
-                                        <dt>장바구니 이용안내</dt>
-                                        <dd>
-                                            <ul>
-                                                <li>장바구니 상품은 30일간 보관되며, 최대 30개까지 저장됩니다.</li>
-                                                <li>장기보관을 원하는 경우 위시리스트를 이용해주세요.</li>
-                                                <li>판매종료된 상품은 장바구니에서 자동삭제 됩니다.</li>
-                                                <li>일부상품의 경우 결제수단이 제한될 수 있습니다.</li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </div>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>배송지</dt>
+                                            <dd>
+                                                홍길동<br>
+                                                16005<br>
+                                                경기도 용인시 기흥구 동백죽전대로 325번지 롯데캐슬 아파트 101동 1101호 010-1234-5678<br>
+                                                배송 메시지 : 부재시 문앞에 놓아주세요.
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>주문상품</dt>
+                                            <dd>
+                                                <p>무무스가드플러스 [옵션] 110ml / 1개</p>
+                                                <p>무무스가드플러스 [옵션] 80ml / 1개</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
                             </div>
                         </article>
                     </div>
@@ -531,14 +429,20 @@
                                 </li>
                                 <li>
                                     <dl>
+                                        <dt>할인금액</dt>
+                                        <dd>- 2,000원</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
                                         <dt>배송비</dt>
                                         <dd>+ 3,000원</dd>
                                     </dl>
                                 </li>
                                 <li>
                                     <dl>
-                                        <dt>할인금액</dt>
-                                        <dd>- 2,000원</dd>
+                                        <dt>포인트금액</dt>
+                                        <dd>- 0원</dd>
                                     </dl>
                                 </li>
                             </ul>
@@ -548,18 +452,84 @@
                                 <dt>결제예정금액</dt>
                                 <dd><b>127,000</b>원</dd>
                             </dl>
-                            <div class="btn-area">
-                                <a href="#" class="btn btn-lg btn-blue">전체상품 주문</a>
-                                <a href="#" class="btn btn-lg btn-white">선택상품 주문</a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="n-pay">
-                        <img src="/content/pest/images/purchase/img_naver_pay.png" style="width: 100%;" alt="">
+                        <div class="pay-details">
+                            <p>신한카드 / 일시불</p>
+                        </div>
                     </div>
                 </aside>
             </div>
         </div>
+        
+        <!-- relation -->
+        <section class="relation">
+            <div class="container">
+                <div class="section-header">
+                    <h3>이런 상품 어때요?</h3>
+                </div>
+                <div class="section-content">
+                    <div class="recommend-product">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="item-img">
+                                        <figure>
+                                            <img src="/content/pest/images/mypage/img_recommend_product_frame.png" style="background-image: url(/content/pest/images/mypage/bg_order_list.png);" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="details">
+                                        <b>백두산 생약치약</b>
+                                        <p>[치약] 천연 4가지 성분</p>
+                                        <div class="amount">
+                                            <p>39,000원</p>
+                                            <span>51,000원</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="item-img">
+                                        <figure>
+                                            <img src="/content/pest/images/mypage/img_recommend_product_frame.png" style="background-image: url(/content/pest/images/mypage/bg_order_list.png);" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="details">
+                                        <b>백두산 생약치약</b>
+                                        <p>[치약] 천연 4가지 성분</p>
+                                        <div class="amount">
+                                            <p>39,000원</p>
+                                            <span>51,000원</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="item-img">
+                                        <figure>
+                                            <img src="/content/pest/images/mypage/img_recommend_product_frame.png" style="background-image: url(/content/pest/images/mypage/bg_order_list.png);" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="details">
+                                        <b>백두산 생약치약</b>
+                                        <p>[치약] 천연 4가지 성분</p>
+                                        <div class="amount">
+                                            <p>39,000원</p>
+                                            <span>51,000원</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-common-area">
+                        <a href="#" class="btn btn-cancel">쇼핑 계속하기</a>
+                        <a href="#" class="btn btn-save">주문내역 상세보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </main>
     
