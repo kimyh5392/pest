@@ -1770,4 +1770,27 @@ body.show-modal {
   .rotate-pop.show {
     display: block; }
 
+/* btn-more-area */
+.btn-more-area {
+  margin-top: 70px; }
+  .btn-more-area .btn-more {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #000; }
+    .btn-more-area .btn-more .icon-down {
+      display: inline-block;
+      vertical-align: top;
+      width: 15px;
+      height: 50px;
+      margin-left: 10px;
+      background-image: url(/content/pest/images/main/ico_arrow_down.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 50% 50%; }
+
 /*# sourceMappingURL=sub.css.map */
