@@ -437,7 +437,46 @@
     }
 }
 
-
+/* patent */
+.patent {
+    .article-header {
+        padding-bottom: 80px;
+        h4 {
+            font-size: 30px;
+            color: #000;
+            line-height: 45px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 14px;
+            color: #000;
+            line-height: 25px;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+    }
+    figure {
+        img {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 100%;
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    article {
+        text-align: center;
+        padding: 100px 0;
+        &:first-child {
+            padding-top: 50px;
+        }
+        &.global-star {
+            background-color: #f1f1f1;
+        }
+    }
+}
 
 
 

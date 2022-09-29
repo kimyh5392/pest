@@ -427,6 +427,19 @@ pre {
     margin-top: 25px; }
     .agreement .summary .container p:before {
       content: '※ '; }
+  .agreement .summary .container .btn-find-area {
+    width: 580px;
+    margin: 0 auto;
+    margin-top: 40px; }
+    .agreement .summary .container .btn-find-area .btn-join {
+      display: block;
+      width: 100%;
+      color: #fff;
+      line-height: 58px;
+      background-image: url(/content/pest/images/sub/bg_btn.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover; }
 .agreement .simply-join {
   margin-top: 50px; }
   .agreement .simply-join .container > dl {

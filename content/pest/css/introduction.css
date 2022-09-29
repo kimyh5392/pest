@@ -389,4 +389,33 @@ pre {
     font-weight: 400;
     margin-top: 35px; }
 
+/* patent */
+.patent .article-header {
+  padding-bottom: 80px; }
+  .patent .article-header h4 {
+    font-size: 30px;
+    color: #000;
+    line-height: 45px;
+    font-weight: bold; }
+  .patent .article-header p {
+    font-size: 14px;
+    color: #000;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 30px; }
+.patent figure img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  margin-right: 40px; }
+  .patent figure img:last-child {
+    margin-right: 0; }
+.patent article {
+  text-align: center;
+  padding: 100px 0; }
+  .patent article:first-child {
+    padding-top: 50px; }
+  .patent article.global-star {
+    background-color: #f1f1f1; }
+
 /*# sourceMappingURL=introduction.css.map */

@@ -459,6 +459,21 @@
                     content: '※ ';
                 }
             }
+            .btn-find-area {
+                width: 580px;
+                margin: 0 auto;
+                margin-top: 40px;
+                .btn-join {
+                    display: block;
+                    width: 100%;
+                    color: #fff;
+                    line-height: 58px;
+                    background-image: url(/content/pest/images/sub/bg_btn.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: cover;
+                }
+            }
         }
     }
     .simply-join {
