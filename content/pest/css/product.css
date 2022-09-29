@@ -83,12 +83,6 @@ a, button {
 pre {
   white-space: pre-wrap; }
 
-/* product-list */
-.product-list .article-header {
-  padding: 60px 0 55px; }
-.product-list .article-content .tab-content {
-  padding-top: 40px; }
-
 /* product-details */
 .product-details {
   position: relative;

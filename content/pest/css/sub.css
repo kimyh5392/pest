@@ -462,6 +462,13 @@ pre {
       color: #fff;
       border-color: #0e3db4;
       background-color: #0e3db4; }
+  .tab-menu.type-2 {
+    width: 600px;
+    margin: -0 auto; }
+    .tab-menu.type-2 > li:nth-of-type(4) ~ li {
+      margin-top: 10px; }
+    .tab-menu.type-2 > li:nth-of-type(4n + 4) {
+      margin-right: 0; }
 
 /* sub-top-util */
 .sub-top-util {
@@ -1792,5 +1799,11 @@ body.show-modal {
       background-repeat: no-repeat;
       background-size: auto;
       background-position: 50% 50%; }
+
+/* product-list */
+.product-list .article-header {
+  padding: 60px 0 55px; }
+.product-list .article-content .tab-content {
+  padding-top: 40px; }
 
 /*# sourceMappingURL=sub.css.map */
