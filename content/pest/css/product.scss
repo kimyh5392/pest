@@ -314,8 +314,7 @@
             .info-wrap {
                 overflow-y: auto;
                 min-height: 400px;
-                max-height: 540px;
-                max-height: 540px;
+                height: calc(100vh - 460px);
                 padding-right: 10px;
             }
             .info-foot {
@@ -553,8 +552,6 @@
     }
     .article-content {
         > figure {
-            height: 780px;
-            overflow: hidden;
             img {
                 display: block;
                 width: 100%;
@@ -955,6 +952,14 @@ body {
             top: 2190px;
             &.fixed-tab {
                 top: 80px;
+            }
+        }
+        .product-info {
+            &.fixed {
+                top: 160px;
+                .info-wrap {
+                    height: calc(100vh - 360px);
+                }
             }
         }
     }
