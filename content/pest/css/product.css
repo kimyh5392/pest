@@ -583,44 +583,38 @@ pre {
             display: inline-block;
             vertical-align: top; }
             .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like {
-              border: 1px solid #919191; }
-              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like > span {
-                display: inline-block;
-                font-size: 14px;
-                color: #000;
-                font-weight: 500;
-                line-height: 36px;
-                padding: 0 15px;
-                background-color: #fff;
-                border-right: 1px solid #919191; }
-              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .btn-like {
-                display: inline-block;
-                vertical-align: top;
-                width: 64px;
-                height: 36px;
-                line-height: 36px;
-                font-size: 20px;
-                color: #000;
-                text-align: center;
-                font-weight: bold;
-                -webkit-transition-property: all;
-                transition-property: all;
-                -webkit-transition-duration: 0.15s;
-                transition-duration: 0.15s;
-                -webkit-transition-timing-function: linear;
-                transition-timing-function: linear;
-                -webkit-transition-delay: 0s;
-                transition-delay: 0s; }
-                .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .btn-like .ico-like {
+              position: relative; }
+              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .btn-drop-more {
+                display: block;
+                width: 24px; }
+              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .like-box {
+                position: absolute;
+                top: 0;
+                right: 24px;
+                width: auto;
+                display: none;
+                white-space: nowrap;
+                border: 1px solid #919191;
+                background-color: #fff; }
+                .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .like-box > span {
+                  display: inline-block;
+                  font-size: 14px;
+                  color: #000;
+                  font-weight: 500;
+                  line-height: 36px;
+                  padding: 0 15px;
+                  background-color: #fff;
+                  border-right: 1px solid #919191; }
+                .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .like-box .btn-like {
                   display: inline-block;
                   vertical-align: top;
-                  width: 21px;
+                  width: 64px;
                   height: 36px;
-                  margin-right: 5px;
-                  background-image: url(/content/pest/images/product/ico_like.png);
-                  background-repeat: no-repeat;
-                  background-position: 50% 50%;
-                  background-size: auto;
+                  line-height: 36px;
+                  font-size: 20px;
+                  color: #000;
+                  text-align: center;
+                  font-weight: bold;
                   -webkit-transition-property: all;
                   transition-property: all;
                   -webkit-transition-duration: 0.15s;
@@ -629,11 +623,31 @@ pre {
                   transition-timing-function: linear;
                   -webkit-transition-delay: 0s;
                   transition-delay: 0s; }
-                .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .btn-like.on {
-                  color: #fff;
-                  background-color: #0e3db4; }
-                  .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .btn-like.on .ico-like {
-                    background-image: url(/content/pest/images/product/ico_like_on.png); }
+                  .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .like-box .btn-like .ico-like {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 21px;
+                    height: 36px;
+                    margin-right: 5px;
+                    background-image: url(/content/pest/images/product/ico_like.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: auto;
+                    -webkit-transition-property: all;
+                    transition-property: all;
+                    -webkit-transition-duration: 0.15s;
+                    transition-duration: 0.15s;
+                    -webkit-transition-timing-function: linear;
+                    transition-timing-function: linear;
+                    -webkit-transition-delay: 0s;
+                    transition-delay: 0s; }
+                  .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .like-box .btn-like.on {
+                    color: #fff;
+                    background-color: #0e3db4; }
+                    .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like .like-box .btn-like.on .ico-like {
+                      background-image: url(/content/pest/images/product/ico_like_on.png); }
+              .product-review .article-content > ul > li .review-wrap .review-info .review-util > div.like.show .like-box {
+                display: block; }
       .product-review .article-content > ul > li .review-wrap .review-content {
         display: table;
         width: 100%;
