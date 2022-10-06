@@ -4,6 +4,12 @@
 .product-details {
     position: relative;
     padding-top: 90px;
+    .top-content {
+        
+    }
+    .middle-content {
+        
+    }
     .product-info {
         position: absolute;
         top: 90px;
@@ -897,9 +903,9 @@
 
 /* details-tab */
 .details-tab {
-    position: absolute;
+    /*position: absolute;
     top: 2260px;
-    left: 0;
+    left: 0;*/
     width: 100%;
     z-index: 100;
     text-align: center;
@@ -933,6 +939,8 @@
     &.fixed-tab {
         position: fixed;
         top: 150px;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -1571,70 +1579,3 @@ body {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
