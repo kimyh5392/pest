@@ -101,4 +101,12 @@
     $(document).on('click', '.md-alert .md-alert-close', function(){
         $('.md-alert').removeClass('show');
     });
+    
+    // hover-drop
+    $(document).on('mouseenter', '.btn-hover-drop', function(){
+        $(this).parent().addClass('show');
+    });
+    $(document).on('mouseleave', '.hover-drop div', function(){
+        $('.hover-drop').removeClass('show');
+    });
 })(jQuery);

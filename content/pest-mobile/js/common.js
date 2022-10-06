@@ -71,4 +71,20 @@
             }
         });
     });
+    
+    // modal 
+    $(document).on('click','.btn-modal', function(e){
+        $('body').addClass('show-modal');
+        $($(this).attr('href')).addClass('show');
+        e.preventDefault();
+    });
+    $(document).on('click','.btn-msg-modal', function(e){
+        $('body').addClass('show-modal');
+        $('.modal-msg').addClass('show');
+        e.preventDefault();
+    });
+    $(document).on('click','.btn-modal-close', function(e){
+        $('body').removeClass('show-modal');
+        $('.modal').removeClass('show');
+    });
 })(jQuery);

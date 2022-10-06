@@ -130,6 +130,7 @@ pre {
       top: 50%;
       right: 0;
       font-size: 0;
+      z-index: 10;
       transform: translateY(-50%); }
       #header .header-area .container .header-util .search-area {
         display: inline-block;
@@ -200,6 +201,40 @@ pre {
               font-size: 16px;
               color: #333;
               line-height: 34px; }
+          #header .header-area .container .header-util > ul > li .hover-drop {
+            position: relative;
+            display: block; }
+            #header .header-area .container .header-util > ul > li .hover-drop .btn-hover-drop {
+              display: block; }
+            #header .header-area .container .header-util > ul > li .hover-drop > div {
+              display: none;
+              position: absolute;
+              top: 100%;
+              right: 0;
+              padding-top: 15px; }
+              #header .header-area .container .header-util > ul > li .hover-drop > div ul {
+                padding: 10px 25px;
+                border-radius: 5px;
+                border: 2px solid #ebebeb;
+                background-color: #fff; }
+                #header .header-area .container .header-util > ul > li .hover-drop > div ul > li > a {
+                  display: block;
+                  font-size: 14px;
+                  line-height: 32px;
+                  color: #000;
+                  font-weight: 500;
+                  -webkit-transition-property: all;
+                  transition-property: all;
+                  -webkit-transition-duration: 0.15s;
+                  transition-duration: 0.15s;
+                  -webkit-transition-timing-function: linear;
+                  transition-timing-function: linear;
+                  -webkit-transition-delay: 0s;
+                  transition-delay: 0s; }
+                  #header .header-area .container .header-util > ul > li .hover-drop > div ul > li > a:hover {
+                    color: #0e3db4; }
+            #header .header-area .container .header-util > ul > li .hover-drop.show > div {
+              display: block; }
   #header #gnb {
     font-size: 0;
     text-align: center;
@@ -381,6 +416,41 @@ pre {
                 font-weight: 500; }
                 #header #gnb .container .gnb-util > ul > li > a.login:hover {
                   color: #0e3db4; }
+            #header #gnb .container .gnb-util > ul > li .hover-drop {
+              position: relative;
+              display: block; }
+              #header #gnb .container .gnb-util > ul > li .hover-drop .btn-hover-drop {
+                display: block; }
+              #header #gnb .container .gnb-util > ul > li .hover-drop > div {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                padding-top: 15px; }
+                #header #gnb .container .gnb-util > ul > li .hover-drop > div ul {
+                  text-align: left;
+                  padding: 10px 25px;
+                  border-radius: 5px;
+                  border: 2px solid #ebebeb;
+                  background-color: #fff; }
+                  #header #gnb .container .gnb-util > ul > li .hover-drop > div ul > li > a {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #000;
+                    font-weight: 500;
+                    -webkit-transition-property: all;
+                    transition-property: all;
+                    -webkit-transition-duration: 0.15s;
+                    transition-duration: 0.15s;
+                    -webkit-transition-timing-function: linear;
+                    transition-timing-function: linear;
+                    -webkit-transition-delay: 0s;
+                    transition-delay: 0s; }
+                    #header #gnb .container .gnb-util > ul > li .hover-drop > div ul > li > a:hover {
+                      color: #0e3db4; }
+              #header #gnb .container .gnb-util > ul > li .hover-drop.show > div {
+                display: block; }
             #header #gnb .container .gnb-util > ul > li:last-child {
               padding-right: 0; }
 

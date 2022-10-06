@@ -56,6 +56,7 @@
                 top: 50%;
                 right: 0;
                 font-size: 0;
+                z-index: 10;
                 transform: translateY(-50%);
                 .search-area {
                     display: inline-block;
@@ -137,6 +138,44 @@
                                 font-size: 16px;
                                 color: #333;
                                 line-height: 34px;
+                            }
+                        }
+                        .hover-drop {
+                            position: relative;
+                            display: block;
+                            .btn-hover-drop {
+                                display: block;
+                            }
+                            > div {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                right: 0;
+                                padding-top: 15px;
+                                ul {
+                                    padding: 10px 25px;
+                                    border-radius: 5px;
+                                    border: 2px solid #ebebeb;
+                                    background-color: #fff;
+                                    > li {
+                                        > a {
+                                            display: block;
+                                            font-size: 14px;
+                                            line-height: 32px;
+                                            color: #000;
+                                            font-weight: 500;
+                                            @include transition();
+                                            &:hover {
+                                                color: $kcolor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.show {
+                                > div {
+                                    display: block;
+                                }
                             }
                         }
                     }
@@ -342,6 +381,45 @@
                                 font-weight: 500;
                                 &:hover {
                                     color: $kcolor;
+                                }
+                            }
+                        }
+                        .hover-drop {
+                            position: relative;
+                            display: block;
+                            .btn-hover-drop {
+                                display: block;
+                            }
+                            > div {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                right: 0;
+                                padding-top: 15px;
+                                ul {
+                                    text-align: left;
+                                    padding: 10px 25px;
+                                    border-radius: 5px;
+                                    border: 2px solid #ebebeb;
+                                    background-color: #fff;
+                                    > li {
+                                        > a {
+                                            display: block;
+                                            font-size: 14px;
+                                            line-height: 32px;
+                                            color: #000;
+                                            font-weight: 500;
+                                            @include transition();
+                                            &:hover {
+                                                color: $kcolor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.show {
+                                > div {
+                                    display: block;
                                 }
                             }
                         }
