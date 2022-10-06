@@ -1,0 +1,707 @@
+@import 'common';
+
+/* swiper loading */
+.swiper {
+    opacity: 0;
+    &.show {
+        opacity: 1;
+    }
+}
+
+/* jumbotron */
+.jumbotron {
+    .jumbo-slider {
+        .swiper-wrapper {
+            position: relative;
+            .swiper-slide {
+                height: 220px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+                .container {
+                    display: table;
+                    width: 100%;
+                    height: 100%;
+                    .v-align {
+                        display: table-cell;
+                        vertical-align: middle;
+                        h3 {
+                            font-size: 25px;
+                            color: #000;
+                            font-weight: bold;
+                            line-height: 32px;
+                        }
+                        .btn-area {
+                            margin-top: 20px;
+                            .btn-more {
+                                display: inline-block;
+                                font-size: 12px;
+                                color: #fff;
+                                font-weight: 500;
+                                line-height: 26px;
+                                padding: 0 13px;
+                                border-radius: 50px;
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            display: table;
+            table-layout: fixed;
+            width: calc(100% - 40px);
+            transform: translateX(-50%);
+            background-color: rgba(#fff, .3);
+            .swiper-pagination-bullet {
+                display: table-cell;
+                vertical-align: top;
+                height: 3px;
+                opacity: 1;
+                background: none;
+                border-radius: 0;
+                &.swiper-pagination-bullet-active {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* introduce */
+.introduce {
+    padding: 20px 0 10px;
+    .container {
+        > ul {
+            overflow: hidden;
+            width: calc(100% + 10px);
+            margin: 0 -5px;
+            > li {
+                padding: 0 5px;
+                > a {
+                    display: block;
+                    height: 116px;
+                    letter-spacing: -.5px;
+                    padding: 20px 15px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                    > dl {
+                        > dt {
+                            font-size: 18px;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                        > dd {
+                            font-size: 11px;
+                            color: rgba(#fff, .5);
+                            font-weight: 400;
+                            line-height: 18px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                & ~ li {
+                    float: left;
+                    width: 50%;
+                    margin-top: 10px;
+                }
+                &:nth-of-type(1) {
+                    > a {
+                        background-image: url(/content/pest-mobile/images/main/bg_introduce01.png);
+                    }
+                }
+                &:nth-of-type(2) {
+                    > a {
+                        background-image: url(/content/pest-mobile/images/main/bg_introduce02.png);
+                    }
+                }
+                &:nth-of-type(3) {
+                    > a {
+                        background-image: url(/content/pest-mobile/images/main/bg_introduce03.png);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* find-product */
+.find-product {
+    .container {
+        article {
+            padding: 30px 15px;
+            background-color: #e4e4e4;
+            & ~ article {
+                margin-top: 10px;
+            }
+            .article-header {
+                text-align: center;
+                padding-bottom: 20px;
+                h3 {
+                    font-size: 18px;
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+            .article-content {
+                .tab-area {
+                    text-align: center;
+                    .tab-menu {
+                        padding-bottom: 20px;
+                        > ul {
+                            display: table;
+                            width: calc(100% + 4px);
+                            margin: 0 -2px;
+                            li {
+                                display: table-cell;
+                                vertical-align: top;
+                                padding: 0 2px;
+                                > a {
+                                    display: block;
+                                    font-size: 13px;
+                                    color: #000;
+                                    line-height: 24px;
+                                    font-weight: 500;
+                                    @include transition();
+                                    border: 1px solid #000;
+                                }
+                                &.active {
+                                    > a {
+                                        color: #fff;
+                                        border-color: $kcolor;
+                                        background-color: $kcolor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tab-content {
+                        padding: 0 5px;
+                        .tab-pane {
+                            .product-wrap {
+                                position: relative;
+                                .swiper {
+                                    .swiper-wrapper {
+                                        .swiper-slide {
+                                            padding: 0 5px;
+                                            > a {
+                                                display: block;
+                                                > figure {
+                                                    img {
+                                                        display: block;
+                                                        width: 100%;
+                                                    }
+                                                    figcaption {
+                                                        font-size: 12px;
+                                                        color: #000;
+                                                        font-weight: 500;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .btn-controls {
+                                    button {
+                                        position: absolute;
+                                        top: 50%;
+                                        display: block;
+                                        width: 8px;
+                                        margin-top: -11px;
+                                        transform: translateY(-50%);
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                        }
+                                        &.swiper-prev {
+                                            left: -10px;
+                                        }
+                                        &.swiper-next {
+                                            right: -10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .select-list {
+                    > ul {
+                        font-size: 0;
+                        > li {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 50%;
+                            .dropdown {
+                                text-align: left;
+                                .btn-drop {
+                                    position: relative;
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 13px;
+                                    color: #000;
+                                    font-weight: 500;
+                                    text-align: left;
+                                    line-height: 28px;
+                                    padding: 0 10px;
+                                    overflow: hidden;
+                                    background-color: #fff;
+                                    border: 1px solid #9f9f9f;
+                                    &:after {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 10px;
+                                        width: 14px;
+                                        height: 100%;
+                                        content: '';
+                                        @include transition();
+                                        background-image: url(/content/pest-mobile/images/main/ico_triangle.png);
+                                        background-repeat: no-repeat;
+                                        background-position: 50% 50%;
+                                        background-size: 14px auto;
+                                    }
+                                }
+                                > ul {
+                                    max-height: 208px;
+                                    overflow-y: auto;
+                                    padding: 5px 0;
+                                    border: 1px solid #9f9f9f;
+                                    background-color: #fff;
+                                    > li {
+                                        > a {
+                                            font-size: 13px;
+                                            color: #000;
+                                            font-weight: 500;
+                                            line-height: 28px;
+                                            padding: 0 10px;
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    .btn-drop {
+                                        border-bottom: 0;
+                                        &:after {
+                                            transform: rotate(-180deg);
+                                        }
+                                    }
+                                }
+                            }
+                            .btn-area {
+                                > .btn-result {
+                                    display: block;
+                                    font-size: 13px;
+                                    line-height: 30px;
+                                    font-weight: 500;
+                                    color: #fff;
+                                    text-align: center;
+                                    background-color: $kcolor;
+                                }
+                            }
+                            &:nth-of-type(2n + 1) {
+                                padding-right: 5px;
+                            }
+                            &:nth-of-type(2n + 2) {
+                                padding-left: 5px;
+                            }
+                            &:nth-of-type(2) ~ li {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* item-area */
+.item-area {
+    padding: 40px 0;
+    .container {
+        .section-header {
+            padding-bottom: 20px;
+            h3 {
+                font-size: 24px;
+                color: #000;
+                font-weight: bold;
+                @include msr();
+            }
+        }
+        .section-content {
+            .tab-area {
+                .tab-menu {
+                    > .swiper-wrapper {
+                        .swiper-slide {
+                            width: auto !important;
+                            margin-right: 25px;
+                            > a {
+                                font-size: 13px;
+                                color: #828282;
+                                font-weight: 500;
+                            }
+                            &.active {
+                                > a {
+                                    color: #000;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    padding-top: 30px;
+                    .tab-pane {
+                        .item-wrap {
+                            width: calc(100% + 40px);
+                            margin: 0 -20px;
+                            .swiper {
+                                padding: 0 20px;
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                        > a {
+                                            display: block;
+                                            .item-img {
+                                                position: relative;
+                                                border: 1px solid #d9d9d9;
+                                                img {
+                                                    display: block;
+                                                    width: 100%;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    background-position: 50% 50%;
+                                                }
+                                                .label {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    font-size: 10px;
+                                                    width: 36px;
+                                                    font-size: 10px;
+                                                    text-align: center;
+                                                    color: #fff;
+                                                    @include msr();
+                                                    font-weight: 500;
+                                                    line-height: 16px;
+                                                    &.sale {
+                                                        background-color: $kcolor;
+                                                    }
+                                                    &.new {
+                                                        background-color: #000;
+                                                    }
+                                                }
+                                            }
+                                            .details {
+                                                padding-top: 20px;
+                                                strong {
+                                                    display: block;
+                                                    font-size: 15px;
+                                                    font-weight: bold;
+                                                    color: #000;
+                                                }
+                                                p {
+                                                    font-size: 12px;
+                                                    color: #000;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    margin-top: 5px;
+                                                }
+                                                .sum {
+                                                    margin-top: 10px;
+                                                    b {
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        font-size: 14px;
+                                                        line-height: 14px;
+                                                        color: $kcolor;
+                                                        font-weight: bold;
+                                                        @include msr();
+                                                    }
+                                                    small {
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        @include msr();
+                                                        font-size: 11px;
+                                                        color: #000;
+                                                        line-height: 14px;
+                                                        font-weight: 600;
+                                                        text-decoration: line-through;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* promotion */
+.promotion {
+    overflow: hidden;
+    .container-fluid {
+        .simply-scroll {
+            height: auto;
+            .simply-scroll-clip {
+                height: auto;
+                .floting-list {
+                    > li {
+                        height: auto;
+                        > a {
+                            display: block;
+                            > figure {
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* util-area */
+.util-area {
+    .container {
+        > ul {
+            > li {
+                > a {
+                    display: block;
+                    background-image: url(/content/pest-mobile/images/main/bg_util_area_list.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                    > dl {
+                        padding: 20px 15px;
+                        background-repeat: no-repeat;
+                        background-size: 68px auto;
+                        background-position: calc(100% - 10px) 50%;
+                        > dt {
+                            font-size: 18px;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                        > dd {
+                            font-size: 12px;
+                            color: rgba(#fff, .5);
+                            font-weight: 400;
+                            line-height: 18px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                &:nth-of-type(1) {
+                    > a {
+                        > dl {
+                            background-image: url(/content/pest-mobile/images/main/bg_util_area01.png);
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    > a {
+                        > dl {
+                            background-image: url(/content/pest-mobile/images/main/bg_util_area02.png);
+                        }
+                    }
+                }
+                &:nth-of-type(3) {
+                    > a {
+                        > dl {
+                            background-image: url(/content/pest-mobile/images/main/bg_util_area03.png);
+                        }
+                    }
+                }
+                & ~ li {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* photo-review */
+.photo-review {
+    padding: 40px 0;
+    background-color: #f1f1f1;
+    .container {
+        .section-header {
+            text-align: center;
+            padding-bottom: 30px;
+            h3 {
+                font-size: 24px;
+                color: #000;
+                font-weight: bold;
+                @include msr();
+            }
+        }
+        .section-content {
+            > ul {
+                overflow: hidden;
+                > li {
+                    float: left;
+                    width: 50%;
+                    > a {
+                        display: block;
+                        > figure {
+                            img {
+                                width: 100%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: 50% 50%;
+                            }
+                            figcaption {
+                                padding-top: 20px;
+                                b {
+                                    display: block;
+                                    font-size: 14px;
+                                    color: #000;
+                                    font-weight: bold;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                p {
+                                    font-size: 12px;
+                                    color: #000;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    margin-top: 15px;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    word-break: break-word;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                }
+                                .usr-grade {
+                                    position: relative;
+                                    margin-top: 20px;
+                                    i {
+                                        font-size: 12px;
+                                        color: #ababab;
+                                        font-weight: 400;
+                                    }
+                                    .grade {
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        > ol {
+                                            font-size: 0;
+                                            > li {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                width: 12px;
+                                                margin-right: 2px;
+                                                img {
+                                                    display: block;
+                                                    width: 100%;
+                                                }
+                                                &:last-child {
+                                                    margin-right: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-of-type(2n + 1) {
+                        clear: left;
+                        padding-right: 7px;
+                    }
+                    &:nth-of-type(2n + 2) {
+                        padding-left: 7px;
+                    }
+                    &:nth-of-type(2) ~ li {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 40px;
+                > .btn-more {
+                    display: block;
+                    width: 100%;
+                    font-size: 13px;
+                    color: #000;
+                    font-weight: 400;
+                    line-height: 38px;
+                    text-align: center;
+                    border: 1px solid #d9d9d9;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

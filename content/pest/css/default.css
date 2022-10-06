@@ -191,7 +191,8 @@ pre {
             #header .header-area .container .header-util > ul > li > a.login {
               font-size: 16px;
               line-height: 34px;
-              font-weight: 500; }
+              font-weight: 500;
+              padding-top: 0; }
               #header .header-area .container .header-util > ul > li > a.login:hover {
                 color: #0e3db4; }
             #header .header-area .container .header-util > ul > li > a span {

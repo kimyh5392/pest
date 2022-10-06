@@ -191,18 +191,22 @@ pre {
         color: #0e3db4; }
 
 body {
-  padding-bottom: 51px; }
+  padding-bottom: 51px !important; }
   body.banner-none #header {
     top: 0; }
   body.scrolled .quick-foot {
     bottom: 0; }
+  body.scrolled .quick-top .btn-quick-top {
+    right: 20px; }
   body.scroll {
     padding-top: 52px; }
     body.scroll #gnb {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%; }
+      z-index: 100;
+      width: 100%;
+      box-shadow: 0px 8px 23.49px 3.51px rgba(0, 0, 0, 0.1); }
   body.opened {
     overflow: hidden; }
     body.opened #nav {
@@ -460,9 +464,35 @@ body {
         background-size: cover;
         background-position: 50% 50%; }
 
+/* quick-top */
+.quick-top .btn-quick-top {
+  position: fixed;
+  bottom: 70px;
+  right: -100%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  box-shadow: 0px 8px 23.49px 3.51px rgba(0, 0, 0, 0.1);
+  background-image: url(/content/pest-mobile/images/btn_top.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 26px auto; }
+
 /* footer */
 #footer .foot-link {
   padding: 20px 0;
+  border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7; }
   #footer .foot-link > ul {
     font-size: 0;
@@ -529,6 +559,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
   text-align: center;
   background-color: #fff;
@@ -585,5 +616,25 @@ body {
 
 #content.sub-layout {
   padding-top: 60px; }
+
+/* common */
+.tab-area .tab-content .tab-pane {
+  height: 0;
+  visibility: hidden; }
+  .tab-area .tab-content .tab-pane.active {
+    height: auto;
+    visibility: visible; }
+
+.dropdown {
+  position: relative; }
+  .dropdown > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+  .dropdown.active > ul {
+    display: block; }
 
 /*# sourceMappingURL=default.css.map */
