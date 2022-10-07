@@ -210,20 +210,18 @@ body {
   body.opened {
     overflow: hidden; }
     body.opened #nav {
-      left: 0; }
+      bottom: 0; }
   body.show-modal {
     overflow: hidden; }
 
 /* nav */
 #nav {
   position: fixed;
-  top: 0;
-  left: -100%;
+  bottom: -100%;
+  left: 0;
   z-index: 101;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.15s;
@@ -233,34 +231,34 @@ body {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   background-color: #fff; }
-  #nav > article .login-area {
-    position: relative;
+  #nav > article .article-header .login-area {
+    width: 100%;
     padding: 20px;
     background-color: #f1f1f1; }
-    #nav > article .login-area .btn-nav-close {
+    #nav > article .article-header .login-area .btn-nav-close {
       position: absolute;
       top: 20px;
       right: 20px;
       display: block;
       width: 17px; }
-      #nav > article .login-area .btn-nav-close img {
+      #nav > article .article-header .login-area .btn-nav-close img {
         display: block;
         width: 100%; }
-    #nav > article .login-area > b {
+    #nav > article .article-header .login-area > b {
       display: block;
       font-size: 13px;
       color: #0e3db4;
       line-height: 20px;
       font-weight: bold; }
-    #nav > article .login-area > p {
+    #nav > article .article-header .login-area > p {
       font-size: 13px;
       color: #000;
       line-height: 20px;
       font-weight: 400; }
-    #nav > article .login-area .btn-area {
+    #nav > article .article-header .login-area .btn-area {
       font-size: 0;
       margin-top: 15px; }
-      #nav > article .login-area .btn-area > a {
+      #nav > article .article-header .login-area .btn-area > a {
         display: inline-block;
         width: 110px;
         font-size: 14px;
@@ -269,58 +267,64 @@ body {
         vertical-align: top;
         text-align: center;
         margin-right: 10px; }
-        #nav > article .login-area .btn-area > a:last-child {
+        #nav > article .article-header .login-area .btn-area > a:last-child {
           margin-right: 0; }
-        #nav > article .login-area .btn-area > a.btn-login {
+        #nav > article .article-header .login-area .btn-area > a.btn-login {
           background-color: #0e3db4; }
-        #nav > article .login-area .btn-area > a.btn-join {
+        #nav > article .article-header .login-area .btn-area > a.btn-join {
           background-color: #000; }
-  #nav > article .article-header {
+  #nav > article .article-header .member-info {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #d7d7d7;
     background-color: #f8f8f8; }
-    #nav > article .article-header .top {
-      position: relative;
-      padding: 15px 20px;
-      border-bottom: 1px solid #d7d7d7; }
-      #nav > article .article-header .top * {
-        display: inline-block;
-        vertical-align: top; }
-      #nav > article .article-header .top img {
-        width: 34px; }
-      #nav > article .article-header .top b {
-        line-height: 34px;
-        padding: 0 5px 0 10px; }
-      #nav > article .article-header .top p {
-        line-height: 34px; }
-      #nav > article .article-header .top .btn-logout {
-        width: 65px;
-        font-size: 13px;
-        color: #fff;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        margin-left: 15px;
-        margin-top: 5px;
-        background-color: #000; }
-      #nav > article .article-header .top .btn-nav-close {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        width: 17px;
+    #nav > article .article-header .member-info * {
+      display: inline-block;
+      vertical-align: top; }
+    #nav > article .article-header .member-info img {
+      width: 34px; }
+    #nav > article .article-header .member-info b {
+      line-height: 34px;
+      padding: 0 5px 0 10px; }
+    #nav > article .article-header .member-info p {
+      line-height: 34px; }
+    #nav > article .article-header .member-info .btn-logout {
+      width: 65px;
+      font-size: 13px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      margin-left: 15px;
+      margin-top: 5px;
+      background-color: #000; }
+    #nav > article .article-header .member-info .btn-nav-close {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 17px;
+      display: block;
+      transform: translateY(-50%); }
+      #nav > article .article-header .member-info .btn-nav-close img {
         display: block;
-        transform: translateY(-50%); }
-        #nav > article .article-header .top .btn-nav-close img {
-          display: block;
-          width: 100%; }
-    #nav > article .article-header .usr-info {
-      padding: 20px; }
-      #nav > article .article-header .usr-info .coupon-point > ul {
+        width: 100%; }
+  #nav > article .article-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 147px);
+    padding-bottom: 60px; }
+    #nav > article .article-content .usr-info {
+      padding: 20px;
+      background-color: #f8f8f8; }
+      #nav > article .article-content .usr-info .coupon-point > ul {
         display: table;
         width: 100%;
         table-layout: fixed; }
-        #nav > article .article-header .usr-info .coupon-point > ul > li {
+        #nav > article .article-content .usr-info .coupon-point > ul > li {
           display: table-cell;
           vertical-align: top; }
-          #nav > article .article-header .usr-info .coupon-point > ul > li > a {
+          #nav > article .article-content .usr-info .coupon-point > ul > li > a {
             position: relative;
             display: block;
             height: 90px;
@@ -331,45 +335,43 @@ body {
             background-repeat: no-repeat;
             background-size: 89px auto;
             background-position: -5px 15px; }
-            #nav > article .article-header .usr-info .coupon-point > ul > li > a > dl dt {
+            #nav > article .article-content .usr-info .coupon-point > ul > li > a > dl dt {
               font-size: 13px;
               color: #000;
               font-weight: bold; }
-            #nav > article .article-header .usr-info .coupon-point > ul > li > a > dl dd {
+            #nav > article .article-content .usr-info .coupon-point > ul > li > a > dl dd {
               position: absolute;
               bottom: 15px;
               right: 15px;
               font-size: 11px;
               color: #0e3db4;
               font-weight: bold; }
-              #nav > article .article-header .usr-info .coupon-point > ul > li > a > dl dd b {
+              #nav > article .article-content .usr-info .coupon-point > ul > li > a > dl dd b {
                 font-size: 33px;
                 font-family: 'Montserrat', sans-serif; }
-          #nav > article .article-header .usr-info .coupon-point > ul > li:nth-of-type(1) {
+          #nav > article .article-content .usr-info .coupon-point > ul > li:nth-of-type(1) {
             padding-right: 3px; }
-          #nav > article .article-header .usr-info .coupon-point > ul > li:nth-of-type(2) {
+          #nav > article .article-content .usr-info .coupon-point > ul > li:nth-of-type(2) {
             padding-left: 3px; }
-    #nav > article .article-header .usr-quick-link {
-      text-align: center;
-      margin-top: 30px; }
-      #nav > article .article-header .usr-quick-link > ul {
-        display: table;
-        width: 100%;
-        table-layout: fixed; }
-        #nav > article .article-header .usr-quick-link > ul > li {
-          display: table-cell;
-          vertical-align: middle; }
-          #nav > article .article-header .usr-quick-link > ul > li > a figure img {
-            width: 54px;
-            margin: 0 auto; }
-          #nav > article .article-header .usr-quick-link > ul > li > a figure figcaption {
-            display: block;
-            font-size: 13px;
-            color: #000;
-            font-weight: 500;
-            margin-top: 10px; }
-  #nav > article .article-content {
-    padding-bottom: 60px; }
+      #nav > article .article-content .usr-info .usr-quick-link {
+        text-align: center;
+        margin-top: 30px; }
+        #nav > article .article-content .usr-info .usr-quick-link > ul {
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+          #nav > article .article-content .usr-info .usr-quick-link > ul > li {
+            display: table-cell;
+            vertical-align: middle; }
+            #nav > article .article-content .usr-info .usr-quick-link > ul > li > a figure img {
+              width: 54px;
+              margin: 0 auto; }
+            #nav > article .article-content .usr-info .usr-quick-link > ul > li > a figure figcaption {
+              display: block;
+              font-size: 13px;
+              color: #000;
+              font-weight: 500;
+              margin-top: 10px; }
     #nav > article .article-content .gnb-menu > li {
       border-bottom: 1px solid #d7d7d7; }
       #nav > article .article-content .gnb-menu > li > a {
@@ -429,6 +431,8 @@ body {
         transform: translateY(-50%) rotate(-180deg); }
       #nav > article .article-content .gnb-menu > li.active > ul {
         display: block; }
+  #nav > article.login-success .article-content {
+    height: calc(100vh - 65px); }
 
 /* quick-foot */
 .quick-foot {
@@ -731,6 +735,99 @@ body {
           .modal.modal-agree .tab-area .section-content .tab-content .tab-pane .agree-content b {
             font-weight: bold; }
   .modal.show {
+    display: block; }
+
+/* global-search */
+.global-search {
+  /*height: 59px;*/
+  margin: 0 auto;
+  padding: 14px 0;
+  width: calc(100% - 60px); }
+  .global-search .form-group {
+    position: relative;
+    padding-right: 30px; }
+    .global-search .form-group .form-control {
+      height: auto;
+      padding: 5px 10px;
+      border: 0;
+      border-bottom: 1px solid #000; }
+    .global-search .form-group .btn-search {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      width: 20px;
+      display: block;
+      transform: translateY(-50%); }
+      .global-search .form-group .btn-search img {
+        display: block;
+        width: 100%; }
+
+/* search-pop */
+.search-pop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-color: #fff; }
+  .search-pop .pop-head {
+    border-bottom: 1px solid #d7d7d7; }
+    .search-pop .pop-head .container {
+      position: relative; }
+      .search-pop .pop-head .container .btn-area {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        font-size: 0;
+        transform: translateY(-50%); }
+        .search-pop .pop-head .container .btn-area > a {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 20px;
+          margin-right: 15px; }
+          .search-pop .pop-head .container .btn-area > a img {
+            display: block;
+            width: 100%; }
+          .search-pop .pop-head .container .btn-area > a span {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 10px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 50%;
+            background-color: #0e3db4; }
+          .search-pop .pop-head .container .btn-area > a:last-child {
+            margin-right: 0; }
+      .search-pop .pop-head .container .global-search {
+        width: calc(100% - 30px);
+        margin: 0; }
+  .search-pop .pop-body {
+    text-align: center;
+    padding: 30px 0; }
+    .search-pop .pop-body dl dt {
+      font-size: 16px;
+      font-weight: bold;
+      color: #0e3db4; }
+    .search-pop .pop-body dl dd {
+      margin-top: 30px; }
+      .search-pop .pop-body dl dd ol > li > a {
+        display: inline-block;
+        font-size: 16px;
+        color: #000;
+        font-weight: 400; }
+      .search-pop .pop-body dl dd ol > li ~ li {
+        margin-top: 20px; }
+  .search-pop.show {
     display: block; }
 
 /*# sourceMappingURL=default.css.map */

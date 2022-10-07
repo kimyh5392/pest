@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/content/pest-mobile/css/default.css">
     <link rel="stylesheet" href="/content/pest-mobile/css/sub.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>GssenShop</title>
 </head>
 <body>
@@ -29,6 +30,207 @@
             </div>
         </div>
     </header>
+    
+    <!-- nav -->
+    <nav id="nav">
+        <!--
+            login 되었을때 login-success
+            logout 일때는 클래스 X
+        -->
+        <article class="login-success">
+            <div class="article-header">
+                <!-- login out 
+                <div class="login-area">
+                    <button type="button" class="btn-nav-close">
+                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                    </button>
+                    <b>지쎈샵에 오신 걸 환영합니다.</b>
+                    <p>
+                        지금 지쎈샵 회원가입을 하시면<br>
+                        즉시 사용 가능한 2,000원 쿠폰을 드립니다.
+                    </p>
+                    <div class="btn-area">
+                        <a href="/content/mobile/member/login.html" class="btn-login">로그인</a>
+                        <a href="/content/mobile/member/agreement.html" class="btn-join">회원가입</a>
+                    </div>
+                </div>-->
+                <!-- member-info -->
+                <div class="member-info">
+                    <!--<img src="/content/pest-mobile/images/ico_vvip.png" alt="">
+                    <img src="/content/pest-mobile/images/ico_family.png" alt="">
+                    <img src="/content/pest-mobile/images/ico_buddy.png" alt="">-->
+                    <img src="/content/pest-mobile/images/ico_vip.png" alt="">
+                    <b>홍깅동님</b>
+                    <p>안녕하세요</p>
+                    <a href="#" class="btn-logout">로그아웃</a>
+                    <button type="button" class="btn-nav-close">
+                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="article-content">
+                <!-- 
+                    로그아웃일때는 숨김  
+                -->
+                <div class="usr-info">
+                    <div class="coupon-point">
+                        <ul>
+                            <li>
+                                <a href="/content/mobile/mypage/down_coupon.html">
+                                    <dl>
+                                        <dt>쿠폰 &gt;</dt>
+                                        <dd><b>3</b>개</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/mobile/mypage/saving_point.html">
+                                    <dl>
+                                        <dt>포인트 &gt;</dt>
+                                        <dd><b>3,000</b>원</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="usr-quick-link">
+                        <ul>
+                            <li>
+                                <a href="/content/mobile/mypage/lately_order.html">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/ico_usr_quick01.png" alt="">
+                                        <figcaption>주문내역</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/mobile/mypage/delivery.html">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/ico_usr_quick02.png" alt="">
+                                        <figcaption>배송현황</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/mobile/mypage/wish_list.html">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/ico_usr_quick03.png" alt="">
+                                        <figcaption>위시리스트</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/mobile/mypage/lately_order.html">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/ico_usr_quick04.png" alt="">
+                                        <figcaption>마이페이지</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="gnb-menu">
+                    <li>
+                        <a href="javascript:;">ABOUT US</a>
+                        <ul>
+                            <li><a href="/content/mobile/introduction/company.html">회사 소개</a></li>
+                            <li><a href="/content/mobile/introduction/research.html">인증 및 특허</a></li>
+                            <li><a href="/content/mobile/introduction/patent.html">연구소 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">친환경 혁신 제품</a>
+                        <ul>
+                            <li><a href="/content/mobile/product/product_list.html">EWG 그린등급 제품</a></li>
+                            <li><a href="/content/mobile/product/product_list.html">Tablet 제품</a></li>
+                            <li><a href="/content/mobile/product/product_list.html">Micro Capture 제품</a></li>
+                            <li><a href="/content/mobile/product/lohas.html">로하스인증제품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">보행해충</a>
+                        <ul>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">개미</a></li>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">지네</a></li>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">바퀴벌레</a></li>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">노래기</a></li>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">쥐</a></li>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">빈대/벼룩</a></li>
+                            <li><a href="/content/mobile/walk_pest/walk_pest.html">진드기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">비래해충</a>
+                        <ul>
+                            <li><a href="/content/mobile/proportional_pest/proportional_pest.html">모기</a></li>
+                            <li><a href="/content/mobile/proportional_pest/proportional_pest.html">날(초)파리</a></li>
+                            <li><a href="/content/mobile/proportional_pest/proportional_pest.html">파리</a></li>
+                            <li><a href="/content/mobile/proportional_pest/proportional_pest.html">나방류</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">바이러스</a>
+                        <ul>
+                            <li><a href="/content/mobile/virus/virus.html">살균제</a></li>
+                            <li><a href="/content/mobile/virus/virus.html">손소독제</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">셀프방역솔루션</a>
+                        <ul>
+                            <li><a href="/content/mobile/solution/solution.html">해충방역</a></li>
+                            <li><a href="/content/mobile/solution/solution.html">살균방역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">커뮤니티</a>
+                        <ul>
+                            <li><a href="/content/mobile/community/event.html">기획이벤트</a></li>
+                            <li><a href="/content/mobile/community/notice.html">공지사항</a></li>
+                            <li><a href="#">해충별 방역퇴치법</a></li>
+                            <li><a href="/content/mobile/community/faq.html">FAQ</a></li>
+                            <li><a href="/content/mobile/community/question.html">전문가에게 물어보기</a></li>
+                            <li><a href="/content/mobile/community/one_qna.html">1:1문의</a></li>
+                            <li><a href="/content/mobile/community/experience.html">신제품 고객 체험단</a></li>
+                            <li><a href="/content/mobile/community/membership.html">멤버십</a></li>
+                            <li><a href="/content/mobile/community/photo_review.html">포토 후기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">마이페이지</a>
+                        <ul>
+                            <li><a href="/content/mobile/mypage/order_his.html">주문내역조회</a></li>
+                            <li><a href="/content/mobile/mypage/one_qna.html">1:1문의</a></li>
+                            <li><a href="/content/mobile/mypage/delivery.html">배송조회</a></li>
+                            <li><a href="/content/mobile/community/experience.html">신제품 고객체험단</a></li>
+                            <li><a href="/content/mobile/mypage/revocation.html">취소/교환/반품</a></li>
+                            <li><a href="/content/mobile/mypage/modify.html">회원정보 수정</a></li>
+                            <li><a href="/content/mobile/mypage/down_coupon.html">쿠폰</a></li>
+                            <li><a href="/content/mobile/mypage/delivery_addr.html">배송주소록</a></li>
+                            <li><a href="/content/mobile/mypage/saving_point.html">포인트</a></li>
+                            <li><a href="/content/mobile/mypage/notice.html">공지사항</a></li>
+                            <li><a href="/content/mobile/mypage/wish_list.html">위시리스트</a></li>
+                            <li><a href="/content/mobile/mypage/question.html">전문가에게 물어보기</a></li>
+                            <li><a href="/content/mobile/mypage/lately_product.html">최근 본 상품</a></li>
+                            <li><a href="/content/mobile/mypage/benefit.html">멤버십 혜택</a></li>
+                            <li><a href="/content/mobile/mypage/review.html">상품리뷰</a></li>
+                            <li><a href="/content/mobile/mypage/faq.html">FAQ</a></li>
+                            <li><a href="/content/mobile/mypage/qna.html">상품 Q&amp;A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">회원로그인</a>
+                        <ul>
+                            <li><a href="/content/mobile/member/agreement.html">회원가입</a></li>
+                            <li><a href="/content/mobile/mypage/withdraw.html">회원탈퇴</a></li>
+                            <li><a href="/content/mobile/mypage/modify.html">회원수정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </nav>
 
     <!-- Content -->
     <main id="content" class="sub-layout">
@@ -166,207 +368,11 @@
         </div>
     </div>
     
-    <!-- nav -->
-    <nav id="nav">
-        <article>
-            <!-- login out 
-            <div class="login-area">
-                <button type="button" class="btn-nav-close">
-                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
-                </button>
-                <b>지쎈샵에 오신 걸 환영합니다.</b>
-                <p>
-                    지금 지쎈샵 회원가입을 하시면<br>
-                    즉시 사용 가능한 2,000원 쿠폰을 드립니다.
-                </p>
-                <div class="btn-area">
-                    <a href="#" class="btn-login">로그인</a>
-                    <a href="#" class="btn-join">회원가입</a>
-                </div>
-            </div>-->
-            <!-- login -->
-            <div class="article-header">
-                <div class="top">
-                    <!--
-                    <img src="/content//pest-mobile/images/ico_vvip.png" alt="">
-                    <img src="/content//pest-mobile/images/ico_family.png" alt="">
-                    <img src="/content//pest-mobile/images/ico_buddy.png" alt="">
-                    -->
-                    <img src="/content//pest-mobile/images/ico_vip.png" alt="">
-                    <b>홍깅동님</b>
-                    <p>안녕하세요</p>
-                    <a href="#" class="btn-logout">로그아웃</a>
-                    <button type="button" class="btn-nav-close">
-                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
-                    </button>
-                </div>
-                <div class="usr-info">
-                    <div class="coupon-point">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <dl>
-                                        <dt>쿠폰 &gt;</dt>
-                                        <dd><b>3</b>개</dd>
-                                    </dl>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <dl>
-                                        <dt>포인트 &gt;</dt>
-                                        <dd><b>3,000</b>원</dd>
-                                    </dl>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="usr-quick-link">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <figure>
-                                        <img src="/content/pest-mobile/images/ico_usr_quick01.png" alt="">
-                                        <figcaption>주문내역</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <figure>
-                                        <img src="/content/pest-mobile/images/ico_usr_quick02.png" alt="">
-                                        <figcaption>배송현황</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <figure>
-                                        <img src="/content/pest-mobile/images/ico_usr_quick03.png" alt="">
-                                        <figcaption>위시리스트</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <figure>
-                                        <img src="/content/pest-mobile/images/ico_usr_quick04.png" alt="">
-                                        <figcaption>마이페이지</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="article-content">
-                <ul class="gnb-menu">
-                    <li>
-                        <a href="javascript:;">ABOUT US</a>
-                        <ul>
-                            <li><a href="#">회사 소개</a></li>
-                            <li><a href="#">인증 및 특허</a></li>
-                            <li><a href="#">연구소 소개</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">친환경 혁신 제품</a>
-                        <ul>
-                            <li><a href="#">EWG 그린등급 제품</a></li>
-                            <li><a href="#">Tablet 제품</a></li>
-                            <li><a href="#">Micro Capture 제품</a></li>
-                            <li><a href="#">로하스인증제품</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">보행해충</a>
-                        <ul>
-                            <li><a href="#">개미</a></li>
-                            <li><a href="#">지네</a></li>
-                            <li><a href="#">바퀴벌레</a></li>
-                            <li><a href="#">노래기</a></li>
-                            <li><a href="#">쥐</a></li>
-                            <li><a href="#">빈대/벼룩</a></li>
-                            <li><a href="#">진드기</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">비래해충</a>
-                        <ul>
-                            <li><a href="#">모기</a></li>
-                            <li><a href="#">날(초)파리</a></li>
-                            <li><a href="#">파리</a></li>
-                            <li><a href="#">나방류</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">바이러스</a>
-                        <ul>
-                            <li><a href="#">살균제</a></li>
-                            <li><a href="#">손소독제</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">셀프방역솔루션</a>
-                        <ul>
-                            <li><a href="#">해충방역</a></li>
-                            <li><a href="#">살균방역</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">커뮤니티</a>
-                        <ul>
-                            <li><a href="#">기획이벤트</a></li>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">해충별 방역퇴치법</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">전문가에게 물어보기</a></li>
-                            <li><a href="#">1:1문의</a></li>
-                            <li><a href="#">신제품 고객 체험단</a></li>
-                            <li><a href="#">멤버십</a></li>
-                            <li><a href="#">포토 후기</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">마이페이지</a>
-                        <ul>
-                            <li><a href="#">주문내역조회</a></li>
-                            <li><a href="#">1:1문의</a></li>
-                            <li><a href="#">배송조회</a></li>
-                            <li><a href="#">신제품 고객체험단</a></li>
-                            <li><a href="#">취소/교환/반품</a></li>
-                            <li><a href="#">회원정보 수정</a></li>
-                            <li><a href="#">쿠폰</a></li>
-                            <li><a href="#">배송주소록</a></li>
-                            <li><a href="#">포인트</a></li>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">위시리스트</a></li>
-                            <li><a href="#">전문가에게 물어보기</a></li>
-                            <li><a href="#">최근 본 상품</a></li>
-                            <li><a href="#">멤버십 혜택</a></li>
-                            <li><a href="#">상품리뷰</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">상품 Q&amp;A</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">회원로그인</a>
-                        <ul>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">회원탈퇴</a></li>
-                            <li><a href="#">회원수정</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </article>
-    </nav>
-    
     <!--quick-foot -->
     <nav class="quick-foot">
         <ul>
             <li>
-                <a href="/content/mobile/">
+                <a href="/content/mobile/index.html">
                     <img src="/content/pest-mobile/images/ico_quick01.png" alt="">
                 </a>
             </li>
@@ -376,17 +382,17 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/content/mobile/mypage/lately_order.html">
                     <img src="/content/pest-mobile/images/ico_quick03.png" alt="">
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/content/mobile/mypage/delivery.html">
                     <img src="/content/pest-mobile/images/ico_quick04.png" alt="">
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/content/mobile/mypage/lately_product.html">
                     <img src="/content/pest-mobile/images/bg_quick_frame.png" style="background-image: url(/content/pest-mobile/images/img_quick_frame.png);" alt="">
                 </a>
             </li>
@@ -555,6 +561,7 @@
     </div>
     
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/sub.js'></script>
     <script>

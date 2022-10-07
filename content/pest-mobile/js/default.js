@@ -21,14 +21,6 @@
         }
     });
 
-    // nav 관련
-    $(document).on('click', '.btn-nav', function(){
-        $('body').addClass('opened');
-    });
-    $(document).on('click', '.btn-nav-close', function(){
-        $('body').removeClass('opened');
-    });
-
     // gnb-menu
     $(document).on('click', '.gnb-menu > li > a', function() {
         if ($(this).parent().hasClass('active')) {
@@ -37,6 +29,16 @@
             $(this).parent().siblings('.active').removeClass('active');
             $(this).parent().addClass('active');
         }
+    });
+    
+    // 헤더 검색 관련
+    $(document).on('click', '.btn-search-open', function(){
+        $('.search-pop').addClass('show');
+        $('body').addClass('show-modal');
+    });
+    $(document).on('click', '.btn-pop-close', function(){
+        $('.search-pop').removeClass('show');
+        $('body').removeClass('show-modal');
     });
 
 })(jQuery);

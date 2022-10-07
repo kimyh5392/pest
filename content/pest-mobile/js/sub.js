@@ -1,5 +1,12 @@
 (function($){
     
+    // accordion
+    $(document).on('click', '.btn-collapse', function(e){
+        $(this).parent().toggleClass('active');
+        $(this).closest('li').find('.answer').not(':animated').slideToggle();
+        e.preventDefault();
+    });
+    
     // datepicker
     $.datepicker.setDefaults({
         dateFormat: 'yy-mm-dd',

@@ -1,5 +1,13 @@
 (function($){
     
+    // nav 관련
+    $(document).on('click', '.btn-nav', function(){
+        $('body').addClass('opened');
+    });
+    $(document).on('click', '.btn-nav-close', function(){
+        $('body').removeClass('opened');
+    });
+    
     // quick-link open 관련
     $(document).ready(function() {
         var lastScroll = 0;
@@ -86,5 +94,10 @@
     $(document).on('click','.btn-modal-close', function(e){
         $('body').removeClass('show-modal');
         $('.modal').removeClass('show');
+    });
+    
+    // like btn
+    $(document).on('click', '.btn-like', function(){
+        $(this).toggleClass('on');
     });
 })(jQuery);

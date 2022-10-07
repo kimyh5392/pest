@@ -903,9 +903,6 @@
 
 /* details-tab */
 .details-tab {
-    /*position: absolute;
-    top: 2260px;
-    left: 0;*/
     width: 100%;
     z-index: 100;
     text-align: center;
@@ -954,7 +951,7 @@
                     > li {
                         .btn-collapse {
                             padding-left: 0;
-                            padding-right: 0;
+                            padding-right: 240px;
                             > dl {
                                 dt {
                                     color: #919191;

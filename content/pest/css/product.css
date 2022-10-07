@@ -779,9 +779,6 @@ pre {
 
 /* details-tab */
 .details-tab {
-  /*position: absolute;
-  top: 2260px;
-  left: 0;*/
   width: 100%;
   z-index: 100;
   text-align: center;
@@ -823,7 +820,7 @@ pre {
   padding-top: 0 !important; }
   .qna-list .article-content .default-board .accordion-list > ul > li .btn-collapse {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 240px; }
     .qna-list .article-content .default-board .accordion-list > ul > li .btn-collapse > dl dt {
       color: #919191; }
   .qna-list .article-content .pagination {
