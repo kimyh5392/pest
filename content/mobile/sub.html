@@ -18,7 +18,7 @@
             </button>
             <h2>주문내역조회</h2>
             <div class="btn-area">
-                <a href="#" class="btn btn-search">
+                <a href="javascript:;" class="btn-search-open">
                     <img src="/content/pest-mobile/images/ico_search.png" alt="">
                 </a>
                 <a href="#" class="btn btn-home">
@@ -31,6 +31,44 @@
             </div>
         </div>
     </header>
+    
+    <!-- search-pop -->
+    <div class="search-pop">
+        <div class="pop-head">
+            <div class="container">
+                <div class="global-search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="무무스가드">
+                        <a href="/content/mobile/search_result.html" class="btn-search">
+                            <img src="/content/pest-mobile/images/ico_search.png" alt="">
+                        </a>
+                        <!--<button type="button" class="btn-search">
+                            <img src="/content/pest-mobile/images/ico_search.png" alt="">
+                        </button>-->
+                    </div>
+                </div>
+                <div class="btn-area">
+                    <a href="javascript:;" class="btn btn-close btn-pop-close">
+                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pop-body">
+            <dl>
+                <dt>인기 검색어</dt>
+                <dd>
+                    <ol>
+                        <li><a href="#">모기약</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">무무스가드</a></li>
+                        <li><a href="#">해충</a></li>
+                        <li><a href="#">손소독제</a></li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+    </div>
     
     <!-- nav -->
     <nav id="nav">
@@ -244,6 +282,15 @@
             <h6 class="sub-t">메세지 팝업</h6>
             <a href="#" class="btn-msg-modal">메세지 팝업</a>
             
+            <h6 class="sub-t">btn-controls</h6>
+            <div class="btn-controls">
+                <div class="form-group">
+                    <button type="button" class="btn-minus">-</button>
+                    <input type="text" class="form-control" value="1">
+                    <button type="button" class="btn-plus">+</button>
+                </div>
+            </div>
+                                        
             <h6 class="sub-t">검색 1</h6>
             <div class="select-search">
                 <div class="form-group">

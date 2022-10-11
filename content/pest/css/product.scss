@@ -49,6 +49,7 @@
                     font-size: 14px;
                     color: rgba(#000, .4);
                     line-height: 21px;
+                    font-weight: 400;
                     margin-top: 15px;
                 }
                 .price-wrap {
@@ -1072,7 +1073,8 @@ body {
     &.modal-review {
         .modal-content {
             width: 720px;
-            max-height: 680px;
+            z-index: 105;
+            max-height: 756px;
             overflow-y: auto;
             background-color: #fff;
             .content-head {
@@ -1422,6 +1424,9 @@ body {
                                 }
                                 .review-wrap {
                                     padding: 0 30px;
+                                    max-height: 671px;
+                                    overflow-x: hidden;
+                                    overflow-y: auto;
                                     .review-head {
                                         position: relative;
                                         padding: 20px 0;

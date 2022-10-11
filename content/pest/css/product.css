@@ -129,6 +129,7 @@ pre {
         font-size: 14px;
         color: rgba(0, 0, 0, 0.4);
         line-height: 21px;
+        font-weight: 400;
         margin-top: 15px; }
       .product-details .product-info .info-wrap .info-header .price-wrap {
         padding-top: 20px; }
@@ -903,7 +904,8 @@ body.banner-none .product-info.fixed {
             background-image: url(/content/pest/images/product/ico_minus.png); }
 .modal.modal-review .modal-content {
   width: 720px;
-  max-height: 680px;
+  z-index: 105;
+  max-height: 756px;
   overflow-y: auto;
   background-color: #fff; }
   .modal.modal-review .modal-content .content-head {
@@ -1163,7 +1165,10 @@ body.banner-none .product-info.fixed {
             font-weight: 400;
             line-height: 23px; }
     .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap {
-      padding: 0 30px; }
+      padding: 0 30px;
+      max-height: 671px;
+      overflow-x: hidden;
+      overflow-y: auto; }
       .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head {
         position: relative;
         padding: 20px 0;

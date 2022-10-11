@@ -100,4 +100,23 @@
     $(document).on('click', '.btn-like', function(){
         $(this).toggleClass('on');
     });
+    
+    // 헤더 검색 관련
+    $(document).on('click', '.btn-search-open', function(){
+        $('.search-pop').addClass('show');
+        $('body').addClass('show-modal');
+    });
+    $(document).on('click', '.btn-pop-close', function(){
+        $('.search-pop').removeClass('show');
+        $('body').removeClass('show-modal');
+    });
+    
+    // sub-head
+    $(window).on('scroll load resize', function() {
+        if ($(this).scrollTop() > 0) {
+            $('body').addClass('sub-header-fixed');
+        } else {
+            $('body').removeClass('sub-header-fixed');
+        }
+    });
 })(jQuery);
