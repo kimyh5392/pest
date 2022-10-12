@@ -1102,4 +1102,38 @@ textarea {
     font-weight: 400;
     margin-left: 5px; }
 
+/* link-tab */
+.link-tab {
+  border-bottom: 1px solid #d7d7d7; }
+  .link-tab > ul {
+    display: table;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed; }
+    .link-tab > ul > li {
+      display: table-cell;
+      vertical-align: top; }
+      .link-tab > ul > li > a {
+        display: block; }
+        .link-tab > ul > li > a span {
+          position: relative;
+          display: inline-block;
+          font-size: 15px;
+          color: #000;
+          font-weight: 500;
+          padding-bottom: 20px; }
+          .link-tab > ul > li > a span:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            display: block;
+            content: '';
+            background-color: #0e3db4; }
+      .link-tab > ul > li.active > a span {
+        color: #0e3db4; }
+        .link-tab > ul > li.active > a span:after {
+          width: 100%; }
+
 /*# sourceMappingURL=sub.css.map */

@@ -1272,7 +1272,51 @@ textarea {
     }
 }
 
-
+/* link-tab */
+.link-tab {
+    border-bottom: 1px solid #d7d7d7;
+    > ul {
+        display: table;
+        width: 100%;
+        text-align: center;
+        table-layout: fixed;
+        > li {
+            display: table-cell;
+            vertical-align: top;
+            > a {
+                display: block;
+                span {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 500;
+                    padding-bottom: 20px;
+                    &:after {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        display: block;
+                        content: '';
+                        background-color: $kcolor;
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    span {
+                        color: $kcolor;
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
