@@ -279,24 +279,32 @@
             <div class="swiper product-slider">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
-                        <figure>
-                            <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
-                        </figure>
+                        <a href="#pop-slider" class="btn-modal btn-pop-slider">
+                            <figure>
+                                <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
+                            </figure>
+                        </a>
                     </li>
                     <li class="swiper-slide">
-                        <figure>
-                            <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
-                        </figure>
+                        <a href="#pop-slider" class="btn-modal btn-pop-slider">
+                            <figure>
+                                <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
+                            </figure>
+                        </a>
                     </li>
                     <li class="swiper-slide">
-                        <figure>
-                            <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
-                        </figure>
+                        <a href="#pop-slider" class="btn-modal btn-pop-slider">
+                            <figure>
+                                <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
+                            </figure>
+                        </a>
                     </li>
                     <li class="swiper-slide">
-                        <figure>
-                            <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
-                        </figure>
+                        <a href="#pop-slider" class="btn-modal btn-pop-slider">
+                            <figure>
+                                <img src="/content/pest-mobile/images/product/img_product_slide_frame.png" style="background-image: url(/content/pest-mobile/images/product/img_product_slide01.png);" alt="">
+                            </figure>
+                        </a>
                     </li>
                 </ul>
                 <div class="swiper-pagination"></div>
@@ -837,6 +845,52 @@
         
     </main>
     
+    <!-- modal modal-product-slider -->
+    <div class="modal modal-product-slider" id="pop-slider">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <article>
+                <button type="button" class="btn-modal-close">
+                    <img src="/content/pest-mobile/images/ico_close.png" alt="">
+                </button>
+                <div class="container-fluid">
+                    <div class="article-content">
+                        <div class="swiper product-pop-slider">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/product/img_pop_product_slide.png" alt="">
+                                    </figure>
+                                </li>
+                                <li class="swiper-slide">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/product/img_pop_product_slide.png" alt="">
+                                    </figure>
+                                </li>
+                                <li class="swiper-slide">
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/product/img_pop_product_slide.png" alt="">
+                                    </figure>
+                                </li>
+                            </ul>
+                            <!-- fraction-pagination -->
+                            <div class="fraction-pagination"></div>
+                            <!-- slider-controls -->
+                            <div class="slider-controls">
+                                <button type="button" class="button-prev">
+                                    <img src="/content/pest-mobile/images/product/ico_btn_prev.png" alt="">
+                                </button>
+                                <button type="button" class="button-next">
+                                    <img src="/content/pest-mobile/images/product/ico_btn_next.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
     <!-- 구매관련 -->
     <div class="quick-buy">
         <a href="javascript:;" class="btn btn-buy">구매하기</a>
@@ -1119,8 +1173,6 @@
         </div>
     </div>
     
-    
-    
     <!-- quick-top -->
     <div class="quick-top">
         <a href="javascript:;" class="btn-quick-top"></a>
@@ -1311,6 +1363,11 @@
                 $(this).parent().parent().removeClass('show');
                 $('body').removeClass('show-modal');
             });
+            
+            // slide popup 관련
+            $(document).on('click', '.btn-pop-slider', function(){
+                console.log('눌럿다');
+            });
         })(jQuery);
         // product-slider
         const carosel = new Swiper ('.product-slider', {
@@ -1328,6 +1385,21 @@
             }
         });
         
+        const carosel2 = new Swiper ('.product-pop-slider', {
+            loop: true,
+            loopFillGroupWithBlank: true,
+            loopAdditionalSlides: 1,
+            loadPrevNext : true,
+            pagination: {
+                el: '.fraction-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+              nextEl: '.button-next',
+              prevEl: '.button-prev',
+            },
+        });
+        
         //
         const goods_swiper1 = new Swiper ('.relation-slider', {
             loopAdditionalSlides: 1,
@@ -1335,6 +1407,8 @@
             loadPrevNext : true,
             spaceBetween: 10,
         });
+        
+        
     </script>
 </body>
 </html>

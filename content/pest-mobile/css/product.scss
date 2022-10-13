@@ -25,13 +25,16 @@
         position: relative;
         .swiper-wrapper {
             .swiper-slide {
-                > figure {
-                    img {
-                        display: block;
-                        width: 100%;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: 50% 50%;
+                > a {
+                    display: block;
+                    > figure {
+                        img {
+                            display: block;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                        }
                     }
                 }
             }
@@ -738,8 +741,88 @@ body {
     }
 }
 
-
-
+/* modal */
+.modal {
+    &.modal-product-slider {
+        .backdrop {
+            background-color: #343434;
+        }
+        .modal-content {
+            width: 100%;
+            height: 100vh;
+            background: none;
+            article {
+                position: relative;
+                height: 100vh;
+                padding: 60px 0;
+                .btn-modal-close {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    display: block;
+                    width: 20px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .container-fluid {
+                    display: table;
+                    width: 100%;
+                    height: 100%;
+                    table-layout: fixed;
+                    .article-content {
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 100%;
+                        .product-pop-slider {
+                            position: relative;
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    > figure {
+                                        display: block;
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .fraction-pagination {
+                                font-size: 20px;
+                                color: #fff;
+                                text-align: center;
+                                @include msr();
+                                font-weight: 500;
+                                margin-top: 35px;
+                            }
+                            .slider-controls {
+                                button {
+                                    position: absolute;
+                                    top: calc(50% - 27.5px);
+                                    display: block;
+                                    width: 20px;
+                                    z-index: 1;
+                                    transform: translateY(-50%);
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                    &.button-prev {
+                                        left: 20px;
+                                    }
+                                    &.button-next {
+                                        right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
