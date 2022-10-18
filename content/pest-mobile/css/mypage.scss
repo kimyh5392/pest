@@ -270,16 +270,39 @@
         > ul {
             > li {
                 border-bottom: 1px solid #d7d7d7;
+                &:last-child {
+                    border-bottom: 0;
+                }
                 > a {
-                    
+                    display: block;
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 500;
+                    line-height: 54px;
+                    padding-left: 20px;
                 }
                 > ul {
+                    padding: 10px 0 10px 20px;
+                    border-top: 1px solid #d7d7d7;
                     > li {
                         > a {
+                            display: block;
                             position: relative;
+                            font-size: 15px;
+                            line-height: 40px;
+                            color: #000;
+                            font-weight: 500;
                             padding-left: 10px;
+                            background-image: url(/content/pest-mobile/images/mypage/ico_arrow_right.png);
+                            background-repeat: no-repeat;
+                            background-size: 8px auto;
+                            background-position: calc(100% - 20px) 50%;
                             &:before {
-                                content: '·'
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                content: '·';
+                                transform: translateY(-50%);
                             }
                         }
                     }
@@ -288,6 +311,333 @@
         }
     }
 }
+
+/* order-his, delivery, .revocation */
+.order-his, .delivery, .revocation {
+    .section-header {
+        padding: 20px 0 30px;
+    }
+    .section-content {
+        .lately-order {
+            border-top: 1px solid #d7d7d7;
+        }
+        .btn-area {
+            text-align: center;
+            padding: 20px 20px 0;
+            .btn {
+                font-size: 15px;
+                color: #000;
+                font-weight: 500;
+                line-height: 43px;
+                i {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 17px;
+                    height: 43px;
+                    margin-left: 10px;
+                    background-image: url(/content/pest-mobile/images/ico_arrow_bottom.png);
+                    background-repeat: no-repeat;
+                    background-size: 17px auto;
+                    background-position: 50% 50%;
+                }
+                &.btn-lg {
+                    display: block;
+                    width: 100%;
+                }
+                &.btn-white {
+                    border: 1px solid #e4e4e4;
+                }
+            }
+        }
+    }
+}
+
+/* order-details */
+.order-details {
+    .order-information {
+        padding: 20px;
+        border-bottom: 8px solid #f5f5f5;
+        > dl {
+            overflow: hidden;
+            dt, dd {
+                font-size: 12px;
+                color: #000;
+                font-weight: 500;
+                line-height: 18px;
+                float: left;
+            }
+            dt {
+                clear: left;
+                &:after {
+                    content: ':';
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+    .section-header {
+        padding: 10px 0;
+        .container {
+            .box {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                div {
+                    display: table-cell;
+                    vertical-align: middle;
+                    &.item-img {
+                        width: 70px;
+                        img {
+                            display: block;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                        }
+                    }
+                    &.details {
+                        padding: 0 20px;
+                        b {
+                            display: block;
+                            font-size: 14px;
+                            color: #000;
+                            font-weight: 500;
+                            line-height: 18px;
+                        }
+                        p {
+                            font-size: 12px;
+                            color: #919191;
+                            font-weight: 400;
+                            line-height: 18px;
+                            margin-top: 5px;
+                        }
+                    }
+                    &.state {
+                        width: 60px;
+                        text-align: center;
+                        b {
+                            font-size: 12px;
+                            color: $kcolor;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: center;
+                margin-top: 20px;
+                > ul {
+                    display: table;
+                    table-layout: fixed;
+                    width: calc(100% + 10px);
+                    margin: 0 -5px;
+                    > li {
+                        display: table-cell;
+                        vertical-align: top;
+                        padding: 0 5px;
+                        > a {
+                            display: block;
+                            font-size: 14px;
+                            color: #000;
+                            font-weight: 500;
+                            line-height: 26px;
+                            border: 1px solid #e4e4e4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-content {
+        article {
+            padding: 20px 0;
+            border-top: 8px solid #f5f5f5;
+            .article-header {
+                padding-bottom: 20px;
+                h3 {
+                    font-size: 14px;
+                    color: $kcolor;
+                    font-weight: 500;
+                }
+            }
+            .article-content {
+                ul {
+                    > li {
+                        dl {
+                            display: table;
+                            width: 100%;
+                            table-layout: fixed;
+                            dt, dd {
+                                font-size: 15px;
+                                color: #000;
+                                line-height: 20px;
+                                font-weight: 400;
+                                display: table-cell;
+                                vertical-align: top;
+                            }
+                            dd {
+                                text-align: right;
+                            }
+                        }
+                        & ~ li {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+            .total {
+                padding: 20px 20px 0;
+                margin-top: 20px;
+                border-top: 1px solid #d7d7d7;
+                > dl {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    dt, dd {
+                        font-size: 15px;
+                        color: #000;
+                        font-weight: 400;
+                        display: table-cell;
+                        vertical-align: top;
+                    }
+                    dd {
+                        text-align: right;
+                    }
+                }
+            }
+            &.delivery-information {
+                .article-content {
+                    ul {
+                        > li {
+                            dl {
+                                > dt {
+                                    width: 100px;
+                                }
+                                > dd {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* coupon-area */
+.coupon-area {
+    padding-top: 20px;
+    .section-header {
+        .link-tab {
+            padding: 0 20px;
+        }
+    }
+    .section-content {
+        padding-top: 35px;
+        .no-coupon {
+            text-align: center;
+            font-size: 14px;
+            padding: 100px 0;
+            color: #000;
+            font-weight: 400;
+        }
+        > ul {
+            border-top: 1px solid #d7d7d7;
+            > li {
+                position: relative;
+                padding: 20px;
+                padding-right: 90px;
+                border-bottom: 1px solid #d7d7d7;
+                b {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $kcolor;
+                }
+                .note {
+                    position: relative;
+                    font-size: 12px;
+                    color: #919191;
+                    line-height: 16px;
+                    padding-left: 10px;
+                    margin-top: 10px;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        content: '*';
+                    }
+                    & ~ .note {
+                        margin-top: 0;
+                    }
+                }
+                .btn-area {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    width: 60px;
+                    transform: translateY(-50%);
+                    .btn-down {
+                        display: block;
+                        width: 22px;
+                        margin: 0 auto;
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .btn-white {
+                        display: none;
+                        width: 60px;
+                        font-size: 12px;
+                        color: #000;
+                        text-align: center;
+                        font-weight: 500;
+                        line-height: 20px;
+                        margin: 0 auto;
+                        border: 1px solid #e4e4e4;
+                    }
+                    &.down-success {
+                        .btn-down {
+                            display: none;
+                        }
+                        .btn-white {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

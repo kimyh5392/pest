@@ -512,6 +512,78 @@ textarea {
     left: 0;
     content: '*'; }
 
+/* search-form2 */
+.search-form2 > ul {
+  display: table;
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border: 1px solid #e4e4e4; }
+  .search-form2 > ul > li {
+    display: table-cell;
+    vertical-align: top;
+    border-right: 1px solid #e4e4e4; }
+    .search-form2 > ul > li > a {
+      display: block;
+      font-size: 15px;
+      color: #000;
+      font-weight: 500;
+      line-height: 32px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+    .search-form2 > ul > li.active > a {
+      color: #fff;
+      background-color: #000; }
+.search-form2 .date-form {
+  position: relative;
+  padding-right: 90px; }
+  .search-form2 .date-form .form-group {
+    margin-top: 10px; }
+    .search-form2 .date-form .form-group.date {
+      display: none;
+      /*display: table;*/
+      width: 100%;
+      table-layout: fixed; }
+      .search-form2 .date-form .form-group.date * {
+        display: table-cell;
+        vertical-align: middle; }
+      .search-form2 .date-form .form-group.date span {
+        width: 20px;
+        font-size: 15px;
+        color: #000;
+        font-weight: bold;
+        text-align: center; }
+      .search-form2 .date-form .form-group.date.show {
+        display: table; }
+  .search-form2 .date-form .btn-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: #fff;
+    width: 80px;
+    height: 100%;
+    background-color: #0e3db4; }
+.search-form2 .attention {
+  position: relative;
+  font-size: 11px;
+  color: #ababab;
+  line-height: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  margin-top: 10px; }
+  .search-form2 .attention:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '*'; }
+
 /* default-board */
 .default-board .accordion-list > li {
   border-bottom: 1px solid #d7d7d7; }

@@ -530,6 +530,88 @@ textarea {
     }
 }
 
+/* search-form2 */
+.search-form2 {
+    > ul {
+        display: table;
+        width: 100%;
+        text-align: center;
+        table-layout: fixed;
+        border: 1px solid #e4e4e4;
+        > li {
+            display: table-cell;
+            vertical-align: top;
+            border-right: 1px solid #e4e4e4;
+            > a {
+                display: block;
+                font-size: 15px;
+                color: #000;
+                font-weight: 500;
+                line-height: 32px;
+                @include transition();
+            }
+            &.active {
+                > a {
+                    color: #fff;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    .date-form {
+        position: relative;
+        padding-right: 90px;
+        .form-group {
+            margin-top: 10px;
+            &.date {
+                display: none;
+                /*display: table;*/
+                width: 100%;
+                table-layout: fixed;
+                * {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                span {
+                    width: 20px;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                &.show {
+                    display: table;
+                }
+            }
+        }
+        .btn-search {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 16px;
+            color: #fff;
+            width: 80px;
+            height: 100%;
+            background-color: $kcolor;
+        }
+    }
+    .attention {
+        position: relative;
+        font-size: 11px;
+        color: #ababab;
+        line-height: 18px;
+        font-weight: 500;
+        padding-left: 10px;
+        margin-top: 10px;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '*';
+        }
+    }
+}
+
 /* default-board */
 .default-board {
     .accordion-list {

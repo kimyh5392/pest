@@ -7,6 +7,18 @@
         e.preventDefault();
     });
     
+    // search-form2 관련
+    $(document).on('click', '.search-form2 > ul > li > a', function(){
+        $('.search-form2 > ul > li').removeClass('active')
+        $('.form-group.date').removeClass('show');
+        $(this).parent().addClass('active');
+    });
+    $(document).on('click', '.date-setting > a', function(){
+        $('.search-form2 > ul > li').removeClass('active')
+        $(this).parent().addClass('active');
+        $('.form-group.date').addClass('show');
+    });
+    
     // datepicker
     $.datepicker.setDefaults({
         dateFormat: 'yy-mm-dd',

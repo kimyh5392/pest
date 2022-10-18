@@ -296,10 +296,250 @@ pre {
         border: 1px solid #e4e4e4; }
 .mypage .my-page-list > ul > li {
   border-bottom: 1px solid #d7d7d7; }
-  .mypage .my-page-list > ul > li > ul > li > a {
-    position: relative;
-    padding-left: 10px; }
-    .mypage .my-page-list > ul > li > ul > li > a:before {
-      content: "·"; }
+  .mypage .my-page-list > ul > li:last-child {
+    border-bottom: 0; }
+  .mypage .my-page-list > ul > li > a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    line-height: 54px;
+    padding-left: 20px; }
+  .mypage .my-page-list > ul > li > ul {
+    padding: 10px 0 10px 20px;
+    border-top: 1px solid #d7d7d7; }
+    .mypage .my-page-list > ul > li > ul > li > a {
+      display: block;
+      position: relative;
+      font-size: 15px;
+      line-height: 40px;
+      color: #000;
+      font-weight: 500;
+      padding-left: 10px;
+      background-image: url(/content/pest-mobile/images/mypage/ico_arrow_right.png);
+      background-repeat: no-repeat;
+      background-size: 8px auto;
+      background-position: calc(100% - 20px) 50%; }
+      .mypage .my-page-list > ul > li > ul > li > a:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '·';
+        transform: translateY(-50%); }
+
+/* order-his, delivery, .revocation */
+.order-his .section-header, .delivery .section-header, .revocation .section-header {
+  padding: 20px 0 30px; }
+.order-his .section-content .lately-order, .delivery .section-content .lately-order, .revocation .section-content .lately-order {
+  border-top: 1px solid #d7d7d7; }
+.order-his .section-content .btn-area, .delivery .section-content .btn-area, .revocation .section-content .btn-area {
+  text-align: center;
+  padding: 20px 20px 0; }
+  .order-his .section-content .btn-area .btn, .delivery .section-content .btn-area .btn, .revocation .section-content .btn-area .btn {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    line-height: 43px; }
+    .order-his .section-content .btn-area .btn i, .delivery .section-content .btn-area .btn i, .revocation .section-content .btn-area .btn i {
+      display: inline-block;
+      vertical-align: top;
+      width: 17px;
+      height: 43px;
+      margin-left: 10px;
+      background-image: url(/content/pest-mobile/images/ico_arrow_bottom.png);
+      background-repeat: no-repeat;
+      background-size: 17px auto;
+      background-position: 50% 50%; }
+    .order-his .section-content .btn-area .btn.btn-lg, .delivery .section-content .btn-area .btn.btn-lg, .revocation .section-content .btn-area .btn.btn-lg {
+      display: block;
+      width: 100%; }
+    .order-his .section-content .btn-area .btn.btn-white, .delivery .section-content .btn-area .btn.btn-white, .revocation .section-content .btn-area .btn.btn-white {
+      border: 1px solid #e4e4e4; }
+
+/* order-details */
+.order-details .order-information {
+  padding: 20px;
+  border-bottom: 8px solid #f5f5f5; }
+  .order-details .order-information > dl {
+    overflow: hidden; }
+    .order-details .order-information > dl dt, .order-details .order-information > dl dd {
+      font-size: 12px;
+      color: #000;
+      font-weight: 500;
+      line-height: 18px;
+      float: left; }
+    .order-details .order-information > dl dt {
+      clear: left; }
+      .order-details .order-information > dl dt:after {
+        content: ':';
+        margin: 0 3px; }
+.order-details .section-header {
+  padding: 10px 0; }
+  .order-details .section-header .container .box {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .order-details .section-header .container .box div {
+      display: table-cell;
+      vertical-align: middle; }
+      .order-details .section-header .container .box div.item-img {
+        width: 70px; }
+        .order-details .section-header .container .box div.item-img img {
+          display: block;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%; }
+      .order-details .section-header .container .box div.details {
+        padding: 0 20px; }
+        .order-details .section-header .container .box div.details b {
+          display: block;
+          font-size: 14px;
+          color: #000;
+          font-weight: 500;
+          line-height: 18px; }
+        .order-details .section-header .container .box div.details p {
+          font-size: 12px;
+          color: #919191;
+          font-weight: 400;
+          line-height: 18px;
+          margin-top: 5px; }
+      .order-details .section-header .container .box div.state {
+        width: 60px;
+        text-align: center; }
+        .order-details .section-header .container .box div.state b {
+          font-size: 12px;
+          color: #0e3db4;
+          font-weight: bold; }
+  .order-details .section-header .container .btn-area {
+    text-align: center;
+    margin-top: 20px; }
+    .order-details .section-header .container .btn-area > ul {
+      display: table;
+      table-layout: fixed;
+      width: calc(100% + 10px);
+      margin: 0 -5px; }
+      .order-details .section-header .container .btn-area > ul > li {
+        display: table-cell;
+        vertical-align: top;
+        padding: 0 5px; }
+        .order-details .section-header .container .btn-area > ul > li > a {
+          display: block;
+          font-size: 14px;
+          color: #000;
+          font-weight: 500;
+          line-height: 26px;
+          border: 1px solid #e4e4e4; }
+.order-details .section-content article {
+  padding: 20px 0;
+  border-top: 8px solid #f5f5f5; }
+  .order-details .section-content article .article-header {
+    padding-bottom: 20px; }
+    .order-details .section-content article .article-header h3 {
+      font-size: 14px;
+      color: #0e3db4;
+      font-weight: 500; }
+  .order-details .section-content article .article-content ul > li dl {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .order-details .section-content article .article-content ul > li dl dt, .order-details .section-content article .article-content ul > li dl dd {
+      font-size: 15px;
+      color: #000;
+      line-height: 20px;
+      font-weight: 400;
+      display: table-cell;
+      vertical-align: top; }
+    .order-details .section-content article .article-content ul > li dl dd {
+      text-align: right; }
+  .order-details .section-content article .article-content ul > li ~ li {
+    margin-top: 15px; }
+  .order-details .section-content article .total {
+    padding: 20px 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #d7d7d7; }
+    .order-details .section-content article .total > dl {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      .order-details .section-content article .total > dl dt, .order-details .section-content article .total > dl dd {
+        font-size: 15px;
+        color: #000;
+        font-weight: 400;
+        display: table-cell;
+        vertical-align: top; }
+      .order-details .section-content article .total > dl dd {
+        text-align: right; }
+  .order-details .section-content article.delivery-information .article-content ul > li dl > dt {
+    width: 100px; }
+  .order-details .section-content article.delivery-information .article-content ul > li dl > dd {
+    text-align: left; }
+
+/* coupon-area */
+.coupon-area {
+  padding-top: 20px; }
+  .coupon-area .section-header .link-tab {
+    padding: 0 20px; }
+  .coupon-area .section-content {
+    padding-top: 35px; }
+    .coupon-area .section-content .no-coupon {
+      text-align: center;
+      font-size: 14px;
+      padding: 100px 0;
+      color: #000;
+      font-weight: 400; }
+    .coupon-area .section-content > ul {
+      border-top: 1px solid #d7d7d7; }
+      .coupon-area .section-content > ul > li {
+        position: relative;
+        padding: 20px;
+        padding-right: 90px;
+        border-bottom: 1px solid #d7d7d7; }
+        .coupon-area .section-content > ul > li b {
+          display: block;
+          font-size: 18px;
+          font-weight: 500;
+          color: #0e3db4; }
+        .coupon-area .section-content > ul > li .note {
+          position: relative;
+          font-size: 12px;
+          color: #919191;
+          line-height: 16px;
+          padding-left: 10px;
+          margin-top: 10px; }
+          .coupon-area .section-content > ul > li .note:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '*'; }
+          .coupon-area .section-content > ul > li .note ~ .note {
+            margin-top: 0; }
+        .coupon-area .section-content > ul > li .btn-area {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          width: 60px;
+          transform: translateY(-50%); }
+          .coupon-area .section-content > ul > li .btn-area .btn-down {
+            display: block;
+            width: 22px;
+            margin: 0 auto; }
+            .coupon-area .section-content > ul > li .btn-area .btn-down img {
+              display: block;
+              width: 100%; }
+          .coupon-area .section-content > ul > li .btn-area .btn-white {
+            display: none;
+            width: 60px;
+            font-size: 12px;
+            color: #000;
+            text-align: center;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 0 auto;
+            border: 1px solid #e4e4e4; }
+          .coupon-area .section-content > ul > li .btn-area.down-success .btn-down {
+            display: none; }
+          .coupon-area .section-content > ul > li .btn-area.down-success .btn-white {
+            display: block; }
 
 /*# sourceMappingURL=mypage.css.map */

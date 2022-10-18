@@ -975,6 +975,164 @@
             }
         }
     }
+    &.modal-review {
+        .modal-content {
+            width: 720px;
+            z-index: 105;
+            max-height: 756px;
+            overflow-y: auto;
+            background-color: #fff;
+            .content-head {
+                text-align: center;
+                padding: 60px 0 50px;
+                h4 {
+                    font-size: 25px;
+                    color: #000;
+                    font-weight: 400;
+                }
+                .grade {
+                    margin-top: 30px;
+                    > ol {
+                        > li {
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 0 5px;
+                            > a {
+                                display: block;
+                                img {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 35px;
+                        color: $kcolor;
+                        font-weight: 500;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .content-body {
+                position: relative;
+                padding: 0 45px 60px;
+                .form-group {
+                    padding: 30px;
+                    border: 1px solid #d7d7d7;
+                    .form-control {
+                        height: 180px;
+                        border: 0;
+                        padding: 0;
+                        resize: none;
+                    }
+                    span {
+                        display: block;
+                        font-size: 17px;
+                        color: #010101;
+                        text-align: right;
+                        padding-top: 30px;
+                    }
+                }
+                .file-attach {
+                    margin-top: 10px;
+                    input[type="file"] {
+                        display: none;
+                    }
+                    .btn-flie {
+                        display: block;
+                        width: 100%;
+                        line-height: 70px;
+                        font-size: 18px;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: 400;
+                        cursor: pointer;
+                        background-color: $kcolor;
+                    }
+                    .attention {
+                        font-size: 14px;
+                        color: #ababab;
+                        font-weight: 400;
+                        margin-top: 15px;
+                    }
+                }
+                .file-list {
+                    margin-top: 30px;
+                    padding-bottom: 45px;
+                    > ul {
+                        font-size: 0;
+                        > li {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 85px;
+                            margin-right: 10px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            > .file-wrap {
+                                position: relative;
+                                figure {
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: 50% 50%;
+                                    }
+                                }
+                            }
+                            .btn-del {
+                                position: absolute;
+                                top: 8px;
+                                right: 8px;
+                                display: block;
+                                img {
+                                    display: block;
+                                }
+                            }
+                            .btn-file-modify {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                text-align: center;
+                                color: #fff;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 22px;
+                                background-color: rgba(#000, .2);
+                            }
+                        }
+                    }
+                }
+                .btn-area {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    font-size: 0;
+                    text-align: center;
+                    margin-top: 45px;
+                    .btn {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 50%;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 60px;
+                        &.btn-cancel {
+                            color: #000;
+                            background-color: #f5f5f5;
+                        }
+                        &.btn-submit {
+                            color: #fff;
+                            background-color: $kcolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* 공통 */
