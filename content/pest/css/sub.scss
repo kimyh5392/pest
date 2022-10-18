@@ -3,6 +3,9 @@
 /* quick-banner reset */
 .quick-banner {
     top: 374px;
+    &.type-2 {
+        top: 684px;
+    }
 }
 
 /* content */

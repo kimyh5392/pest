@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/content/pest-mobile/css/default.css">
     <link rel="stylesheet" href="/content/pest-mobile/css/sub.css">
-    <link rel="stylesheet" href="/content/pest-mobile/css/member.css">
+    <link rel="stylesheet" href="/content/pest-mobile/css/purchase.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>GssenShop</title>
 </head>
@@ -14,12 +14,10 @@
     <!-- Header -->
     <header id="sub-head">
         <div class="container">
-            <h2>아이디/비밀번호 찾기</h2>
-            <div class="btn-area">
-                <a href="javascript:;" class="btn-close">
-                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
-                </a>
-            </div>
+            <button type="button" class="btn-back">
+                <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
+            </button>
+            <h2>주문서 작성</h2>
         </div>
     </header>
     
@@ -265,29 +263,230 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <article class="usr-certification">
-            <div class="container">
-                <h4>입력하신 정보와 일치하는 아이디 정보입니다.</h4>
-                <div class="box">
-                    <p>
-                        AB1***@naver.com<br>
-                        카카오 가입 / 2022. 06. 01
-                    </p>
+        <!-- purchase-order -->
+        <section class="purchase-order">
+            <article class="delivery-information">
+                <div class="article-header">
+                    <div class="container">
+                        <h3>배송정보</h3>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        * 개인정보 보호를 위해 뒤의 3자리를 * 표기됩니다.
-                    </li>
-                    <li>
-                        * 비밀번호를 모르시나요?
-                        <a href="/content/mobile/member/pw_find.html" class="btn-pw-find">비밀번호 찾기</a>
-                    </li>
-                </ul>
-                <div class="btn-area">
-                    <a href="/content/mobile/member/login.html" class="btn-login">로그인 하기</a>
+                <div class="article-content">
+                    <div class="container">
+                        <div class="info-top">
+                            <b>홍길동</b>
+                            <a href="#" class="btn btn-black">배송지 변경</a>
+                        </div>
+                        <div class="info-body">
+                            <address>
+                                16005)<br>
+                                경기도 용인시 기흥구 동백죽전대로 325번지 <br>
+                                롯데캐슬 아파트 101동 1101호
+                            </address>
+                            <p class="contact">010-1234-5678</p>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>배송메세지를 선택해주세요.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </article>
+            <article class="goods-order">
+                <div class="article-header">
+                    <div class="container">
+                        <h3>주문 상품 (총 2개)</h3>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <ul class="order-product">
+                        <li>
+                            <div class="box">
+                                <div class="item-img">
+                                    <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                </div>
+                                <div class="details">
+                                    <b>무무스가드플러스</b>
+                                    <p>
+                                        옵션 : 110mL<br>
+                                        수량 : 1개
+                                    </p>
+                                </div>
+                                <div class="total">
+                                    <p>21,000원</p>
+                                    <small>11,000원</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="item-img">
+                                    <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                </div>
+                                <div class="details">
+                                    <b>무무스가드플러스</b>
+                                    <p>
+                                        옵션 : 110mL<br>
+                                        수량 : 1개
+                                    </p>
+                                </div>
+                                <div class="total">
+                                    <p>21,000원</p>
+                                    <small>11,000원</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="item-img">
+                                    <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                </div>
+                                <div class="details">
+                                    <b>무무스가드플러스</b>
+                                    <p>
+                                        옵션 : 110mL<br>
+                                        수량 : 1개
+                                    </p>
+                                </div>
+                                <div class="total">
+                                    <p>21,000원</p>
+                                    <small>11,000원</small>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <dl class="total-area">
+                        <dt>배송비 (선불)</dt>
+                        <dd>3,000원</dd>
+                    </dl>
+                </div>
+            </article>
+            <article class="discount-wrap">
+                <div class="article-header">
+                    <div class="container">
+                        <h3>할인혜택</h3>
+                        <p class="attention">* 쿠폰과 포인트는 중복사용이 불가합니다.</p>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>쿠폰할인</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="1,000,000 원">
+                                            <a href="#" class="btn btn-benefit">쿠폰조회</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>포인트 사용</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="1,000,000 원">
+                                            <a href="#" class="btn btn-benefit">전액사용</a>
+                                        </div>
+                                        <p class="note">보유 포인트 : 5,000P / 1P : 1원</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="buy-list">
+                <div class="article-header">
+                    <div class="container">
+                        <h3>결제수단</h3>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <div class="radio-box">
+                                    <input type="radio" id="radio1" name="buy-list">
+                                    <label for="radio1"></label>
+                                    <label for="radio1" class="label">카드결제</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio-box">
+                                    <input type="radio" id="radio2" name="buy-list">
+                                    <label for="radio2"></label>
+                                    <label for="radio2" class="label">계좌이체</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio-box">
+                                    <input type="radio" id="radio3" name="buy-list">
+                                    <label for="radio3"></label>
+                                    <label for="radio3" class="label">가상계좌</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio-box">
+                                    <input type="radio" id="radio4" name="buy-list">
+                                    <label for="radio4"></label>
+                                    <label for="radio4" class="label">계좌이체(에스트로)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio-box">
+                                    <input type="radio" id="radio5" name="buy-list">
+                                    <label for="radio5"></label>
+                                    <label for="radio5" class="label">가상계좌(에스트로)</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="pay-total">
+                <div class="article-header">
+                    <div class="container">
+                        <h3>결제금액</h3>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>총 상품가격</dt>
+                                    <dd>53,000원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>배송비</dt>
+                                    <dd>3,000원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>할인 금액</dt>
+                                    <dd>-1,000원</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <dl class="total-area">
+                        <dt>배송비 (선불)</dt>
+                        <dd>3,000원</dd>
+                    </dl>
+                </div>
+            </article>
+            <div class="btn-pay-area">
+                <p>결제정보를 확인하였으며, 구매진행에 동의합니다.</p>
+                <a href="#" class="btn btn-lg btn-blue">결제하기</a>
             </div>
-        </article>
+        </section>
         
     </main>
     

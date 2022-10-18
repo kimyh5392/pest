@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/content/pest-mobile/css/default.css">
     <link rel="stylesheet" href="/content/pest-mobile/css/sub.css">
-    <link rel="stylesheet" href="/content/pest-mobile/css/member.css">
+    <link rel="stylesheet" href="/content/pest-mobile/css/purchase.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>GssenShop</title>
 </head>
@@ -14,7 +14,10 @@
     <!-- Header -->
     <header id="sub-head">
         <div class="container">
-            <h2>아이디/비밀번호 찾기</h2>
+            <button type="button" class="btn-back">
+                <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
+            </button>
+            <h2>배송지 정보</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-close">
                     <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
@@ -265,29 +268,87 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <article class="usr-certification">
-            <div class="container">
-                <h4>입력하신 정보와 일치하는 아이디 정보입니다.</h4>
-                <div class="box">
-                    <p>
-                        AB1***@naver.com<br>
-                        카카오 가입 / 2022. 06. 01
-                    </p>
+        <!-- delivery-info -->
+        <section class="delivery-info">
+            <article>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>배송지 이름</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="우리집">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>받으시는 분</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="홍길동">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>
+                                    <div class="form-group addr">
+                                        <input type="text" class="form-control" placeholder="16005 경기도 용인시 기흥구 동백죽전대로 325번지">
+                                        <a href="#" class="btn btn-modify">변경</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="101동 1101호">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>휴대폰번호</dt>
+                                <dd>
+                                    <div class="contact">
+                                        <ul>
+                                            <li>
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>010</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="1234">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="5678">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="radio-box">
+                                <input type="radio" id="radio1" name="basic-addr" checked>
+                                <label for="radio1"></label>
+                                <label for="radio1" class="label">배송 주소록에 저장</label>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        * 개인정보 보호를 위해 뒤의 3자리를 * 표기됩니다.
-                    </li>
-                    <li>
-                        * 비밀번호를 모르시나요?
-                        <a href="/content/mobile/member/pw_find.html" class="btn-pw-find">비밀번호 찾기</a>
-                    </li>
-                </ul>
                 <div class="btn-area">
-                    <a href="/content/mobile/member/login.html" class="btn-login">로그인 하기</a>
+                    <a href="#" class="btn btn-lg btn-blue">배송지 적용</a>
                 </div>
-            </div>
-        </article>
+            </article>
+        </section>
         
     </main>
     

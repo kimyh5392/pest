@@ -451,8 +451,10 @@
     overflow: hidden;
     .container-fluid {
         .simply-scroll {
+            width: 100% !important;
             height: auto;
             .simply-scroll-clip {
+                width: 100% !important;
                 height: auto;
                 .floting-list {
                     > li {

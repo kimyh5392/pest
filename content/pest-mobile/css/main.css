@@ -412,8 +412,10 @@ pre {
 .promotion {
   overflow: hidden; }
   .promotion .container-fluid .simply-scroll {
+    width: 100% !important;
     height: auto; }
     .promotion .container-fluid .simply-scroll .simply-scroll-clip {
+      width: 100% !important;
       height: auto; }
       .promotion .container-fluid .simply-scroll .simply-scroll-clip .floting-list > li {
         height: auto; }

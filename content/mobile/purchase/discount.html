@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/content/pest-mobile/css/default.css">
     <link rel="stylesheet" href="/content/pest-mobile/css/sub.css">
-    <link rel="stylesheet" href="/content/pest-mobile/css/member.css">
+    <link rel="stylesheet" href="/content/pest-mobile/css/purchase.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>GssenShop</title>
 </head>
@@ -14,7 +14,10 @@
     <!-- Header -->
     <header id="sub-head">
         <div class="container">
-            <h2>아이디/비밀번호 찾기</h2>
+            <button type="button" class="btn-back">
+                <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
+            </button>
+            <h2>쿠폰 할인</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-close">
                     <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
@@ -265,29 +268,92 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <article class="usr-certification">
-            <div class="container">
-                <h4>입력하신 정보와 일치하는 아이디 정보입니다.</h4>
-                <div class="box">
-                    <p>
-                        AB1***@naver.com<br>
-                        카카오 가입 / 2022. 06. 01
-                    </p>
+        <!-- discount -->
+        <section class="discount">
+            <p class="summary-txt">
+                사용 가능한 쿠폰만 보여집니다.
+            </p>
+            <article>
+                <div class="article-content">
+                    <ul class="order-product">
+                        <li>
+                            <div class="box">
+                                <div class="item-img">
+                                    <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                </div>
+                                <div class="details">
+                                    <b>무무스가드플러스</b>
+                                    <p>
+                                        옵션 : 110mL<br>
+                                        수량 : 1개
+                                    </p>
+                                </div>
+                                <div class="total">
+                                    <p>21,000원</p>
+                                    <small>11,000원</small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control choice">
+                                    <option>2,100원 기피제 10% 할인</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="item-img">
+                                    <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                </div>
+                                <div class="details">
+                                    <b>무무스가드플러스</b>
+                                    <p>
+                                        옵션 : 110mL<br>
+                                        수량 : 1개
+                                    </p>
+                                </div>
+                                <div class="total">
+                                    <p>21,000원</p>
+                                    <small>11,000원</small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>쿠폰을 선택하세요</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        * 개인정보 보호를 위해 뒤의 3자리를 * 표기됩니다.
-                    </li>
-                    <li>
-                        * 비밀번호를 모르시나요?
-                        <a href="/content/mobile/member/pw_find.html" class="btn-pw-find">비밀번호 찾기</a>
-                    </li>
-                </ul>
+                <div class="total-area">
+                    <div class="container">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dt>상품 판매가</dt>
+                                    <dd>51,000원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>쿠폰 할인</dt>
+                                    <dd>2,100원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>쿠폰 적용 금액</dt>
+                                    <dd class="total">48,900원</dd>
+                                </dl>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
                 <div class="btn-area">
-                    <a href="/content/mobile/member/login.html" class="btn-login">로그인 하기</a>
+                    <a href="#" class="btn btn-sm btn-black">취소</a>
+                    <a href="#" class="btn btn-sm btn-blue">쿠폰할인적용</a>
                 </div>
-            </div>
-        </article>
+            </article>
+        </section>
         
     </main>
     

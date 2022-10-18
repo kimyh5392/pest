@@ -86,6 +86,8 @@ pre {
 /* quick-banner reset */
 .quick-banner {
   top: 374px; }
+  .quick-banner.type-2 {
+    top: 684px; }
 
 /* content */
 #content {
