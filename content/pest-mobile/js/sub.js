@@ -19,6 +19,15 @@
         $('.form-group.date').addClass('show');
     });
     
+    // modify-drop
+    $(document).on('click', '.btn-drop', function(e){
+        e.stopPropagation();
+        $(this).parent().toggleClass('active');
+    });
+    $(document).click(function(){
+        $('.dropdown').removeClass('active');
+    });
+    
     // datepicker
     $.datepicker.setDefaults({
         dateFormat: 'yy-mm-dd',

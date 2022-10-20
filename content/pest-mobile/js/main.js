@@ -8,6 +8,37 @@
     $('.floting-list').simplyScroll({
         speed: 1
     });
+    
+    // dropdown
+    $(document).ready(function() {
+        //Open Drop Down
+        $('.btn-drop').click(function (e) {
+            e.preventDefault();
+            if ($('.dropdown').hasClass('active')) {
+                $('.dropdown').removeClass('active');
+                $(this).parent().toggleClass('active');
+            } else {
+                $(this).parent().toggleClass('active');
+            }
+        });
+
+        // On click get Current Selected tag Value
+        $('.dropdown > ul > li > a').click(function (e) {
+            $(this).parent().parent().siblings('.btn-drop').addClass('on');
+            if ($('.dropdown').hasClass('active')) {
+                var current_value = $(this).text();
+                $('.dropdown').removeClass('active');
+                $(this).parents('.dropdown').find('.btn-drop').text(current_value);
+            }
+        });
+
+        // close when click on Body
+        $('html').click(function (event) {
+            if ($(event.target).closest('.btn-drop').length === 0) {
+                $('.dropdown').removeClass('active');
+            }
+        });
+    });
 })(jQuery);
 
 // jumbo-slider

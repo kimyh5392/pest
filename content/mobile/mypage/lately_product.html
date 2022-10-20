@@ -17,7 +17,7 @@
             <button type="button" class="btn-back">
                 <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
             </button>
-            <h2>배송조회</h2>
+            <h2>최근 본 상품</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-search-open">
                     <img src="/content/pest-mobile/images/ico_search.png" alt="">
@@ -272,120 +272,60 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <section class="delivery">
-            <div class="section-header">
-                <div class="container">
-                    <div class="search-form2">
-                        <ul>
-                            <li class="active"><a href="#">1개월</a></li>
-                            <li><a href="#">3개월</a></li>
-                            <li><a href="#">6개월</a></li>
-                            <li class="date-setting"><a href="#">기간설정</a></li>
-                        </ul>
-                        <div class="date-form">
-                            <div class="form-group date">
-                                <input type="text" class="form-control date-pick">
-                                <span>-</span>
-                                <input type="text" class="form-control date-pick">
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>배송 전체</option>
-                                </select>
-                            </div>
-                            <button type="button" class="btn-search">조회</button>
-                        </div>
-                        <p class="attention">
-                            기간 선택 후 조회 버튼을 클릭하시면 해당기간의 배송내역을 확인할 수있습니다.
-                        </p>
-                    </div>
-                </div>
+        <section class="wish-list">
+            <div class="attention">
+                <p>최근 본 상품은 30일간 저장되며, 최대 30개까지 저장됩니다.</p>
+            </div>
+            <div class="btn-all-area">
+                <b>전체 2개</b>
+                <a href="#" class="btn-all">전체삭제</a>
             </div>
             <div class="section-content">
-                <ul class="lately-order">
+                <!--<p class="no-goods">제품이 없습니다.</p>-->
+                <ul>
                     <li>
                         <div class="box">
                             <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
+                                <img src="/content/pest-mobile/images/mypage/img_item_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
                             </div>
                             <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
+                                <strong>무무스가드플러스</strong>
+                                <p>천연성분으로 만든 잇몸에 보약 치약</p>
+                                <div>
+                                    <b>39,000원</b><span>51,000원</span>
+                                </div>
                             </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송준비</a>
-                            </div>
+                            <a href="#" class="btn-delete">
+                                <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btn-area">
+                            <a href="#" class="btn btn-md btn-white">장바구니 담기</a>
+                            <a href="#" class="btn btn-md btn-white">구매하기</a>
                         </div>
                     </li>
                     <li>
                         <div class="box">
                             <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
+                                <img src="/content/pest-mobile/images/mypage/img_item_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
                             </div>
                             <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
+                                <strong>무무스가드플러스</strong>
+                                <p>천연성분으로 만든 잇몸에 보약 치약</p>
+                                <div>
+                                    <b>39,000원</b><span>51,000원</span>
+                                </div>
                             </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송중</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
+                            <a href="#" class="btn-delete">
+                                <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                            </a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송완료</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송중</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송완료</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
+                        <div class="btn-area">
+                            <a href="#" class="btn btn-md btn-white">장바구니 담기</a>
+                            <a href="#" class="btn btn-md btn-white">구매하기</a>
                         </div>
                     </li>
                 </ul>
-                <div class="btn-area">
-                    <a href="#" class="btn btn-lg btn-white">이전내역 더보기 <i class="ico-down"></i></a>
-                </div>
             </div>
         </section>
         

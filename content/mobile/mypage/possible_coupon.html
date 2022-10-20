@@ -17,7 +17,7 @@
             <button type="button" class="btn-back">
                 <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
             </button>
-            <h2>배송조회</h2>
+            <h2>쿠폰</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-search-open">
                     <img src="/content/pest-mobile/images/ico_search.png" alt="">
@@ -272,124 +272,53 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <section class="delivery">
+        <!-- coupon-area -->
+        <section class="coupon-area">
             <div class="section-header">
-                <div class="container">
-                    <div class="search-form2">
-                        <ul>
-                            <li class="active"><a href="#">1개월</a></li>
-                            <li><a href="#">3개월</a></li>
-                            <li><a href="#">6개월</a></li>
-                            <li class="date-setting"><a href="#">기간설정</a></li>
-                        </ul>
-                        <div class="date-form">
-                            <div class="form-group date">
-                                <input type="text" class="form-control date-pick">
-                                <span>-</span>
-                                <input type="text" class="form-control date-pick">
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>배송 전체</option>
-                                </select>
-                            </div>
-                            <button type="button" class="btn-search">조회</button>
-                        </div>
-                        <p class="attention">
-                            기간 선택 후 조회 버튼을 클릭하시면 해당기간의 배송내역을 확인할 수있습니다.
-                        </p>
-                    </div>
-                </div>
+                <nav class="link-tab">
+                    <ul>
+                        <li>
+                            <a href="/content/mobile/mypage/down_coupon.html"><span>다운가능한 쿠폰</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="/content/mobile/mypage/possible_coupon.html"><span>사용가능한 쿠폰</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="section-content">
-                <ul class="lately-order">
+                <!--<p class="no-coupon">다운가능한 쿠폰이 없습니다.</p>-->
+                <ul>
                     <li>
+                        <span>2022. 06. 01 - 2022. 06. 31</span>
+                        <b>[1,000원] VIP 회원 할인 쿠폰</b>
                         <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송준비</a>
+                            <div class="v-align">
+                                <dl>
+                                    <dt>사용대상</dt>
+                                    <dd>무무스가드 플러스</dd>
+                                </dl>
                             </div>
                         </div>
                     </li>
                     <li>
+                        <span>제한 없음</span>
+                        <b>[10%] 전제품 10% 할인 쿠폰 (30만원 이상 구매시)</b>
                         <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송중</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송완료</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송중</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <div class="item-img">
-                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
-                            </div>
-                            <div class="details">
-                                <span>2022. 06. 25 주문</span>
-                                <b>무무스가드플러스</b>
-                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
-                            </div>
-                            <div class="info">
-                                <a href="#" class="btn btn-default">배송완료</a>
-                                <a href="#" class="btn btn-white">배송조회</a>
+                            <div class="v-align">
+                                <dl>
+                                    <dt>사용대상</dt>
+                                    <dd>전제품</dd>
+                                </dl>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <div class="btn-area">
-                    <a href="#" class="btn btn-lg btn-white">이전내역 더보기 <i class="ico-down"></i></a>
-                </div>
             </div>
         </section>
         
     </main>
+    
     
     <!--quick-foot -->
     <nav class="quick-foot">
@@ -587,5 +516,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/sub.js'></script>
+    <script>
+        (function($){
+            // 쿠폰 다운 관련
+            $(document).on('click', '.btn-down', function(){
+                $(this).parent().addClass('down-success');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
