@@ -17,7 +17,7 @@
             <button type="button" class="btn-back">
                 <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
             </button>
-            <h2>My Page</h2>
+            <h2>교환 신청</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-close">
                     <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
@@ -268,41 +268,104 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <!-- mypage-header -->
-        <div class="mypage-header">
-            <div class="container">
-                <div class="usr-info">
-                    <div class="usr-rank">
-                        <!--<img src="/content/pest-mobile/images/mypage/img_buddy.png" alt="">
-                        <img src="/content/pest-mobile/images/mypage/img_family.png" alt="">
-                        <img src="/content/pest-mobile/images/mypage/img_vvip.png" alt="">-->
-                        <img src="/content/pest-mobile/images/mypage/img_vip.png" alt="">
-                    </div>
-                    <div class="info">
-                        <strong>홍길동님</strong> <a href="#" class="btn btn-usr-modify">정보수정</a>
-                        <p>안녕하세요. 지쎈샵에 오신걸 환영합니다.</p>
-                    </div>
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>
-                            <div class="box">
-                                <a href="#">쿠폰 ></a>
-                                <p><b>3</b>장</p>
+        <section class="decide">
+            <div class="section-header">
+                <h3>교환/반품 배송비를 확인해주세요</h3>
+                <p>
+                    관리자가 교환/반품 신청 승인 후 교환/반품 처리가 진행되며<br>
+                    배송된 주소에서만 교환/반품 처리가 가능합니다.
+                </p>
+            </div>
+            <div class="section-content">
+                <ul class="select-goods type-2">
+                    <li>
+                        <div class="box">
+                            <div class="item-img">
+                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
                             </div>
-                        </li>
-                        <li>
-                            <div class="box">
-                                <a href="#">포인트 ></a>
-                                <p><b>3,000</b>P</p>
+                            <div class="details">
+                                <span>2022. 06. 25 주문</span>
+                                <b>무무스가드플러스</b>
+                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
                             </div>
-                        </li>
-                    </ul>
-                    <p class="note">10일 이내 소멸 예정 쿠폰이 1개 있습니다.</p>
-                    <p class="note">10일 이내 소멸 예정 포인트가 1,000P 있습니다.</p>
+                            <div class="info">
+                                <b>배송비<br> 구매자 부담</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="item-img">
+                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
+                            </div>
+                            <div class="details">
+                                <span>2022. 06. 25 주문</span>
+                                <b>무무스가드플러스</b>
+                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
+                            </div>
+                            <div class="info">
+                                <b>배송비<br> 판매자 부담</b>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <article>
+                    <div class="container">
+                        <div class="article-content">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>신청사유</dt>
+                                        <dd>주문실수 (배송비 구매자 부담)</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>상세사유</dt>
+                                        <dd>
+                                            오늘 배송받아서 확인해보니 저에게는 맞지 않네요. 교환신청 합니다
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="container">
+                        <div class="article-header">
+                            <h3>교환/반품 배송비</h3>
+                        </div>
+                        <div class="article-content">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>배송비</dt>
+                                        <dd>6,000원(배송비 판매자 부담)</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="v-middle">결제방법</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>선불 카트결제</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <div class="btn-area">
+                    <a href="/content/mobile/mypage/exchange_request.html" class="btn btn-sm btn-gray">이전</a>
+                    <a href="/content/mobile/mypage/exchange_request3.html" class="btn btn-sm btn-blue">다음</a>
                 </div>
             </div>
-        </div>
+        </section>
         
     </main>
     
@@ -502,5 +565,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/sub.js'></script>
+    <script>
+        (function($){
+            $(document).on('click', '.btn-reason', function(){
+                $('.btn-reason').removeClass('active');
+                $(this).addClass('active');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

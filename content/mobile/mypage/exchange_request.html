@@ -17,7 +17,7 @@
             <button type="button" class="btn-back">
                 <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
             </button>
-            <h2>My Page</h2>
+            <h2>교환 신청</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-close">
                     <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
@@ -268,41 +268,118 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <!-- mypage-header -->
-        <div class="mypage-header">
-            <div class="container">
-                <div class="usr-info">
-                    <div class="usr-rank">
-                        <!--<img src="/content/pest-mobile/images/mypage/img_buddy.png" alt="">
-                        <img src="/content/pest-mobile/images/mypage/img_family.png" alt="">
-                        <img src="/content/pest-mobile/images/mypage/img_vvip.png" alt="">-->
-                        <img src="/content/pest-mobile/images/mypage/img_vip.png" alt="">
-                    </div>
-                    <div class="info">
-                        <strong>홍길동님</strong> <a href="#" class="btn btn-usr-modify">정보수정</a>
-                        <p>안녕하세요. 지쎈샵에 오신걸 환영합니다.</p>
-                    </div>
+        <section class="decide">
+            <div class="section-header">
+                <h3>교환 사유를 입력해주세요</h3>
+                <p>
+                    교환 사유를 확인할 수 있는 사진을 등록하시면<br> 보다 신속하게 교환 처리가 가능합니다.
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="check-box">
+                    <input type="checkbox" id="checkAll">
+                    <label for="check1"></label>
+                    <label for="check1" class="label">전체선택</label>
                 </div>
-                <div class="details">
-                    <ul>
-                        <li>
-                            <div class="box">
-                                <a href="#">쿠폰 ></a>
-                                <p><b>3</b>장</p>
+                <ul class="select-goods">
+                    <li>
+                        <div class="box">
+                            <div class="check-box">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
                             </div>
+                            <div class="item-img">
+                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
+                            </div>
+                            <div class="details">
+                                <span>2022. 06. 25 주문</span>
+                                <b>무무스가드플러스</b>
+                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="check-box">
+                                <input type="checkbox" id="check2">
+                                <label for="check2"></label>
+                            </div>
+                            <div class="item-img">
+                                <img src="/content/pest-mobile/images/mypage/img_lately_order_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
+                            </div>
+                            <div class="details">
+                                <span>2022. 06. 25 주문</span>
+                                <b>무무스가드플러스</b>
+                                <p>옵션 : 110mL / 수량 : 1개<br> 21,000원</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="reason">
+                <div class="container">
+                    <ul class="reason-list">
+                        <li>
+                            <dl>
+                                <dt>배송비 구매자 부담</dt>
+                                <dd>
+                                    <a href="javascript:;" class="btn-reason">색상, 사이즈 변경</a>
+                                    <a href="javascript:;" class="btn-reason">주문 실수</a>
+                                </dd>
+                            </dl>
                         </li>
                         <li>
-                            <div class="box">
-                                <a href="#">포인트 ></a>
-                                <p><b>3,000</b>P</p>
-                            </div>
+                            <dl>
+                                <dt>배송비 판매자 부담</dt>
+                                <dd>
+                                    <a href="javascript:;" class="btn-reason active">파손 및 불량</a>
+                                    <a href="javascript:;" class="btn-reason">오배송</a>
+                                </dd>
+                            </dl>
                         </li>
                     </ul>
-                    <p class="note">10일 이내 소멸 예정 쿠폰이 1개 있습니다.</p>
-                    <p class="note">10일 이내 소멸 예정 포인트가 1,000P 있습니다.</p>
+                    <div class="form-group text-box">
+                        <textarea class="form-control" placeholder="상품에 대해 최소 10자 이상 작성해주세요."></textarea>
+                        <span>89 / 최대 1,000자</span>
+                    </div>
+                    <div class="file-attach">
+                        <input type="file" id="attach">
+                        <label for="attach" class="btn-file">사진 첨부하기</label>
+                        <p class="attention">사진은 최대 2장 / 10MB 까지 등록가능합니다.</p>
+                    </div>
+                    <div class="file-list">
+                        <ul>
+                            <li>
+                                <div class="file-wrap">
+                                    <a href="#" class="btn-del">
+                                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                                    </a>
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/mypage/img_file_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
+                                    </figure>
+                                    <a href="#" class="btn-file-modify">편집</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-wrap">
+                                    <a href="#" class="btn-del">
+                                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                                    </a>
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/mypage/img_file_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
+                                    </figure>
+                                    <a href="#" class="btn-file-modify">편집</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-area">
+                    <a href="#" class="btn btn-md btn-gray">취소</a>
+                    <a href="/content/mobile/mypage/exchange_request2.html" class="btn btn-md btn-blue">다음</a>
                 </div>
             </div>
-        </div>
+        </section>
         
     </main>
     
@@ -502,5 +579,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/sub.js'></script>
+    <script>
+        (function($){
+            $(document).on('click', '.btn-reason', function(){
+                $('.btn-reason').removeClass('active');
+                $(this).addClass('active');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

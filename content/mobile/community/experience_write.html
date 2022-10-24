@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/content/pest-mobile/css/default.css">
     <link rel="stylesheet" href="/content/pest-mobile/css/sub.css">
-    <link rel="stylesheet" href="/content/pest-mobile/css/mypage.css">
+    <link rel="stylesheet" href="/content/pest-mobile/css/community.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>GssenShop</title>
 </head>
@@ -17,7 +17,7 @@
             <button type="button" class="btn-back">
                 <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
             </button>
-            <h2>My Page</h2>
+            <h2>체험후기 작성</h2>
             <div class="btn-area">
                 <a href="javascript:;" class="btn-close">
                     <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
@@ -268,41 +268,93 @@
     <!-- Content -->
     <main id="content" class="sub-layout">
         
-        <!-- mypage-header -->
-        <div class="mypage-header">
+        <!-- review-write -->
+        <section class="review-write">
             <div class="container">
-                <div class="usr-info">
-                    <div class="usr-rank">
-                        <!--<img src="/content/pest-mobile/images/mypage/img_buddy.png" alt="">
-                        <img src="/content/pest-mobile/images/mypage/img_family.png" alt="">
-                        <img src="/content/pest-mobile/images/mypage/img_vvip.png" alt="">-->
-                        <img src="/content/pest-mobile/images/mypage/img_vip.png" alt="">
-                    </div>
-                    <div class="info">
-                        <strong>홍길동님</strong> <a href="#" class="btn btn-usr-modify">정보수정</a>
-                        <p>안녕하세요. 지쎈샵에 오신걸 환영합니다.</p>
+                <div class="section-header">
+                    <strong>상품은 만족하셨나요?</strong>
+                    <div class="grade">
+                        <ol>
+                            <li>
+                                <a href="#">
+                                    <img src="/content/pest-mobile/images/mypage/ico_review_star_on.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/content/pest-mobile/images/mypage/ico_review_star_on.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/content/pest-mobile/images/mypage/ico_review_star_on.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/content/pest-mobile/images/mypage/ico_review_star_on.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/content/pest-mobile/images/mypage/ico_review_star.png" alt="">
+                                </a>
+                            </li>
+                        </ol>
+                        <b>4.0</b>
                     </div>
                 </div>
-                <div class="details">
-                    <ul>
-                        <li>
-                            <div class="box">
-                                <a href="#">쿠폰 ></a>
-                                <p><b>3</b>장</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box">
-                                <a href="#">포인트 ></a>
-                                <p><b>3,000</b>P</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="note">10일 이내 소멸 예정 쿠폰이 1개 있습니다.</p>
-                    <p class="note">10일 이내 소멸 예정 포인트가 1,000P 있습니다.</p>
+                <div class="section-content">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>참여한 체험단 제목을 선택해주세요.</option>
+                            <option>무무스가드 플러스 신제품 출시 기념</option>
+                            <option>케이비카드 체험단 이벤트</option>
+                            <option>로하스인증제품 체험 기획 이벤트</option>
+                        </select>
+                    </div>
+                    <div class="form-group text-box">
+                        <textarea class="form-control" placeholder="상품에 대해 최소 10자 이상 작성해주세요."></textarea>
+                        <span>89 / 최대 1,000자</span>
+                    </div>
+                    <div class="file-attach">
+                        <input type="file" id="attach">
+                        <label for="attach" class="btn-file">사진 첨부하기</label>
+                        <p class="attention">사진은 최대 2장 / 10MB 까지 등록가능합니다.</p>
+                    </div>
+                    <div class="file-list">
+                        <ul>
+                            <li>
+                                <div class="file-wrap">
+                                    <a href="#" class="btn-del">
+                                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                                    </a>
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/mypage/img_file_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
+                                    </figure>
+                                    <a href="#" class="btn-file-modify">편집</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-wrap">
+                                    <a href="#" class="btn-del">
+                                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                                    </a>
+                                    <figure>
+                                        <img src="/content/pest-mobile/images/mypage/img_file_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
+                                    </figure>
+                                    <a href="#" class="btn-file-modify">편집</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-md btn-gray">취소</a>
+                        <a href="#" class="btn btn-md btn-blue">등록</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         
     </main>
     
