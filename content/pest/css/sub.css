@@ -1277,6 +1277,102 @@ select.form-control {
         font-weight: 500;
         margin: 0 auto;
         background-color: #000; }
+  .modal.marketing-pop .modal-content {
+    width: auto;
+    max-height: inherit; }
+    .modal.marketing-pop .modal-content article {
+      position: relative;
+      width: 850px;
+      padding: 40px 0;
+      background-color: #fff; }
+      .modal.marketing-pop .modal-content article > .btn-modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block; }
+      .modal.marketing-pop .modal-content article h4 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center; }
+      .modal.marketing-pop .modal-content article .article-header {
+        text-align: center;
+        margin-top: 40px;
+        padding: 0;
+        border-bottom: 1px solid #000; }
+        .modal.marketing-pop .modal-content article .article-header h5 {
+          position: relative;
+          display: inline-block;
+          min-width: auto;
+          font-size: 20px;
+          color: #000;
+          border: 0;
+          padding-bottom: 15px;
+          color: #0e3db4; }
+      .modal.marketing-pop .modal-content article .article-content .marketing-content {
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 14px;
+        color: #000;
+        text-align: left;
+        max-height: 480px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 30px; }
+      .modal.marketing-pop .modal-content article .article-content .btn-area {
+        margin-top: 20px; }
+        .modal.marketing-pop .modal-content article .article-content .btn-area .btn-modal-close {
+          width: 260px;
+          line-height: 48px;
+          display: block;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+          color: #fff;
+          margin: 0 auto;
+          background-color: #000; }
+      .modal.marketing-pop .modal-content article .tab-area {
+        margin-top: 40px; }
+        .modal.marketing-pop .modal-content article .tab-area .tab-menu {
+          width: 100%;
+          display: table;
+          table-layout: fixed;
+          border-bottom: 1px solid #000; }
+          .modal.marketing-pop .modal-content article .tab-area .tab-menu > li {
+            display: table-cell;
+            width: 50%;
+            vertical-align: top; }
+            .modal.marketing-pop .modal-content article .tab-area .tab-menu > li > a {
+              position: relative;
+              display: inline-block;
+              min-width: auto;
+              font-size: 20px;
+              color: #000;
+              border: 0;
+              padding: 0;
+              padding-bottom: 15px;
+              background: none !important; }
+              .modal.marketing-pop .modal-content article .tab-area .tab-menu > li > a:after {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                display: block;
+                content: '';
+                width: 0;
+                height: 4px;
+                -webkit-transition-property: all;
+                transition-property: all;
+                -webkit-transition-duration: 0.15s;
+                transition-duration: 0.15s;
+                -webkit-transition-timing-function: linear;
+                transition-timing-function: linear;
+                -webkit-transition-delay: 0s;
+                transition-delay: 0s;
+                transform: translateX(-50%);
+                background-color: #0e3db4; }
+            .modal.marketing-pop .modal-content article .tab-area .tab-menu > li.active > a {
+              color: #0e3db4; }
+              .modal.marketing-pop .modal-content article .tab-area .tab-menu > li.active > a:after {
+                width: 100%; }
   .modal.show {
     display: block; }
 
