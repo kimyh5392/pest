@@ -1285,6 +1285,7 @@ section .section-content article ~ article {
             .review .section-content article .article-content .usr-reivew > ul > li > a > div.details dl dd {
               text-overflow: ellipsis;
               overflow: hidden;
+              height: 69px;
               word-break: break-word;
               display: -webkit-box;
               -webkit-line-clamp: 3;
