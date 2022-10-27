@@ -860,7 +860,7 @@ section .section-content article ~ article {
         right: 0; }
 .modal.modal-review .modal-content {
   width: 720px;
-  max-height: 756px;
+  max-height: 820px;
   overflow-y: auto;
   background-color: #fff; }
   .modal.modal-review .modal-content .content-head {
