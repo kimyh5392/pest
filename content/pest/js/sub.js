@@ -1,16 +1,5 @@
 (function($){
     
-    // modal 
-    $(document).on('click','.btn-modal', function(e){
-        $('body').addClass('show-modal');
-        $($(this).attr('href')).addClass('show');
-        e.preventDefault();
-    });
-    $(document).on('click','.btn-modal-close', function(e){
-        $('body').removeClass('show-modal');
-        $('.modal').removeClass('show');
-    });
-    
     // accordion
     $(document).on('click', '.btn-collapse', function(e){
         $(this).parent().toggleClass('active');

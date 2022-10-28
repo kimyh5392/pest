@@ -84,6 +84,17 @@
         }
     });
     
+    // modal 
+    $(document).on('click','.btn-modal', function(e){
+        $('body').addClass('show-modal');
+        $($(this).attr('href')).addClass('show');
+        e.preventDefault();
+    });
+    $(document).on('click','.btn-modal-close', function(e){
+        $('body').removeClass('show-modal');
+        $('.modal').removeClass('show');
+    });
+    
     // global-saerch-area
     $(document).on('click', '.btn-search-open, .header-util .form-control', function(){
         $('body').addClass('search-open');
