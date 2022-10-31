@@ -1784,9 +1784,11 @@
                 if ($(this).scrollTop() > topContentH) {//2260
                     $('.details-tab').addClass('fixed-tab');
                     $('.product-info').addClass('fixed');
+                    $('.middle-content').addClass('space');
                 } else {
                     $('.details-tab').removeClass('fixed-tab');
                     $('.product-info').removeClass('fixed');
+                    $('.middle-content').removeClass('space');
                 }
             });
 

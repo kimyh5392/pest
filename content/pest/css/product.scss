@@ -8,7 +8,9 @@
         
     }
     .middle-content {
-        
+        &.space {
+            padding-top: 58px;
+        }
     }
     .product-info {
         position: absolute;

@@ -87,6 +87,8 @@ pre {
 .product-details {
   position: relative;
   padding-top: 90px; }
+  .product-details .middle-content.space {
+    padding-top: 58px; }
   .product-details .product-info {
     position: absolute;
     top: 90px;
