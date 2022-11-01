@@ -799,6 +799,78 @@ body {
             }
         }
     }
+    &.modal-marketing {
+        .marketing-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #fff;
+            .section-header {
+                position: relative;
+                text-align: center;
+                border-bottom: 1px solid #d7d7d7;
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 59px;
+                }
+                > .btn-modal-close {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    width: 17px;
+                    display: block;
+                    transform: translateY(-50%);
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            .section-content {
+                overflow: hidden;
+                .content-top {
+                    text-align: center;
+                    border-bottom: 1px solid #d7d7d7;
+                    h4 {
+                        position: relative;
+                        font-size: 15px;
+                        color: $kcolor;
+                        font-weight: 500;
+                        display: inline-block;
+                        line-height: 59px;
+                        &:after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            content: '';
+                            transform: translateX(-50%);
+                            background-color: $kcolor;
+                        }
+                    }
+                }
+                .content-body {
+                    padding: 40px 20px;
+                    .agree-content {
+                        font-size: 11px;
+                        color: #000;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                    
+                }
+            }
+        }
+    }
     &.show {
         display: block;
     }

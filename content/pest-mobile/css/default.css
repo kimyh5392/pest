@@ -736,6 +736,64 @@ body {
           line-height: 18px; }
           .modal.modal-agree .tab-area .section-content .tab-content .tab-pane .agree-content b {
             font-weight: bold; }
+  .modal.modal-marketing .marketing-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff; }
+    .modal.modal-marketing .marketing-area .section-header {
+      position: relative;
+      text-align: center;
+      border-bottom: 1px solid #d7d7d7; }
+      .modal.modal-marketing .marketing-area .section-header h3 {
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        line-height: 59px; }
+      .modal.modal-marketing .marketing-area .section-header > .btn-modal-close {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 17px;
+        display: block;
+        transform: translateY(-50%); }
+        .modal.modal-marketing .marketing-area .section-header > .btn-modal-close img {
+          display: block;
+          width: 100%; }
+    .modal.modal-marketing .marketing-area .section-content {
+      overflow: hidden; }
+      .modal.modal-marketing .marketing-area .section-content .content-top {
+        text-align: center;
+        border-bottom: 1px solid #d7d7d7; }
+        .modal.modal-marketing .marketing-area .section-content .content-top h4 {
+          position: relative;
+          font-size: 15px;
+          color: #0e3db4;
+          font-weight: 500;
+          display: inline-block;
+          line-height: 59px; }
+          .modal.modal-marketing .marketing-area .section-content .content-top h4:after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            width: 100%;
+            height: 3px;
+            content: '';
+            transform: translateX(-50%);
+            background-color: #0e3db4; }
+      .modal.modal-marketing .marketing-area .section-content .content-body {
+        padding: 40px 20px; }
+        .modal.modal-marketing .marketing-area .section-content .content-body .agree-content {
+          font-size: 11px;
+          color: #000;
+          font-weight: 400;
+          line-height: 18px; }
   .modal.show {
     display: block; }
 
