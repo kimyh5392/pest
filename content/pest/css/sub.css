@@ -146,8 +146,13 @@ pre {
       display: table-cell;
       vertical-align: bottom;
       height: 100%; }
-      .mypage-header .container > div.user .usr-lank {
+      .mypage-header .container > div.user .usr-rank {
         display: block; }
+        .mypage-header .container > div.user .usr-rank img {
+          display: block;
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: 50% 50%; }
       .mypage-header .container > div.user strong {
         display: block;
         font-size: 44px;

@@ -98,7 +98,10 @@ pre {
         width: 50px; }
         .mypage-header .container .usr-info > div.usr-rank img {
           display: block;
-          width: 100%; }
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%; }
       .mypage-header .container .usr-info > div.info {
         padding-left: 20px; }
         .mypage-header .container .usr-info > div.info strong {

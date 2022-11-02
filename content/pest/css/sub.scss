@@ -81,8 +81,14 @@
             vertical-align: bottom;
             height: 100%;
             &.user {
-                .usr-lank {
+                .usr-rank {
                     display: block;
+                    img {
+                        display: block;
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: 50% 50%;
+                    }
                 }
                 strong {
                     display: block;
