@@ -621,4 +621,69 @@ pre {
   .pw-modify .article-content .btn-join-area {
     margin-top: 35px; }
 
+/* dormant */
+.dormant .article-header {
+  text-align: center;
+  padding: 40px 0 30px; }
+  .dormant .article-header h4 {
+    font-size: 17px;
+    color: #000;
+    font-weight: 500; }
+    .dormant .article-header h4 span {
+      color: #0e3db4; }
+  .dormant .article-header p {
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 20px; }
+.dormant .article-content .info {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #f1f1f1; }
+  .dormant .article-content .info > ul > li > dl {
+    font-size: 0; }
+    .dormant .article-content .info > ul > li > dl > dt, .dormant .article-content .info > ul > li > dl dd {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      font-weight: 400; }
+    .dormant .article-content .info > ul > li > dl dt:after {
+      position: relative;
+      top: 6px;
+      display: inline-block;
+      vertical-align: top;
+      width: 1px;
+      height: 14px;
+      content: '';
+      margin: 0 10px;
+      background-color: #000; }
+.dormant .article-content p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  font-weight: 500;
+  margin-top: 20px; }
+  .dormant .article-content p span {
+    color: #0e3db4; }
+.dormant .article-content .btn-area {
+  text-align: center;
+  font-size: 0;
+  margin-top: 30px; }
+  .dormant .article-content .btn-area > .btn {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top; }
+    .dormant .article-content .btn-area > .btn.btn-sm {
+      width: 50%; }
+    .dormant .article-content .btn-area > .btn.btn-black {
+      background-color: #000; }
+    .dormant .article-content .btn-area > .btn.btn-blue {
+      background-color: #0e3db4; }
+
 /*# sourceMappingURL=member.css.map */

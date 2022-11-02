@@ -673,4 +673,78 @@ pre {
       .modal.pw-write .modal-content article .article-content .btn-area .btn.btn-submit {
         background-color: #0e3db4; }
 
+/* dormant */
+.dormant {
+  display: block;
+  width: 580px;
+  margin: 0 auto;
+  text-align: center; }
+  .dormant .container {
+    width: 100%; }
+    .dormant .container .article-header {
+      padding: 100px 0 40px; }
+      .dormant .container .article-header h4 {
+        font-size: 25px;
+        color: #000;
+        font-weight: 500; }
+        .dormant .container .article-header h4 span {
+          color: #0e3db4; }
+      .dormant .container .article-header p {
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 30px; }
+    .dormant .container .article-content .info {
+      padding: 30px 0;
+      background-color: #f5f5f5; }
+      .dormant .container .article-content .info > ul > li > dl {
+        font-size: 0; }
+        .dormant .container .article-content .info > ul > li > dl > dt, .dormant .container .article-content .info > ul > li > dl dd {
+          font-size: 16px;
+          color: #000;
+          font-weight: 400;
+          line-height: 30px;
+          display: inline-block;
+          vertical-align: top; }
+        .dormant .container .article-content .info > ul > li > dl dt:after {
+          position: relative;
+          top: 8px;
+          display: inline-block;
+          vertical-align: top;
+          width: 1px;
+          height: 16px;
+          content: '';
+          margin: 0 15px;
+          background-color: #000; }
+    .dormant .container .article-content > p {
+      font-size: 16px;
+      color: #000;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 60px; }
+      .dormant .container .article-content > p span {
+        color: #0e3db4; }
+    .dormant .container .article-content .btn-area {
+      font-size: 0;
+      margin-top: 50px; }
+      .dormant .container .article-content .btn-area > .btn {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        line-height: 58px;
+        font-weight: 500;
+        margin-right: 10px; }
+        .dormant .container .article-content .btn-area > .btn:last-child {
+          margin-right: 0; }
+        .dormant .container .article-content .btn-area > .btn.btn-sm {
+          width: calc(50% - 5px); }
+        .dormant .container .article-content .btn-area > .btn.btn-black {
+          background-color: #000; }
+        .dormant .container .article-content .btn-area > .btn.btn-blue {
+          background-image: url(/content/pest/images/sub/bg_btn.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%; }
+
 /*# sourceMappingURL=member.css.map */
