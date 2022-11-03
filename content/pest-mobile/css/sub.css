@@ -1367,4 +1367,28 @@ textarea {
         .review-list > li .content-area .content-body > div.details .like-area {
           margin-top: 15px; }
 
+/* btn-more-area */
+.btn-more-area {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 20px; }
+  .btn-more-area .btn-more {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    color: #000;
+    line-height: 38px;
+    font-weight: 500;
+    border: 1px solid #d9d9d9; }
+    .btn-more-area .btn-more .icon-down {
+      display: inline-block;
+      vertical-align: top;
+      width: 10px;
+      height: 38px;
+      margin-left: 15px;
+      background-image: url(/content/pest-mobile/images/community/ico_down.png);
+      background-repeat: no-repeat;
+      background-size: 10px auto;
+      background-position: 50% 50%; }
+
 /*# sourceMappingURL=sub.css.map */
