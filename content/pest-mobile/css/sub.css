@@ -1391,4 +1391,27 @@ textarea {
       background-size: 10px auto;
       background-position: 50% 50%; }
 
+/* tab-link */
+.tab-link {
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  border-bottom: 0; }
+  .tab-link > ul {
+    overflow: hidden; }
+    .tab-link > ul > li {
+      float: left;
+      width: 50%;
+      border-bottom: 1px solid #e4e4e4; }
+      .tab-link > ul > li:nth-of-type(2n + 1) {
+        border-right: 1px solid #e4e4e4; }
+      .tab-link > ul > li > a {
+        display: block;
+        font-size: 15px;
+        color: #000;
+        font-weight: 500;
+        line-height: 30px; }
+      .tab-link > ul > li.active > a {
+        color: #fff;
+        background-color: #000; }
+
 /*# sourceMappingURL=sub.css.map */
