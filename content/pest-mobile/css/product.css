@@ -690,5 +690,127 @@ body {
               left: 20px; }
             .modal.modal-product-slider .modal-content article .container-fluid .article-content .product-pop-slider .slider-controls button.button-next {
               right: 20px; }
+.modal.modal-review-write {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  overflow-y: auto;
+  background-color: #fff; }
+  .modal.modal-review-write .review-write .container .section-header {
+    text-align: center;
+    padding: 40px 0 35px; }
+    .modal.modal-review-write .review-write .container .section-header strong {
+      display: block;
+      font-size: 15px;
+      color: #000;
+      font-weight: 500; }
+    .modal.modal-review-write .review-write .container .section-header .grade {
+      margin-top: 15px; }
+      .modal.modal-review-write .review-write .container .section-header .grade > ol {
+        font-size: 0; }
+        .modal.modal-review-write .review-write .container .section-header .grade > ol > li {
+          display: inline-block;
+          width: 41px;
+          vertical-align: top;
+          margin: 0 5px; }
+          .modal.modal-review-write .review-write .container .section-header .grade > ol > li > a {
+            display: block; }
+            .modal.modal-review-write .review-write .container .section-header .grade > ol > li > a img {
+              display: block;
+              width: 100%; }
+      .modal.modal-review-write .review-write .container .section-header .grade > b {
+        display: block;
+        font-size: 20px;
+        color: #0e3db4;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 15px; }
+  .modal.modal-review-write .review-write .container .section-content .file-attach {
+    margin-top: 25px; }
+    .modal.modal-review-write .review-write .container .section-content .file-attach input[type="file"] {
+      display: none; }
+    .modal.modal-review-write .review-write .container .section-content .file-attach .btn-file {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      line-height: 40px;
+      background-color: #0e3db4; }
+    .modal.modal-review-write .review-write .container .section-content .file-attach .attention {
+      position: relative;
+      font-size: 12px;
+      color: #ababab;
+      font-weight: 500;
+      padding-left: 20px;
+      margin-top: 10px; }
+      .modal.modal-review-write .review-write .container .section-content .file-attach .attention:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '※'; }
+  .modal.modal-review-write .review-write .container .section-content .file-list {
+    padding: 20px 0 30px; }
+    .modal.modal-review-write .review-write .container .section-content .file-list > ul {
+      font-size: 0; }
+      .modal.modal-review-write .review-write .container .section-content .file-list > ul > li {
+        display: inline-block;
+        width: 100px;
+        margin-right: 10px; }
+        .modal.modal-review-write .review-write .container .section-content .file-list > ul > li:last-child {
+          margin-right: 0; }
+        .modal.modal-review-write .review-write .container .section-content .file-list > ul > li .file-wrap {
+          position: relative; }
+          .modal.modal-review-write .review-write .container .section-content .file-list > ul > li .file-wrap .btn-del {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 15px; }
+            .modal.modal-review-write .review-write .container .section-content .file-list > ul > li .file-wrap .btn-del img {
+              display: block;
+              width: 100%; }
+          .modal.modal-review-write .review-write .container .section-content .file-list > ul > li .file-wrap > figure img {
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover; }
+          .modal.modal-review-write .review-write .container .section-content .file-list > ul > li .file-wrap .btn-file-modify {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            font-size: 12px;
+            color: #fff;
+            line-height: 18px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.2); }
+  .modal.modal-review-write .review-write .container .section-content .btn-area {
+    font-size: 0;
+    text-align: center;
+    width: calc(100% + 40px);
+    margin: 0 -20px; }
+    .modal.modal-review-write .review-write .container .section-content .btn-area .btn {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 40px; }
+      .modal.modal-review-write .review-write .container .section-content .btn-area .btn.btn-lg {
+        display: block;
+        width: 100%; }
+      .modal.modal-review-write .review-write .container .section-content .btn-area .btn.btn-md {
+        width: 50%; }
+      .modal.modal-review-write .review-write .container .section-content .btn-area .btn.btn-gray {
+        color: #000;
+        background-color: #f5f5f5; }
+      .modal.modal-review-write .review-write .container .section-content .btn-area .btn.btn-blue {
+        color: #fff;
+        background-color: #0e3db4; }
 
 /*# sourceMappingURL=product.css.map */

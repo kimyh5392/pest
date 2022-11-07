@@ -1415,10 +1415,31 @@ pre {
     color: #000;
     font-weight: 400;
     line-height: 18px; }
+  .withdraw-wrap .cause .article-content .input-form {
+    width: calc(100% + 40px);
+    margin: 20px -20px 0;
+    padding: 20px;
+    border-top: 1px solid #d7d7d7; }
+    .withdraw-wrap .cause .article-content .input-form > ul > li > dl {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      .withdraw-wrap .cause .article-content .input-form > ul > li > dl dt, .withdraw-wrap .cause .article-content .input-form > ul > li > dl dd {
+        display: table-cell;
+        vertical-align: middle; }
+      .withdraw-wrap .cause .article-content .input-form > ul > li > dl dt {
+        width: 80px;
+        font-size: 12px;
+        color: #000;
+        font-weight: 500; }
+      .withdraw-wrap .cause .article-content .input-form > ul > li > dl dd .form-group .form-control {
+        width: 200px; }
+    .withdraw-wrap .cause .article-content .input-form > ul > li ~ li {
+      margin-top: 10px; }
   .withdraw-wrap .cause .article-content .cause-list {
     overflow: hidden;
     width: calc(100% + 40px);
-    margin: 20px -20px 0;
+    margin: 0 -20px;
     padding: 20px;
     border-top: 1px solid #d7d7d7; }
     .withdraw-wrap .cause .article-content .cause-list > li {
