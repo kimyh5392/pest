@@ -499,6 +499,9 @@
                     <figure>
                         <img src="/content/pest-mobile/images/product/img_details_info.png" alt="">
                     </figure>
+                    <div class="btn-area">
+                        <button type="button" class="btn-details">상품설명 더보기 <i class="icon-down"></i></button>
+                    </div>
                 </div>
             </article>
             <!-- product-review-wrap -->
@@ -1463,6 +1466,12 @@
             // slide popup 관련
             $(document).on('click', '.btn-pop-slider', function(){
                 console.log('눌럿다');
+            });
+            
+            // 제숨 상세 
+            $(document).on('click', '.info-details .article-content .btn-details', function(){
+                $('.info-details .article-content > figure').addClass('show');
+                $(this).parent().hide();
             });
         })(jQuery);
         // product-slider
