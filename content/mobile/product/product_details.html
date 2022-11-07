@@ -964,29 +964,63 @@
                                     <figure>
                                         <img src="/content/pest-mobile/images/mypage/img_file_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
                                     </figure>
-                                    <a href="#" class="btn-file-modify">편집</a>
+                                    <a href="#file-modify-pop" class="btn-file-modify btn-modal">편집</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="file-wrap">
-                                    <a href="#" class="btn-del">
+                                    <a href="#file-modify-pop" class="btn-del">
                                         <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
                                     </a>
                                     <figure>
                                         <img src="/content/pest-mobile/images/mypage/img_file_list_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_item_list_frame.png);" alt="">
                                     </figure>
-                                    <a href="#" class="btn-file-modify">편집</a>
+                                    <a href="#file-modify-pop" class="btn-file-modify btn-modal">편집</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-md btn-gray">취소</a>
+                        <a href="#" class="btn btn-md btn-gray btn-modal-close">취소</a>
                         <a href="#" class="btn btn-md btn-blue">등록</a>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+    
+    <!-- 사진 편집 -->
+    <div class="modal modal-file-modify" id="file-modify-pop">
+        <div id="sub-head">
+            <div class="container">
+                <button type="button" class="btn-back">
+                    <img src="/content/pest-mobile/images/ico_arrow_back.png" alt="">
+                </button>
+                <h2>사진 편집</h2>
+                <div class="btn-area">
+                    <a href="javascript:;" class="btn-close btn-modal-close2">
+                        <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <article class="file-modify">
+            <div class="article-content">
+                <div class="container">
+                    <figure class="rotate-board">
+                        <img src="/content/pest-mobile/images/mypage/img_modify_frame.png" style="background-image: url(/content/pest-mobile/images/mypage/bg_lately_order.png);" alt="">
+                    </figure>
+                    <button type="button" class="btn-rotate">
+                        <img src="/content/pest-mobile/images/mypage/ico_rotate.png" alt="">
+                        사진 회전
+                    </button>
+                </div>
+                <div class="btn-area">
+                    <a href="#" class="btn btn-md btn-gray btn-modal-close2">취소</a>
+                    <a href="#" class="btn btn-md btn-blue">등록</a>
+                </div>
+            </div>
+        </article>
     </div>
     
     
@@ -997,6 +1031,7 @@
             <img src="/content/pest-mobile/images/product/img_n_pay.png" alt=""> Pay 구매
         </a>
     </div>
+    
     <!-- basic-buy -->
     <div class="basic-buy buy-wrap">
         <div class="backdrop"></div>
@@ -1468,7 +1503,7 @@
                 console.log('눌럿다');
             });
             
-            // 제숨 상세 
+            // 제품 상세 
             $(document).on('click', '.info-details .article-content .btn-details', function(){
                 $('.info-details .article-content > figure').addClass('show');
                 $(this).parent().hide();

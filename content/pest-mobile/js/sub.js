@@ -28,6 +28,17 @@
         $('.dropdown').removeClass('active');
     });
     
+    // img rotate
+    var rotateDegrees = 0;
+    $(document).on('click', '.btn-rotate', function(){
+        rotateDegrees += 90;
+        $('.rotate-board img').css("transform","rotate(" + rotateDegrees + "deg)");
+    });
+    
+    $(document).on('click', '.btn-modal-close2', function(){
+        $('.modal-file-modify').removeClass('show');
+    });
+    
     // datepicker
     $.datepicker.setDefaults({
         dateFormat: 'yy-mm-dd',
