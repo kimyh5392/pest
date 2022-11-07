@@ -310,12 +310,51 @@
                 </div>
                 <div class="btn-area">
                     <a href="#" class="btn btn-sm btn-black">휴면계정 유지</a>
-                    <a href="#" class="btn btn-sm btn-blue">휴면 해제</a>
+                    <a href="#" class="btn btn-sm btn-blue btn-msg-modal">휴면 해제</a>
                 </div>
             </div>
         </article>
         
     </main>
+    
+    
+    <div class="modal modal-msg">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <article>
+                <button type="button" class="btn-modal-close">
+                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                </button>
+                <div class="article-content">
+                    <p>휴면 상태를 해제<br> 하시겠습니까?</p>
+                </div>
+                <div class="btn-area">
+                    <a href="javascript:;" class="btn btn-sm btn-black btn-modal-close">NO</a>
+                    <a href="javascript:;" class="btn btn-sm btn-blue btn-confirm">YES</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <div class="modal confirm-modal">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <article>
+                <button type="button" class="btn-modal-close">
+                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                </button>
+                <div class="article-content">
+                    <p>
+                        휴면 해제가 정상적으로 완료되었습니다.<br>
+                        다시 로그인해주세요
+                    </p>
+                </div>
+                <div class="btn-area">
+                    <a href="/content/mobile/member/login.html" class="btn btn-lg btn-black btn-modal-close">확인</a>
+                </div>
+            </article>
+        </div>
+    </div>
     
     <!--quick-foot -->
     <nav class="quick-foot">
@@ -513,5 +552,16 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/sub.js'></script>
+    <script>
+        (function($){
+            $(document).on('click', '.btn-confirm', function(){
+                $('.confirm-modal').addClass('show');
+                $('.modal-msg').removeClass('show');
+            });
+            $(document).on('click', '.pop-close2', function(){
+                $('.confirm-modal').removeClass('show');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

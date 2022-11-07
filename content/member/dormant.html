@@ -398,13 +398,47 @@
                     </p>
                     <div class="btn-area">
                         <a href="#" class="btn btn-sm btn-black">휴면계정 유지</a>
-                        <a href="#" class="btn btn-sm btn-blue">휴면 해제</a>
+                        <a href="javascript:;" class="btn btn-sm btn-blue btn-default-popup">휴면 해제</a>
                     </div>
                 </div>
             </div>
         </article>
         
     </main>
+    
+    <div class="default-modal">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <button type="button" class="btn-close pop-close">
+                <img src="/content/pest/images/ico_close_small.png" alt="">
+            </button>
+            <p>
+                휴면 상태를 해제<br> 하시겠습니까?
+            </p>
+            <div class="btn-area">
+                <p>
+                    <a href="javascript:;" class="btn btn-md btn-gray pop-close">NO</a>
+                    <a href="javascript:;" class="btn btn-md btn-blue btn-confirm">YES</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="confirm-modal">
+        <div class="backdrop"></div>
+        <div class="modal-content">
+            <button type="button" class="btn-close pop-close2">
+                <img src="/content/pest/images/ico_close_small.png" alt="">
+            </button>
+            <p>
+                휴면 해제가 정상적으로<br> 완료되었습니다.
+                다시 로그인해주세요
+            </p>
+            <div class="btn-area">
+                <a href="/content/member/login.html" class="btn btn-lg btn-black pop-close">확인</a>
+            </div>
+        </div>
+    </div>
     
     <!-- quick-banner -->
     <nav class="quick-banner">
@@ -518,5 +552,16 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest/js/common.js'></script>
     <script src='/content/pest/js/sub.js'></script>
+    <script>
+        (function($){
+            $(document).on('click', '.btn-confirm', function(){
+                $('.confirm-modal').addClass('show');
+                $('.default-modal').removeClass('show');
+            });
+            $(document).on('click', '.pop-close2', function(){
+                $('.confirm-modal').removeClass('show');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
