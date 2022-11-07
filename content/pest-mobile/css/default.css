@@ -654,13 +654,18 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1000;
+    padding-top: 120px;
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #fff; }
     .modal.modal-agree .tab-area .section-header {
-      position: relative;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       text-align: center;
-      border-bottom: 1px solid #d7d7d7; }
+      border-bottom: 1px solid #d7d7d7;
+      background-color: #fff; }
       .modal.modal-agree .tab-area .section-header h3 {
         font-size: 16px;
         color: #000;
@@ -676,21 +681,19 @@ body {
         .modal.modal-agree .tab-area .section-header > .btn-modal-close img {
           display: block;
           width: 100%; }
-    .modal.modal-agree .tab-area .section-content {
-      overflow: hidden; }
-      .modal.modal-agree .tab-area .section-content .tab-menu {
+      .modal.modal-agree .tab-area .section-header .tab-menu {
         text-align: center;
         border-bottom: 1px solid #d7d7d7; }
-        .modal.modal-agree .tab-area .section-content .tab-menu > ul {
+        .modal.modal-agree .tab-area .section-header .tab-menu > ul {
           display: table;
           width: 100%;
           table-layout: fixed; }
-          .modal.modal-agree .tab-area .section-content .tab-menu > ul > li {
+          .modal.modal-agree .tab-area .section-header .tab-menu > ul > li {
             display: table-cell;
             vertical-align: middle; }
-            .modal.modal-agree .tab-area .section-content .tab-menu > ul > li > a {
+            .modal.modal-agree .tab-area .section-header .tab-menu > ul > li > a {
               display: block; }
-              .modal.modal-agree .tab-area .section-content .tab-menu > ul > li > a > span {
+              .modal.modal-agree .tab-area .section-header .tab-menu > ul > li > a > span {
                 position: relative;
                 font-size: 15px;
                 color: #000;
@@ -705,7 +708,7 @@ body {
                 font-weight: 500;
                 display: inline-block;
                 line-height: 59px; }
-                .modal.modal-agree .tab-area .section-content .tab-menu > ul > li > a > span:after {
+                .modal.modal-agree .tab-area .section-header .tab-menu > ul > li > a > span:after {
                   position: absolute;
                   bottom: 0;
                   left: 50%;
@@ -723,10 +726,12 @@ body {
                   transition-delay: 0s;
                   transform: translateX(-50%);
                   background-color: #0e3db4; }
-            .modal.modal-agree .tab-area .section-content .tab-menu > ul > li.active > a span {
+            .modal.modal-agree .tab-area .section-header .tab-menu > ul > li.active > a span {
               color: #0e3db4; }
-              .modal.modal-agree .tab-area .section-content .tab-menu > ul > li.active > a span:after {
+              .modal.modal-agree .tab-area .section-header .tab-menu > ul > li.active > a span:after {
                 width: 100%; }
+    .modal.modal-agree .tab-area .section-content {
+      overflow: hidden; }
       .modal.modal-agree .tab-area .section-content .tab-content {
         padding: 40px 20px; }
         .modal.modal-agree .tab-area .section-content .tab-content .tab-pane .agree-content {
