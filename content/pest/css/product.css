@@ -390,6 +390,7 @@ pre {
       width: 360px;
       margin: 30px auto 0; }
       .product-details .details-wrap .details-header .swiper-nav-area .nav-slider .swiper-wrapper .swiper-slide {
+        width: 68px !important;
         cursor: pointer; }
         .product-details .details-wrap .details-header .swiper-nav-area .nav-slider .swiper-wrapper .swiper-slide > figure img {
           display: block;

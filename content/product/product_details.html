@@ -506,7 +506,7 @@
                                             <img src="/content/pest/images/product/img_thumbnail.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png)" alt="">
                                         </figure>
                                     </li>
-                                    <li class="swiper-slide">
+                                    <!--<li class="swiper-slide">
                                         <figure>
                                             <img src="/content/pest/images/product/img_thumbnail.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png)" alt="">
                                         </figure>
@@ -525,7 +525,7 @@
                                         <figure>
                                             <img src="/content/pest/images/product/img_thumbnail.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png)" alt="">
                                         </figure>
-                                    </li>
+                                    </li>-->
                                 </ul>
                                 <!-- btn-enlarge -->
                                 <a href="#enlarge-pop" class="btn-enlarge btn-modal">
@@ -540,7 +540,7 @@
                                                 <img src="/content/pest/images/product/img_nav_slide.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png)" alt="">
                                             </figure>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <!--<li class="swiper-slide">
                                             <figure>
                                                 <img src="/content/pest/images/product/img_nav_slide.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png)" alt="">
                                             </figure>
@@ -559,7 +559,7 @@
                                             <figure>
                                                 <img src="/content/pest/images/product/img_nav_slide.png" style="background-image: url(/content/pest/images/product/bg_thumbnail.png)" alt="">
                                             </figure>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                                 <div class="controls">
@@ -1890,17 +1890,17 @@
         
         // product swiper
         var productSwiper = new Swiper ('.product-slider', {
-            loop: true,
-            loopedSlides: 5,
+            loop: false,
+            loopedSlides: 1,
             navigation: {
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
             },
         });
         var navSwiper = new Swiper ('.nav-slider', {
-            slidesPerView: 5,
+            slidesPerView: 1,
             spaceBetween: 5,
-            loop: true,
+            loop: false,
             slideToClickedSlide: true,
         });
         productSwiper.controller.control = navSwiper;
