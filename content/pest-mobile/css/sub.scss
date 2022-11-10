@@ -1895,7 +1895,145 @@ textarea {
     }
 }
 
-
+/* membership */
+.membership {
+    .section-header {
+        text-align: center;
+        padding-top: 50px;
+        h3 {
+            width: 186px;
+            margin: 0 auto;
+            font-size: 0;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 17px;
+            color: #000;
+            font-weight: 500;
+            @include msr();
+            margin-top: 10px;
+        }
+    }
+    .section-content {
+        padding-top: 35px;
+        > ol {
+            padding: 0 10px;
+            > li {
+                dl {
+                    dt {
+                        img {
+                            display: block;
+                            width: 73px;
+                            margin: 0 auto;
+                        }
+                    }
+                    dd {
+                        margin-top: 20px;
+                        .table-wrap {
+                            border-top: 1px solid #d8d8d8;
+                            .table {
+                                width: 100%;
+                                table-layout: fixed;
+                                tbody {
+                                    tr {
+                                        th {
+                                            text-align: center;
+                                            width: 105px;
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            color: #363636;
+                                            vertical-align: middle;
+                                            background-color: #f5f4ef;
+                                            border-bottom: 1px solid #d8d8d8;
+                                            border-right: 1px solid #d8d8d8;
+                                            span {
+                                                display: block;
+                                                font-size: 11px;
+                                                font-weight: 400;
+                                                margin-top: 5px;
+                                                color: rgba(#000, .5);
+                                            }
+                                        }
+                                        td {
+                                            font-size: 13px;
+                                            color: #363636;
+                                            font-weight: 400;
+                                            height: 55px;
+                                            vertical-align: middle;
+                                            text-align: center;
+                                            border-bottom: 1px solid #d8d8d8;
+                                            span {
+                                                display: block;
+                                                font-size: 11px;
+                                                font-weight: 400;
+                                                margin-top: 5px;
+                                                color: rgba(#000, .5);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & ~ li {
+                    margin-top: 50px;
+                }
+            }
+        }
+        .summary {
+            padding: 20px;
+            background-color: #f5f4ef;
+            dl {
+                dt {
+                    font-size: 15px;
+                    color: #363636;
+                    font-weight: bold;
+                }
+                dd {
+                    margin-top: 15px;
+                    p {
+                        font-size: 12px;
+                        color: #363636;
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                    small {
+                        display: block;
+                        font-size: 11px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        color: rgba(#000, .5);
+                    }
+                    ul {
+                        > li {
+                            position: relative;
+                            padding-left: 10px;
+                            font-size: 12px;
+                            color: #363636;
+                            line-height: 18px;
+                            &:before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content: '·'
+                            }
+                            span {
+                                background-color: #d5d5d2;
+                            }
+                        }
+                    }
+                }
+            }
+            & ~ .summary {
+                margin-top: 10px;
+            }
+        }
+    }
+}
 
 
 
