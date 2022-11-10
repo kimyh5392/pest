@@ -1133,6 +1133,120 @@
             }
         }
     }
+    &.modal-qna-modify {
+        .modal-content {
+            article {
+                .article-header {
+                    padding-bottom: 65px;
+                }
+                .article-content {
+                    .modify-form {
+                        padding: 0 50px;
+                        > ul {
+                            > li {
+                                dl {
+                                    dt {
+                                        font-size: 18px;
+                                        color: #000;
+                                        font-weight: 400;
+                                    }
+                                    dd {
+                                        margin-top: 15px;
+                                        .form-group {
+                                            &.text-box {
+                                                .form-control {
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+                                        .check-box {
+                                            margin-top: 20px;
+                                        }
+                                    }
+                                }
+                                & ~ li {
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                        .attention {
+                            color: #ababab;
+                            line-height: 22px;
+                            margin-top: 45px;
+                        }
+                    }
+                    .modal-btn-area {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+    &.alert-modal {
+        .modal-content {
+            width: 400px;
+            article {
+                text-align: center;
+                padding: 60px 30px 40px;
+                background-color: #fff;
+                .article-header {
+                    padding: 0;
+                    p {
+                        font-size: 23px;
+                        margin: 0;
+                    }
+                    small {
+                        display: block;
+                        font-weight: 400;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        line-height: 26px;
+                    }
+                }
+                .article-content {
+                    .btn-area {
+                        font-size: 0;
+                        margin-top: 50px;
+                        p {
+                            .btn {
+                                display: inline-block;
+                                vertical-align: top;
+                                font-size: 16px;
+                                color: #000;
+                                line-height: 48px;
+                                font-weight: 500;
+                                &.btn-sm {
+                                    width: calc(50% - 10px);
+                                    margin-right: 20px;
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+                                }
+                                &.btn-md {
+                                    width: 50%;
+                                }
+                                &.btn-lg {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                &.btn-black {
+                                    color: #fff;
+                                    background-color: #000;
+                                }
+                                &.btn-gray {
+                                    background-color: #eaeaea;
+                                }
+                                &.btn-blue {
+                                    color: #fff;
+                                    background-color: $kcolor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* 공통 */
