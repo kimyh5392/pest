@@ -1688,4 +1688,66 @@ textarea {
     .membership .section-content .summary ~ .summary {
       margin-top: 10px; }
 
+/* board-write */
+.board-write {
+  padding-top: 30px; }
+  .board-write .container > ul > li > dl > dt {
+    font-size: 12px;
+    color: #000;
+    font-weight: 500; }
+  .board-write .container > ul > li > dl dd {
+    margin-top: 10px; }
+  .board-write .container > ul > li ~ li {
+    margin-top: 20px; }
+  .board-write .container .check-box {
+    margin-top: 10px; }
+  .board-write .container .attention {
+    position: relative;
+    font-size: 12px;
+    color: #ababab;
+    line-height: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-top: 25px; }
+    .board-write .container .attention:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '*'; }
+  .board-write .container .btn-area {
+    font-size: 0;
+    text-align: center;
+    margin-top: 35px; }
+    .board-write .container .btn-area .btn {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 40px; }
+      .board-write .container .btn-area .btn.btn-lg {
+        display: block;
+        width: 100%; }
+      .board-write .container .btn-area .btn.btn-md {
+        width: 50%; }
+      .board-write .container .btn-area .btn.btn-gray {
+        color: #000;
+        background-color: #f5f5f5; }
+      .board-write .container .btn-area .btn.btn-blue {
+        color: #fff;
+        background-color: #0e3db4; }
+
+/* one-qna */
+.one-qna .section-header {
+  padding: 20px 0 30px; }
+  .one-qna .section-header .btn-area {
+    text-align: center;
+    margin-top: 20px; }
+    .one-qna .section-header .btn-area .btn-write {
+      display: block;
+      font-size: 15px;
+      color: #000;
+      line-height: 38px;
+      font-weight: 500;
+      border: 1px solid #e4e4e4; }
+
 /*# sourceMappingURL=sub.css.map */
