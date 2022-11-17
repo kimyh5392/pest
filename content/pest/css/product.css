@@ -465,12 +465,28 @@ pre {
         display: table-cell;
         vertical-align: bottom; }
         .relation-item .article-content > ul > li > a > div.item {
+          position: relative;
           width: 115px; }
           .relation-item .article-content > ul > li > a > div.item figure img {
             width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%; }
+          .relation-item .article-content > ul > li > a > div.item .label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 10px;
+            color: #fff;
+            font-weight: 500;
+            width: 35px;
+            text-align: center;
+            line-height: 18px;
+            font-family: 'Montserrat', sans-serif; }
+            .relation-item .article-content > ul > li > a > div.item .label.sale {
+              background-color: #0e3db4; }
+            .relation-item .article-content > ul > li > a > div.item .label.new {
+              background-color: #000; }
         .relation-item .article-content > ul > li > a > div.details {
           padding-left: 15px;
           padding-bottom: 5px; }

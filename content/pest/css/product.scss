@@ -485,6 +485,7 @@
                         display: table-cell;
                         vertical-align: bottom;
                         &.item {
+                            position: relative;
                             width: 115px;
                             figure {
                                 img {
@@ -492,6 +493,24 @@
                                     background-repeat: no-repeat;
                                     background-size: cover;
                                     background-position: 50% 50%;
+                                }
+                            }
+                            .label {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-size: 10px;
+                                color: #fff;
+                                font-weight: 500;
+                                width: 35px;
+                                text-align: center;
+                                line-height: 18px;
+                                @include msr();
+                                &.sale {
+                                    background-color: $kcolor;
+                                }
+                                &.new {
+                                    background-color: #000;
                                 }
                             }
                         }
