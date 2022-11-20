@@ -28,6 +28,13 @@
         $('.dropdown').removeClass('active');
     });
     
+    // 좋아요 박스 
+    $(document).on('click', '.btn-like-drop', function(){
+        console.log('a');
+        $(this).parent().toggleClass('active');
+    });
+    
+    
     // img rotate
     var rotateDegrees = 0;
     $(document).on('click', '.btn-rotate', function(){

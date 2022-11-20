@@ -437,6 +437,33 @@ textarea {
         .modify-drop .dropdown ul > li > a i.icon-delete {
           background-image: url(/content/pest-mobile/images/sub/ico_delete.png); }
 
+/* like-drop */
+.like-drop {
+  position: absolute;
+  top: 15px;
+  right: 20px; }
+  .like-drop .drop-box {
+    position: relative; }
+    .like-drop .drop-box .btn-like-drop {
+      display: block;
+      width: 10px; }
+      .like-drop .drop-box .btn-like-drop img {
+        width: 3px;
+        margin: 0 auto; }
+    .like-drop .drop-box .like-area {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: auto;
+      white-space: nowrap;
+      z-index: 1;
+      padding: 5px 10px;
+      border: 1px solid #000;
+      background-color: #fff; }
+    .like-drop .drop-box.active .like-area {
+      display: block; }
+
 /* like-area */
 .like-area p {
   font-size: 13px;
