@@ -369,6 +369,8 @@ pre {
     position: relative; }
     .product-details .details-wrap .container {
       padding-right: 410px; }
+    .product-details .details-wrap .details-header .container {
+      padding-right: 490px; }
     .product-details .details-wrap .details-header .product-slider {
       position: relative; }
       .product-details .details-wrap .details-header .product-slider .swiper-wrapper .swiper-slide > figure img {
