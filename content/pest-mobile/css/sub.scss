@@ -122,8 +122,10 @@ textarea {
             }
             .details {
                 > p {
+                    display: block;
                     font-size: 12px;
                     color: #000;
+                    height: 34px;
                     font-weight: 400;
                     line-height: 17px;
                     margin-top: 15px;
