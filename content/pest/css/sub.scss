@@ -432,16 +432,22 @@
 .tab-menu {
     text-align: center;
     font-size: 0;
+    width: calc(100% + 10px);
+    margin: 0 -5px;
     > li {
         display: inline-block;
         vertical-align: top;
-        margin-right: 10px;
+        width: calc(100% / 7);
+        padding: 0 5px;
+        &:nth-of-type(7) ~ li {
+            margin-top: 10px;
+        }
         &:last-child {
             margin-right: 0;
         }
         > a {
             display: inline-block;
-            min-width: 140px;
+            width: 100%;
             font-size: 15px;
             line-height: 38px;
             color: #000;
