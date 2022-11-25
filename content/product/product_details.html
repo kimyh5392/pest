@@ -290,7 +290,7 @@
         </nav>
     </header>
     
-    <!-- global-search-area -->
+    <!-- global-search-area 
     <div class="global-search-area">
         <div class="container">
             <div class="search-area">
@@ -335,7 +335,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- search-backdrop -->
     <div class="search-backdrop"></div>
     <!-- modal md-alert -->
@@ -1780,7 +1780,8 @@
             var $target = $('.details-tab ul > li > a');
             var $topH = 262;
             
-            var topContentH = $('.top-content').height() - 76;
+            /*var topContentH = $('.top-content').height() + 130;*/
+            var topContentH = $('.top-content').height() + 128;
             
             console.log(topContentH);
 
@@ -1816,7 +1817,7 @@
 
             function findPosition(){
                 $('.article').each(function(){
-                    if( ($(this).offset().top - $(window).scrollTop() - $topH) < 20 ){
+                    if( ($(this).offset().top - $(window).scrollTop() - $topH) < 10 ){
                         $target.parent().removeClass('active');
                         $('.details-tab').find('[data-scroll="'+ $(this).attr('id') +'"]').parent().addClass('active');
                     } else {

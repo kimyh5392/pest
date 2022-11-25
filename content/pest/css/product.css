@@ -86,12 +86,12 @@ pre {
 /* product-details */
 .product-details {
   position: relative;
-  padding-top: 90px; }
+  padding-top: 30px; }
   .product-details .middle-content.space {
     padding-top: 58px; }
   .product-details .product-info {
     position: absolute;
-    top: 90px;
+    top: 30px;
     right: 50%;
     z-index: 1;
     margin-right: -600px;
@@ -833,7 +833,7 @@ pre {
           background-color: #0e3db4; }
   .details-tab.fixed-tab {
     position: fixed;
-    top: 150px;
+    top: 132px;
     left: 0;
     width: 100%; }
 
@@ -851,7 +851,7 @@ pre {
 body.banner-none .details-tab {
   top: 2190px; }
   body.banner-none .details-tab.fixed-tab {
-    top: 80px; }
+    top: 64px; }
 body.banner-none .product-info.fixed {
   top: 160px; }
   body.banner-none .product-info.fixed .info-wrap {

@@ -62,7 +62,7 @@
     
     // header scroll
     $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 124) {
+        if ($(this).scrollTop() > 100) {
             $('body').addClass('scrolled');
         } else {
             $('body').removeClass('scrolled');

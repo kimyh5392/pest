@@ -3,7 +3,7 @@
 /* product-details */
 .product-details {
     position: relative;
-    padding-top: 90px;
+    padding-top: 30px;
     .top-content {
         
     }
@@ -14,7 +14,7 @@
     }
     .product-info {
         position: absolute;
-        top: 90px;
+        top: 30px;
         right: 50%;
         z-index: 1;
         margin-right: -600px;
@@ -961,7 +961,7 @@
     }
     &.fixed-tab {
         position: fixed;
-        top: 150px;
+        top: 132px;
         left: 0;
         width: 100%;
     }
@@ -1001,7 +1001,7 @@ body {
         .details-tab {
             top: 2190px;
             &.fixed-tab {
-                top: 80px;
+                top: 64px;
             }
         }
         .product-info {
