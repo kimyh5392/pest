@@ -544,6 +544,7 @@ pre {
                 color: #919191;
                 font-weight: 400; }
               .coupon-area .section-content > ul > li .box .v-align dl dd {
+                word-break: break-all;
                 font-size: 13px;
                 color: #000;
                 font-weight: 500;
