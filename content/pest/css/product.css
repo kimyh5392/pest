@@ -840,10 +840,10 @@ pre {
 /* qna-list */
 .qna-list .article-content {
   padding-top: 0 !important; }
-  .qna-list .article-content .default-board .accordion-list > ul > li .btn-collapse {
+  .qna-list .article-content .default-board .accordion-list > ul > li > a {
     padding-left: 0;
     padding-right: 240px; }
-    .qna-list .article-content .default-board .accordion-list > ul > li .btn-collapse > dl dt {
+    .qna-list .article-content .default-board .accordion-list > ul > li > a > dl dt {
       color: #919191; }
   .qna-list .article-content .pagination {
     margin-top: 30px; }

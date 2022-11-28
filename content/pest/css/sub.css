@@ -839,43 +839,29 @@ select.form-control {
   border-bottom: 1px solid #e4e4e4; }
   .default-board .accordion-list > ul > li:first-child {
     border-top: 1px solid #e4e4e4; }
-  .default-board .accordion-list > ul > li > .btn-collapse {
+  .default-board .accordion-list > ul > li > a {
     position: relative;
     display: block;
     padding: 30px 20px;
     padding-right: 180px; }
-    .default-board .accordion-list > ul > li > .btn-collapse:after {
-      position: absolute;
-      top: 50%;
-      right: 25px;
-      content: url(/content/pest/images/sub/ico_accordion_arrow.png);
-      -webkit-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.15s;
-      transition-duration: 0.15s;
-      -webkit-transition-timing-function: linear;
-      transition-timing-function: linear;
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
-      transform: translateY(-50%); }
-    .default-board .accordion-list > ul > li > .btn-collapse > dl > dt {
+    .default-board .accordion-list > ul > li > a > dl > dt {
       font-size: 16px;
       color: #0e3db4;
       font-weight: 400; }
-      .default-board .accordion-list > ul > li > .btn-collapse > dl > dt.black {
+      .default-board .accordion-list > ul > li > a > dl > dt.black {
         color: #000; }
-    .default-board .accordion-list > ul > li > .btn-collapse > dl > dd {
+    .default-board .accordion-list > ul > li > a > dl > dd {
       font-size: 16px;
       color: #000;
       font-weight: 400;
       margin-top: 10px;
       line-height: 28px; }
-    .default-board .accordion-list > ul > li > .btn-collapse .adm-reply {
+    .default-board .accordion-list > ul > li > a .adm-reply {
       position: absolute;
       top: 50%;
       right: 75px;
       transform: translateY(-50%); }
-      .default-board .accordion-list > ul > li > .btn-collapse .adm-reply .label {
+      .default-board .accordion-list > ul > li > a .adm-reply .label {
         display: block;
         width: 80px;
         font-size: 14px;
@@ -883,10 +869,24 @@ select.form-control {
         font-weight: 400;
         line-height: 34px;
         text-align: center; }
-        .default-board .accordion-list > ul > li > .btn-collapse .adm-reply .label.wait {
+        .default-board .accordion-list > ul > li > a .adm-reply .label.wait {
           background-color: #bababa; }
-        .default-board .accordion-list > ul > li > .btn-collapse .adm-reply .label.success {
+        .default-board .accordion-list > ul > li > a .adm-reply .label.success {
           background-color: #0e3db4; }
+  .default-board .accordion-list > ul > li > .btn-collapse:after {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    content: url(/content/pest/images/sub/ico_accordion_arrow.png);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    transform: translateY(-50%); }
   .default-board .accordion-list > ul > li .answer {
     display: none;
     background-color: #f5f5f5; }
