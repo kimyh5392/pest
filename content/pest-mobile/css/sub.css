@@ -616,43 +616,23 @@ textarea {
 /* default-board */
 .default-board .accordion-list > li {
   border-bottom: 1px solid #d7d7d7; }
-  .default-board .accordion-list > li .btn-collapse {
+  .default-board .accordion-list > li a {
     position: relative;
     display: block;
     padding: 20px;
     padding-right: 100px; }
-    .default-board .accordion-list > li .btn-collapse:after {
-      position: absolute;
-      top: 0;
-      right: 20px;
-      width: 17px;
-      height: 100%;
-      display: block;
-      content: '';
-      -webkit-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.15s;
-      transition-duration: 0.15s;
-      -webkit-transition-timing-function: linear;
-      transition-timing-function: linear;
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
-      background-image: url(/content/pest-mobile/images/sub/ico_bottom_arrow.png);
-      background-repeat: no-repeat;
-      background-size: 17px auto;
-      background-position: 50% 50%; }
-    .default-board .accordion-list > li .btn-collapse dl dt {
+    .default-board .accordion-list > li a dl dt {
       font-size: 11px;
       color: #000;
       font-weight: 500; }
-    .default-board .accordion-list > li .btn-collapse dl dd {
+    .default-board .accordion-list > li a dl dd {
       display: block;
       font-size: 15px;
       line-height: 20px;
       color: #000;
       font-weight: 500;
       margin-top: 5px; }
-    .default-board .accordion-list > li .btn-collapse .label {
+    .default-board .accordion-list > li a .label {
       position: absolute;
       top: 50%;
       right: 50px;
@@ -660,6 +640,26 @@ textarea {
       color: #0e3db4;
       font-weight: bold;
       transform: translateY(-50%); }
+  .default-board .accordion-list > li .btn-collapse:after {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 17px;
+    height: 100%;
+    display: block;
+    content: '';
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    background-image: url(/content/pest-mobile/images/sub/ico_bottom_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 17px auto;
+    background-position: 50% 50%; }
   .default-board .accordion-list > li .answer {
     display: none;
     border-top: 1px solid #d7d7d7;

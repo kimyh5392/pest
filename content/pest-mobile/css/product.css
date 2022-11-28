@@ -358,13 +358,13 @@ pre {
   padding-top: 0; }
   .details-wrap .qna-list .article-content .default-board .accordion-list > li:first-child {
     border-top: 0; }
-  .details-wrap .qna-list .article-content .default-board .accordion-list > li .btn-collapse {
+  .details-wrap .qna-list .article-content .default-board .accordion-list > li a {
     padding-left: 0;
     padding-right: 110px; }
-    .details-wrap .qna-list .article-content .default-board .accordion-list > li .btn-collapse dl dt, .details-wrap .qna-list .article-content .default-board .accordion-list > li .btn-collapse dl dd {
+    .details-wrap .qna-list .article-content .default-board .accordion-list > li a dl dt, .details-wrap .qna-list .article-content .default-board .accordion-list > li a dl dd {
       font-size: 12px;
       line-height: 18px; }
-    .details-wrap .qna-list .article-content .default-board .accordion-list > li .btn-collapse dl dt {
+    .details-wrap .qna-list .article-content .default-board .accordion-list > li a dl dt {
       color: #919191; }
 .details-wrap .amount-info .article-content > dl > dt {
   font-size: 13px;

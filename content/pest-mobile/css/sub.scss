@@ -654,25 +654,11 @@ textarea {
     .accordion-list {
         > li {
             border-bottom: 1px solid #d7d7d7;
-            .btn-collapse {
+            a {
                 position: relative;
                 display: block;
                 padding: 20px;
                 padding-right: 100px;
-                &:after {
-                    position: absolute;
-                    top: 0;
-                    right: 20px;
-                    width: 17px;
-                    height: 100%;
-                    display: block;
-                    content: '';
-                    @include transition();
-                    background-image: url(/content/pest-mobile/images/sub/ico_bottom_arrow.png);
-                    background-repeat: no-repeat;
-                    background-size: 17px auto;
-                    background-position: 50% 50%;
-                }
                 dl {
                     dt {
                         font-size: 11px;
@@ -696,6 +682,22 @@ textarea {
                     color: $kcolor;
                     font-weight: bold;
                     transform: translateY(-50%);
+                }
+            }
+            .btn-collapse {
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    width: 17px;
+                    height: 100%;
+                    display: block;
+                    content: '';
+                    @include transition();
+                    background-image: url(/content/pest-mobile/images/sub/ico_bottom_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: 17px auto;
+                    background-position: 50% 50%;
                 }
             }
             .answer {
