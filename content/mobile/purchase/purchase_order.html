@@ -275,7 +275,7 @@
                     <div class="container">
                         <div class="info-top">
                             <b>홍길동</b>
-                            <a href="#" class="btn btn-black">배송지 변경</a>
+                            <a href="#addr-list-pop" class="btn btn-black btn-modal">배송지 변경</a>
                         </div>
                         <div class="info-body">
                             <address>
@@ -589,6 +589,191 @@
             </div>
         </div>
     </footer>
+    
+    <!-- modal modal-addr-list -->
+    <div class="modal modal-addr-list" id="addr-list-pop">
+        <section>
+            <div class="section-header">
+                <h3>배송 주소록</h3>
+                <button type="button" class="btn-modal-close">
+                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                </button>
+            </div>
+            <div class="section-content">
+                <article class="delivery-addr">
+                    <ul>
+                        <li>
+                            <div class="container">
+                                <div class="radio-box">
+                                    <input type="radio" id="radio1" name="addr-list">
+                                    <label for="radio1"></label>
+                                </div>
+                                <div class="details">
+                                    <div class="top">
+                                        <b>홍길동 (우리집)</b> <span>기본배송지</span>
+                                        <div class="modify-drop">
+                                            <div class="dropdown">
+                                                <button type="button" class="btn-drop">
+                                                    <img src="/content/pest-mobile/images/sub/ico_modify_drop.png" alt="">
+                                                </button>
+                                                <ul>
+                                                    <li><a href="#">수정하기 <i class="icon-modify"></i></a></li>
+                                                    <li><a href="#">삭제하기 <i class="icon-delete"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addr-info">
+                                        <address>
+                                            16005)<br>
+                                            경기도 용인시 기흥구 동백죽전대로 325번지 <br>
+                                            롯데캐슬 아파트 101동 1101호
+                                        </address>
+                                        <p class="contact">010-1234-5678</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <div class="radio-box">
+                                    <input type="radio" id="radio1" name="addr-list">
+                                    <label for="radio1"></label>
+                                </div>
+                                <div class="details">
+                                    <div class="top">
+                                        <b>이태백 (회사)</b>
+                                        <div class="modify-drop">
+                                            <div class="dropdown">
+                                                <button type="button" class="btn-drop">
+                                                    <img src="/content/pest-mobile/images/sub/ico_modify_drop.png" alt="">
+                                                </button>
+                                                <ul>
+                                                    <li><a href="#">수정하기 <i class="icon-modify"></i></a></li>
+                                                    <li><a href="#">삭제하기 <i class="icon-delete"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addr-info">
+                                        <address>
+                                            16005)<br>
+                                            경기도 용인시 기흥구 동백죽전대로 325번지 <br>
+                                            롯데캐슬 아파트 101동 1101호
+                                        </address>
+                                        <p class="contact">010-1234-5678</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <div class="container">
+                            <p>
+                                <a href="#" class="btn btn-lg btn-blue">배송지로 적용</a>
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-sm btn-white">기본배송지로 설정</a>
+                                <a href="#addr-form-pop" class="btn btn-sm btn-white btn-modal">신규 배송지 추가</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    
+    <!-- modal modal-addr-form -->
+    <div class="modal modal-addr-form" id="addr-form-pop">
+        <section>
+            <div class="section-header">
+                <h3>배송지 정보</h3>
+                <button type="button" class="btn-modal-close">
+                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                </button>
+            </div>
+            <div class="section-content">
+                <article>
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>배송지 이름</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="우리집">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>받으시는 분</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="홍길동">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>
+                                        <div class="form-group addr">
+                                            <input type="text" class="form-control" placeholder="16005 경기도 용인시 기흥구 동백죽전대로 325번지">
+                                            <a href="#" class="btn btn-modify">변경</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="101동 1101호">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>휴대폰번호</dt>
+                                    <dd>
+                                        <div class="contact">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option>010</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="1234">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="5678">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <div class="radio-box">
+                                    <input type="radio" id="radio1" name="basic-addr" checked="">
+                                    <label for="radio1"></label>
+                                    <label for="radio1" class="label">배송 주소록에 저장</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-lg btn-blue">배송지 적용</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
     
     <!-- modal modal-agree -->
     <div class="modal modal-agree" id="agree-pop">

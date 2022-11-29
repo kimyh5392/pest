@@ -1575,6 +1575,359 @@ textarea {
             }
         }
     }
+    &.modal-addr-form {
+        > section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1001;
+            padding-top: 120px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #fff;
+            .section-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #d7d7d7;
+                background-color: #fff;
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 59px;
+                }
+                > .btn-modal-close {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    width: 17px;
+                    display: block;
+                    transform: translateY(-50%);
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .tab-menu {
+                    text-align: center;
+                    border-bottom: 1px solid #d7d7d7;
+                    > ul {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        > li {
+                            display: table-cell;
+                            vertical-align: middle;
+                            > a {
+                                display: block;
+                                > span {
+                                    position: relative;
+                                    font-size: 15px;
+                                    color: #000;
+                                    @include transition();
+                                    font-weight: 500;
+                                    display: inline-block;
+                                    line-height: 59px;
+                                    &:after {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 50%;
+                                        display: block;
+                                        width: 0;
+                                        height: 3px;
+                                        content: '';
+                                        @include transition();
+                                        transform: translateX(-50%);
+                                        background-color: $kcolor;
+                                    }
+                                }
+                            }
+                            &.active {
+                                > a {
+                                    span {
+                                        color: $kcolor;
+                                        &:after {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section-content {
+                article {
+                    ul {
+                        > li {
+                            dl {
+                                dt {
+                                    font-size: 12px;
+                                    color: #000;
+                                    font-weight: 500;
+                                }
+                                dd {
+                                    margin-top: 10px;
+                                    .form-group {
+                                        &.addr {
+                                            position: relative;
+                                            .form-control {
+                                                padding-right: 60px;
+                                            }
+                                            .btn-modify {
+                                                position: absolute;
+                                                top: 50%;
+                                                right: 10px;
+                                                font-size: 12px;
+                                                color: #fff;
+                                                display: block;
+                                                width: 40px;
+                                                text-align: center;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                transform: translateY(-50%);
+                                                background-color: #000;
+                                            }
+                                        }
+                                        & ~ .form-group {
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                    .contact {
+                                        > ul {
+                                            width: calc(100% + 10px);
+                                            margin: 0 - 5px;
+                                            overflow: hidden;
+                                            > li {
+                                                float: left;
+                                                width: 33.3333333333%;
+                                                padding: 0 5px;
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & ~ li {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                    .btn-area {
+                        text-align: center;
+                        margin-top: 20px;
+                        .btn-lg {
+                            width: 100%;
+                            font-size: 15px;
+                            font-weight: 500;
+                            display: block;
+                            line-height: 45px;
+                            &.btn-blue {
+                                color: #fff;
+                                background-color: $kcolor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.modal-addr-list {
+        > section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            padding-top: 60px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #fff;
+            .section-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #d7d7d7;
+                background-color: #fff;
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 59px;
+                }
+                > .btn-modal-close {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    width: 17px;
+                    display: block;
+                    transform: translateY(-50%);
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .tab-menu {
+                    text-align: center;
+                    border-bottom: 1px solid #d7d7d7;
+                    > ul {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        > li {
+                            display: table-cell;
+                            vertical-align: middle;
+                            > a {
+                                display: block;
+                                > span {
+                                    position: relative;
+                                    font-size: 15px;
+                                    color: #000;
+                                    @include transition();
+                                    font-weight: 500;
+                                    display: inline-block;
+                                    line-height: 59px;
+                                    &:after {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 50%;
+                                        display: block;
+                                        width: 0;
+                                        height: 3px;
+                                        content: '';
+                                        @include transition();
+                                        transform: translateX(-50%);
+                                        background-color: $kcolor;
+                                    }
+                                }
+                            }
+                            &.active {
+                                > a {
+                                    span {
+                                        color: $kcolor;
+                                        &:after {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section-content {
+                .delivery-addr {
+                    > ul {
+                        > li {
+                            border-bottom: 1px solid #919191;
+                            .container {
+                                display: table;
+                                width: 100%;
+                                padding: 25px 20px;
+                                > div {
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                    &.radio-box {
+                                        width: 30px;
+                                    }
+                                    &.details {
+                                        .top {
+                                            position: relative;
+                                            b {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                font-size: 15px;
+                                                color: #000;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                margin-right: 5px;
+                                            }
+                                            span {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                font-size: 11px;
+                                                color: #fff;
+                                                height: 20px;
+                                                line-height: 18px;
+                                                font-weight: 400;
+                                                padding: 0 5px;
+                                                background-color: $kcolor;
+                                            }
+                                            .modify-drop {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                            }
+                                        }
+                                        .addr-info {
+                                            padding-top: 15px;
+                                            address {
+                                                font-size: 13px;
+                                                line-height: 18px;
+                                                color: #000;
+                                                font-weight: 400;
+                                                font-style: normal;
+                                            }
+                                            .contact {
+                                                font-size: 13px;
+                                                color: #000;
+                                                font-weight: 400;
+                                                margin-top: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-area {
+                        text-align: center;
+                        padding: 25px 0;
+                        .container {
+                            font-size: 0;
+                            p {
+                                display: block;
+                                .btn {
+                                    font-size: 15px;
+                                    line-height: 38px;
+                                    font-weight: 500;
+                                    border: 1px solid #919191;
+                                    &.btn-lg {
+                                        display: block;
+                                    }
+                                    &.btn-blue {
+                                        color: #fff;
+                                        border-color: $kcolor;
+                                        background-color: $kcolor;
+                                    }
+                                    &.btn-sm {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        width: calc(50% - 5px);
+                                        margin-right: 10px;
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                                & ~ P {
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     &.show {
         display: block;
     }

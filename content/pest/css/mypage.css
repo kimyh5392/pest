@@ -336,7 +336,7 @@ section .section-content article ~ article {
 /* modal */
 .modal .modal-content {
   width: 725px;
-  max-height: 700px;
+  max-height: 800px;
   overflow-y: auto;
   background-color: #fff; }
   .modal .modal-content article {
