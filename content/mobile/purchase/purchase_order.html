@@ -378,7 +378,7 @@
                                     <dd>
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="1,000,000 원">
-                                            <a href="#" class="btn btn-benefit">쿠폰조회</a>
+                                            <a href="#coupon-list-pop" class="btn btn-benefit btn-modal">쿠폰조회</a>
                                         </div>
                                     </dd>
                                 </dl>
@@ -589,6 +589,97 @@
             </div>
         </div>
     </footer>
+    
+    
+    <!-- modal modal-coupon-list -->
+    <div class="modal modal-coupon-list" id="coupon-list-pop">
+        <section>
+            <div class="section-header">
+                <h3>쿠폰할인</h3>
+                <button type="button" class="btn-modal-close">
+                    <img src="/content/pest-mobile/images/ico_close_black.png" alt="">
+                </button>
+            </div>
+            <div class="section-content">
+                <article class="coupon-list">
+                    <div class="container">
+                        <b>사용 가능한 쿠폰만 보여집니다.</b>
+                        <ul class="order-product">
+                            <li>
+                                <div class="box">
+                                    <div class="item-img">
+                                        <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <b>무무스가드플러스</b>
+                                        <p>
+                                            옵션 : 110mL<br>
+                                            수량 : 1개
+                                        </p>
+                                    </div>
+                                    <div class="total">
+                                        <p>21,000원</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>2,100원 기피제 10% 할인</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="item-img">
+                                        <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <b>무무스가드플러스</b>
+                                        <p>
+                                            옵션 : 110mL<br>
+                                            수량 : 1개
+                                        </p>
+                                    </div>
+                                    <div class="total">
+                                        <p>21,000원</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>쿠폰을 선택하세요.</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total-area">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dt>상품판매가</dt>
+                                    <dd>51,000원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>쿠폰할인</dt>
+                                    <dd class="blue">2,100원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>쿠폰적용금액</dt>
+                                    <dd class="red">48,900원</dd>
+                                </dl>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-lg btn-blue">쿠폰할인 적용</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
     
     <!-- modal modal-addr-list -->
     <div class="modal modal-addr-list" id="addr-list-pop">

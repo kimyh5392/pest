@@ -1592,6 +1592,7 @@ textarea {
                 top: 0;
                 left: 0;
                 width: 100%;
+                z-index: 1;
                 text-align: center;
                 border-bottom: 1px solid #d7d7d7;
                 background-color: #fff;
@@ -1611,53 +1612,6 @@ textarea {
                     img {
                         display: block;
                         width: 100%;
-                    }
-                }
-                .tab-menu {
-                    text-align: center;
-                    border-bottom: 1px solid #d7d7d7;
-                    > ul {
-                        display: table;
-                        width: 100%;
-                        table-layout: fixed;
-                        > li {
-                            display: table-cell;
-                            vertical-align: middle;
-                            > a {
-                                display: block;
-                                > span {
-                                    position: relative;
-                                    font-size: 15px;
-                                    color: #000;
-                                    @include transition();
-                                    font-weight: 500;
-                                    display: inline-block;
-                                    line-height: 59px;
-                                    &:after {
-                                        position: absolute;
-                                        bottom: 0;
-                                        left: 50%;
-                                        display: block;
-                                        width: 0;
-                                        height: 3px;
-                                        content: '';
-                                        @include transition();
-                                        transform: translateX(-50%);
-                                        background-color: $kcolor;
-                                    }
-                                }
-                            }
-                            &.active {
-                                > a {
-                                    span {
-                                        color: $kcolor;
-                                        &:after {
-                                            width: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1754,6 +1708,7 @@ textarea {
                 top: 0;
                 left: 0;
                 width: 100%;
+                z-index: 1;
                 text-align: center;
                 border-bottom: 1px solid #d7d7d7;
                 background-color: #fff;
@@ -1773,53 +1728,6 @@ textarea {
                     img {
                         display: block;
                         width: 100%;
-                    }
-                }
-                .tab-menu {
-                    text-align: center;
-                    border-bottom: 1px solid #d7d7d7;
-                    > ul {
-                        display: table;
-                        width: 100%;
-                        table-layout: fixed;
-                        > li {
-                            display: table-cell;
-                            vertical-align: middle;
-                            > a {
-                                display: block;
-                                > span {
-                                    position: relative;
-                                    font-size: 15px;
-                                    color: #000;
-                                    @include transition();
-                                    font-weight: 500;
-                                    display: inline-block;
-                                    line-height: 59px;
-                                    &:after {
-                                        position: absolute;
-                                        bottom: 0;
-                                        left: 50%;
-                                        display: block;
-                                        width: 0;
-                                        height: 3px;
-                                        content: '';
-                                        @include transition();
-                                        transform: translateX(-50%);
-                                        background-color: $kcolor;
-                                    }
-                                }
-                            }
-                            &.active {
-                                > a {
-                                    span {
-                                        color: $kcolor;
-                                        &:after {
-                                            width: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1921,6 +1829,146 @@ textarea {
                                 & ~ P {
                                     margin-top: 10px;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.modal-coupon-list {
+        section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1001;
+            padding-top: 120px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #fff;
+            .section-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+                text-align: center;
+                border-bottom: 1px solid #d7d7d7;
+                background-color: #fff;
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 59px;
+                }
+                > .btn-modal-close {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    width: 17px;
+                    display: block;
+                    transform: translateY(-50%);
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            .section-content {
+                .coupon-list {
+                    .container {
+                        b {
+                            display: block;
+                            font-size: 13px;
+                            color: #000;
+                            font-weight: 500;
+                            margin-bottom: 20px;
+                        }
+                        .order-product {
+                            > li {
+                                .box {
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    > div {
+                                        &.details {
+                                            p {
+                                                color: #000;
+                                            }
+                                        }
+                                    }
+                                }
+                                .form-group {
+                                    padding-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .total-area {
+                        font-size: 0;
+                        text-align: center;
+                        margin-top: 30px;
+                        padding: 20px 0;
+                        background-color: #f5f5f5;
+                        > ol {
+                            > li {
+                                display: inline-block;
+                                vertical-align: top;
+                                width: 33.33333333%;
+                                dl {
+                                    dt {
+                                        font-size: 12px;
+                                        color: #000;
+                                        font-weight: 400;
+                                    }
+                                    dd {
+                                        position: relative;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        margin-top: 10px;
+                                        &.blue {
+                                            color: #0e3db4;
+                                            &:before {
+                                                position: absolute;
+                                                top: 50%;
+                                                left: -3.5px;
+                                                font-size: 20px;
+                                                color: #000;
+                                                display: block;
+                                                transform: translateY(-50%);
+                                                content: '-';
+                                            }
+                                        }
+                                        &.red {
+                                            color: #ff4800;
+                                            &:before {
+                                                position: absolute;
+                                                top: 50%;
+                                                left: -5.5px;
+                                                color: #000;
+                                                font-size: 20px;
+                                                display: block;
+                                                transform: translateY(-50%);
+                                                content: '=';
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-area {
+                        text-align: center;
+                        .btn-lg {
+                            width: 100%;
+                            font-size: 15px;
+                            font-weight: 500;
+                            display: block;
+                            line-height: 45px;
+                            &.btn-blue {
+                                color: #fff;
+                                background-color: $kcolor;
                             }
                         }
                     }
