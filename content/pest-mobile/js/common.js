@@ -66,9 +66,9 @@
     });
     
     // like btn
-    $(document).on('click', '.btn-like', function(){
+    /*$(document).on('click', '.btn-like', function(){
         $(this).toggleClass('on');
-    });
+    });*/
     
     // 헤더 검색 관련
     $(document).on('click', '.btn-search-open', function(){
