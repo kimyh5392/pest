@@ -654,7 +654,7 @@ textarea {
     .accordion-list {
         > li {
             border-bottom: 1px solid #d7d7d7;
-            a {
+            > a {
                 position: relative;
                 display: block;
                 padding: 20px;

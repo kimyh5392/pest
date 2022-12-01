@@ -616,23 +616,23 @@ textarea {
 /* default-board */
 .default-board .accordion-list > li {
   border-bottom: 1px solid #d7d7d7; }
-  .default-board .accordion-list > li a {
+  .default-board .accordion-list > li > a {
     position: relative;
     display: block;
     padding: 20px;
     padding-right: 100px; }
-    .default-board .accordion-list > li a dl dt {
+    .default-board .accordion-list > li > a dl dt {
       font-size: 11px;
       color: #000;
       font-weight: 500; }
-    .default-board .accordion-list > li a dl dd {
+    .default-board .accordion-list > li > a dl dd {
       display: block;
       font-size: 15px;
       line-height: 20px;
       color: #000;
       font-weight: 500;
       margin-top: 5px; }
-    .default-board .accordion-list > li a .label {
+    .default-board .accordion-list > li > a .label {
       position: absolute;
       top: 50%;
       right: 50px;
