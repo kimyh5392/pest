@@ -1383,6 +1383,55 @@ select.form-control {
               color: #0e3db4; }
               .modal.marketing-pop .modal-content article .tab-area .tab-menu > li.active > a:after {
                 width: 100%; }
+  .modal.modal-qna-modify .modal-content {
+    width: 725px;
+    max-height: 800px;
+    overflow-y: auto;
+    background-color: #fff; }
+    .modal.modal-qna-modify .modal-content article .article-header {
+      text-align: center;
+      padding: 35px 0 65px; }
+      .modal.modal-qna-modify .modal-content article .article-header .btn-modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block; }
+      .modal.modal-qna-modify .modal-content article .article-header h4 {
+        font-size: 22px;
+        color: #000;
+        font-weight: 400; }
+      .modal.modal-qna-modify .modal-content article .article-header b {
+        display: block;
+        font-size: 30px;
+        color: #000;
+        font-weight: bold;
+        margin-top: 30px; }
+      .modal.modal-qna-modify .modal-content article .article-header p {
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+        line-height: 27px;
+        margin-top: 15px; }
+    .modal.modal-qna-modify .modal-content article .article-content .modify-form {
+      padding: 0 50px; }
+      .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dt {
+        font-size: 18px;
+        color: #000;
+        font-weight: 400; }
+      .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd {
+        margin-top: 15px; }
+        .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd .form-group.text-box .form-control {
+          padding: 0; }
+        .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd .check-box {
+          margin-top: 20px; }
+      .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li ~ li {
+        margin-top: 20px; }
+      .modal.modal-qna-modify .modal-content article .article-content .modify-form .attention {
+        color: #ababab;
+        line-height: 22px;
+        margin-top: 45px; }
+    .modal.modal-qna-modify .modal-content article .article-content .modal-btn-area {
+      margin-top: 40px; }
   .modal.show {
     display: block; }
 
