@@ -87,29 +87,40 @@ pre {
 
 /* company */
 .company .intro {
-  padding-top: 130px;
+  /*padding-top: 130px;
   background-image: url(/content/pest/images/introduction/bg_intro.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-size: auto; }
-  .company .intro .container strong {
-    display: block;
-    font-size: 40px;
-    color: #000;
-    font-weight: bold;
-    line-height: 50px; }
-  .company .intro .container b {
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 45px;
-    color: #958052; }
-  .company .intro .container p {
-    font-size: 14px;
-    line-height: 25px;
-    color: #000;
-    font-weight: 400;
-    margin-top: 70px; }
+  background-size: auto;*/ }
+  .company .intro .container {
+    display: table;
+    table-layout: fixed; }
+    .company .intro .container > div {
+      display: table-cell;
+      vertical-align: middle; }
+      .company .intro .container > div.summary strong {
+        display: block;
+        font-size: 40px;
+        color: #000;
+        font-weight: bold;
+        line-height: 50px; }
+      .company .intro .container > div.summary b {
+        display: block;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 45px;
+        color: #958052; }
+      .company .intro .container > div.summary p {
+        font-size: 14px;
+        line-height: 25px;
+        color: #000;
+        font-weight: 400;
+        margin-top: 70px; }
+      .company .intro .container > div.item-img {
+        width: 615px; }
+        .company .intro .container > div.item-img > figure img {
+          display: block;
+          width: 100%; }
 .company .history {
   margin-top: 100px; }
   .company .history > .container > div {
