@@ -1210,12 +1210,12 @@ section .section-content article ~ article {
         .coupon .section-content article .article-content .coupon-list > ul > li .btn-area.down-success .btn-black {
           display: block; }
       .coupon .section-content article .article-content .coupon-list > ul > li .target {
-        position: absolute;
+        /*position: absolute;
         top: 0;
         right: 0;
         width: 170px;
         height: 100%;
-        text-align: center;
+        text-align: center;*/
         background-color: #f5f5f5; }
         .coupon .section-content article .article-content .coupon-list > ul > li .target .v-align {
           display: table;
@@ -1224,7 +1224,7 @@ section .section-content article ~ article {
           .coupon .section-content article .article-content .coupon-list > ul > li .target .v-align dl {
             display: table-cell;
             vertical-align: middle;
-            padding: 0 15px; }
+            padding: 15px; }
             .coupon .section-content article .article-content .coupon-list > ul > li .target .v-align dl dt {
               font-size: 14px;
               font-weight: 400;
@@ -1235,6 +1235,20 @@ section .section-content article ~ article {
               color: #000;
               font-weight: bold;
               margin-top: 10px; }
+    .coupon .section-content article .article-content .coupon-list.type-2 > ul > li {
+      display: table;
+      width: 100%;
+      padding: 0;
+      table-layout: fixed; }
+      .coupon .section-content article .article-content .coupon-list.type-2 > ul > li > div {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%; }
+        .coupon .section-content article .article-content .coupon-list.type-2 > ul > li > div.details {
+          padding: 30px 60px; }
+        .coupon .section-content article .article-content .coupon-list.type-2 > ul > li > div.target {
+          width: 170px;
+          text-align: center; }
 
 /* point */
 .point .section-content article .article-head {
