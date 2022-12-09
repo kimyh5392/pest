@@ -2563,6 +2563,25 @@ textarea {
     }
 }
 
+/* summary-txt */
+.summary-txt {
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    line-height: 18px;
+    &.left {
+        text-align: left;
+    }
+    &.right {
+        text-align: right;
+    }
+    &.center {
+        text-align: center;
+    }
+}
+
+
+
 
 
 
