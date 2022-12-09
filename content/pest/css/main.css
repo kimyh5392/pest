@@ -539,6 +539,12 @@ pre {
         padding: 0 15px; }
         .photo-review .section-content .review-list > li a {
           display: block; }
+          .photo-review .section-content .review-list > li a figure img {
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain; }
           .photo-review .section-content .review-list > li a figure figcaption {
             padding-top: 25px; }
             .photo-review .section-content .review-list > li a figure figcaption > b {

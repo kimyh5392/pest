@@ -568,7 +568,11 @@
                     display: block;
                     figure {
                         img {
-                            
+                            display: block;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-position: 50% 50%;
+                            background-size: contain;
                         }
                         figcaption {
                             padding-top: 25px;
