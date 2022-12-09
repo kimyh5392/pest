@@ -544,7 +544,7 @@ pre {
             width: 100%;
             background-repeat: no-repeat;
             background-position: 50% 50%;
-            background-size: contain; }
+            background-size: cover; }
           .photo-review .section-content .review-list > li a figure figcaption {
             padding-top: 25px; }
             .photo-review .section-content .review-list > li a figure figcaption > b {
