@@ -1955,4 +1955,21 @@ pre {
     display: block;
     width: 100%; }
 
+/* default-board-list */
+.default-board-list .section-header {
+  padding: 20px 0 30px; }
+.default-board-list .section-content .accordion-list > li .answer .answer-area {
+  text-align: center;
+  padding: 35px 20px; }
+  .default-board-list .section-content .accordion-list > li .answer .answer-area p {
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    line-height: 18px; }
+  .default-board-list .section-content .accordion-list > li .answer .answer-area figure img {
+    display: block;
+    width: 100%; }
+  .default-board-list .section-content .accordion-list > li .answer .answer-area.left {
+    text-align: left; }
+
 /*# sourceMappingURL=mypage.css.map */
