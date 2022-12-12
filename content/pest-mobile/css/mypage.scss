@@ -2498,7 +2498,27 @@
 }
 
 
-
+.default-board {
+    .accordion-list {
+        > li {
+            .answer {
+                .answer-area {
+                    .usr-content {
+                        .content {
+                            figure {
+                                width: 160px;
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

@@ -1949,4 +1949,10 @@ pre {
       color: #fff;
       background-color: #0e3db4; }
 
+.default-board .accordion-list > li .answer .answer-area .usr-content .content figure {
+  width: 160px; }
+  .default-board .accordion-list > li .answer .answer-area .usr-content .content figure img {
+    display: block;
+    width: 100%; }
+
 /*# sourceMappingURL=mypage.css.map */
