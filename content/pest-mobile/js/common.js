@@ -52,6 +52,7 @@
     // modal 
     $(document).on('click','.btn-modal', function(e){
         $('body').addClass('show-modal');
+        $('.modal').removeClass('show');
         $($(this).attr('href')).addClass('show');
         e.preventDefault();
     });
