@@ -1152,9 +1152,9 @@ section .section-content article ~ article {
         display: inline-block;
         vertical-align: top; }
       .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause .form-group select.form-control {
-        width: 32%; }
+        width: 40%; }
       .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause .form-group input.form-control {
-        width: 65%;
+        width: 58%;
         margin-left: 5px; }
     .modal.modal-cancel .modal-content .article-content > div.bank-info > ul > li ~ li {
       margin-top: 10px; }
