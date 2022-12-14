@@ -1110,6 +1110,59 @@ section .section-content article ~ article {
             background-color: rgba(0, 0, 0, 0.2); }
   .modal.modal-question .modal-content article .article-content .modal-btn-area {
     margin-top: 45px; }
+  .modal.modal-cancel .modal-content .article-content > div {
+    padding: 0 40px; }
+    .modal.modal-cancel .modal-content .article-content > div h5 {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      color: #0e3db4;
+      padding-bottom: 30px; }
+    .modal.modal-cancel .modal-content .article-content > div dl {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      .modal.modal-cancel .modal-content .article-content > div dl dt, .modal.modal-cancel .modal-content .article-content > div dl dd {
+        display: table-cell;
+        vertical-align: middle; }
+      .modal.modal-cancel .modal-content .article-content > div dl dt {
+        font-size: 18px;
+        color: #000;
+        font-weight: 400;
+        width: 115px; }
+    .modal.modal-cancel .modal-content .article-content > div ~ div {
+      margin-top: 45px; }
+    .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list {
+      padding: 0; }
+      .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .info .item-img {
+        width: 115px; }
+      .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .details {
+        padding-left: 55px; }
+    .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause {
+      margin-top: 40px; }
+    .modal.modal-cancel .modal-content .article-content > div.bank-info > ul > li ~ li {
+      margin-top: 10px; }
+    .modal.modal-cancel .modal-content .article-content > div.summary-list {
+      margin-top: 0;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .modal.modal-cancel .modal-content .article-content > div.summary-list > ul > li {
+        position: relative;
+        font-size: 14px;
+        color: #ababab;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 15px; }
+        .modal.modal-cancel .modal-content .article-content > div.summary-list > ul > li ~ li {
+          margin-top: 10px; }
+        .modal.modal-cancel .modal-content .article-content > div.summary-list > ul > li:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '-'; }
+    .modal.modal-cancel .modal-content .article-content > div.modal-btn-area {
+      padding: 0;
+      margin-top: 0; }
 
 /* coupon */
 .coupon .section-content article .article-head {

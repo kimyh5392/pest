@@ -1432,6 +1432,95 @@ section {
             }
         }
     }
+    &.modal-cancel {
+        .modal-content {
+            .article-content {
+                > div {
+                    padding: 0 40px;
+                    h5 {
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $kcolor;
+                        padding-bottom: 30px;
+                    }
+                    dl {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        dt , dd {
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                        dt {
+                            font-size: 18px;
+                            color: #000;
+                            font-weight: 400;
+                            width: 115px;
+                        }
+                    }
+                    & ~ div {
+                        margin-top: 45px;
+                    }
+                    &.cancel-info {
+                        .order-list {
+                            padding: 0;
+                            > li {
+                                .info {
+                                    .item-img {
+                                        width: 115px;
+                                    }
+                                }
+                                .details {
+                                    padding-left: 55px;
+                                }
+                            }
+                        }
+                        .cause {
+                            margin-top: 40px;
+                        }
+                    }
+                    &.bank-info {
+                        > ul {
+                            > li {
+                                & ~ li {
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                    &.summary-list {
+                        margin-top: 0;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        > ul {
+                            > li {
+                                position: relative;
+                                font-size: 14px;
+                                color: #ababab;
+                                font-weight: 400;
+                                line-height: 22px;
+                                padding-left: 15px;
+                                & ~ li {
+                                    margin-top: 10px;
+                                }
+                                &:before {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    content: '-';
+                                }
+                            }
+                        }
+                    }
+                    &.modal-btn-area {
+                        padding: 0;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* coupon */
