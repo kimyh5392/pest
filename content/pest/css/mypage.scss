@@ -1555,7 +1555,12 @@ section {
                             }
                             .details {
                                 .summary {
+                                    position: relative;
+                                    padding-left: 110px;
                                     b {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
                                         display: inline-block;
                                         vertical-align: top;
                                         font-size: 25px;

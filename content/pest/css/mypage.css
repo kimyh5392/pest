@@ -1184,52 +1184,58 @@ section .section-content article ~ article {
       border-bottom: 1px solid #e4e4e4; }
       .coupon .section-content article .article-content .coupon-list > ul > li:first-child {
         border-top: 1px solid #e4e4e4; }
-      .coupon .section-content article .article-content .coupon-list > ul > li .details .summary b {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 25px;
-        font-weight: 600;
-        color: #0e3db4;
-        line-height: 25px; }
-      .coupon .section-content article .article-content .coupon-list > ul > li .details .summary > p {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 20px;
-        color: #000;
-        font-weight: 400;
-        margin-left: 10px;
-        line-height: 25px; }
-      .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker {
+      .coupon .section-content article .article-content .coupon-list > ul > li .details .summary {
         position: relative;
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 10px; }
-        .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .btn-ticker {
-          display: block;
-          padding-top: 4px; }
-        .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .ticker-pop {
-          display: none;
+        padding-left: 110px; }
+        .coupon .section-content article .article-content .coupon-list > ul > li .details .summary b {
           position: absolute;
-          top: -30%;
-          left: 50%;
-          white-space: nowrap;
-          padding: 7px 10px;
-          background-color: #fff;
-          border: 1px solid #000;
-          transform: translate(-50%, -100%); }
-          .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .ticker-pop:after {
+          top: 0;
+          left: 0;
+          display: inline-block;
+          vertical-align: top;
+          font-size: 25px;
+          font-weight: 600;
+          color: #0e3db4;
+          line-height: 25px; }
+        .coupon .section-content article .article-content .coupon-list > ul > li .details .summary > p {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 20px;
+          color: #000;
+          font-weight: 400;
+          margin-left: 10px;
+          line-height: 25px; }
+        .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 10px; }
+          .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .btn-ticker {
+            display: block;
+            padding-top: 4px; }
+          .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .ticker-pop {
+            display: none;
             position: absolute;
-            bottom: -11px;
+            top: -30%;
             left: 50%;
-            margin-left: -6.5px;
-            content: url(/content/pest/images/product/ico_ticker_bottom.png); }
-          .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .ticker-pop p {
-            font-size: 13px;
-            line-height: 20px;
-            color: #000;
-            font-weight: 400; }
-        .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker.show .ticker-pop {
-          display: block; }
+            white-space: nowrap;
+            padding: 7px 10px;
+            background-color: #fff;
+            border: 1px solid #000;
+            transform: translate(-50%, -100%); }
+            .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .ticker-pop:after {
+              position: absolute;
+              bottom: -11px;
+              left: 50%;
+              margin-left: -6.5px;
+              content: url(/content/pest/images/product/ico_ticker_bottom.png); }
+            .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker .ticker-pop p {
+              font-size: 13px;
+              line-height: 20px;
+              color: #000;
+              font-weight: 400; }
+          .coupon .section-content article .article-content .coupon-list > ul > li .details .summary .ticker.show .ticker-pop {
+            display: block; }
       .coupon .section-content article .article-content .coupon-list > ul > li .details .attention {
         display: block;
         font-size: 16px;
