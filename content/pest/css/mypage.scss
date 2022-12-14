@@ -1473,11 +1473,38 @@ section {
                                 }
                                 .details {
                                     padding-left: 55px;
+                                    p {
+                                        margin-top: 10px;
+                                        line-height: 28px;
+                                        .form-control {
+                                            display: inline-block;
+                                            width: 80px;
+                                            height: 28px;
+                                            background-position: calc(100% - 10px) 50%;
+                                        }
+                                    }
                                 }
                             }
                         }
                         .cause {
                             margin-top: 40px;
+                            .form-group {
+                                .form-control {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+                                select {
+                                    &.form-control {
+                                        width: 32%;
+                                    }
+                                }
+                                input {
+                                    &.form-control {
+                                        width: 65%;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
                         }
                     }
                     &.bank-info {

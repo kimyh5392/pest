@@ -1138,8 +1138,24 @@ section .section-content article ~ article {
         width: 115px; }
       .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .details {
         padding-left: 55px; }
+        .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .details p {
+          margin-top: 10px;
+          line-height: 28px; }
+          .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .details p .form-control {
+            display: inline-block;
+            width: 80px;
+            height: 28px;
+            background-position: calc(100% - 10px) 50%; }
     .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause {
       margin-top: 40px; }
+      .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause .form-group .form-control {
+        display: inline-block;
+        vertical-align: top; }
+      .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause .form-group select.form-control {
+        width: 32%; }
+      .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause .form-group input.form-control {
+        width: 65%;
+        margin-left: 5px; }
     .modal.modal-cancel .modal-content .article-content > div.bank-info > ul > li ~ li {
       margin-top: 10px; }
     .modal.modal-cancel .modal-content .article-content > div.summary-list {

@@ -1952,6 +1952,14 @@ textarea {
         font-weight: 500; }
     .modal.modal-cancel-pop > section .section-content > article .article-content {
       border-top: 1px solid #d7d7d7; }
+      .modal.modal-cancel-pop > section .section-content > article .article-content .order-product > li .box .details p {
+        line-height: 20px;
+        margin-top: 5px; }
+        .modal.modal-cancel-pop > section .section-content > article .article-content .order-product > li .box .details p .form-control {
+          display: inline-block;
+          width: 60px;
+          height: 20px;
+          padding-left: 5px; }
       .modal.modal-cancel-pop > section .section-content > article .article-content .cause {
         padding: 20px; }
         .modal.modal-cancel-pop > section .section-content > article .article-content .cause > dl {
@@ -1968,6 +1976,8 @@ textarea {
             font-weight: 400; }
           .modal.modal-cancel-pop > section .section-content > article .article-content .cause > dl dd .form-group select.form-control {
             color: #919191; }
+          .modal.modal-cancel-pop > section .section-content > article .article-content .cause > dl dd .form-group.form-control ~ .form-control {
+            margin-top: 5px; }
       .modal.modal-cancel-pop > section .section-content > article .article-content .bank-info {
         padding: 20px;
         border-top: 8px solid #f5f5f5; }

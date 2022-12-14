@@ -433,7 +433,7 @@
     </main>
     
     <!-- modal modal-cancel-pop -->
-    <div class="modal modal-cancel-pop" id="cancel-pop">
+    <div class="modal modal-cancel-pop show" id="cancel-pop">
         <section>
             <div class="section-header">
                 <h3>취소 신청</h3>
@@ -457,7 +457,10 @@
                                         <b>무무스가드플러스</b>
                                         <p>
                                             옵션 : 110mL<br>
-                                            수량 : 1개
+                                            수량 : 
+                                            <select class="form-control">
+                                                <option>10</option>
+                                            </select>
                                         </p>
                                     </div>
                                 </div>
@@ -479,12 +482,13 @@
                         </ul>
                         <div class="cause">
                             <dl>
-                                <dt>신청사유</dt>
+                                <dt>취소 사유</dt>
                                 <dd>
                                     <div class="form-group">
                                         <select class="form-control">
                                             <option>구매의사 없음</option>
                                         </select>
+                                        <input type="text" class="form-control">
                                     </div>
                                 </dd>
                             </dl>
