@@ -243,6 +243,9 @@ body {
                 }
                 img {
                     width: 34px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
                 }
                 b {
                     line-height: 34px;

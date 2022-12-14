@@ -283,7 +283,10 @@ body {
       display: inline-block;
       vertical-align: top; }
     #nav > article .article-header .member-info img {
-      width: 34px; }
+      width: 34px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
     #nav > article .article-header .member-info b {
       line-height: 34px;
       padding: 0 5px 0 10px; }
