@@ -2401,8 +2401,171 @@ body {
     }
 }
 
+/* experience */
+.experience {
+    .section-content {
+        article {
+            .article-head {
+                padding-bottom: 60px;
+                h4 {
+                    font-size: 30px;
+                }
+            }
+            .article-content {
+                > dl {
+                    dt {
+                        font-size: 20px;
+                        color: #000;
+                        font-weight: 400;
+                        & ~ dt {
+                            margin-top: 60px;
+                        }
+                    }
+                    dd {
+                        margin-top: 20px;
+                        .experience-banner {
+                            > a {
+                                display: block;
+                                > figure {
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* experience-request */
+.experience-request {
+    .section-content {
+        article {
+            .article-head {
+                padding-bottom: 60px;
+                h4 {
+                    font-size: 30px;
+                }
+            }
+            .article-content {
+                .experience-intro {
+                    > figure {
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    p {
+                        display: block;
+                        font-size: 14px;
+                        color: #000;
+                        font-weight: 400;
+                        margin-top: 30px;
+                    }
+                }
+                .experience-info {
+                    padding: 40px 0 60px;
+                    > dl {
+                        overflow: hidden;
+                        dt, dd {
+                            float: left;
+                            font-size: 16px;
+                            line-height: 30px;
+                            color: #000;
+                            font-weight: 400;
+                        }
+                        dt {
+                            width: 180px;
+                            clear: left;
+                        }
+                    }
+                    .btn-area {
+                        margin-top: 60px;
+                        > .btn {
+                            display: inline-block;
+                            width: 180px;
+                            font-size: 17px;
+                            line-height: 42px;
+                            vertical-align: top;
+                            color: #fff;
+                            font-weight: 400;
+                            text-align: center;
+                            margin-right: 10px;
+                            border-radius: 10px;
+                            background-color: $kcolor;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                .request-reply {
+                    > ul {
+                        border-top: 1px solid #e4e4e4;
+                        border-bottom: 1px solid #e4e4e4;
+                        > li {
+                            padding: 30px 20px;
+                            > ul {
+                                font-size: 0;
+                                > li {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: rgba(#000, .4);
+                                    &:after {
+                                        width: 1px;
+                                        height: 14px;
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        content: '';
+                                        margin: 0 10px;
+                                        background-color: rgba(#000, .4);
+                                    }
+                                    &:last-child {
+                                        &:after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                            > p {
+                                font-size: 16px;
+                                color: #000;
+                                font-weight: 400;
+                                margin-top: 10px;
+                            }
+                            & ~ li {
+                                border-top: 1px solid #e4e4e4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
+/* eradication */
+.eradication {
+    figure {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .article-content {
+        padding-top: 70px;
+        .tab-menu {
+            padding: 100px 0 60px;
+        }
+    }
+}
 
 
 
