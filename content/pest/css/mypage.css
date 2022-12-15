@@ -1130,13 +1130,39 @@ section .section-content article ~ article {
         font-size: 18px;
         color: #000;
         font-weight: 400;
-        width: 115px; }
+        width: 150px; }
+      .modal.modal-cancel .modal-content .article-content > div dl dd > p {
+        font-size: 18px;
+        color: #000;
+        font-weight: 400;
+        line-height: 46px; }
+      .modal.modal-cancel .modal-content .article-content > div dl dd .radio-box > div .label {
+        font-weight: 400; }
+      .modal.modal-cancel .modal-content .article-content > div dl.addr-form dt {
+        vertical-align: top;
+        line-height: 46px; }
+      .modal.modal-cancel .modal-content .article-content > div dl.addr-form dd .form-group:nth-of-type(1) {
+        position: relative;
+        padding-right: 100px; }
+        .modal.modal-cancel .modal-content .article-content > div dl.addr-form dd .form-group:nth-of-type(1) .btn-addr-search {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          font-size: 16px;
+          font-weight: 400;
+          color: #fff;
+          width: 90px;
+          line-height: 46px;
+          background-color: #0e3db4; }
+      .modal.modal-cancel .modal-content .article-content > div dl.addr-form dd .form-group ~ .form-group {
+        margin-top: 5px; }
     .modal.modal-cancel .modal-content .article-content > div ~ div {
       margin-top: 45px; }
     .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list {
       padding: 0; }
       .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .info .item-img {
-        width: 115px; }
+        width: 130px; }
       .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .details {
         padding-left: 55px; }
         .modal.modal-cancel .modal-content .article-content > div.cancel-info .order-list > li .details p {
@@ -1157,6 +1183,23 @@ section .section-content article ~ article {
       .modal.modal-cancel .modal-content .article-content > div.cancel-info .cause .form-group input.form-control {
         width: 58%;
         margin-left: 5px; }
+    .modal.modal-cancel .modal-content .article-content > div.info-form > ul > li ~ li {
+      margin-top: 10px; }
+    .modal.modal-cancel .modal-content .article-content > div.info-form .cause {
+      margin-top: 20px; }
+      .modal.modal-cancel .modal-content .article-content > div.info-form .cause .form-group .form-control {
+        display: inline-block;
+        vertical-align: top; }
+      .modal.modal-cancel .modal-content .article-content > div.info-form .cause .form-group select.form-control {
+        width: 40%; }
+      .modal.modal-cancel .modal-content .article-content > div.info-form .cause .form-group input.form-control {
+        width: 58%;
+        margin-left: 5px; }
+    .modal.modal-cancel .modal-content .article-content > div.info-form .hidden-box {
+      display: none; }
+      .modal.modal-cancel .modal-content .article-content > div.info-form .hidden-box.show {
+        display: table;
+        width: 100%; }
     .modal.modal-cancel .modal-content .article-content > div.bank-info > ul > li ~ li {
       margin-top: 10px; }
     .modal.modal-cancel .modal-content .article-content > div.summary-list {

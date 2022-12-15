@@ -465,20 +465,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="box">
-                                    <div class="item-img">
-                                        <img src="/content/pest-mobile/images/sub/img_order_product_frame.png" style="background-image: url(/content/pest-mobile/images/sub/bg_order_product.png);" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <b>무무스가드플러스</b>
-                                        <p>
-                                            옵션 : 110mL<br>
-                                            수량 : 1개
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                         <div class="cause">
                             <dl>
@@ -493,6 +479,93 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="info-form">
+                            <h5>반송 송장 정보</h5>
+                            <ul class="input-list">
+                                <li>
+                                    <dl>
+                                        <dt>회수 요청 구분</dt>
+                                        <dd>
+                                            <div class="radio-box">
+                                                <div>
+                                                    <input type="radio" id="radio1" name="usr-select">
+                                                    <label for="radio1" class="btn-hidden1"></label>
+                                                    <label for="radio1" class="label btn-hidden1">지정택배사 이용하기</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="radio2" name="usr-select">
+                                                    <label for="radio2" class="btn-hidden2"></label>
+                                                    <label for="radio2" class="label btn-hidden2">직접 발송</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <div class="cause hidden-box">
+                                <dl>
+                                    <dt>반송 송장정보</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>대한통운</option>
+                                            </select>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="info-form">
+                            <h5>반송지 정보</h5>
+                            <ul class="input-list">
+                                <li>
+                                    <dl>
+                                        <dt>고객명</dt>
+                                        <dd>
+                                            <p>홍길동</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>전화번호</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>휴대폰</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="010-0000-0000">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="addr-form">
+                                        <dt>배송지 주소</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="0000">
+                                                <button type="button" class="btn-addr-search">검색</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="부산 해운대구 APEC로 30(벡스코)">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="bank-info">
                             <h5>환불 계좌 정보 입력</h5>
                             <ul class="input-list">
@@ -502,7 +575,7 @@
                                         <dd>
                                             <div class="form-group">
                                                 <select class="form-control">
-                                                    <option>구매의사 없음</option>
+                                                    <option>NH 농협은행</option>
                                                 </select>
                                             </div>
                                         </dd>
@@ -1321,5 +1394,16 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/sub.js'></script>
+    <script>
+        (function($){
+            // 반송 송장번호 관련
+            $(document).on('click', '.btn-hidden1', function(){
+                $('.hidden-box').removeClass('show');
+            });
+            $(document).on('click', '.btn-hidden2', function(){
+                $('.hidden-box').addClass('show');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

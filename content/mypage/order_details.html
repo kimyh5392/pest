@@ -767,6 +767,91 @@
                             </dd>
                         </dl>
                     </div>
+                    <div class="info-form">
+                        <h5>반송 송장 정보</h5>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>회수 요청 구분</dt>
+                                    <dd>
+                                        <div class="radio-box">
+                                            <div>
+                                                <input type="radio" id="radio1" name="usr-select">
+                                                <label for="radio1" class="btn-hidden1"></label>
+                                                <label for="radio1" class="label btn-hidden1">지정택배사 이용하기</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="radio2" name="usr-select">
+                                                <label for="radio2" class="btn-hidden2"></label>
+                                                <label for="radio2" class="label btn-hidden2">직접 발송</label>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <dl class="cause hidden-box">
+                            <dt>반송 송장정보</dt>
+                            <dd>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>대한통운</option>
+                                    </select>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="info-form">
+                        <h5>반송지 정보</h5>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>고객명</dt>
+                                    <dd>
+                                        <p>홍길동</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>전화번호</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>휴대폰</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="010-0000-0000">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="addr-form">
+                                    <dt>배송지 주소</dt>
+                                    <dd>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="0000">
+                                            <button type="button" class="btn-addr-search">검색</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="부산 해운대구 APEC로 30(벡스코)">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="bank-info">
                         <h5>환불 계좌 정보 입력</h5>
                         <ul>
@@ -895,7 +980,6 @@
             </article>
         </div>
     </div>
-    
     <!-- modal-exchange -->
     <div class="modal modal-exchange" id="exchange-pop">
         <div class="backdrop"></div>
@@ -1014,7 +1098,6 @@
             </article>
         </div>
     </div>
-    
     <!-- modal-return -->
     <div class="modal modal-return" id="return-pop">
         <div class="backdrop"></div>
@@ -1133,7 +1216,6 @@
             </article>
         </div>
     </div>
-    
     <!-- modal-exchange-return step-1 -->
     <div class="modal modal-exchange-return step-1" id="exchange-return-1">
         <div class="backdrop"></div>
@@ -1393,7 +1475,6 @@
             </article>
         </div>
     </div>
-    <!--  -->
     <!-- modal-addr-modify -->
     <div class="modal modal-addr-modify addr-select" id="addr-modify-2">
         <div class="backdrop"></div>
@@ -1741,6 +1822,14 @@
             });
             $(document).on('click', '.btn-next-modal', function(){
                 $(this).parent().parent().parent().parent().parent().removeClass('show');
+            });
+            
+            // 반송 송장번호 관련
+            $(document).on('click', '.btn-hidden1', function(){
+                $('.hidden-box').removeClass('show');
+            });
+            $(document).on('click', '.btn-hidden2', function(){
+                $('.hidden-box').addClass('show');
             });
         })(jQuery);
     </script>
