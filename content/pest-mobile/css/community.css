@@ -107,7 +107,10 @@ pre {
     display: block; }
     .event .section-content .event-slider .swiper-wrapper .swiper-slide > a > figure img {
       display: block;
-      width: 100%; }
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
   .event .section-content .event-slider .event-pagination {
     position: absolute;
     bottom: 10px;
@@ -192,7 +195,10 @@ pre {
   display: block; }
   .event-list-wrap > dl dd ul > li > a figure img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; }
 .event-list-wrap > dl dd ul > li ~ li {
   margin-top: 10px; }
 
