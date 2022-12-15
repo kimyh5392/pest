@@ -246,7 +246,8 @@ section .section-content article ~ article {
     vertical-align: middle; }
     .order-details .section-content article .article-content .order-list > li > div.btn-area {
       position: static;
-      width: 340px;
+      width: 380px;
+      text-align: right;
       font-size: 0;
       padding: 0 40px;
       transform: none; }
