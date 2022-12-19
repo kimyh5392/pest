@@ -2900,8 +2900,21 @@ textarea {
       background-color: #0e3db4; }
 
 /* eradication */
+.eradication .section-header {
+  text-align: center;
+  padding: 40px 0 20px; }
+  .eradication .section-header h3 {
+    font-size: 13px;
+    color: #000;
+    font-weight: 500; }
 .eradication .section-content figure img {
   display: block;
   width: 100%; }
+.eradication .section-content .tab-menu {
+  padding: 20px 0; }
+.eradication .section-content .tab-content .tab-pane {
+  overflow: hidden; }
+  .eradication .section-content .tab-content .tab-pane.active {
+    overflow: visible; }
 
 /*# sourceMappingURL=sub.css.map */

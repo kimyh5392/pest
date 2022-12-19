@@ -2057,12 +2057,18 @@ body.show-modal {
       border-top: 1px solid #e4e4e4; }
 
 /* eradication */
+.eradication .section-content article .article-head {
+  padding-bottom: 60px; }
+  .eradication .section-content article .article-head h5 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 80px;
+    text-align: center; }
 .eradication figure img {
   display: block;
   width: 100%; }
-.eradication .article-content {
-  padding-top: 70px; }
-  .eradication .article-content .tab-menu {
-    padding: 100px 0 60px; }
+.eradication .article-content .tab-menu {
+  padding: 100px 0 60px; }
 
 /*# sourceMappingURL=sub.css.map */

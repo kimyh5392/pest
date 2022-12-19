@@ -3775,11 +3775,31 @@ textarea {
 
 /* eradication */
 .eradication {
+    .section-header {
+        text-align: center;
+        padding: 40px 0 20px;
+        h3 {
+            font-size: 13px;
+            color: #000;
+            font-weight: 500;
+        }
+    }
     .section-content {
         figure {
             img {
                 display: block;
                 width: 100%;
+            }
+        }
+        .tab-menu {
+            padding: 20px 0;
+        }
+        .tab-content {
+            .tab-pane {
+                overflow: hidden;
+                &.active {
+                    overflow: visible;
+                }
             }
         }
     }

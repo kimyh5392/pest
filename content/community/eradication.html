@@ -428,17 +428,24 @@
                             <article>
                                 <div class="article-head">
                                     <h4>해충별 방역퇴치법</h4>
+                                    <h5>퇴치법이 궁금한 해충을 선택하세요.</h5>
                                 </div>
                                 <div class="article-content tab-area">
                                     <figure>
-                                        <img src="/content/pest/images/community/img_eradication01.png" alt="">
+                                        <img src="/content/pest/images/community/img_eradication.png" usemap="#eradication-map" alt="">
                                     </figure>
+                                    <map name="eradication-map">
+                                        <area target="" alt="개미" title="개미" href="#tab-1" coords="119,261,119,241,112,229,13,228,2,235,1,246,0,295,5,304,13,307,107,309,116,305,117,296,117,277,127,271" shape="poly" class="btn-target1">
+                                        <area target="" alt="모기" title="모기" href="#tab-2" coords="595,48,603,53,603,78,609,87,708,87,719,87,719,73,719,25,716,14,710,9,613,11,602,17,604,25,605,42" shape="poly" class="btn-target2">
+                                        <area target="" alt="바퀴벌레" title="바퀴벌레" href="#tab-3" coords="761,332,770,335,771,361,775,366,782,370,877,370,882,364,886,357,886,311,884,299,876,293,779,292,774,298,771,308,772,323" shape="poly" class="btn-target3">
+                                        <area target="" alt="쥐" title="쥐" href="#tab-4" coords="760,433,771,423,771,409,771,399,777,392,877,395,884,401,883,414,884,460,880,471,868,472,776,471,772,463,769,456,770,440" shape="poly" class="btn-target4">
+                                    </map>
                                     <ul class="tab-menu">
-                                        <li class="active"><a href="#tab-1">바퀴벌레</a></li>
-                                        <li><a href="#tab-2">개미</a></li>
-                                        <li><a href="#tab-3">쥐</a></li>
-                                        <li><a href="#tab-4">집먼지 진드기</a></li>
-                                        <li><a href="#tab-5">빈대</a></li>
+                                        <li class="active"><a href="#tab-1">개미</a></li>
+                                        <li><a href="#tab-2">모기</a></li>
+                                        <li><a href="#tab-3">바퀴벌레</a></li>
+                                        <li><a href="#tab-4">쥐</a></li>
+                                        <!--<li><a href="#tab-5">빈대</a></li>-->
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="tab-1">
@@ -461,11 +468,11 @@
                                                 <img src="/content/pest/images/community/img_eradication02.png" alt="">
                                             </figure>
                                         </div>
-                                        <div class="tab-pane" id="tab-5">
+                                        <!--<div class="tab-pane" id="tab-5">
                                             <figure>
                                                 <img src="/content/pest/images/community/img_eradication02.png" alt="">
                                             </figure>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </article>
@@ -591,21 +598,36 @@
     <script src='/content/pest/js/quick_banner_sub.js'></script>
     <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // jumbo-slider
-        const carosel = new Swiper ('.event-slider', {
-            loop: true,
-            loopFillGroupWithBlank: true,
-            loopAdditionalSlides: 1,
-            loadPrevNext : true,
-            /*autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },*/
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        (function($){
+            $(document).on('click', '.btn-target1', function(e){
+                $('.tab-menu > li a').parent().removeClass('active');
+                $('.tab-menu > li').eq(0).addClass('active');
+                $('.tab-pane').removeClass('active');
+                $($(this).attr('href')).addClass('active');
+                e.preventDefault();
+            });
+            $(document).on('click', '.btn-target2', function(e){
+                $('.tab-menu > li a').parent().removeClass('active');
+                $('.tab-menu > li').eq(1).addClass('active');
+                $('.tab-pane').removeClass('active');
+                $($(this).attr('href')).addClass('active');
+                e.preventDefault();
+            });
+            $(document).on('click', '.btn-target3', function(e){
+                $('.tab-menu > li a').parent().removeClass('active');
+                $('.tab-menu > li').eq(2).addClass('active');
+                $('.tab-pane').removeClass('active');
+                $($(this).attr('href')).addClass('active');
+                e.preventDefault();
+            });
+            $(document).on('click', '.btn-target4', function(e){
+                $('.tab-menu > li a').parent().removeClass('active');
+                $('.tab-menu > li').eq(3).addClass('active');
+                $('.tab-pane').removeClass('active');
+                $($(this).attr('href')).addClass('active');
+                e.preventDefault();
+            });
+        })(jQuery);
     </script>
 </body>
 </html>

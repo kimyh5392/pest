@@ -2553,6 +2553,20 @@ body {
 
 /* eradication */
 .eradication {
+    .section-content {
+        article {
+            .article-head {
+                padding-bottom: 60px;
+                h5 {
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: 500;
+                    margin-top: 80px;
+                    text-align: center;
+                }
+            }
+        }
+    }
     figure {
         img {
             display: block;
@@ -2560,7 +2574,6 @@ body {
         }
     }
     .article-content {
-        padding-top: 70px;
         .tab-menu {
             padding: 100px 0 60px;
         }
