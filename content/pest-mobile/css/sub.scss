@@ -3896,7 +3896,132 @@ textarea {
     }
 }
 
-
+/* question-write */
+.question-write {
+    padding-top: 30px;
+    .container {
+        .section-content {
+            strong {
+                display: block;
+                font-size: 12px;
+                color: #000;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .form-group {
+                & ~ .form-group {
+                    margin-top: 20px;
+                }
+            }
+            .file-attach {
+                margin-top: 25px;
+                input[type="file"] {
+                    display: none;
+                }
+                .btn-file {
+                    display: block;
+                    width: 100%;
+                    font-size: 15px;
+                    color: #fff;
+                    text-align: center;
+                    font-weight: 500;
+                    line-height: 40px;
+                    background-color: $kcolor;
+                }
+                .attention {
+                    position: relative;
+                    font-size: 12px;
+                    color: #ababab;
+                    font-weight: 500;
+                    padding-left: 20px;
+                    margin-top: 10px;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        content: '※';
+                    }
+                }
+            }
+            .file-list {
+                padding: 20px 0 30px;
+                > ul {
+                    font-size: 0;
+                    > li {
+                        display: inline-block;
+                        width: 100px;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        .file-wrap {
+                            position: relative;
+                            .btn-del {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                width: 15px;
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                            > figure {
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 50%;
+                                    background-size: cover;
+                                }
+                            }
+                            .btn-file-modify {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                display: block;
+                                font-size: 12px;
+                                color: #fff;
+                                line-height: 18px;
+                                width: 100%;
+                                text-align: center;
+                                background-color: rgba(#000, .2);
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                font-size: 0;
+                text-align: center;
+                width: calc(100% + 40px);
+                margin: 0 -20px;
+                .btn {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    &.btn-lg {
+                        display: block;
+                        width: 100%;
+                    }
+                    &.btn-md {
+                        width: 50%;
+                    }
+                    &.btn-gray {
+                        color: #000;
+                        background-color: #f5f5f5;
+                    }
+                    &.btn-blue {
+                        color: #fff;
+                        background-color: $kcolor;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

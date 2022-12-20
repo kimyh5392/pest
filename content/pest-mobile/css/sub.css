@@ -2975,4 +2975,100 @@ textarea {
     display: block;
     width: 100%; }
 
+/* question-write */
+.question-write {
+  padding-top: 30px; }
+  .question-write .container .section-content strong {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px; }
+  .question-write .container .section-content .form-group ~ .form-group {
+    margin-top: 20px; }
+  .question-write .container .section-content .file-attach {
+    margin-top: 25px; }
+    .question-write .container .section-content .file-attach input[type="file"] {
+      display: none; }
+    .question-write .container .section-content .file-attach .btn-file {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      line-height: 40px;
+      background-color: #0e3db4; }
+    .question-write .container .section-content .file-attach .attention {
+      position: relative;
+      font-size: 12px;
+      color: #ababab;
+      font-weight: 500;
+      padding-left: 20px;
+      margin-top: 10px; }
+      .question-write .container .section-content .file-attach .attention:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '※'; }
+  .question-write .container .section-content .file-list {
+    padding: 20px 0 30px; }
+    .question-write .container .section-content .file-list > ul {
+      font-size: 0; }
+      .question-write .container .section-content .file-list > ul > li {
+        display: inline-block;
+        width: 100px;
+        margin-right: 10px; }
+        .question-write .container .section-content .file-list > ul > li:last-child {
+          margin-right: 0; }
+        .question-write .container .section-content .file-list > ul > li .file-wrap {
+          position: relative; }
+          .question-write .container .section-content .file-list > ul > li .file-wrap .btn-del {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 15px; }
+            .question-write .container .section-content .file-list > ul > li .file-wrap .btn-del img {
+              display: block;
+              width: 100%; }
+          .question-write .container .section-content .file-list > ul > li .file-wrap > figure img {
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover; }
+          .question-write .container .section-content .file-list > ul > li .file-wrap .btn-file-modify {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            font-size: 12px;
+            color: #fff;
+            line-height: 18px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.2); }
+  .question-write .container .section-content .btn-area {
+    font-size: 0;
+    text-align: center;
+    width: calc(100% + 40px);
+    margin: 0 -20px; }
+    .question-write .container .section-content .btn-area .btn {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 40px; }
+      .question-write .container .section-content .btn-area .btn.btn-lg {
+        display: block;
+        width: 100%; }
+      .question-write .container .section-content .btn-area .btn.btn-md {
+        width: 50%; }
+      .question-write .container .section-content .btn-area .btn.btn-gray {
+        color: #000;
+        background-color: #f5f5f5; }
+      .question-write .container .section-content .btn-area .btn.btn-blue {
+        color: #fff;
+        background-color: #0e3db4; }
+
 /*# sourceMappingURL=sub.css.map */

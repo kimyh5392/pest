@@ -1922,25 +1922,4 @@ section .section-content article ~ article {
 .faq .section-content article .article-content .default-board {
   margin-top: 55px; }
 
-/* question */
-.question .section-content article .article-head {
-  padding-bottom: 40px; }
-  .question .section-content article .article-head p {
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 30px; }
-.question .section-content article .article-content .search-form {
-  margin-top: 60px; }
-.question .section-content article .article-content .default-board {
-  margin-top: 60px; }
-  .question .section-content article .article-content .default-board .accordion-list > ul > li > .answer .usr-content video {
-    display: block;
-    width: 100%;
-    max-width: 450px; }
-  .question .section-content article .article-content .default-board .accordion-list > ul > li > .answer .usr-content img {
-    display: block;
-    max-width: 100%; }
-
 /*# sourceMappingURL=mypage.css.map */
