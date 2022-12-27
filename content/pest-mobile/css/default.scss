@@ -111,6 +111,7 @@
             .swiper-slide {
                 width: auto !important;
                 > a {
+                    white-space: nowrap;
                     font-size: 13px;
                     color: #000;
                     line-height: 50px;
