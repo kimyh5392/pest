@@ -187,6 +187,9 @@ pre {
   padding: 120px 0 100px; }
   .event-view .section-header h3 {
     font-size: 30px; }
+.event-view .section-content > figure img {
+  display: block;
+  width: 100%; }
 .event-view .goods .article-header {
   padding: 120px 0 30px; }
 

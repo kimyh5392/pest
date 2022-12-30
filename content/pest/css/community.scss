@@ -171,6 +171,14 @@
             font-size: 30px;
         }
     }
+    .section-content {
+        > figure {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
     .goods {
         .article-header {
             padding: 120px 0 30px;
