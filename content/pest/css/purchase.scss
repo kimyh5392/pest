@@ -484,13 +484,16 @@
                                 vertical-align: middle;
                                 &.item-img {
                                     width: 90px;
-                                    > figure {
-                                        img {
-                                            display: block;
-                                            width: 100%;
-                                            background-repeat: no-repeat;
-                                            background-position: 50% 50%;
-                                            background-size: cover;
+                                    > a {
+                                        display: block;
+                                        > figure {
+                                            img {
+                                                display: block;
+                                                width: 100%;
+                                                background-repeat: no-repeat;
+                                                background-position: 50% 50%;
+                                                background-size: cover;
+                                            }
                                         }
                                     }
                                 }

@@ -438,12 +438,14 @@ pre {
         vertical-align: middle; }
         .purchase-order .section-content article.order-item .article-content > ul > li > div.item-img {
           width: 90px; }
-          .purchase-order .section-content article.order-item .article-content > ul > li > div.item-img > figure img {
-            display: block;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: cover; }
+          .purchase-order .section-content article.order-item .article-content > ul > li > div.item-img > a {
+            display: block; }
+            .purchase-order .section-content article.order-item .article-content > ul > li > div.item-img > a > figure img {
+              display: block;
+              width: 100%;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: cover; }
         .purchase-order .section-content article.order-item .article-content > ul > li > div.details {
           padding: 0 20px; }
           .purchase-order .section-content article.order-item .article-content > ul > li > div.details p {
