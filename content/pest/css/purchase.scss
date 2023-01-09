@@ -5,11 +5,13 @@
 .purchase-wrap {
     padding-top: 120px;
     .container {
-        display: table;
-        table-layout: fixed;
+        position: relative;
+        padding-right: 310px;
+        /*display: table;
+        table-layout: fixed;*/
         section {
-            display: table-cell;
-            vertical-align: top;
+            /*display: table-cell;
+            vertical-align: top;*/
             padding-right: 70px;
             .section-header {
                 padding-bottom: 40px;
@@ -21,9 +23,16 @@
             }
         }
         aside {
+            position: absolute;
+            top: 0;
+            right: 50%;
             width: 310px;
-            display: table-cell;
-            vertical-align: top;
+            margin-right: -600px;
+            background-color: #fff;
+            &.fixed {
+                position: fixed;
+                top: 155px;
+            }
             .breadcrumb {
                 font-size: 0;
                 padding: 0 16px 30px;
@@ -163,6 +172,19 @@
     }
 }
 
+body {
+    &.banner-none {
+        .purchase-wrap {
+            .container {
+                aside {
+                    &.fixed {
+                        top: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* basket */
 .basket {

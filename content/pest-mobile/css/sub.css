@@ -1462,7 +1462,7 @@ textarea {
       .modal.modal-addr-list > section .section-content .delivery-addr > ul > li .container {
         display: table;
         width: 100%;
-        padding: 25px 20px; }
+        padding: 15px 20px; }
         .modal.modal-addr-list > section .section-content .delivery-addr > ul > li .container > div {
           display: table-cell;
           vertical-align: middle; }
@@ -1504,7 +1504,7 @@ textarea {
               font-size: 13px;
               color: #000;
               font-weight: 400;
-              margin-top: 20px; }
+              /*margin-top: 20px;*/ }
     .modal.modal-addr-list > section .section-content .delivery-addr .btn-area {
       text-align: center;
       padding: 25px 0; }

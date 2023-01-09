@@ -88,11 +88,13 @@ pre {
 .purchase-wrap {
   padding-top: 120px; }
   .purchase-wrap .container {
-    display: table;
-    table-layout: fixed; }
+    position: relative;
+    padding-right: 310px;
+    /*display: table;
+    table-layout: fixed;*/ }
     .purchase-wrap .container section {
-      display: table-cell;
-      vertical-align: top;
+      /*display: table-cell;
+      vertical-align: top;*/
       padding-right: 70px; }
       .purchase-wrap .container section .section-header {
         padding-bottom: 40px; }
@@ -101,9 +103,15 @@ pre {
           color: #000;
           font-weight: bold; }
     .purchase-wrap .container aside {
+      position: absolute;
+      top: 0;
+      right: 50%;
       width: 310px;
-      display: table-cell;
-      vertical-align: top; }
+      margin-right: -600px;
+      background-color: #fff; }
+      .purchase-wrap .container aside.fixed {
+        position: fixed;
+        top: 155px; }
       .purchase-wrap .container aside .breadcrumb {
         font-size: 0;
         padding: 0 16px 30px; }
@@ -199,6 +207,9 @@ pre {
             color: #0e3db4; }
       .purchase-wrap .container aside .n-pay {
         margin-top: 30px; }
+
+body.banner-none .purchase-wrap .container aside.fixed {
+  top: 90px; }
 
 /* basket */
 .basket .section-header {

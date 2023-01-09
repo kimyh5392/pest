@@ -854,5 +854,16 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='/content/pest/js/common.js'></script>
     <script src='/content/pest/js/sub.js'></script>
+    <script>
+        (function($){
+            $(window).on('scroll', function() {
+                if ($(this).scrollTop() > 200) {//2260
+                    $('.aside').addClass('fixed');
+                } else {
+                    $('.aside').removeClass('fixed');
+                }
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
