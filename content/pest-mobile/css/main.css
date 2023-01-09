@@ -297,6 +297,7 @@ pre {
           border: 1px solid #9f9f9f;
           background-color: #fff; }
           .find-product .container article .article-content .select-list > ul > li .dropdown > ul > li > a {
+            display: block;
             font-size: 13px;
             color: #000;
             font-weight: 500;
