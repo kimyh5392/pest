@@ -462,6 +462,7 @@ pre {
   padding: 40px 0;
   background-color: #f1f1f1; }
   .photo-review .container .section-header {
+    position: relative;
     text-align: center;
     padding-bottom: 30px; }
     .photo-review .container .section-header h3 {
@@ -469,6 +470,15 @@ pre {
       color: #000;
       font-weight: bold;
       font-family: 'Montserrat', sans-serif; }
+    .photo-review .container .section-header .btn-more {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      display: block;
+      font-size: 13px;
+      color: #000;
+      font-weight: 500;
+      /*transform: translateY(-50%);*/ }
   .photo-review .container .section-content > ul {
     overflow: hidden; }
     .photo-review .container .section-content > ul > li {

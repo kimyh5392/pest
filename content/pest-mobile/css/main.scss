@@ -541,6 +541,7 @@
     background-color: #f1f1f1;
     .container {
         .section-header {
+            position: relative;
             text-align: center;
             padding-bottom: 30px;
             h3 {
@@ -548,6 +549,16 @@
                 color: #000;
                 font-weight: bold;
                 @include msr();
+            }
+            .btn-more {
+                position: absolute;
+                top: 5px;
+                right: 0;
+                display: block;
+                font-size: 13px;
+                color: #000;
+                font-weight: 500;
+                /*transform: translateY(-50%);*/
             }
         }
         .section-content {
