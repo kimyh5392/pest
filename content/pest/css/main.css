@@ -897,4 +897,305 @@ pre {
         .product .container .section-content .tab-content .tab-pane .item-wrap .controls > button.swiper-next {
           right: -48px; }
 
+/* modal */
+.modal.review-list-popup .modal-content .review-area {
+  width: 880px; }
+  .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content {
+    width: 720px;
+    max-height: 760px;
+    overflow-y: auto;
+    margin: 0 auto;
+    background-color: #fff; }
+    .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      padding: 15px;
+      padding-right: 80px;
+      background-color: #ebebeb;
+      background-image: url(/content/pest/images/product/ico_arrow_move.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: calc(100% - 30px) 50%; }
+      .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div {
+        display: table-cell;
+        vertical-align: middle; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.item-img {
+          width: 55px; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.item-img > figure img {
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details {
+          padding-left: 15px; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details > dl dt, .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details > dl dd {
+            font-size: 18px;
+            color: #000;
+            font-weight: 400;
+            line-height: 23px; }
+    .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap {
+      padding: 0 30px;
+      max-height: 671px;
+      overflow-x: hidden;
+      overflow-y: auto; }
+      .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head {
+        position: relative;
+        padding: 20px 0;
+        border-bottom: 2px solid #000; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade {
+          font-size: 0; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol {
+            display: inline-block;
+            vertical-align: top;
+            padding: 1.5px 0; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li {
+              display: inline-block;
+              vertical-align: top;
+              margin-right: 2px; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li:last-child {
+                margin-right: 0; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li img {
+                display: block; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > b {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 20px;
+            color: #0e3db4;
+            margin-left: 10px; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info {
+          margin-top: 15px; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul {
+            font-size: 0; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li {
+              display: inline-block;
+              vertical-align: top;
+              font-size: 15px;
+              color: #919191;
+              font-weight: 400; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li:after {
+                position: relative;
+                top: 3px;
+                display: inline-block;
+                vertical-align: top;
+                content: '';
+                width: 1px;
+                height: 12px;
+                margin: 0 10px;
+                background-color: #919191; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li:last-child:after {
+                display: none; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop {
+          position: absolute;
+          top: 20px;
+          right: 0; }
+      .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body {
+        padding-top: 20px; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > p {
+          font-size: 14px;
+          color: #000;
+          font-weight: 400;
+          line-height: 25px; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > figure {
+          margin-top: 40px; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > figure img {
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area {
+          font-size: 0;
+          padding: 20px 0; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area span {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+            color: #000;
+            line-height: 34px;
+            font-weight: 400;
+            margin-right: 10px; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like {
+            display: inline-block;
+            vertical-align: top;
+            width: 64px;
+            height: 34px;
+            line-height: 36px;
+            font-size: 20px;
+            color: #000;
+            text-align: center;
+            font-weight: bold;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            border: 1px solid #000; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like .ico-like {
+              display: inline-block;
+              vertical-align: top;
+              width: 21px;
+              height: 34px;
+              margin-right: 5px;
+              background-image: url(/content/pest/images/product/ico_like.png);
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: auto;
+              -webkit-transition-property: all;
+              transition-property: all;
+              -webkit-transition-duration: 0.15s;
+              transition-duration: 0.15s;
+              -webkit-transition-timing-function: linear;
+              transition-timing-function: linear;
+              -webkit-transition-delay: 0s;
+              transition-delay: 0s; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like.on {
+              color: #fff;
+              background-color: #0e3db4;
+              border-color: #0e3db4; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like.on .ico-like {
+                background-image: url(/content/pest/images/product/ico_like_on.png); }
+  .modal.review-list-popup .modal-content .review-area .controls button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: block;
+    transform: translateY(-50%); }
+    .modal.review-list-popup .modal-content .review-area .controls button.swiper-button-prev2 {
+      left: 0; }
+    .modal.review-list-popup .modal-content .review-area .controls button.swiper-button-next2 {
+      right: 0; }
+.modal.modal-review .modal-content {
+  width: 720px;
+  z-index: 105;
+  max-height: 756px;
+  overflow-y: auto;
+  background-color: #fff; }
+  .modal.modal-review .modal-content .content-head {
+    text-align: center;
+    padding: 60px 0 50px; }
+    .modal.modal-review .modal-content .content-head h4 {
+      font-size: 25px;
+      color: #000;
+      font-weight: 400; }
+    .modal.modal-review .modal-content .content-head .grade {
+      margin-top: 30px; }
+      .modal.modal-review .modal-content .content-head .grade > ol > li {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px; }
+        .modal.modal-review .modal-content .content-head .grade > ol > li > a {
+          display: block; }
+          .modal.modal-review .modal-content .content-head .grade > ol > li > a img {
+            display: block; }
+      .modal.modal-review .modal-content .content-head .grade p {
+        font-size: 35px;
+        color: #0e3db4;
+        font-weight: 500;
+        margin-top: 30px; }
+  .modal.modal-review .modal-content .content-body {
+    position: relative;
+    padding: 0 45px 60px; }
+    .modal.modal-review .modal-content .content-body .form-group {
+      padding: 30px;
+      border: 1px solid #d7d7d7; }
+      .modal.modal-review .modal-content .content-body .form-group .form-control {
+        height: 180px;
+        border: 0;
+        padding: 0;
+        resize: none; }
+      .modal.modal-review .modal-content .content-body .form-group span {
+        display: block;
+        font-size: 17px;
+        color: #010101;
+        text-align: right;
+        padding-top: 30px; }
+    .modal.modal-review .modal-content .content-body .file-attach {
+      margin-top: 10px; }
+      .modal.modal-review .modal-content .content-body .file-attach input[type="file"] {
+        display: none; }
+      .modal.modal-review .modal-content .content-body .file-attach .btn-flie {
+        display: block;
+        width: 100%;
+        line-height: 70px;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+        cursor: pointer;
+        background-color: #0e3db4; }
+      .modal.modal-review .modal-content .content-body .file-attach .attention {
+        font-size: 14px;
+        color: #ababab;
+        font-weight: 400;
+        margin-top: 15px; }
+    .modal.modal-review .modal-content .content-body .file-list {
+      margin-top: 30px;
+      padding-bottom: 45px; }
+      .modal.modal-review .modal-content .content-body .file-list > ul {
+        font-size: 0; }
+        .modal.modal-review .modal-content .content-body .file-list > ul > li {
+          display: inline-block;
+          vertical-align: top;
+          width: 85px;
+          margin-right: 10px; }
+          .modal.modal-review .modal-content .content-body .file-list > ul > li:last-child {
+            margin-right: 0; }
+          .modal.modal-review .modal-content .content-body .file-list > ul > li > .file-wrap {
+            position: relative; }
+            .modal.modal-review .modal-content .content-body .file-list > ul > li > .file-wrap figure img {
+              display: block;
+              width: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 50% 50%; }
+          .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-del {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: block; }
+            .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-del img {
+              display: block; }
+          .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-file-modify {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            background-color: rgba(0, 0, 0, 0.2); }
+    .modal.modal-review .modal-content .content-body .btn-area {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 0;
+      text-align: center;
+      margin-top: 45px; }
+      .modal.modal-review .modal-content .content-body .btn-area .btn {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px; }
+        .modal.modal-review .modal-content .content-body .btn-area .btn.btn-cancel {
+          color: #000;
+          background-color: #f5f5f5; }
+        .modal.modal-review .modal-content .content-body .btn-area .btn.btn-submit {
+          color: #fff;
+          background-color: #0e3db4; }
+.modal.show {
+  display: block; }
+
+body.show-modal {
+  overflow: hidden; }
+
 /*# sourceMappingURL=main.css.map */
