@@ -419,6 +419,7 @@ pre {
       width: 100% !important;
       height: auto; }
       .promotion .container-fluid .simply-scroll .simply-scroll-clip .floting-list > li {
+        width: auto;
         height: auto; }
         .promotion .container-fluid .simply-scroll .simply-scroll-clip .floting-list > li > a {
           display: block; }
