@@ -342,236 +342,322 @@ pre {
     }
 }*/
 /* modal */
-.modal .modal-content {
-  width: 725px;
-  max-height: 700px;
-  overflow-y: auto;
-  background-color: #fff; }
-  .modal .modal-content article {
-    position: relative; }
-    .modal .modal-content article .article-header {
-      text-align: center;
-      padding: 35px 0 45px; }
-      .modal .modal-content article .article-header .btn-modal-close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: block; }
-      .modal .modal-content article .article-header h4 {
-        font-size: 22px;
-        color: #000;
-        font-weight: 400; }
-      .modal .modal-content article .article-header b {
-        display: block;
-        font-size: 30px;
-        color: #000;
-        font-weight: bold;
-        margin-top: 30px; }
-      .modal .modal-content article .article-header p {
-        font-size: 16px;
-        color: #000;
-        font-weight: 500;
-        line-height: 27px;
-        margin-top: 15px; }
-    .modal .modal-content article .article-content .select-product {
-      padding: 0 50px; }
-      .modal .modal-content article .article-content .select-product .select-top {
-        padding-left: 0; }
-      .modal .modal-content article .article-content .select-product .select-body > ul > li > div.details dl dt, .modal .modal-content article .article-content .select-product .select-body > ul > li > div.details dl dd {
-        font-size: 18px;
-        color: #000;
-        line-height: 27px; }
-      .modal .modal-content article .article-content .select-product .select-body > ul > li > div.details b {
-        display: block;
-        font-size: 18px;
-        line-height: 27px; }
-      .modal .modal-content article .article-content .select-product .select-body > ul > li > div:nth-of-type(1) {
-        width: 55px;
-        padding-left: 0; }
-      .modal .modal-content article .article-content .select-product > p {
-        font-size: 16px;
-        font-weight: 400;
+.modal {
+  /*&.modal-request {
+      .modal-content {
+          article {
+              .article-content {
+                  > .input-form {
+                      padding: 0 50px;
+                      .summary {
+                          text-align: center;
+                          > b {
+                              font-size: 18px;
+                              line-height: 26px;
+                              color: #000;
+                              font-weight: 500;
+                          }
+                          > p {
+                              font-size: 16px;
+                              color: #000;
+                              font-weight: 400;
+                              margin-top: 20px;
+                          }
+                      }
+                      > ul {
+                          margin-top: 30px;
+                          text-align: left;
+                          > li {
+                              > dl {
+                                  > dt {
+                                      font-size: 18px;
+                                      color: #000;
+                                      font-weight: 400;
+                                  }
+                                  > dd {
+                                      margin-top: 15px;
+                                      .form-group {
+                                          .form-control {
+                                              font-size: 16px;
+                                          }
+                                      }
+                                  }
+                              }
+                              & ~ li {
+                                  margin-top: 20px;
+                              }
+                          }
+                      }
+                      .check-box {
+                          margin-top: 20px;
+                      }
+                  }
+                  .modal-btn-area {
+                      margin-top: 45px;
+                  }
+              }
+          }
+      }
+  }
+  &.modal-experience-review {
+      .modal-content {
+          article {
+              .article-content {
+                  .content-area {
+                      padding: 0 50px;
+                      .content-head {
+                          text-align: center;
+                          padding-bottom: 50px;
+                          h4 {
+                              font-size: 25px;
+                              color: #000;
+                              font-weight: 400;
+                          }
+                          .grade {
+                              margin-top: 30px;
+                              > ol {
+                                  > li {
+                                      display: inline-block;
+                                      vertical-align: top;
+                                      padding: 0 5px;
+                                      > a {
+                                          display: block;
+                                          img {
+                                              display: block;
+                                          }
+                                      }
+                                  }
+                              }
+                              p {
+                                  font-size: 35px;
+                                  color: $kcolor;
+                                  font-weight: 500;
+                                  margin-top: 30px;
+                              }
+                          }
+                      }
+                      .content-body {
+                          position: relative;
+                          .form-group {
+                              & ~ .form-group {
+                                  margin-top: 10px;
+                              }
+                          }
+                          .file-attach {
+                              margin-top: 10px;
+                              input[type="file"] {
+                                  display: none;
+                              }
+                              .btn-flie {
+                                  display: block;
+                                  width: 100%;
+                                  line-height: 70px;
+                                  font-size: 18px;
+                                  color: #fff;
+                                  text-align: center;
+                                  font-weight: 400;
+                                  cursor: pointer;
+                                  background-color: $kcolor;
+                              }
+                              .attention {
+                                  font-size: 14px;
+                                  color: #ababab;
+                                  font-weight: 400;
+                                  margin-top: 15px;
+                              }
+                          }
+                          .file-list {
+                              margin-top: 30px;
+                              padding-bottom: 45px;
+                              > ul {
+                                  font-size: 0;
+                                  > li {
+                                      display: inline-block;
+                                      vertical-align: top;
+                                      width: 85px;
+                                      margin-right: 10px;
+                                      &:last-child {
+                                          margin-right: 0;
+                                      }
+                                      > .file-wrap {
+                                          position: relative;
+                                          figure {
+                                              img {
+                                                  display: block;
+                                                  width: 100%;
+                                                  background-repeat: no-repeat;
+                                                  background-size: cover;
+                                                  background-position: 50% 50%;
+                                              }
+                                          }
+                                      }
+                                      .btn-del {
+                                          position: absolute;
+                                          top: 8px;
+                                          right: 8px;
+                                          display: block;
+                                          img {
+                                              display: block;
+                                          }
+                                      }
+                                      .btn-file-modify {
+                                          position: absolute;
+                                          bottom: 0;
+                                          left: 0;
+                                          width: 100%;
+                                          text-align: center;
+                                          color: #fff;
+                                          font-weight: 400;
+                                          font-size: 12px;
+                                          line-height: 22px;
+                                          background-color: rgba(#000, .2);
+                                      }
+                                  }
+                              }
+                          }
+                          .btn-area {
+                              position: absolute;
+                              bottom: 0;
+                              left: 0;
+                              width: 100%;
+                              font-size: 0;
+                              text-align: center;
+                              margin-top: 45px;
+                              .btn {
+                                  display: inline-block;
+                                  vertical-align: top;
+                                  width: 50%;
+                                  font-size: 20px;
+                                  font-weight: 400;
+                                  line-height: 60px;
+                                  &.btn-cancel {
+                                      color: #000;
+                                      background-color: #f5f5f5;
+                                  }
+                                  &.btn-submit {
+                                      color: #fff;
+                                      background-color: $kcolor;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }*/ }
+  .modal .modal-content {
+    width: 725px;
+    max-height: 700px;
+    overflow-y: auto;
+    background-color: #fff; }
+    .modal .modal-content article {
+      position: relative; }
+      .modal .modal-content article .article-header {
         text-align: center;
-        color: rgba(0, 0, 0, 0.4);
-        margin-top: 25px;
-        letter-spacing: -.5px; }
-.modal.modal-question .modal-content article .article-content > ul {
-  padding: 0 50px; }
-  .modal.modal-question .modal-content article .article-content > ul > li > dl > dt {
-    font-size: 18px;
-    color: #000;
-    font-weight: 400; }
-  .modal.modal-question .modal-content article .article-content > ul > li > dl > dd {
-    margin-top: 15px; }
-    .modal.modal-question .modal-content article .article-content > ul > li > dl > dd .form-group .form-control {
-      font-size: 16px; }
-  .modal.modal-question .modal-content article .article-content > ul > li ~ li {
-    margin-top: 20px; }
-.modal.modal-question .modal-content article .article-content .file-area {
-  margin-top: 20px;
-  padding: 0 50px; }
-  .modal.modal-question .modal-content article .article-content .file-area .file-attach {
-    margin-top: 20px; }
-    .modal.modal-question .modal-content article .article-content .file-area .file-attach input[type="file"] {
-      display: none; }
-    .modal.modal-question .modal-content article .article-content .file-area .file-attach .btn-file {
-      display: block;
-      width: 100%;
-      font-size: 20px;
-      color: #fff;
-      cursor: pointer;
-      text-align: center;
-      font-weight: 400;
-      line-height: 70px;
-      background-color: #0e3db4; }
-    .modal.modal-question .modal-content article .article-content .file-area .file-attach .attention {
-      color: #ababab;
-      margin-top: 15px; }
-  .modal.modal-question .modal-content article .article-content .file-area .file-list {
-    margin-top: 30px; }
-    .modal.modal-question .modal-content article .article-content .file-area .file-list > ul {
-      font-size: 0; }
-      .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li {
-        display: inline-block;
-        vertical-align: top;
-        width: 85px;
-        margin-right: 10px; }
-        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li:last-child {
-          margin-right: 0; }
-        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li > .file-wrap {
-          position: relative; }
-          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li > .file-wrap figure img {
-            display: block;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%; }
-        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-del {
+        padding: 35px 0 45px; }
+        .modal .modal-content article .article-header .btn-modal-close {
           position: absolute;
-          top: 8px;
-          right: 8px;
+          top: 20px;
+          right: 20px;
           display: block; }
-          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-del img {
-            display: block; }
-        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-file-modify {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          text-align: center;
-          color: #fff;
+        .modal .modal-content article .article-header h4 {
+          font-size: 22px;
+          color: #000;
+          font-weight: 400; }
+        .modal .modal-content article .article-header b {
+          display: block;
+          font-size: 30px;
+          color: #000;
+          font-weight: bold;
+          margin-top: 30px; }
+        .modal .modal-content article .article-header p {
+          font-size: 16px;
+          color: #000;
+          font-weight: 500;
+          line-height: 27px;
+          margin-top: 15px; }
+      .modal .modal-content article .article-content .select-product {
+        padding: 0 50px; }
+        .modal .modal-content article .article-content .select-product .select-top {
+          padding-left: 0; }
+        .modal .modal-content article .article-content .select-product .select-body > ul > li > div.details dl dt, .modal .modal-content article .article-content .select-product .select-body > ul > li > div.details dl dd {
+          font-size: 18px;
+          color: #000;
+          line-height: 27px; }
+        .modal .modal-content article .article-content .select-product .select-body > ul > li > div.details b {
+          display: block;
+          font-size: 18px;
+          line-height: 27px; }
+        .modal .modal-content article .article-content .select-product .select-body > ul > li > div:nth-of-type(1) {
+          width: 55px;
+          padding-left: 0; }
+        .modal .modal-content article .article-content .select-product > p {
+          font-size: 16px;
           font-weight: 400;
-          font-size: 12px;
-          line-height: 22px;
-          background-color: rgba(0, 0, 0, 0.2); }
-.modal.modal-question .modal-content article .article-content .modal-btn-area {
-  margin-top: 45px; }
-.modal.modal-request .modal-content article .article-content > .input-form {
-  padding: 0 50px; }
-  .modal.modal-request .modal-content article .article-content > .input-form .summary {
-    text-align: center; }
-    .modal.modal-request .modal-content article .article-content > .input-form .summary > b {
-      font-size: 18px;
-      line-height: 26px;
-      color: #000;
-      font-weight: 500; }
-    .modal.modal-request .modal-content article .article-content > .input-form .summary > p {
-      font-size: 16px;
-      color: #000;
-      font-weight: 400;
-      margin-top: 20px; }
-  .modal.modal-request .modal-content article .article-content > .input-form > ul {
-    margin-top: 30px;
-    text-align: left; }
-    .modal.modal-request .modal-content article .article-content > .input-form > ul > li > dl > dt {
+          text-align: center;
+          color: rgba(0, 0, 0, 0.4);
+          margin-top: 25px;
+          letter-spacing: -.5px; }
+  .modal.modal-question .modal-content article .article-content > ul {
+    padding: 0 50px; }
+    .modal.modal-question .modal-content article .article-content > ul > li > dl > dt {
       font-size: 18px;
       color: #000;
       font-weight: 400; }
-    .modal.modal-request .modal-content article .article-content > .input-form > ul > li > dl > dd {
+    .modal.modal-question .modal-content article .article-content > ul > li > dl > dd {
       margin-top: 15px; }
-      .modal.modal-request .modal-content article .article-content > .input-form > ul > li > dl > dd .form-group .form-control {
+      .modal.modal-question .modal-content article .article-content > ul > li > dl > dd .form-group .form-control {
         font-size: 16px; }
-    .modal.modal-request .modal-content article .article-content > .input-form > ul > li ~ li {
+    .modal.modal-question .modal-content article .article-content > ul > li ~ li {
       margin-top: 20px; }
-  .modal.modal-request .modal-content article .article-content > .input-form .check-box {
-    margin-top: 20px; }
-.modal.modal-request .modal-content article .article-content .modal-btn-area {
-  margin-top: 45px; }
-.modal.modal-experience-review .modal-content article .article-content .content-area {
-  padding: 0 50px; }
-  .modal.modal-experience-review .modal-content article .article-content .content-area .content-head {
-    text-align: center;
-    padding-bottom: 50px; }
-    .modal.modal-experience-review .modal-content article .article-content .content-area .content-head h4 {
-      font-size: 25px;
-      color: #000;
-      font-weight: 400; }
-    .modal.modal-experience-review .modal-content article .article-content .content-area .content-head .grade {
-      margin-top: 30px; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-head .grade > ol > li {
-        display: inline-block;
-        vertical-align: top;
-        padding: 0 5px; }
-        .modal.modal-experience-review .modal-content article .article-content .content-area .content-head .grade > ol > li > a {
-          display: block; }
-          .modal.modal-experience-review .modal-content article .article-content .content-area .content-head .grade > ol > li > a img {
-            display: block; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-head .grade p {
-        font-size: 35px;
-        color: #0e3db4;
-        font-weight: 500;
-        margin-top: 30px; }
-  .modal.modal-experience-review .modal-content article .article-content .content-area .content-body {
-    position: relative; }
-    .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .form-group ~ .form-group {
-      margin-top: 10px; }
-    .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-attach {
-      margin-top: 10px; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-attach input[type="file"] {
+  .modal.modal-question .modal-content article .article-content .file-area {
+    margin-top: 20px;
+    padding: 0 50px; }
+    .modal.modal-question .modal-content article .article-content .file-area .file-attach {
+      margin-top: 20px; }
+      .modal.modal-question .modal-content article .article-content .file-area .file-attach input[type="file"] {
         display: none; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-attach .btn-flie {
+      .modal.modal-question .modal-content article .article-content .file-area .file-attach .btn-file {
         display: block;
         width: 100%;
-        line-height: 70px;
-        font-size: 18px;
+        font-size: 20px;
         color: #fff;
+        cursor: pointer;
         text-align: center;
         font-weight: 400;
-        cursor: pointer;
+        line-height: 70px;
         background-color: #0e3db4; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-attach .attention {
-        font-size: 14px;
+      .modal.modal-question .modal-content article .article-content .file-area .file-attach .attention {
         color: #ababab;
-        font-weight: 400;
         margin-top: 15px; }
-    .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list {
-      margin-top: 30px;
-      padding-bottom: 45px; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul {
+    .modal.modal-question .modal-content article .article-content .file-area .file-list {
+      margin-top: 30px; }
+      .modal.modal-question .modal-content article .article-content .file-area .file-list > ul {
         font-size: 0; }
-        .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li {
+        .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li {
           display: inline-block;
           vertical-align: top;
           width: 85px;
           margin-right: 10px; }
-          .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li:last-child {
+          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li:last-child {
             margin-right: 0; }
-          .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li > .file-wrap {
+          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li > .file-wrap {
             position: relative; }
-            .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li > .file-wrap figure img {
+            .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li > .file-wrap figure img {
               display: block;
               width: 100%;
               background-repeat: no-repeat;
               background-size: cover;
               background-position: 50% 50%; }
-          .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li .btn-del {
+          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-del {
             position: absolute;
             top: 8px;
             right: 8px;
             display: block; }
-            .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li .btn-del img {
+            .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-del img {
               display: block; }
-          .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .file-list > ul > li .btn-file-modify {
+          .modal.modal-question .modal-content article .article-content .file-area .file-list > ul > li .btn-file-modify {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -582,176 +668,138 @@ pre {
             font-size: 12px;
             line-height: 22px;
             background-color: rgba(0, 0, 0, 0.2); }
-    .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .btn-area {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      font-size: 0;
-      text-align: center;
-      margin-top: 45px; }
-      .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .btn-area .btn {
-        display: inline-block;
-        vertical-align: top;
-        width: 50%;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 60px; }
-        .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .btn-area .btn.btn-cancel {
-          color: #000;
-          background-color: #f5f5f5; }
-        .modal.modal-experience-review .modal-content article .article-content .content-area .content-body .btn-area .btn.btn-submit {
-          color: #fff;
-          background-color: #0e3db4; }
-.modal.review-list-popup .modal-content {
-  width: auto;
-  max-height: auto;
-  background: none;
-  overflow: visible; }
-  .modal.review-list-popup .modal-content .review-area {
-    width: 880px; }
-    .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content {
-      width: 720px;
-      max-height: 760px;
-      overflow-y: auto;
-      margin: 0 auto;
-      background-color: #fff; }
-      .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
-        padding: 15px;
-        padding-right: 80px;
-        background-color: #ebebeb;
-        background-image: url(/content/pest/images/product/ico_arrow_move.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: calc(100% - 30px) 50%; }
-        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div {
-          display: table-cell;
-          vertical-align: middle; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.item-img {
-            width: 55px; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.item-img > figure img {
-              display: block;
-              width: 100%;
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              background-size: cover; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details {
-            padding-left: 15px; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details > dl dt, .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details > dl dd {
-              font-size: 18px;
-              color: #000;
-              font-weight: 400;
-              line-height: 23px; }
-      .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap {
-        padding: 0 30px; }
-        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head {
-          position: relative;
-          padding: 20px 0;
-          border-bottom: 2px solid #000; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade {
-            font-size: 0; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol {
-              display: inline-block;
-              vertical-align: top;
-              padding: 1.5px 0; }
-              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li {
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 2px; }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li:last-child {
-                  margin-right: 0; }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li img {
-                  display: block; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > b {
-              display: inline-block;
-              vertical-align: top;
-              font-size: 20px;
-              color: #0e3db4;
-              margin-left: 10px; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info {
-            margin-top: 15px; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul {
-              font-size: 0; }
-              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li {
-                display: inline-block;
-                vertical-align: top;
-                font-size: 15px;
-                color: #919191;
-                font-weight: 400; }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li:after {
-                  position: relative;
-                  top: 3px;
-                  display: inline-block;
-                  vertical-align: top;
-                  content: '';
-                  width: 1px;
-                  height: 12px;
-                  margin: 0 10px;
-                  background-color: #919191; }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li:last-child:after {
-                  display: none; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop {
-            position: absolute;
-            top: 20px;
-            right: 0; }
-        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body {
-          padding-top: 20px; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > p {
-            font-size: 14px;
-            color: #000;
-            font-weight: 400;
-            line-height: 25px; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > figure {
-            margin-top: 40px; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > figure img {
-              display: block;
-              width: 100%;
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              background-size: cover; }
-          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area {
-            font-size: 0;
-            padding: 20px 0; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area span {
-              display: inline-block;
-              vertical-align: top;
-              font-size: 16px;
-              color: #000;
-              line-height: 34px;
-              font-weight: 400;
-              margin-right: 10px; }
-            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like {
-              display: inline-block;
-              vertical-align: top;
-              width: 64px;
-              height: 34px;
-              line-height: 36px;
-              font-size: 20px;
-              color: #000;
-              text-align: center;
-              font-weight: bold;
-              -webkit-transition-property: all;
-              transition-property: all;
-              -webkit-transition-duration: 0.15s;
-              transition-duration: 0.15s;
-              -webkit-transition-timing-function: linear;
-              transition-timing-function: linear;
-              -webkit-transition-delay: 0s;
-              transition-delay: 0s;
-              border: 1px solid #000; }
-              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like .ico-like {
-                display: inline-block;
-                vertical-align: top;
-                width: 21px;
-                height: 34px;
-                margin-right: 5px;
-                background-image: url(/content/pest/images/product/ico_like.png);
+  .modal.modal-question .modal-content article .article-content .modal-btn-area {
+    margin-top: 45px; }
+  .modal.review-list-popup .modal-content {
+    width: auto;
+    max-height: auto;
+    background: none;
+    overflow: visible; }
+    .modal.review-list-popup .modal-content .review-area {
+      width: 880px; }
+      .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content {
+        width: 720px;
+        max-height: 760px;
+        overflow-y: auto;
+        margin: 0 auto;
+        background-color: #fff; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+          padding: 15px;
+          padding-right: 80px;
+          background-color: #ebebeb;
+          background-image: url(/content/pest/images/product/ico_arrow_move.png);
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: calc(100% - 30px) 50%; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div {
+            display: table-cell;
+            vertical-align: middle; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.item-img {
+              width: 55px; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.item-img > figure img {
+                display: block;
+                width: 100%;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
-                background-size: auto;
+                background-size: cover; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details {
+              padding-left: 15px; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details > dl dt, .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content > a > div.details > dl dd {
+                font-size: 18px;
+                color: #000;
+                font-weight: 400;
+                line-height: 23px; }
+        .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap {
+          padding: 0 30px; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head {
+            position: relative;
+            padding: 20px 0;
+            border-bottom: 2px solid #000; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade {
+              font-size: 0; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol {
+                display: inline-block;
+                vertical-align: top;
+                padding: 1.5px 0; }
+                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li {
+                  display: inline-block;
+                  vertical-align: top;
+                  margin-right: 2px; }
+                  .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li:last-child {
+                    margin-right: 0; }
+                  .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > ol > li img {
+                    display: block; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .grade > b {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 20px;
+                color: #0e3db4;
+                margin-left: 10px; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info {
+              margin-top: 15px; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul {
+                font-size: 0; }
+                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li {
+                  display: inline-block;
+                  vertical-align: top;
+                  font-size: 15px;
+                  color: #919191;
+                  font-weight: 400; }
+                  .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li:after {
+                    position: relative;
+                    top: 3px;
+                    display: inline-block;
+                    vertical-align: top;
+                    content: '';
+                    width: 1px;
+                    height: 12px;
+                    margin: 0 10px;
+                    background-color: #919191; }
+                  .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .usr-info > ul > li:last-child:after {
+                    display: none; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-head .modify-drop {
+              position: absolute;
+              top: 20px;
+              right: 0; }
+          .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body {
+            padding-top: 20px; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > p {
+              font-size: 14px;
+              color: #000;
+              font-weight: 400;
+              line-height: 25px; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > figure {
+              margin-top: 40px; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body > figure img {
+                display: block;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover; }
+            .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area {
+              font-size: 0;
+              padding: 20px 0; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area span {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 16px;
+                color: #000;
+                line-height: 34px;
+                font-weight: 400;
+                margin-right: 10px; }
+              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like {
+                display: inline-block;
+                vertical-align: top;
+                width: 64px;
+                height: 34px;
+                line-height: 36px;
+                font-size: 20px;
+                color: #000;
+                text-align: center;
+                font-weight: bold;
                 -webkit-transition-property: all;
                 transition-property: all;
                 -webkit-transition-duration: 0.15s;
@@ -759,240 +807,263 @@ pre {
                 -webkit-transition-timing-function: linear;
                 transition-timing-function: linear;
                 -webkit-transition-delay: 0s;
-                transition-delay: 0s; }
-              .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like.on {
-                color: #fff;
-                background-color: #0e3db4;
-                border-color: #0e3db4; }
-                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like.on .ico-like {
-                  background-image: url(/content/pest/images/product/ico_like_on.png); }
-    .modal.review-list-popup .modal-content .review-area .controls button {
-      position: absolute;
-      top: 50%;
-      z-index: 1;
-      display: block;
-      transform: translateY(-50%); }
-      .modal.review-list-popup .modal-content .review-area .controls button.swiper-button-prev2 {
-        left: 0; }
-      .modal.review-list-popup .modal-content .review-area .controls button.swiper-button-next2 {
-        right: 0; }
-.modal.modal-review .modal-content {
-  width: 720px;
-  z-index: 105;
-  max-height: 756px;
-  overflow-y: auto;
-  background-color: #fff; }
-  .modal.modal-review .modal-content .content-head {
-    text-align: center;
-    padding: 60px 0 50px; }
-    .modal.modal-review .modal-content .content-head h4 {
-      font-size: 25px;
-      color: #000;
-      font-weight: 400; }
-    .modal.modal-review .modal-content .content-head .grade {
-      margin-top: 30px; }
-      .modal.modal-review .modal-content .content-head .grade > ol > li {
-        display: inline-block;
-        vertical-align: top;
-        padding: 0 5px; }
-        .modal.modal-review .modal-content .content-head .grade > ol > li > a {
-          display: block; }
-          .modal.modal-review .modal-content .content-head .grade > ol > li > a img {
-            display: block; }
-      .modal.modal-review .modal-content .content-head .grade p {
-        font-size: 35px;
-        color: #0e3db4;
-        font-weight: 500;
+                transition-delay: 0s;
+                border: 1px solid #000; }
+                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like .ico-like {
+                  display: inline-block;
+                  vertical-align: top;
+                  width: 21px;
+                  height: 34px;
+                  margin-right: 5px;
+                  background-image: url(/content/pest/images/product/ico_like.png);
+                  background-repeat: no-repeat;
+                  background-position: 50% 50%;
+                  background-size: auto;
+                  -webkit-transition-property: all;
+                  transition-property: all;
+                  -webkit-transition-duration: 0.15s;
+                  transition-duration: 0.15s;
+                  -webkit-transition-timing-function: linear;
+                  transition-timing-function: linear;
+                  -webkit-transition-delay: 0s;
+                  transition-delay: 0s; }
+                .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like.on {
+                  color: #fff;
+                  background-color: #0e3db4;
+                  border-color: #0e3db4; }
+                  .modal.review-list-popup .modal-content .review-area .review-swiper .swiper-wrapper .swiper-slide .review-content .review-wrap .review-body .like-area .btn-like.on .ico-like {
+                    background-image: url(/content/pest/images/product/ico_like_on.png); }
+      .modal.review-list-popup .modal-content .review-area .controls button {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        display: block;
+        transform: translateY(-50%); }
+        .modal.review-list-popup .modal-content .review-area .controls button.swiper-button-prev2 {
+          left: 0; }
+        .modal.review-list-popup .modal-content .review-area .controls button.swiper-button-next2 {
+          right: 0; }
+  .modal.modal-review .modal-content {
+    width: 720px;
+    z-index: 105;
+    max-height: 756px;
+    overflow-y: auto;
+    background-color: #fff; }
+    .modal.modal-review .modal-content .content-head {
+      text-align: center;
+      padding: 60px 0 50px; }
+      .modal.modal-review .modal-content .content-head h4 {
+        font-size: 25px;
+        color: #000;
+        font-weight: 400; }
+      .modal.modal-review .modal-content .content-head .grade {
         margin-top: 30px; }
-  .modal.modal-review .modal-content .content-body {
-    position: relative;
-    padding: 0 45px 60px; }
-    .modal.modal-review .modal-content .content-body .form-group {
-      padding: 30px;
-      border: 1px solid #d7d7d7; }
-      .modal.modal-review .modal-content .content-body .form-group .form-control {
-        height: 180px;
-        border: 0;
-        padding: 0;
-        resize: none; }
-      .modal.modal-review .modal-content .content-body .form-group span {
-        display: block;
-        font-size: 17px;
-        color: #010101;
-        text-align: right;
-        padding-top: 30px; }
-    .modal.modal-review .modal-content .content-body .file-attach {
-      margin-top: 10px; }
-      .modal.modal-review .modal-content .content-body .file-attach input[type="file"] {
-        display: none; }
-      .modal.modal-review .modal-content .content-body .file-attach .btn-flie {
-        display: block;
-        width: 100%;
-        line-height: 70px;
-        font-size: 18px;
-        color: #fff;
-        text-align: center;
-        font-weight: 400;
-        cursor: pointer;
-        background-color: #0e3db4; }
-      .modal.modal-review .modal-content .content-body .file-attach .attention {
-        font-size: 14px;
-        color: #ababab;
-        font-weight: 400;
-        margin-top: 15px; }
-    .modal.modal-review .modal-content .content-body .file-list {
-      margin-top: 30px;
-      padding-bottom: 45px; }
-      .modal.modal-review .modal-content .content-body .file-list > ul {
-        font-size: 0; }
-        .modal.modal-review .modal-content .content-body .file-list > ul > li {
+        .modal.modal-review .modal-content .content-head .grade > ol > li {
           display: inline-block;
           vertical-align: top;
-          width: 85px;
-          margin-right: 10px; }
-          .modal.modal-review .modal-content .content-body .file-list > ul > li:last-child {
-            margin-right: 0; }
-          .modal.modal-review .modal-content .content-body .file-list > ul > li > .file-wrap {
-            position: relative; }
-            .modal.modal-review .modal-content .content-body .file-list > ul > li > .file-wrap figure img {
-              display: block;
-              width: 100%;
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: 50% 50%; }
-          .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-del {
-            position: absolute;
-            top: 8px;
-            right: 8px;
+          padding: 0 5px; }
+          .modal.modal-review .modal-content .content-head .grade > ol > li > a {
             display: block; }
-            .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-del img {
+            .modal.modal-review .modal-content .content-head .grade > ol > li > a img {
               display: block; }
-          .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-file-modify {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            color: #fff;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 22px;
-            background-color: rgba(0, 0, 0, 0.2); }
-    .modal.modal-review .modal-content .content-body .btn-area {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      font-size: 0;
-      text-align: center;
-      margin-top: 45px; }
-      .modal.modal-review .modal-content .content-body .btn-area .btn {
-        display: inline-block;
-        vertical-align: top;
-        width: 50%;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 60px; }
-        .modal.modal-review .modal-content .content-body .btn-area .btn.btn-cancel {
-          color: #000;
-          background-color: #f5f5f5; }
-        .modal.modal-review .modal-content .content-body .btn-area .btn.btn-submit {
-          color: #fff;
-          background-color: #0e3db4; }
-.modal.modal-qna-modify .modal-content article .article-header {
-  padding-bottom: 65px; }
-.modal.modal-qna-modify .modal-content article .article-content .modify-form {
-  padding: 0 50px; }
-  .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dt {
-    font-size: 18px;
-    color: #000;
-    font-weight: 400; }
-  .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd {
-    margin-top: 15px; }
-    .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd .form-group.text-box .form-control {
-      padding: 0; }
-    .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd .check-box {
-      margin-top: 20px; }
-  .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li ~ li {
-    margin-top: 20px; }
-  .modal.modal-qna-modify .modal-content article .article-content .modify-form .attention {
-    color: #ababab;
-    line-height: 22px;
-    margin-top: 45px; }
-.modal.modal-qna-modify .modal-content article .article-content .modal-btn-area {
-  margin-top: 40px; }
-.modal.alert-modal .modal-content {
-  width: 400px; }
-  .modal.alert-modal .modal-content article {
-    text-align: center;
-    padding: 60px 30px 40px;
-    background-color: #fff; }
-    .modal.alert-modal .modal-content article .article-header {
-      padding: 0; }
-      .modal.alert-modal .modal-content article .article-header p {
-        font-size: 23px;
-        margin: 0; }
-      .modal.alert-modal .modal-content article .article-header small {
-        display: block;
-        font-weight: 400;
-        font-size: 18px;
-        margin-bottom: 15px;
-        line-height: 26px; }
-    .modal.alert-modal .modal-content article .article-content .btn-area {
-      font-size: 0;
-      margin-top: 50px; }
-      .modal.alert-modal .modal-content article .article-content .btn-area p .btn {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 16px;
-        color: #000;
-        line-height: 48px;
-        font-weight: 500; }
-        .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-sm {
-          width: calc(50% - 10px);
-          margin-right: 20px; }
-          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-sm:last-child {
-            margin-right: 0; }
-        .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-md {
-          width: 50%; }
-        .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-lg {
+        .modal.modal-review .modal-content .content-head .grade p {
+          font-size: 35px;
+          color: #0e3db4;
+          font-weight: 500;
+          margin-top: 30px; }
+    .modal.modal-review .modal-content .content-body {
+      position: relative;
+      padding: 0 45px 60px; }
+      .modal.modal-review .modal-content .content-body .form-group {
+        padding: 30px;
+        border: 1px solid #d7d7d7; }
+        .modal.modal-review .modal-content .content-body .form-group .form-control {
+          height: 180px;
+          border: 0;
+          padding: 0;
+          resize: none; }
+        .modal.modal-review .modal-content .content-body .form-group span {
           display: block;
-          width: 100%; }
-        .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-black {
+          font-size: 17px;
+          color: #010101;
+          text-align: right;
+          padding-top: 30px; }
+      .modal.modal-review .modal-content .content-body .file-attach {
+        margin-top: 10px; }
+        .modal.modal-review .modal-content .content-body .file-attach input[type="file"] {
+          display: none; }
+        .modal.modal-review .modal-content .content-body .file-attach .btn-flie {
+          display: block;
+          width: 100%;
+          line-height: 70px;
+          font-size: 18px;
           color: #fff;
-          background-color: #000; }
-        .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-gray {
-          background-color: #eaeaea; }
-        .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-blue {
-          color: #fff;
+          text-align: center;
+          font-weight: 400;
+          cursor: pointer;
           background-color: #0e3db4; }
+        .modal.modal-review .modal-content .content-body .file-attach .attention {
+          font-size: 14px;
+          color: #ababab;
+          font-weight: 400;
+          margin-top: 15px; }
+      .modal.modal-review .modal-content .content-body .file-list {
+        margin-top: 30px;
+        padding-bottom: 45px; }
+        .modal.modal-review .modal-content .content-body .file-list > ul {
+          font-size: 0; }
+          .modal.modal-review .modal-content .content-body .file-list > ul > li {
+            display: inline-block;
+            vertical-align: top;
+            width: 85px;
+            margin-right: 10px; }
+            .modal.modal-review .modal-content .content-body .file-list > ul > li:last-child {
+              margin-right: 0; }
+            .modal.modal-review .modal-content .content-body .file-list > ul > li > .file-wrap {
+              position: relative; }
+              .modal.modal-review .modal-content .content-body .file-list > ul > li > .file-wrap figure img {
+                display: block;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%; }
+            .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-del {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              display: block; }
+              .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-del img {
+                display: block; }
+            .modal.modal-review .modal-content .content-body .file-list > ul > li .btn-file-modify {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              text-align: center;
+              color: #fff;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 22px;
+              background-color: rgba(0, 0, 0, 0.2); }
+      .modal.modal-review .modal-content .content-body .btn-area {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+        margin-top: 45px; }
+        .modal.modal-review .modal-content .content-body .btn-area .btn {
+          display: inline-block;
+          vertical-align: top;
+          width: 50%;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 60px; }
+          .modal.modal-review .modal-content .content-body .btn-area .btn.btn-cancel {
+            color: #000;
+            background-color: #f5f5f5; }
+          .modal.modal-review .modal-content .content-body .btn-area .btn.btn-submit {
+            color: #fff;
+            background-color: #0e3db4; }
+  .modal.modal-qna-modify .modal-content article .article-header {
+    padding-bottom: 65px; }
+  .modal.modal-qna-modify .modal-content article .article-content .modify-form {
+    padding: 0 50px; }
+    .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dt {
+      font-size: 18px;
+      color: #000;
+      font-weight: 400; }
+    .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd {
+      margin-top: 15px; }
+      .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd .form-group.text-box .form-control {
+        padding: 0; }
+      .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li dl dd .check-box {
+        margin-top: 20px; }
+    .modal.modal-qna-modify .modal-content article .article-content .modify-form > ul > li ~ li {
+      margin-top: 20px; }
+    .modal.modal-qna-modify .modal-content article .article-content .modify-form .attention {
+      color: #ababab;
+      line-height: 22px;
+      margin-top: 45px; }
+  .modal.modal-qna-modify .modal-content article .article-content .modal-btn-area {
+    margin-top: 40px; }
+  .modal.alert-modal .modal-content {
+    width: 400px; }
+    .modal.alert-modal .modal-content article {
+      text-align: center;
+      padding: 60px 30px 40px;
+      background-color: #fff; }
+      .modal.alert-modal .modal-content article .article-header {
+        padding: 0; }
+        .modal.alert-modal .modal-content article .article-header p {
+          font-size: 23px;
+          margin: 0; }
+        .modal.alert-modal .modal-content article .article-header small {
+          display: block;
+          font-weight: 400;
+          font-size: 18px;
+          margin-bottom: 15px;
+          line-height: 26px; }
+      .modal.alert-modal .modal-content article .article-content .btn-area {
+        font-size: 0;
+        margin-top: 50px; }
+        .modal.alert-modal .modal-content article .article-content .btn-area p .btn {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 16px;
+          color: #000;
+          line-height: 48px;
+          font-weight: 500; }
+          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-sm {
+            width: calc(50% - 10px);
+            margin-right: 20px; }
+            .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-sm:last-child {
+              margin-right: 0; }
+          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-md {
+            width: 50%; }
+          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-lg {
+            display: block;
+            width: 100%; }
+          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-black {
+            color: #fff;
+            background-color: #000; }
+          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-gray {
+            background-color: #eaeaea; }
+          .modal.alert-modal .modal-content article .article-content .btn-area p .btn.btn-blue {
+            color: #fff;
+            background-color: #0e3db4; }
 
-/* 공통 */
+/* 공통 
 .contact-input {
-  position: relative;
-  padding-right: 100px;
-  overflow: hidden; }
-  .contact-input > ul {
-    width: calc(100% + 10px);
-    margin: 0 -5px; }
-    .contact-input > ul > li {
-      float: left;
-      width: 33.333333333%;
-      padding: 0 5px; }
-  .contact-input .btn-certification {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90px;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    line-height: 46px;
-    font-weight: 400;
-    background-color: #0e3db4; }
-  .contact-input.type-2 {
-    padding-right: 0; }
-
+    position: relative;
+    padding-right: 100px;
+    overflow: hidden;
+    > ul {
+        width: calc(100% + 10px);
+        margin: 0 -5px;
+        > li {
+            float: left;
+            width: 33.333333333%;
+            padding: 0 5px;
+        }
+    }
+    .btn-certification {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        line-height: 46px;
+        font-weight: 400;
+        background-color: $kcolor;
+    }
+    &.type-2 {
+        padding-right: 0;
+    }
+}*/
 /* photo-review */
 .photo-review .section-content article .article-head {
   padding-bottom: 40px; }
