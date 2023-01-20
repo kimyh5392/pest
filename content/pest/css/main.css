@@ -751,6 +751,17 @@ pre {
     .promotion .container-fluid .floting-slider .slick-list .slick-track .slick-slide > a img {
       width: 100%; }
 
+/* promotion-slider */
+.promotion-slider {
+  overflow: hidden; }
+  .promotion-slider .container-fluid .promotion .swiper-wrapper {
+    transition-timing-function: linear; }
+    .promotion-slider .container-fluid .promotion .swiper-wrapper .swiper-slide {
+      width: auto;
+      padding: 0 15px; }
+      .promotion-slider .container-fluid .promotion .swiper-wrapper .swiper-slide > a {
+        display: block; }
+
 /* util-area */
 .util-area .container {
   overflow: hidden; }

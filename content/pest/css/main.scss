@@ -858,6 +858,26 @@
     }
 }
 
+/* promotion-slider */
+.promotion-slider {
+    overflow: hidden;
+    .container-fluid {
+        .promotion {
+            .swiper-wrapper {
+                transition-timing-function: linear;
+                .swiper-slide {
+                    width: auto;
+                    padding: 0 15px;
+                    > a {
+                        display: block;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* util-area */
 .util-area {
     .container {
