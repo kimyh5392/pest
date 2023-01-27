@@ -2724,6 +2724,7 @@ body {
                         border-top: 1px solid #e4e4e4;
                         border-bottom: 1px solid #e4e4e4;
                         > li {
+                            position: relative;
                             padding: 30px 20px;
                             > ul {
                                 font-size: 0;
@@ -2754,6 +2755,11 @@ body {
                                 color: #000;
                                 font-weight: 400;
                                 margin-top: 10px;
+                            }
+                            .modify-drop {
+                                position: absolute;
+                                top: 30px;
+                                right: 0;
                             }
                             & ~ li {
                                 border-top: 1px solid #e4e4e4;
