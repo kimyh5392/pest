@@ -416,14 +416,14 @@ pre {
         .find-product .container article .article-content .select-area {
           display: table;
           width: 100%;
-          padding: 0 35px;
-          margin-top: 40px; }
+          padding: 0 25px;
+          margin-top: 40px;
+          table-layout: fixed; }
           .find-product .container article .article-content .select-area > div {
             display: table-cell;
             vertical-align: top; }
             .find-product .container article .article-content .select-area > div.select-list {
-              width: calc(100% - 116px);
-              padding-right: 30px; }
+              padding-right: 25px; }
               .find-product .container article .article-content .select-area > div.select-list > ul {
                 font-size: 0; }
                 .find-product .container article .article-content .select-area > div.select-list > ul > li {
@@ -502,13 +502,15 @@ pre {
                     padding-left: 7px; }
                   .find-product .container article .article-content .select-area > div.select-list > ul > li:nth-of-type(2) ~ li {
                     margin-top: 18px; }
-            .find-product .container article .article-content .select-area > div.img-board > a {
-              display: block; }
-              .find-product .container article .article-content .select-area > div.img-board > a > figure img {
-                display: block;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: cover; }
+            .find-product .container article .article-content .select-area > div.img-board {
+              width: 150px; }
+              .find-product .container article .article-content .select-area > div.img-board > a {
+                display: block; }
+                .find-product .container article .article-content .select-area > div.img-board > a > figure img {
+                  display: block;
+                  background-repeat: no-repeat;
+                  background-position: 50% 50%;
+                  background-size: cover; }
       .find-product .container article:nth-of-type(1) {
         padding-right: 10px; }
       .find-product .container article:nth-of-type(2) {

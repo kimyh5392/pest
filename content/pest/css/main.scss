@@ -417,14 +417,14 @@
                 .select-area {
                     display: table;
                     width: 100%;
-                    padding: 0 35px;
+                    padding: 0 25px;
                     margin-top: 40px;
+                    table-layout: fixed;
                     > div {
                         display: table-cell;
                         vertical-align: top;
                         &.select-list {
-                            width: calc(100% - 116px);
-                            padding-right: 30px;
+                            padding-right: 25px;
                             > ul {
                                 font-size: 0;
                                 > li {
@@ -512,6 +512,7 @@
                             }
                         }
                         &.img-board {
+                            width: 150px;
                             > a {
                                 display: block;
                                 > figure {
