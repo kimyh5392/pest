@@ -1323,6 +1323,7 @@ textarea {
     &.modal-msg {
         .modal-content {
             width: 230px;
+            z-index: 200;
             article {
                 position: relative;
                 text-align: center;

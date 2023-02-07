@@ -1142,7 +1142,8 @@ textarea {
         .modal .modal-content .btn-area .btn.btn-blue {
           background-color: #0e3db4; }
   .modal.modal-msg .modal-content {
-    width: 230px; }
+    width: 230px;
+    z-index: 200; }
     .modal.modal-msg .modal-content article {
       position: relative;
       text-align: center; }
