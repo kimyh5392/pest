@@ -863,6 +863,14 @@
                     $('.aside').removeClass('fixed');
                 }
             });
+            
+            $(window).scroll(function() {
+               if ($(window).scrollTop() + $(window).height() > $(document).height() - 70) {
+                   $('.aside').addClass('fixed-none');
+               } else {
+                   $('.aside').removeClass('fixed-none');
+               }
+            });
         })(jQuery);
     </script>
 </body>

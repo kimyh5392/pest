@@ -33,6 +33,10 @@
                 position: fixed;
                 top: 155px;
             }
+            &.fixed-none {
+                position: absolute;
+                top: calc(100% - 400px);
+            }
             .breadcrumb {
                 font-size: 0;
                 padding: 0 16px 30px;
