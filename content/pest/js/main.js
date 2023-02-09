@@ -1,12 +1,10 @@
 // jumbo-slider
-const carosel = new Swiper ('.jumbo-slider', {
+const swiper = new Swiper ('.jumbo-slider', {
+    speed: 500,
     loop: true,
-    loopFillGroupWithBlank: true,
     loopAdditionalSlides: 1,
-    loadPrevNext : true,
     autoplay: {
         delay: 4000,
-        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
@@ -17,6 +15,7 @@ const carosel = new Swiper ('.jumbo-slider', {
         nextEl: ".swiper-next",
     },
 });
+
 
 // product-slider
 const product_swiper1 = new Swiper ('.product1', {
