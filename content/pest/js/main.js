@@ -5,6 +5,7 @@ const swiper = new Swiper ('.jumbo-slider', {
     loopAdditionalSlides: 1,
     autoplay: {
         delay: 4000,
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
