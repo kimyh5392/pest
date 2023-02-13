@@ -201,17 +201,15 @@
                     .answer-area {
                         text-align: center;
                         padding: 35px 20px;
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
                         p {
                             font-size: 13px;
                             color: #000;
                             font-weight: 400;
                             line-height: 18px;
-                        }
-                        figure {
-                            img {
-                                display: block;
-                                width: 100%;
-                            }
                         }
                         &.left {
                             text-align: left;
