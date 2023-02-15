@@ -901,4 +901,41 @@ body {
   .search-pop.show {
     display: block; }
 
+/* event-pop */
+.event-pop {
+  position: absolute;
+  top: 154px;
+  left: 0;
+  z-index: 200;
+  padding: 0 10px; }
+  .event-pop .pop-wrap {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    max-width: 400px;
+    box-shadow: 10px 10px 50px #1a1a1a; }
+    .event-pop .pop-wrap > .pop-content > a {
+      display: block; }
+      .event-pop .pop-wrap > .pop-content > a > figure img {
+        display: block;
+        max-width: 100%; }
+    .event-pop .pop-wrap .pop-foot {
+      padding: 5px 10px;
+      overflow: hidden;
+      background-color: #000; }
+      .event-pop .pop-wrap .pop-foot > label {
+        float: left;
+        font-size: 13px;
+        color: #fff;
+        line-height: 20px; }
+        .event-pop .pop-wrap .pop-foot > label input[type="checkbox"] {
+          position: relative;
+          top: 1px;
+          margin: 0; }
+      .event-pop .pop-wrap .pop-foot .event-close {
+        float: right;
+        line-height: 20px;
+        font-size: 13px;
+        color: #fff; }
+
 /*# sourceMappingURL=default.css.map */

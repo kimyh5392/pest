@@ -1005,7 +1005,54 @@ body {
     }
 }
 
-
+/* event-pop */
+.event-pop {
+    position: absolute;
+    top: 154px;
+    left: 0;
+    z-index: 200;
+    padding: 0 10px;
+    .pop-wrap {
+        display: block;
+        width: 94%;
+        margin: 0 auto;
+        max-width: 400px;
+        box-shadow: 10px 10px 50px #1a1a1a;
+        > .pop-content {
+            > a {
+                display: block;
+                > figure {
+                    img {
+                        display: block;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .pop-foot {
+            padding: 5px 10px;
+            overflow: hidden;
+            background-color: #000;
+            > label {
+                float: left;
+                font-size: 13px;
+                color: #fff;
+                line-height: 20px;
+                input[type="checkbox"] {
+                    position: relative;
+                    top: 1px;
+                    margin: 0;
+                }
+            }
+            .event-close {
+                float: right;
+                line-height: 20px;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+    }
+}
 
 
 

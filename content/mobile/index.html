@@ -2583,11 +2583,36 @@
         </section>
     </div>
     
+    <!-- event-pop -->
+    <div class="event-pop">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <a href="#">
+                    <figure>
+                        <img src="/content/pest/images/img_main_popup.jpg" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="pop-foot">
+                <button type="button" class="event-close">[닫기]</button>
+                <label><input type="checkbox"> 오늘하루 보지않기</label>
+            </div>
+        </div>
+    </div>
+    
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='/content/pest-mobile/js/simplyscroll/jquery.simplyscroll.min.js'></script>
     <script src='/content/pest-mobile/js/default.js'></script>
     <script src='/content/pest-mobile/js/common.js'></script>
     <script src='/content/pest-mobile/js/main.js'></script>
+    <script>
+        (function($){
+            // event-pop 
+            $(document).on('click', '.event-close', function(){
+                $('.event-pop').hide();
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

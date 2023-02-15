@@ -3283,6 +3283,24 @@
         </div>
     </footer>
     
+    <!-- event-pop -->
+    <div class="event-pop">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <a href="#">
+                    <figure>
+                        <img src="/content/pest/images/img_main_popup.jpg" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="pop-foot">
+                <button type="button" class="event-close">[닫기]</button>
+                <label><input type="checkbox"> 오늘하루 보지않기</label>
+            </div>
+        </div>
+    </div>
+    
+    
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src='/content/pest/js/simplyscroll/jquery.simplyscroll.min.js'></script>
@@ -3319,6 +3337,11 @@
                 $('.rotate-pop').removeClass('show');
                 rotateDegrees = 0;
                 $('.rotate-board figure > img').css("transform","rotate(" + rotateDegrees + "deg)");
+            });
+            
+            // event-pop 
+            $(document).on('click', '.event-close', function(){
+                $('.event-pop').hide();
             });
             
         })(jQuery);
